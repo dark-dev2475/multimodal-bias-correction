@@ -1,0 +1,70 @@
+{
+  "claims": [
+    {
+      "claim": "Two men are inside a woodworking workshop.",
+      "type": "observation",
+      "category": "location",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man with a beard sits in a manual wheelchair facing toward the right.",
+      "type": "observation",
+      "category": "action",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man is wearing a light green t-shirt.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man is wearing work pants.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man has red earmuffs resting around his neck.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man is actively using a laptop resting on his lap.",
+      "type": "observation",
+      "category": "action",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "Another man has yellow earmuffs over his ears.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "Another man is wearing a blue plaid shirt.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "Another man is wearing jeans.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "Another man stands in front of a large industrial woodworking machine.",
+      "type": "observation",
+      "category": "location",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "Another man works with wooden materials.",
+      "type": "observation",
+      "category": "action",
+      "requires_visual_evidence": true
+    }
+  ]
+}

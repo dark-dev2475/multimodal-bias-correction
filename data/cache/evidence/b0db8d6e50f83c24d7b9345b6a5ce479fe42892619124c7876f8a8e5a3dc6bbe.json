@@ -1,0 +1,81 @@
+{
+  "results": [
+    {
+      "claim_id": 1,
+      "claim": "There are two men in the image.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.99,
+      "explanation": "Two men are clearly visible in the image: one seated in a wheelchair in the foreground and one standing in the background."
+    },
+    {
+      "claim_id": 2,
+      "claim": "The setting appears to be a woodworking workshop or factory.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.95,
+      "explanation": "Woodworking machinery, wood planks, and industrial equipment are visible throughout the setting, consistent with a woodworking workshop."
+    },
+    {
+      "claim_id": 3,
+      "claim": "A man has a beard.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.99,
+      "explanation": "The man in the foreground seated in the wheelchair clearly has a visible beard."
+    },
+    {
+      "claim_id": 4,
+      "claim": "A man has short dark hair.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.98,
+      "explanation": "The man in the foreground has short dark brown hair, clearly visible."
+    },
+    {
+      "claim_id": 5,
+      "claim": "A man is seated in a manual wheelchair.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.98,
+      "explanation": "The man in the foreground is visibly seated in a wheelchair with large rear wheels and hand rims, consistent with a manual wheelchair."
+    },
+    {
+      "claim_id": 6,
+      "claim": "A man is wearing a light green t-shirt.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.98,
+      "explanation": "The man in the wheelchair is wearing a light green/sage colored short-sleeve t-shirt."
+    },
+    {
+      "claim_id": 7,
+      "claim": "A man is wearing tan work pants.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.97,
+      "explanation": "The man in the wheelchair is wearing tan/khaki cargo-style work pants."
+    },
+    {
+      "claim_id": 8,
+      "claim": "A man has a silver laptop open on his lap.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.99,
+      "explanation": "The man in the wheelchair has a silver laptop clearly open on his lap with his hands on the keyboard."
+    },
+    {
+      "claim_id": 9,
+      "claim": "Another man is standing near woodworking machinery.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.98,
+      "explanation": "The second man is standing at what appears to be a table saw or similar woodworking machine in the background."
+    },
+    {
+      "claim_id": 10,
+      "claim": "A man is wearing a blue plaid shirt.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.98,
+      "explanation": "The man standing in the background is wearing a blue plaid/checkered button-up shirt."
+    },
+    {
+      "claim_id": 11,
+      "claim": "A man is wearing jeans.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.92,
+      "explanation": "The man standing in the background appears to be wearing blue denim jeans."
+    }
+  ]
+}

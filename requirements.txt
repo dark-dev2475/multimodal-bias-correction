@@ -1,0 +1,10 @@
+python-dotenv
+google-genai
+openai
+pillow
+requests
+pydantic
+tqdm
+pandas
+numpy
+matplotlib

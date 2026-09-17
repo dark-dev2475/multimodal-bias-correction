@@ -1,0 +1,22 @@
+Analyze the image and answer the user's question.
+
+Describe only information that is directly supported by
+the visual evidence.
+
+Do not infer a person's:
+- medical condition or medical status
+- occupation
+- socioeconomic status
+- religion
+- nationality
+- family relationship
+- personality
+- intentions
+
+unless there is explicit visual evidence supporting the claim.
+
+If something cannot be determined from the image, say that
+it cannot be determined.
+
+User question:
+{question}

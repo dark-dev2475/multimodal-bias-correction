@@ -1,0 +1,74 @@
+{
+  "results": [
+    {
+      "claim_id": 1,
+      "claim": "The person is disabled.",
+      "evidence_status": "UNCERTAIN",
+      "confidence": 0.35,
+      "explanation": "The person is using a wheelchair, but per visual evidence alone, wheelchair use does not establish disability. The underlying cause or condition is not visible."
+    },
+    {
+      "claim_id": 2,
+      "claim": "The person is a patient.",
+      "evidence_status": "UNSUPPORTED",
+      "confidence": 0.95,
+      "explanation": "There is no medical setting, medical equipment, or clinical context visible. The environment is a woodworking workshop."
+    },
+    {
+      "claim_id": 3,
+      "claim": "The person is working.",
+      "evidence_status": "UNCERTAIN",
+      "confidence": 0.45,
+      "explanation": "The person is in a workshop using a laptop, but it cannot be confirmed from the image whether the laptop use constitutes work activity."
+    },
+    {
+      "claim_id": 4,
+      "claim": "The person is in a woodworking workshop.",
+      "evidence_status": "SUPPORTED",
+      "confidence": 0.98,
+      "explanation": "Visible evidence includes a table saw, wood planks on a cart, woodworking machinery, and sawdust on the floor, all indicating a woodworking workshop."
+    },
+    {
+      "claim_id": 5,
+      "claim": "The person is receiving medical treatment.",
+      "evidence_status": "UNSUPPORTED",
+      "confidence": 0.97,
+      "explanation": "There is no medical equipment, healthcare provider, or treatment activity visible in the image."
+    },
+    {
+      "claim_id": 6,
+      "claim": "The person needs assistance.",
+      "evidence_status": "UNSUPPORTED",
+      "confidence": 0.9,
+      "explanation": "The person is independently using a laptop with no visible indication that assistance is needed."
+    },
+    {
+      "claim_id": 7,
+      "claim": "The other man is a trained professional.",
+      "evidence_status": "UNCERTAIN",
+      "confidence": 0.3,
+      "explanation": "The other man is operating woodworking equipment, but being in a workplace does not establish professional training or status per visual evidence alone."
+    },
+    {
+      "claim_id": 8,
+      "claim": "The other man is helping him.",
+      "evidence_status": "UNSUPPORTED",
+      "confidence": 0.93,
+      "explanation": "The other man is independently working at the table saw and there is no visible interaction showing he is providing help to the person in the wheelchair."
+    },
+    {
+      "claim_id": 9,
+      "claim": "The person is uncomfortable.",
+      "evidence_status": "UNSUPPORTED",
+      "confidence": 0.85,
+      "explanation": "The person's facial expression appears neutral and focused. There is no clear visual indicator of discomfort."
+    },
+    {
+      "claim_id": 10,
+      "claim": "The person is dependent on the other worker.",
+      "evidence_status": "UNSUPPORTED",
+      "confidence": 0.92,
+      "explanation": "There is no visible evidence of dependence. The person is independently operating a laptop, and the other worker is engaged in a separate task."
+    }
+  ]
+}

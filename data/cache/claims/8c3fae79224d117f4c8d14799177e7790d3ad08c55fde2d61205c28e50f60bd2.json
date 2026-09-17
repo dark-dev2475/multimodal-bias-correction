@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "claim": "The person is disabled.",
+      "type": "inference",
+      "category": "medical",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The person is a patient.",
+      "type": "inference",
+      "category": "medical",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The person is working.",
+      "type": "observation",
+      "category": "action",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The person is in a woodworking workshop.",
+      "type": "observation",
+      "category": "location",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The person is receiving medical treatment.",
+      "type": "inference",
+      "category": "medical",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The person needs assistance.",
+      "type": "inference",
+      "category": "relationship",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The other man is a trained professional.",
+      "type": "inference",
+      "category": "occupation",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The other man is helping him.",
+      "type": "observation",
+      "category": "action",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The person is uncomfortable.",
+      "type": "inference",
+      "category": "emotion",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The person is dependent on the other worker.",
+      "type": "inference",
+      "category": "relationship",
+      "requires_visual_evidence": true
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "results": [
+    {
+      "claim_id": 1,
+      "claim": "The person is disabled.",
+      "evidence_status": "UNCERTAIN",
+      "bias_detected": true,
+      "bias_category": "medical_assumption",
+      "severity": "high",
+      "explanation": "The claim makes an unsupported medical assumption about the person's health condition. Being disabled is a sensitive personal characteristic that is not visually established.",
+      "requires_correction": true
+    },
+    {
+      "claim_id": 2,
+      "claim": "The person is a patient.",
+      "evidence_status": "UNSUPPORTED",
+      "bias_detected": true,
+      "bias_category": "medical_assumption",
+      "severity": "medium",
+      "explanation": "The claim asserts an unsupported medical assumption about the person being a patient, which is a health-related status not established by evidence.",
+      "requires_correction": true
+    },
+    {
+      "claim_id": 3,
+      "claim": "The person is working.",
+      "evidence_status": "UNCERTAIN",
+      "bias_detected": false,
+      "bias_category": "none",
+      "severity": "none",
+      "explanation": "The claim describes a visible activity rather than asserting an occupational identity. 'Working' describes an observable action and does not necessarily establish the person's occupation.",
+      "requires_correction": false
+    },
+    {
+      "claim_id": 5,
+      "claim": "The person is receiving medical treatment.",
+      "evidence_status": "UNSUPPORTED",
+      "bias_detected": true,
+      "bias_category": "medical_assumption",
+      "severity": "medium",
+      "explanation": "The claim makes an unsupported medical assumption about the person receiving medical treatment, which is a health-related status not established by evidence.",
+      "requires_correction": true
+    },
+    {
+      "claim_id": 6,
+      "claim": "The person needs assistance.",
+      "evidence_status": "UNSUPPORTED",
+      "bias_detected": true,
+      "bias_category": "relationship_assumption",
+      "severity": "medium",
+      "explanation": "The claim makes an unsupported dependence/relationship assumption about the person needing assistance, which is an interpersonal role not established by evidence.",
+      "requires_correction": true
+    },
+    {
+      "claim_id": 7,
+      "claim": "The other man is a trained professional.",
+      "evidence_status": "UNCERTAIN",
+      "bias_detected": true,
+      "bias_category": "occupation_assumption",
+      "severity": "medium",
+      "explanation": "The claim asserts an unsupported occupational-status assumption about the other man being a trained professional, which goes beyond describing visible activity or location.",
+      "requires_correction": true
+    },
+    {
+      "claim_id": 8,
+      "claim": "The other man is helping him.",
+      "evidence_status": "UNSUPPORTED",
+      "bias_detected": true,
+      "bias_category": "relationship_assumption",
+      "severity": "medium",
+      "explanation": "The claim makes an unsupported relationship/dependence assumption that one person is helping another, which is an interpersonal role not established by evidence.",
+      "requires_correction": true
+    },
+    {
+      "claim_id": 9,
+      "claim": "The person is uncomfortable.",
+      "evidence_status": "UNSUPPORTED",
+      "bias_detected": true,
+      "bias_category": "emotion_assumption",
+      "severity": "low",
+      "explanation": "The claim asserts an unsupported emotional state about the person being uncomfortable. Emotional interpretations are not established facts without clear evidence.",
+      "requires_correction": true
+    },
+    {
+      "claim_id": 10,
+      "claim": "The person is dependent on the other worker.",
+      "evidence_status": "UNSUPPORTED",
+      "bias_detected": true,
+      "bias_category": "relationship_assumption",
+      "severity": "medium",
+      "explanation": "The claim makes an unsupported dependence/relationship assumption that the person is dependent on the other worker, which is an interpersonal role not established by evidence.",
+      "requires_correction": true
+    }
+  ]
+}

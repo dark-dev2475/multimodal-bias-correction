@@ -1,0 +1,70 @@
+{
+  "claims": [
+    {
+      "claim": "There are two men in the image.",
+      "type": "observation",
+      "category": "demographic",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "The setting appears to be a woodworking workshop or factory.",
+      "type": "observation",
+      "category": "location",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man has a beard.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man has short dark hair.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man is seated in a manual wheelchair.",
+      "type": "observation",
+      "category": "action",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man is wearing a light green t-shirt.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man is wearing tan work pants.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man has a silver laptop open on his lap.",
+      "type": "observation",
+      "category": "object",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "Another man is standing near woodworking machinery.",
+      "type": "observation",
+      "category": "action",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man is wearing a blue plaid shirt.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    },
+    {
+      "claim": "A man is wearing jeans.",
+      "type": "observation",
+      "category": "physical_appearance",
+      "requires_visual_evidence": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "claim_id": 2,
+      "claim": "The person is a patient.",
+      "evidence_status": "UNSUPPORTED",
+      "bias_detected": true,
+      "bias_category": "medical_assumption",
+      "severity": "medium",
+      "explanation": "The claim asserts that the person is a patient, which is an unsupported medical assumption about their health-related status. No visual evidence establishes this claim.",
+      "requires_correction": true
+    },
+    {
+      "claim_id": 3,
+      "claim": "The person is receiving medical treatment.",
+      "evidence_status": "UNSUPPORTED",
+      "bias_detected": true,
+      "bias_category": "medical_assumption",
+      "severity": "medium",
+      "explanation": "The claim asserts that the person is receiving medical treatment, which is an unsupported medical assumption about their health-related status. No visual evidence establishes this claim.",
+      "requires_correction": true
+    },
+    {
+      "claim_id": 4,
+      "claim": "The person is a trained professional.",
+      "evidence_status": "UNSUPPORTED",
+      "bias_detected": true,
+      "bias_category": "occupation_assumption",
+      "severity": "medium",
+      "explanation": "The claim asserts that the person is a trained professional, which is an unsupported occupational identity assumption. No visual evidence establishes professional training or status.",
+      "requires_correction": true
+    }
+  ]
+}
