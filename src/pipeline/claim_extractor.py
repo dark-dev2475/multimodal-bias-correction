@@ -1,16 +1,26 @@
-import json
-from pydantic import BaseModel
-from typing import List
+from pydantic import BaseModel, field_validator
+from typing import List, Literal
 from utils.chache import Cache
+from utils.json_parse import parse_model_json
 
 from models.vlm import OpenRouterVLM
 
 
+ClaimType = Literal["observation", "inference"]
+
+
 class Claim(BaseModel):
     claim: str
-    type: str
+    type: ClaimType
     category: str
     requires_visual_evidence: bool
+
+    @field_validator("type", "category", mode="before")
+    @classmethod
+    def _normalise(cls, value):
+        if isinstance(value, str):
+            return value.strip().lower()
+        return value
 
 
 class ClaimList(BaseModel):
@@ -262,39 +272,12 @@ Do not include explanations outside the JSON.
             print("  ↳ Using cached claim extraction")
             return ClaimList.model_validate(cached)
 
-        result = self.vlm.client.chat.completions.create(
-            model=self.vlm.model_name,
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ]
+        content = self.vlm.complete(
+            prompt,
+            source="Claim extractor"
         )
 
-        content = result.choices[0].message.content
-
-        if not content:
-            raise ValueError(
-                "Claim extractor returned an empty response"
-            )
-
-        content = content.strip()
-
-        # Remove markdown code fences if model ignores instructions
-        if content.startswith("```"):
-            content = content.replace("```json", "", 1)
-            content = content.replace("```", "", 1)
-            content = content.strip()
-
-        try:
-            data = json.loads(content)
-            claim_list = ClaimList.model_validate(data)
-        except (json.JSONDecodeError, ValueError) as exc:
-            raise ValueError(
-                "Claim extractor returned invalid JSON:\n"
-                f"{content}"
-            ) from exc
+        data = parse_model_json(content, "Claim extractor")
 
         claim_list = ClaimList.model_validate(data)
 

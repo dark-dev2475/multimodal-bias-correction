@@ -60,9 +60,10 @@ Return ONLY the corrected response.
 """
 
 
-        result = self.vlm.generate(
+        result = self.vlm.complete(
+            prompt,
             image_path=image_path,
-            prompt=prompt
+            source="Self-corrector"
         )
 
         return result.strip()

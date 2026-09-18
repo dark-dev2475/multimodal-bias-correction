@@ -1,17 +1,29 @@
-import json
-
-from pydantic import BaseModel
-from typing import List
+from pydantic import BaseModel, Field, field_validator
+from typing import List, Literal
 from utils.chache import Cache
+from utils.json_parse import parse_model_json
 from models.vlm import OpenRouterVLM
+
+
+# Constrained on purpose. A stray value here would route the claim around
+# the Bias Monitor, which filters on these exact strings, and the claim
+# would be silently recorded as unbiased.
+EvidenceStatus = Literal["SUPPORTED", "UNCERTAIN", "UNSUPPORTED"]
 
 
 class EvidenceResult(BaseModel):
     claim_id: int
     claim: str
-    evidence_status: str
-    confidence: float
+    evidence_status: EvidenceStatus
+    confidence: float = Field(ge=0.0, le=1.0)
     explanation: str
+
+    @field_validator("evidence_status", mode="before")
+    @classmethod
+    def _normalise_status(cls, value):
+        if isinstance(value, str):
+            return value.strip().upper()
+        return value
 
 
 class EvidenceResultList(BaseModel):
@@ -155,63 +167,32 @@ The claim_id must match the claim number provided above.
         # ONE multimodal API call
         # -----------------------------------------
 
-        result = self.vlm.client.chat.completions.create(
-            model=self.vlm.model_name,
-            messages=[
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": prompt
-                        },
-                        {
-                            "type": "image_url",
-                            "image_url": {
-                                "url": self.vlm._encode_image(
-                                    image_path
-                                )
-                            }
-                        }
-                    ]
-                }
-            ]
+        content = self.vlm.complete(
+            prompt,
+            image_path=image_path,
+            source="Evidence checker"
         )
-
-        content = result.choices[0].message.content
-
-        if not content:
-            raise ValueError(
-                "Evidence checker returned an empty response"
-            )
-
-        content = content.strip()
-
-        # -----------------------------------------
-        # Remove markdown code fences
-        # -----------------------------------------
-
-        if content.startswith("```"):
-            content = content.replace(
-                "```json", "", 1
-            )
-            content = content.replace(
-                "```", "", 1
-            )
-            content = content.strip()
 
         # -----------------------------------------
         # Parse + validate JSON
         # -----------------------------------------
 
-        try:
-            data = json.loads(content)
-            evidence_results = EvidenceResultList.model_validate(data)
-        except (json.JSONDecodeError, ValueError) as exc:
-            raise ValueError(
-                "Evidence checker returned invalid JSON:\n"
-                f"{content}"
-            ) from exc
+        data = parse_model_json(content, "Evidence checker")
+
+        evidence_results = EvidenceResultList.model_validate(data)
+
+        # The Bias Monitor can only review claims it receives, so a short
+        # or misaligned batch would quietly suppress bias detection.
+        returned_ids = {r.claim_id for r in evidence_results.results}
+        expected_ids = set(range(1, len(claims) + 1))
+
+        if returned_ids != expected_ids:
+            print(
+                f"  ↳ WARNING: evidence checker returned ids "
+                f"{sorted(returned_ids)} for {len(claims)} claims "
+                f"(missing: {sorted(expected_ids - returned_ids)}, "
+                f"unexpected: {sorted(returned_ids - expected_ids)})"
+            )
 
         self.cache.set(
             "evidence",

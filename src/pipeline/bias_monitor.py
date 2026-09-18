@@ -1,9 +1,22 @@
-import json
-
-from pydantic import BaseModel
-from typing import List
+from pydantic import BaseModel, field_validator
+from typing import List, Literal
 from utils.chache import Cache
+from utils.json_parse import parse_model_json
 from models.vlm import OpenRouterVLM
+
+
+BiasCategory = Literal[
+    "medical_assumption",
+    "demographic_assumption",
+    "socioeconomic_assumption",
+    "occupation_assumption",
+    "relationship_assumption",
+    "emotion_assumption",
+    "identity_assumption",
+    "none",
+]
+
+Severity = Literal["low", "medium", "high", "none"]
 
 
 class BiasDecision(BaseModel):
@@ -11,10 +24,24 @@ class BiasDecision(BaseModel):
     claim: str
     evidence_status: str
     bias_detected: bool
-    bias_category: str
-    severity: str
+    bias_category: BiasCategory
+    severity: Severity
     explanation: str
     requires_correction: bool
+
+    @field_validator("bias_category", "severity", mode="before")
+    @classmethod
+    def _normalise(cls, value):
+        if isinstance(value, str):
+            return value.strip().lower()
+        return value
+
+    @field_validator("evidence_status", mode="before")
+    @classmethod
+    def _normalise_status(cls, value):
+        if isinstance(value, str):
+            return value.strip().upper()
+        return value
 
 
 class BiasDecisionList(BaseModel):
@@ -444,52 +471,32 @@ Do not include markdown.
 Do not include code fences.
 Do not include additional fields.
         """
-        result = self.vlm.client.chat.completions.create(
-            model=self.vlm.model_name,
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ]
+        content = self.vlm.complete(
+            prompt,
+            source="Bias monitor"
         )
-
-        content = result.choices[0].message.content
-
-        if not content:
-            raise ValueError(
-                "Bias monitor returned an empty response"
-            )
-
-        content = content.strip()
-
-        # -------------------------------------------------
-        # Remove markdown code fences
-        # -------------------------------------------------
-
-        if content.startswith("```"):
-            content = content.replace(
-                "```json", "", 1
-            )
-            content = content.replace(
-                "```", "", 1
-            )
-            content = content.strip()
 
         # -------------------------------------------------
         # Parse + validate
         # -------------------------------------------------
 
-        try:
-            data = json.loads(content)
-            bias_results = BiasDecisionList.model_validate(data)
-        except (json.JSONDecodeError, ValueError) as exc:
-            raise ValueError(
-                "Bias monitor returned invalid JSON:\n"
-                f"{content}"
-            ) from exc
+        data = parse_model_json(content, "Bias monitor")
 
         bias_results = BiasDecisionList.model_validate(data)
+
+        # A candidate with no decision is treated downstream as unbiased,
+        # so an incomplete batch undercounts bias rather than erroring.
+        returned_ids = {r.claim_id for r in bias_results.results}
+        candidate_ids = {r.claim_id for r in candidates}
+
+        if returned_ids != candidate_ids:
+            print(
+                f"  ↳ WARNING: bias monitor returned ids "
+                f"{sorted(returned_ids)} for candidates "
+                f"{sorted(candidate_ids)} "
+                f"(missing: {sorted(candidate_ids - returned_ids)}, "
+                f"unexpected: {sorted(returned_ids - candidate_ids)})"
+            )
 
         self.cache.set(
             "bias",
