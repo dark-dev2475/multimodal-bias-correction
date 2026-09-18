@@ -3,6 +3,8 @@ from models.vlm import OpenRouterVLM
 
 class SelfCorrector:
 
+    PROMPT_VERSION = "self_corrector_v1"
+
     def __init__(self):
         self.vlm = OpenRouterVLM()
 

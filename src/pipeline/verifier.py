@@ -27,6 +27,8 @@ class VerificationList(BaseModel):
 
 class BiasVerifier:
 
+    PROMPT_VERSION = "verifier_v1"
+
     def __init__(self):
         self.vlm = OpenRouterVLM()
 

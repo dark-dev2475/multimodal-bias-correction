@@ -54,6 +54,11 @@ class OpenRouterVLM:
 
         self.model_name = model_name
 
+        # One entry per successful complete(), consumed by the pipeline to
+        # build per-stage metrics. Cached stages add nothing here, which is
+        # what makes a cache hit visible as an absent call.
+        self.calls = []
+
     def _encode_image(self, image_path):
 
         image_path = Path(image_path)
@@ -110,6 +115,26 @@ class OpenRouterVLM:
             }
         ]
 
+    @staticmethod
+    def _usage(response):
+        """Token counts as reported by the API, or None if it reported none.
+
+        Never substitutes zeros: an absent count and a count of zero mean
+        very different things when totalling the cost of a run.
+        """
+
+        usage = getattr(response, "usage", None)
+
+        if usage is None:
+            return None
+
+        fields = {
+            key: getattr(usage, key, None)
+            for key in ("prompt_tokens", "completion_tokens", "total_tokens")
+        }
+
+        return fields if any(v is not None for v in fields.values()) else None
+
     def complete(
         self,
         prompt,
@@ -127,6 +152,7 @@ class OpenRouterVLM:
         content = self._build_content(prompt, image_path)
 
         last_error = None
+        started = time.monotonic()
 
         for attempt in range(1, max_attempts + 1):
 
@@ -157,6 +183,12 @@ class OpenRouterVLM:
                     text = response.choices[0].message.content
 
                     if text and text.strip():
+                        self.calls.append({
+                            "source": source,
+                            "latency_seconds": time.monotonic() - started,
+                            "attempts": attempt,
+                            "usage": self._usage(response)
+                        })
                         return text
 
                     last_error = (

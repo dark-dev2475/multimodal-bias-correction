@@ -4,11 +4,39 @@ from pipeline.evidence_checker import EvidenceChecker
 from pipeline.bias_monitor import BiasMonitor
 from pipeline.corrector import SelfCorrector
 from pipeline.verifier import BiasVerifier
+from utils.schemas import (
+    GenerationMode, PipelineResult, StageMetrics, StopReason,
+)
+
+
+# complete() tags every call with a human-readable source; this maps those
+# onto the stage names used in reported metrics.
+STAGE_BY_SOURCE = {
+    "Initial generator": "generation",
+    "Claim extractor": "extraction",
+    "Evidence checker": "evidence",
+    "Bias monitor": "bias_monitor",
+    "Self-corrector": "correction",
+    "Verifier": "verification",
+}
+
+
+def claim_fingerprint(claims):
+    """Order- and whitespace-insensitive signature of a set of claims.
+
+    Two iterations that produce the same claims in a different order, or with
+    different spacing or casing, have made no substantive progress.
+    """
+
+    return tuple(sorted(
+        " ".join(claim.claim.split()).casefold()
+        for claim in claims
+    ))
 
 
 class BiasCorrectionPipeline:
 
-    def __init__(self, generation_mode="real"):
+    def __init__(self, generation_mode=GenerationMode.real):
 
         self.generator = InitialGenerator(mode=generation_mode)
         self.claim_extractor = ClaimExtractor()
@@ -16,6 +44,72 @@ class BiasCorrectionPipeline:
         self.bias_monitor = BiasMonitor()
         self.corrector = SelfCorrector()
         self.verifier = BiasVerifier()
+
+    # ---------------------------------------------------------
+    # Execution metadata
+    # ---------------------------------------------------------
+
+    def _stages(self):
+
+        return (
+            self.generator,
+            self.claim_extractor,
+            self.evidence_checker,
+            self.bias_monitor,
+            self.corrector,
+            self.verifier
+        )
+
+    def _reset_call_logs(self):
+
+        for stage in self._stages():
+            stage.vlm.calls.clear()
+
+    def _collect_stage_metrics(self):
+        """Per-stage latency, retries and token usage for the run just done.
+
+        A stage served entirely from cache makes no calls and so does not
+        appear here, which is the intended signal rather than a gap.
+        """
+
+        metrics = {}
+
+        for stage in self._stages():
+            for call in stage.vlm.calls:
+
+                name = STAGE_BY_SOURCE.get(call["source"], call["source"])
+                entry = metrics.setdefault(name, StageMetrics())
+
+                entry.calls += 1
+                entry.retries += call["attempts"] - 1
+                entry.latency_seconds = round(
+                    entry.latency_seconds + call["latency_seconds"], 6
+                )
+
+                usage = call.get("usage")
+
+                if usage:
+                    entry.usage_reported_calls += 1
+
+                    for field in ("prompt_tokens", "completion_tokens",
+                                  "total_tokens"):
+                        value = usage.get(field)
+
+                        if value is not None:
+                            current = getattr(entry, field) or 0
+                            setattr(entry, field, current + value)
+
+        return metrics
+
+    def _prompt_versions(self):
+
+        return {
+            "extraction": self.claim_extractor.PROMPT_VERSION,
+            "evidence": self.evidence_checker.PROMPT_VERSION,
+            "bias_monitor": self.bias_monitor.PROMPT_VERSION,
+            "correction": self.corrector.PROMPT_VERSION,
+            "verification": self.verifier.PROMPT_VERSION
+        }
 
     # ---------------------------------------------------------
     # STEP 1: Initial Generation
@@ -170,6 +264,8 @@ class BiasCorrectionPipeline:
         if max_iterations < 1:
             raise ValueError("max_iterations must be at least 1")
 
+        self._reset_call_logs()
+
         print("\n" + "=" * 70)
         print("MULTIMODAL BIAS-CORRECTION PIPELINE")
         print("=" * 70)
@@ -192,9 +288,9 @@ class BiasCorrectionPipeline:
 
         correction_history = []
 
-        previous_claim_texts = None
+        previous_fingerprint = None
         completed_iterations = 0
-        stop_reason = "max_iterations"
+        stop_reason = StopReason.max_iterations
 
         # ---------------------------------------------------------
         # EACH ITERATION RE-ANALYSES THE CURRENT RESPONSE FROM
@@ -240,17 +336,18 @@ class BiasCorrectionPipeline:
             # Identical claims mean the previous correction changed nothing
             # of substance. Another round would re-flag the same claims and
             # spend corrector and verifier calls for no new information.
-            claim_texts = [claim.claim for claim in claims]
+            fingerprint = claim_fingerprint(claims)
 
-            if claim_texts == previous_claim_texts:
+            if previous_fingerprint is not None \
+                    and fingerprint == previous_fingerprint:
                 print(
                     "\nClaims are unchanged from the previous iteration. "
                     "Further correction cannot make progress. Stopping."
                 )
-                stop_reason = "no_progress"
+                stop_reason = StopReason.no_progress
                 break
 
-            previous_claim_texts = claim_texts
+            previous_fingerprint = fingerprint
 
             # -----------------------------------------------------
             # EVIDENCE + BIAS ANALYSIS
@@ -352,7 +449,7 @@ class BiasCorrectionPipeline:
                     "were detected."
                 )
 
-                stop_reason = "verified"
+                stop_reason = StopReason.verified
 
                 break
 
@@ -391,7 +488,9 @@ class BiasCorrectionPipeline:
         # correction_history holds the per-iteration detail.
         # ---------------------------------------------------------
 
-        return {
+        # Validated on the way out: a shape change here fails loudly rather
+        # than reaching the saved results as a silently missing field.
+        return PipelineResult.model_validate({
             "question": question,
             "generation_mode": self.generator.mode,
             "initial_response": initial_response,
@@ -406,5 +505,7 @@ class BiasCorrectionPipeline:
             "verification_passed": verification_passed,
             "stop_reason": stop_reason,
             "correction_iterations": completed_iterations,
-            "correction_history": correction_history
-        }
+            "correction_history": correction_history,
+            "stage_metrics": self._collect_stage_metrics(),
+            "prompt_versions": self._prompt_versions()
+        }).model_dump(mode="json")

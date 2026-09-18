@@ -32,6 +32,8 @@ class EvidenceResultList(BaseModel):
 
 class EvidenceChecker:
 
+    PROMPT_VERSION = "evidence_checker_v1"
+
     def __init__(self):
         self.vlm = OpenRouterVLM()
         self.cache = Cache()
@@ -48,7 +50,7 @@ class EvidenceChecker:
                 claim.model_dump()
                 for claim in claims
             ],
-            "prompt_version": "evidence_checker_v1"
+            "prompt_version": self.PROMPT_VERSION
         }
 
         cached = self.cache.get(

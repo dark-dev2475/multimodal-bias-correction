@@ -7,6 +7,7 @@ sys.path.append(str(PROJECT_ROOT / "src"))
 
 from pipeline.pipeline import BiasCorrectionPipeline
 from pipeline.generator import MODES
+from utils.logger import ExperimentLogger
 
 
 def parse_args():
@@ -43,6 +44,30 @@ def parse_args():
         default=2
     )
 
+    parser.add_argument(
+        "--case-id",
+        default=None,
+        help="Identifier for the saved run. Defaults to the image stem."
+    )
+
+    parser.add_argument(
+        "--experiment-id",
+        default="adhoc",
+        help="Groups this run under <output-dir>/<experiment-id>/."
+    )
+
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=PROJECT_ROOT / "data" / "outputs"
+    )
+
+    parser.add_argument(
+        "--no-save",
+        action="store_true",
+        help="Run without writing a result file."
+    )
+
     return parser.parse_args()
 
 
@@ -66,6 +91,25 @@ def main():
     print(f"Iterations:        {result['correction_iterations']}")
     print(f"Verification:      "
           f"{'passed' if result['verification_passed'] else 'failed'}")
+
+    if args.no_save:
+        return
+
+    case_id = args.case_id or Path(args.image).stem
+
+    output_file = ExperimentLogger(
+        output_dir=args.output_dir
+    ).save_run(
+        case_id=case_id,
+        image_path=args.image,
+        model=pipeline.generator.vlm.model_name,
+        result=result,
+        experiment_id=args.experiment_id,
+        max_iterations=args.max_iterations,
+        prompt_hash=pipeline.generator.prompt_fingerprint()
+    )
+
+    print(f"Saved:             {output_file}")
 
 
 if __name__ == "__main__":

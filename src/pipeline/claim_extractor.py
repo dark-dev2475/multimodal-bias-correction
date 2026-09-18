@@ -29,6 +29,8 @@ class ClaimList(BaseModel):
 
 class ClaimExtractor:
 
+    PROMPT_VERSION = "claim_extraction_v2"
+
     def __init__(self):
         self.vlm = OpenRouterVLM()
         self.cache = Cache()
@@ -260,7 +262,7 @@ Do not include explanations outside the JSON.
         cache_key = {
             "model": self.vlm.model_name,
             "response": response,
-            "prompt_version": "claim_extraction_v2"
+            "prompt_version": self.PROMPT_VERSION
         }
 
         cached = self.cache.get(

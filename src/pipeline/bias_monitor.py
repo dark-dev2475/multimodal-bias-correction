@@ -50,6 +50,8 @@ class BiasDecisionList(BaseModel):
 
 class BiasMonitor:
 
+    PROMPT_VERSION = "bias_monitor_v2"
+
     def __init__(self):
         self.vlm = OpenRouterVLM()
         self.cache = Cache()
@@ -82,7 +84,7 @@ class BiasMonitor:
                 result.model_dump()
                 for result in candidates
             ],
-            "prompt_version": "bias_monitor_v2"
+            "prompt_version": self.PROMPT_VERSION
         }
 
         cached = self.cache.get(
