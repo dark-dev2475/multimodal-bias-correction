@@ -3,6 +3,8 @@ from models.vlm import OpenRouterVLM
 
 class SelfCorrector:
 
+    PROMPT_VERSION = "self_corrector_v1"
+
     def __init__(self):
         self.vlm = OpenRouterVLM()
 
@@ -60,9 +62,10 @@ Return ONLY the corrected response.
 """
 
 
-        result = self.vlm.generate(
+        result = self.vlm.complete(
+            prompt,
             image_path=image_path,
-            prompt=prompt
+            source="Self-corrector"
         )
 
         return result.strip()

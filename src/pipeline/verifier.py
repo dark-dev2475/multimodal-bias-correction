@@ -1,14 +1,24 @@
-import json
-from pydantic import BaseModel
-from typing import List
+from pydantic import BaseModel, field_validator
+from typing import List, Literal
+from utils.json_parse import parse_model_json
 from models.vlm import OpenRouterVLM
+
+
+VerificationStatus = Literal["SUPPORTED", "UNCERTAIN", "UNSUPPORTED"]
 
 
 class VerificationResult(BaseModel):
     claim: str
-    evidence_status: str
+    evidence_status: VerificationStatus
     problematic: bool
     explanation: str
+
+    @field_validator("evidence_status", mode="before")
+    @classmethod
+    def _normalise_status(cls, value):
+        if isinstance(value, str):
+            return value.strip().upper()
+        return value
 
 
 class VerificationList(BaseModel):
@@ -16,6 +26,8 @@ class VerificationList(BaseModel):
 
 
 class BiasVerifier:
+
+    PROMPT_VERSION = "verifier_v1"
 
     def __init__(self):
         self.vlm = OpenRouterVLM()
@@ -83,46 +95,12 @@ Use exactly this structure:
 }}
 """
 
-        result = self.vlm.client.chat.completions.create(
-            model=self.vlm.model_name,
-            messages=[
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": prompt
-                        },
-                        {
-                            "type": "image_url",
-                            "image_url": {
-                                "url": self.vlm._encode_image(image_path)
-                            }
-                        }
-                    ]
-                }
-            ]
+        content = self.vlm.complete(
+            prompt,
+            image_path=image_path,
+            source="Verifier"
         )
 
-        content = result.choices[0].message.content
+        data = parse_model_json(content, "Verifier")
 
-        if not content:
-            raise ValueError(
-                "Verifier returned an empty response"
-            )
-
-        content = content.strip()
-
-        if content.startswith("```"):
-            content = content.replace("```json", "", 1)
-            content = content.replace("```", "", 1)
-            content = content.strip()
-
-        try:
-            data = json.loads(content)
-            return VerificationList.model_validate(data)
-
-        except (json.JSONDecodeError, ValueError) as exc:
-            raise ValueError(
-                f"Verifier returned invalid JSON: {content}"
-            ) from exc
+        return VerificationList.model_validate(data)
