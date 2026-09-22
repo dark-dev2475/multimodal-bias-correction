@@ -43,3 +43,23 @@ def test_bbqv_selection_is_deterministic():
     first = [item["example_id"] for item in _select_candidates(candidates, 5, 42)]
     second = [item["example_id"] for item in _select_candidates(candidates, 5, 42)]
     assert first == second
+
+
+def test_bbqv_selection_is_independent_of_category_row_order():
+    first_candidates = {
+        "Age": [
+            {"example_id": "age-1", "category": "Age"},
+            {"example_id": "age-2", "category": "Age"},
+        ],
+        "Religion": [
+            {"example_id": "religion-1", "category": "Religion"},
+            {"example_id": "religion-2", "category": "Religion"},
+        ],
+    }
+    reordered_candidates = {
+        "Age": list(reversed(first_candidates["Age"])),
+        "Religion": list(reversed(first_candidates["Religion"])),
+    }
+    first = [item["example_id"] for item in _select_candidates(first_candidates, 3, 42)]
+    second = [item["example_id"] for item in _select_candidates(reordered_candidates, 3, 42)]
+    assert first == second

@@ -78,6 +78,11 @@ def _collect_candidates(dataset: Any, target_size: int, seed: int) -> dict[str, 
         category = _label_name(dataset, "category", category_value)
         grouped_indices[category].append(dataset_index)
 
+    # Canonicalize before shuffling so selection does not depend on the
+    # physical row order used by a cached Hub parquet shard.
+    for category, indices in grouped_indices.items():
+        indices.sort(key=lambda index: dataset[index]["id"])
+
     rng = random.Random(seed)
     for indices in grouped_indices.values():
         rng.shuffle(indices)
@@ -132,7 +137,10 @@ def _select_candidates(
     if not categories:
         raise ValueError("BBQ-V contains no selectable categories")
 
-    shuffled = {category: list(rows) for category, rows in candidates.items()}
+    shuffled = {
+        category: sorted(rows, key=lambda row: row["example_id"])
+        for category, rows in candidates.items()
+    }
     for rows in shuffled.values():
         rng.shuffle(rows)
 
