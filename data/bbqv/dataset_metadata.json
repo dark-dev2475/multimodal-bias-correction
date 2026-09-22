@@ -28,9 +28,9 @@
     "Sexual_orientation": 4
   },
   "selection_seed": 42,
-  "created_at": "2026-09-22T18:16:59.140007+00:00",
+  "created_at": "2026-09-22T18:20:44.954623+00:00",
   "dataset_revision": "0.0.0",
-  "git_commit": "0b9cafe1a7e55bcbdb7835dd412d27f25b785636",
+  "git_commit": "d1fb11acd50254ecdde610cbc86d51d2190c9c13",
   "script_version": "1.0",
   "image_deduplication": "SHA-256 over decoded PNG pixels",
   "ground_truth_policy": "BBQ-V categories are benchmark labels, not claim-level ground truth."
