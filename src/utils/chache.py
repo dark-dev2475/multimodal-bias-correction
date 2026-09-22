@@ -7,6 +7,8 @@ class Cache:
     def __init__(self, cache_dir="data/cache"):
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
+        self.hits = 0
+        self.misses = 0
 
     def _make_key(self, data):
         serialized = json.dumps(
@@ -26,7 +28,10 @@ class Cache:
         cache_file = namespace_dir / f"{key}.json"
 
         if not cache_file.exists():
+            self.misses += 1
             return None
+
+        self.hits += 1
 
         with open(cache_file, "r", encoding="utf-8") as f:
             return json.load(f)

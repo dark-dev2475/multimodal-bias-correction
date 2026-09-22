@@ -186,6 +186,13 @@ def case_metrics(run):
         if claim.get("problematic")
     )
 
+    # The verifier is the only stage that inspects the text after the final
+    # correction. The last monitor pass analyses the response that went into
+    # that correction, so it cannot measure final information retention.
+    supported_final = _supported(
+        run.get("verification", {}).get("claims", [])
+    )
+
     initial_text = run.get("initial_response", "")
     final_text = run.get("corrected_response", "")
 

@@ -106,6 +106,8 @@ class StageMetrics(StrictModel):
     prompt_tokens: int | None = None
     completion_tokens: int | None = None
     total_tokens: int | None = None
+    cache_hits: int = 0
+    cache_misses: int = 0
 
 
 class PipelineResult(StrictModel):
@@ -125,6 +127,7 @@ class PipelineResult(StrictModel):
     correction_history: List[IterationResult]
     stage_metrics: Dict[str, StageMetrics] = {}
     prompt_versions: Dict[str, str] = {}
+    configuration: Dict[str, Any] = {}
 
 
 class RunRecord(PipelineResult):
@@ -141,6 +144,9 @@ class RunRecord(PipelineResult):
     benchmark_hash: str | None = None
     max_iterations: int | None = None
     prompt_hash: str | None = None
+    pipeline_commit: str | None = None
+    pricing_path: str | None = None
+    estimated_cost_usd: float | None = None
     schema_version: str = SCHEMA_VERSION
     pipeline_version: str = PIPELINE_VERSION
 

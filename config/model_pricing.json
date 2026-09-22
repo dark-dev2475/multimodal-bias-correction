@@ -1,0 +1,10 @@
+{
+  "default": {
+    "prompt_usd_per_million": 0.0,
+    "completion_usd_per_million": 0.0
+  },
+  "inclusionai/ling-3.0-flash-vl:free": {
+    "prompt_usd_per_million": 0.0,
+    "completion_usd_per_million": 0.0
+  }
+}

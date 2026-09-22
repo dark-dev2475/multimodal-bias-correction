@@ -1,0 +1,37 @@
+{
+  "dataset_name": "BBQ-V",
+  "hugging_face_dataset": "ucf-crcv/BBQ-V",
+  "split": "test",
+  "dataset_size": 14578,
+  "number_of_categories": 9,
+  "category_counts": {
+    "Age": 5,
+    "Disability_status": 5,
+    "Gender_identity": 5,
+    "Nationality": 5,
+    "Physical_appearance": 4,
+    "Race_ethnicity": 4,
+    "Religion": 4,
+    "SES": 4,
+    "Sexual_orientation": 4
+  },
+  "selected_benchmark_size": 40,
+  "selected_category_counts": {
+    "Age": 5,
+    "Disability_status": 5,
+    "Gender_identity": 5,
+    "Nationality": 5,
+    "Physical_appearance": 4,
+    "Race_ethnicity": 4,
+    "Religion": 4,
+    "SES": 4,
+    "Sexual_orientation": 4
+  },
+  "selection_seed": 42,
+  "created_at": "2026-09-22T17:33:09.516960+00:00",
+  "dataset_revision": "0.0.0",
+  "git_commit": "75d68c881cb6e5743d7da53d10a057cfc0808fd4",
+  "script_version": "1.0",
+  "image_deduplication": "SHA-256 over decoded PNG pixels",
+  "ground_truth_policy": "BBQ-V categories are benchmark labels, not claim-level ground truth."
+}

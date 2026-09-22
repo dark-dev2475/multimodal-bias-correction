@@ -1,9 +1,9 @@
 from pipeline.generator import InitialGenerator
-from pipeline.claim_extractor import ClaimExtractor
-from pipeline.evidence_checker import EvidenceChecker
+from pipeline.claim_extractor import Claim, ClaimExtractor
+from pipeline.evidence_checker import EvidenceChecker, EvidenceResult, EvidenceResultList
 from pipeline.bias_monitor import BiasMonitor
 from pipeline.corrector import SelfCorrector
-from pipeline.verifier import BiasVerifier
+from pipeline.verifier import BiasVerifier, VerificationList
 from utils.schemas import (
     GenerationMode, PipelineResult, StageMetrics, StopReason,
 )
@@ -18,6 +18,15 @@ STAGE_BY_SOURCE = {
     "Bias monitor": "bias_monitor",
     "Self-corrector": "correction",
     "Verifier": "verification",
+}
+
+STAGE_BY_CLASS = {
+    "InitialGenerator": "generation",
+    "ClaimExtractor": "extraction",
+    "EvidenceChecker": "evidence",
+    "BiasMonitor": "bias_monitor",
+    "SelfCorrector": "correction",
+    "BiasVerifier": "verification"
 }
 
 
@@ -36,7 +45,14 @@ def claim_fingerprint(claims):
 
 class BiasCorrectionPipeline:
 
-    def __init__(self, generation_mode=GenerationMode.real):
+    def __init__(
+        self,
+        generation_mode=GenerationMode.real,
+        enable_claim_extraction=True,
+        enable_evidence_checking=True,
+        enable_bias_monitor=True,
+        enable_verification=True
+    ):
 
         self.generator = InitialGenerator(mode=generation_mode)
         self.claim_extractor = ClaimExtractor()
@@ -44,6 +60,12 @@ class BiasCorrectionPipeline:
         self.bias_monitor = BiasMonitor()
         self.corrector = SelfCorrector()
         self.verifier = BiasVerifier()
+        self.ablation_config = {
+            "claim_extraction": enable_claim_extraction,
+            "evidence_checking": enable_evidence_checking,
+            "bias_monitor": enable_bias_monitor,
+            "verification": enable_verification
+        }
 
     # ---------------------------------------------------------
     # Execution metadata
@@ -64,6 +86,10 @@ class BiasCorrectionPipeline:
 
         for stage in self._stages():
             stage.vlm.calls.clear()
+            cache = getattr(stage, "cache", None)
+            if cache is not None:
+                cache.hits = 0
+                cache.misses = 0
 
     def _collect_stage_metrics(self):
         """Per-stage latency, retries and token usage for the run just done.
@@ -75,6 +101,15 @@ class BiasCorrectionPipeline:
         metrics = {}
 
         for stage in self._stages():
+            stage_name = STAGE_BY_CLASS.get(
+                stage.__class__.__name__, stage.__class__.__name__
+            )
+            cache = getattr(stage, "cache", None)
+            if cache is not None:
+                metrics.setdefault(stage_name, StageMetrics())
+                metrics[stage_name].cache_hits = cache.hits
+                metrics[stage_name].cache_misses = cache.misses
+
             for call in stage.vlm.calls:
 
                 name = STAGE_BY_SOURCE.get(call["source"], call["source"])
@@ -130,6 +165,14 @@ class BiasCorrectionPipeline:
 
     def extract_claims(self, response):
 
+        if not self.ablation_config["claim_extraction"]:
+            return [Claim(
+                claim=response,
+                type="observation",
+                category="unsegmented_response",
+                requires_visual_evidence=True
+            )]
+
         result = self.claim_extractor.extract(response)
 
         return result.claims
@@ -143,15 +186,34 @@ class BiasCorrectionPipeline:
         if not claims:
             return [], []
 
-        evidence_results = self.evidence_checker.check_all(image_path, claims)
+        if self.ablation_config["evidence_checking"]:
+            evidence_results = self.evidence_checker.check_all(
+                image_path, claims
+            )
+        else:
+            evidence_results = EvidenceResultList(results=[
+                EvidenceResult(
+                    claim_id=index,
+                    claim=claim.claim,
+                    evidence_status="UNCERTAIN",
+                    confidence=0.0,
+                    explanation="Evidence checking disabled for ablation."
+                )
+                for index, claim in enumerate(claims, start=1)
+            ])
 
         print("\n[4/6] Monitoring for bias-relevant assumptions...")
-        bias_results = self.bias_monitor.analyze_all(evidence_results.results)
+        if self.ablation_config["bias_monitor"]:
+            bias_results = self.bias_monitor.analyze_all(
+                evidence_results.results
+            )
+            bias_by_id = {
+                result.claim_id: result
+                for result in bias_results.results
+            }
+        else:
+            bias_by_id = {}
 
-        bias_by_id = {
-            result.claim_id: result
-            for result in bias_results.results
-        }
         claim_analysis = []
 
         for evidence in evidence_results.results:
@@ -405,10 +467,13 @@ class BiasCorrectionPipeline:
             print("\n[6/6] FINAL VERIFICATION")
             print("-" * 70)
 
-            verification = self.verify_response(
-                image_path,
-                corrected_response
-            )
+            if self.ablation_config["verification"]:
+                verification = self.verify_response(
+                    image_path,
+                    corrected_response
+                )
+            else:
+                verification = VerificationList(claims=[])
 
             problematic_claims = [
                 claim
@@ -416,7 +481,10 @@ class BiasCorrectionPipeline:
                 if claim.problematic
             ]
 
-            verification_passed = len(problematic_claims) == 0
+            verification_passed = (
+                self.ablation_config["verification"]
+                and len(problematic_claims) == 0
+            )
 
             correction_history.append({
                 "iteration": iteration,
@@ -507,5 +575,10 @@ class BiasCorrectionPipeline:
             "correction_iterations": completed_iterations,
             "correction_history": correction_history,
             "stage_metrics": self._collect_stage_metrics(),
-            "prompt_versions": self._prompt_versions()
+            "prompt_versions": self._prompt_versions(),
+            "configuration": {
+                "max_iterations": max_iterations,
+                "generation_mode": self.generator.mode.value,
+                **self.ablation_config
+            }
         }).model_dump(mode="json")

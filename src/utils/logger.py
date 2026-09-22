@@ -4,6 +4,12 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 from utils.schemas import RunRecord
+from evaluation.provenance import (
+    DEFAULT_PRICING_PATH,
+    estimate_cost,
+    git_commit,
+    load_pricing,
+)
 
 
 def new_run_id():
@@ -59,6 +65,9 @@ class ExperimentLogger:
             "benchmark_hash": benchmark_hash,
             "max_iterations": max_iterations,
             "prompt_hash": prompt_hash,
+            "pipeline_commit": git_commit(),
+            "pricing_path": str(DEFAULT_PRICING_PATH),
+            "estimated_cost_usd": _estimated_cost(model, result),
             **result
         })
 
@@ -76,6 +85,31 @@ class ExperimentLogger:
             )
 
         return output_file
+
+
+def _estimated_cost(model, result):
+    prompt_tokens = sum(
+        metrics.get("prompt_tokens") or 0
+        for metrics in result.get("stage_metrics", {}).values()
+    )
+    completion_tokens = sum(
+        metrics.get("completion_tokens") or 0
+        for metrics in result.get("stage_metrics", {}).values()
+    )
+    has_usage = any(
+        metrics.get("prompt_tokens") is not None
+        or metrics.get("completion_tokens") is not None
+        for metrics in result.get("stage_metrics", {}).values()
+    )
+    if not has_usage:
+        return None
+
+    return estimate_cost(
+        model,
+        prompt_tokens,
+        completion_tokens,
+        load_pricing()
+    )
 
     def list_runs(self, case_id, experiment_id="adhoc"):
         """Every saved run for a case within one experiment, oldest first."""

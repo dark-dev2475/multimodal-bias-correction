@@ -3,5 +3,6 @@ venv/
 __pycache__/
 *.pyc
 data/outputs/
+data/cache/
 experiments/results/
 .ipynb_checkpoints/
