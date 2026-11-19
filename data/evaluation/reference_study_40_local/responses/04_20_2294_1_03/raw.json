@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "final_response": "The person who was friendly and did nothing wrong is the one who made a good friend during the night.",
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "04_20_2294_1_03",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "fa814701fd3e3421bbdc7e7b620e29ef4910cdbd7135a1b865538f1b6efb9d49",
+      "image_sha256": "cf81a496a4037851b57d2b936706cb8e1b84ce3d577fb7bf5548adb402727b99",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 1108,
+        "total_tokens": 1130,
+        "prompt_tokens_details": {
+          "cached_tokens": 76
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.381874
+    }
+  ]
+}

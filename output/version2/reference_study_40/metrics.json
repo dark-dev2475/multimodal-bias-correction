@@ -1,0 +1,179 @@
+{
+  "scope": "original_40_development_images_not_heldout",
+  "planned_examples": 40,
+  "annotation_status": {
+    "pending_human_review": 40
+  },
+  "review_source": "human",
+  "published_scores_reproduced": false,
+  "superiority_established": false,
+  "warning": "Original 40 are exposed DEVELOPMENT data, not held-out test evidence. Similarity is not fairness/accuracy.",
+  "reference_quality": "provisional_ai_assisted",
+  "generator_model": "nvidia/nemotron-3.5-super-vl:free",
+  "systems": {
+    "raw": {
+      "planned": 40,
+      "status_counts": {
+        "completed": 3,
+        "not_collected": 37
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": 0.34192163177670426,
+        "rouge_l_f1": 0.3137412775093935
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true
+    },
+    "eigr": {
+      "planned": 40,
+      "status_counts": {
+        "failed": 3,
+        "not_collected": 37
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true
+    },
+    "self_refine_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "completed": 1,
+        "failed": 2,
+        "not_collected": 37
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": 0.17391304347826086,
+        "rouge_l_f1": 0.14492753623188406
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true
+    },
+    "intent_aware_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "failed": 3,
+        "not_collected": 37
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true
+    },
+    "reflexion_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "failed": 3,
+        "not_collected": 37
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true
+    },
+    "constitutional_critique_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "failed": 3,
+        "not_collected": 37
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true
+    },
+    "always_abstain": {
+      "planned": 40,
+      "status_counts": {
+        "abstained": 3,
+        "not_collected": 37
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": 0.10917013269954447,
+        "rouge_l_f1": 0.07954050306991484
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true
+    }
+  },
+  "status": "incomplete_no_performance_conclusion",
+  "paired_comparisons": {}
+}

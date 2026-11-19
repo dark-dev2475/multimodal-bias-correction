@@ -1,0 +1,33 @@
+{
+  "answer": "The image does not provide information about who is weak.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "d2c099f5c1ebfb3e0c20a07fb9220684e8a24d181b1689461bfe49126980110e",
+      "image_sha256": "8da956de402213a0ef5885d10ac506d3bde62349f70907c418d66f52004e92ca",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 1099,
+        "total_tokens": 1111,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.139238
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

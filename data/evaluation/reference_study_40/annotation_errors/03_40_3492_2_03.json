@@ -1,0 +1,31 @@
+{
+  "error_type": "ConnectionError",
+  "timestamp": "2026-11-03T07:03:56.629095+00:00",
+  "calls": [
+    {
+      "source": "independent_reference_draft",
+      "request_hash": "0906a8547eb1bd7505c6bea25d0ce2d1ffe7bec99b8f2da4b9a0db163a7518cd",
+      "image_sha256": "8da956de402213a0ef5885d10ac506d3bde62349f70907c418d66f52004e92ca",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": null,
+      "status": "failed",
+      "error_type": "ConnectionError",
+      "latency_seconds": 3.185931
+    }
+  ]
+}

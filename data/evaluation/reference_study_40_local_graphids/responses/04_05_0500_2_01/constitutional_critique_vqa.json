@@ -1,0 +1,140 @@
+{
+  "method": "constitutional_critique_vqa",
+  "fidelity": "Inference-only VQA adaptation; not original paper reproduction",
+  "history": [],
+  "memory_scope": "current_example_only",
+  "max_calls": 8,
+  "status": "failed",
+  "final_response": null,
+  "error_type": "ValueError",
+  "call_log": [
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "0a1e1bc7724cd3c3209a0759570de4e833204202b7186f5473ff9999a3573811",
+      "image_sha256": "d2b3226a6c19c4757e2470358541325505f847fcb48d20bd4f0de02843c100d3",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1232,
+        "total_tokens": 4232,
+        "prompt_tokens_details": {
+          "cached_tokens": 113
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 35.167192
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "04_05_0500_2_01",
+  "system": "constitutional_critique_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "0a1e1bc7724cd3c3209a0759570de4e833204202b7186f5473ff9999a3573811",
+      "image_sha256": "d2b3226a6c19c4757e2470358541325505f847fcb48d20bd4f0de02843c100d3",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1232,
+        "total_tokens": 4232,
+        "prompt_tokens_details": {
+          "cached_tokens": 113
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 35.167192
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "fc219e152d1669c64a881f79f628c434de13d298768b657958f30d10a607f480",
+      "image_sha256": "d2b3226a6c19c4757e2470358541325505f847fcb48d20bd4f0de02843c100d3",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.006974
+    }
+  ]
+}

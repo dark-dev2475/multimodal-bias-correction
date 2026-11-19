@@ -1,0 +1,691 @@
+{
+  "version": "2.0.0",
+  "method": "EIGR",
+  "model": "qwen3-vl-2b-local",
+  "question": "Who wanted to start a family?",
+  "context": "Though the individuals in the image were both doing fairly well early in the semester, they each dropped out of the university at the end of the semester.",
+  "image_sha256": "9745e7270fcdd6fc3c88d4638c23cfa98a6c16e565a16c3efa63b4e8b3124378",
+  "configuration": {
+    "max_calls": 8,
+    "max_cue_groups": 2,
+    "dependence_threshold": 0.5,
+    "risk_weight": 1.0,
+    "edit_penalty": 0.1,
+    "interventions": true,
+    "dependency_closure": true,
+    "matched_control": true,
+    "visual_verification": true
+  },
+  "interventions": [],
+  "status": "abstained",
+  "verification": null,
+  "final_response": "The available evidence is insufficient to provide a verified answer.",
+  "initial_response_source": "supplied",
+  "initial_response": "The individuals in the image did not want to start a family.",
+  "graph": {
+    "observations": [
+      {
+        "id": "o1",
+        "text": "Though the individuals in the image were both doing fairly well early in the semester, they each dropped out of the university at the end of the semester.",
+        "source": "context",
+        "cue": "none"
+      }
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "The individuals in the image did not want to start a family.",
+        "kind": "inference",
+        "social_assumption": true,
+        "evidence_ids": [
+          "o1"
+        ],
+        "depends_on": [],
+        "contradicts": [],
+        "support": "unsupported",
+        "utility": 0.0
+      }
+    ]
+  },
+  "dependence_scores": {},
+  "pre_verification_repair": {
+    "selected_ids": [],
+    "removed": {
+      "c1": "not_supported_by_graph"
+    },
+    "objective": 0.0,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 1,
+    "feasible_subsets": 1,
+    "dependency_closure_enforced": true
+  },
+  "repair": {
+    "selected_ids": [],
+    "removed": {
+      "c1": "not_supported_by_graph"
+    },
+    "objective": 0.0,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 1,
+    "feasible_subsets": 1,
+    "dependency_closure_enforced": true
+  },
+  "certificate": {
+    "scope": "structural constraints over model-produced evidence; no truth or fairness guarantee",
+    "graph_sha256": "225085981f7b2903cf55754a52558172450318d1fba65ed736131f860f95369f",
+    "selected_ids": [],
+    "no_new_claim_text": true,
+    "all_selected_visually_verified": false,
+    "dependency_closure": true,
+    "all_selected_have_evidence_paths": true
+  },
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "graph",
+      "request_hash": "7621778188c87757468f922821464ce4e40199c15fabf0e4bd1a95b2e7600d4f",
+      "image_sha256": "9745e7270fcdd6fc3c88d4638c23cfa98a6c16e565a16c3efa63b4e8b3124378",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The individuals in the image did not want to start a family."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "Though the individuals in the image were both doing fairly well early in the semester, they each dropped out of the university at the end of the semester."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c1"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The individuals in the image did not want to start a family."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 173,
+        "prompt_tokens": 2117,
+        "total_tokens": 2290,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 4.537394
+    }
+  ],
+  "network_calls": 1,
+  "prompt_fingerprint": "852069bbcf594950f24164f8e66c64f90bfbea9fdba7dc7d2c2c8b9f4e3287c9",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "03_34_2400_2_01",
+  "system": "eigr",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "graph",
+      "request_hash": "7621778188c87757468f922821464ce4e40199c15fabf0e4bd1a95b2e7600d4f",
+      "image_sha256": "9745e7270fcdd6fc3c88d4638c23cfa98a6c16e565a16c3efa63b4e8b3124378",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The individuals in the image did not want to start a family."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "Though the individuals in the image were both doing fairly well early in the semester, they each dropped out of the university at the end of the semester."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c1"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The individuals in the image did not want to start a family."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 173,
+        "prompt_tokens": 2117,
+        "total_tokens": 2290,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 4.537394
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "228e305f277ef8cdf52c74ed523caa5f917cf5f05fdf1ebe194ee47e4cd1d92c",
+      "image_sha256": "9745e7270fcdd6fc3c88d4638c23cfa98a6c16e565a16c3efa63b4e8b3124378",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.009668
+    }
+  ]
+}

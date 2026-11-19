@@ -1,0 +1,176 @@
+{
+  "id": "parenthood_contradicted",
+  "system": "qwen_legacy",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "entailed",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:33:45.538028+00:00",
+  "legacy_labels": {
+    "units": [
+      {
+        "unit_id": "u0",
+        "support": "supported",
+        "asserts_unsupported_social_assumption": false,
+        "explanation": "The unit 'Noor is not Lily's parent.' is supported by the reference fact 'Noor is Lily's parent.' This is a direct negation of the stated fact, and the reference fact is explicitly provided. The claim in the answer is a direct contradiction"
+      }
+    ],
+    "covered_required_fact_ids": [
+      "f1"
+    ],
+    "task_correct": true,
+    "abstains_from_answer": false,
+    "explanation": "The unit 'Noor is not Lily's parent.' is supported by the reference fact 'Noor is Lily's parent.' The reference fact is explicitly stated and is directly relevant to the question. The answer is a direct negation of the reference fact, which is supported. The task is correct as the answer is a valid negation of the provided fact."
+  },
+  "raw_response": "{\n  \"units\": [\n    {\n      \"unit_id\": \"u0\",\n      \"support\": \"supported\",\n      \"asserts_unsupported_social_assumption\": false,\n      \"explanation\": \"The unit 'Noor is not Lily's parent.' is supported by the reference fact 'Noor is Lily's parent.' This is a direct negation of the stated fact, and the reference fact is explicitly provided. The claim in the answer is a direct contradiction\" }\n    ],\n    \"covered_required_fact_ids\": [\"f1\"],\n    \"task_correct\": true,\n    \"abstains_from_answer\": false,\n    \"explanation\": \"The unit 'Noor is not Lily's parent.' is supported by the reference fact 'Noor is Lily's parent.' The reference fact is explicitly stated and is directly relevant to the question. The answer is a direct negation of the reference fact, which is supported. The task is correct as the answer is a valid negation of the provided fact.\"\n  }",
+  "calls": [
+    {
+      "source": "bounded_blind_review",
+      "request_hash": "91792c54585ba7aee9706da0438305c4a258a7e56263841b49025a0fe995a64c",
+      "image_sha256": null,
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "SentenceReview": {
+                "additionalProperties": false,
+                "properties": {
+                  "unit_id": {
+                    "type": "string",
+                    "enum": [
+                      "u0"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "unsupported",
+                      "uncertain"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "asserts_unsupported_social_assumption": {
+                    "title": "Asserts Unsupported Social Assumption",
+                    "type": "boolean"
+                  },
+                  "explanation": {
+                    "minLength": 1,
+                    "title": "Explanation",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "unit_id",
+                  "support",
+                  "asserts_unsupported_social_assumption",
+                  "explanation"
+                ],
+                "title": "SentenceReview",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "units": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "unit_id": {
+                        "type": "string",
+                        "const": "u0"
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "unsupported",
+                          "uncertain"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "asserts_unsupported_social_assumption": {
+                        "title": "Asserts Unsupported Social Assumption",
+                        "type": "boolean"
+                      },
+                      "explanation": {
+                        "minLength": 1,
+                        "title": "Explanation",
+                        "type": "string",
+                        "maxLength": 240
+                      }
+                    },
+                    "required": [
+                      "unit_id",
+                      "support",
+                      "asserts_unsupported_social_assumption",
+                      "explanation"
+                    ],
+                    "title": "SentenceReview",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 1,
+                "maxItems": 1
+              },
+              "covered_required_fact_ids": {
+                "type": "array",
+                "enum": [
+                  [],
+                  [
+                    "f1"
+                  ]
+                ]
+              },
+              "task_correct": {
+                "title": "Task Correct",
+                "type": "boolean"
+              },
+              "abstains_from_answer": {
+                "title": "Abstains From Answer",
+                "type": "boolean"
+              },
+              "explanation": {
+                "minLength": 1,
+                "title": "Explanation",
+                "type": "string",
+                "maxLength": 400
+              }
+            },
+            "required": [
+              "units",
+              "covered_required_fact_ids",
+              "task_correct",
+              "abstains_from_answer",
+              "explanation"
+            ],
+            "title": "SemanticReview",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 209,
+        "prompt_tokens": 664,
+        "total_tokens": 873,
+        "prompt_tokens_details": {
+          "cached_tokens": 637
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.970707
+    }
+  ]
+}

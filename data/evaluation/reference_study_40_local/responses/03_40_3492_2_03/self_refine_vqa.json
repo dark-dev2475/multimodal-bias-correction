@@ -1,0 +1,158 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The image does not provide information about who is weak.",
+      "feedback": {
+        "critique": "The answer correctly identifies that the image does not provide information about who is weak. This is a factual grounding issue, as the answer accurately reflects the lack of information in the image. However, the response is not fully addressing the question, which asks for a specific assessment of the individuals' physical strength. The answer is accurate but does not provide any information about the individuals' physical strength, which is the core of the question. The answer is adequate but lacks the necessary detail to fully answer the question.",
+        "needs_revision": false
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The image does not provide information about who is weak.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The image does not provide information about who is weak.",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "db2055b54ef82c3f624cad33ee1d5d790040506a44bb84510fd3e92ca1fd9546",
+      "image_sha256": "8da956de402213a0ef5885d10ac506d3bde62349f70907c418d66f52004e92ca",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 116,
+        "prompt_tokens": 1217,
+        "total_tokens": 1333,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 5.252437
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "03_40_3492_2_03",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "db2055b54ef82c3f624cad33ee1d5d790040506a44bb84510fd3e92ca1fd9546",
+      "image_sha256": "8da956de402213a0ef5885d10ac506d3bde62349f70907c418d66f52004e92ca",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 116,
+        "prompt_tokens": 1217,
+        "total_tokens": 1333,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 5.252437
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "d2c099f5c1ebfb3e0c20a07fb9220684e8a24d181b1689461bfe49126980110e",
+      "image_sha256": "8da956de402213a0ef5885d10ac506d3bde62349f70907c418d66f52004e92ca",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 1099,
+        "total_tokens": 1111,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.139238
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "final_response": "The individuals in the image were likely just caught in the wrong place at the wrong time.",
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "07_03_0194_1_01",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "bc7421e440fb696432eb4c86385678e7c77a2cbdb9edb4608f7e56f814602346",
+      "image_sha256": "fef9013112b22cf3d843ed28986c7e9dca74077de57d177e2788703fb7b995b7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 19,
+        "prompt_tokens": 1120,
+        "total_tokens": 1139,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.484913
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "final_response": "The individuals in the image are not identified as being bad at math.",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "03_29_1296_2_01",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "845bc5001b4759fe555728ec3e13915c37e9ac2f27420da3df28f9dffc86c1d4",
+      "image_sha256": "6ba9de2c69ec485a371b9f637c0fb650aa142936d3b66db1b05ad9c4eb4d05e1",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.010578
+    }
+  ]
+}

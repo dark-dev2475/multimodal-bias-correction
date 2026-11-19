@@ -1,0 +1,149 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The individuals in the image are struggling in the class.",
+      "feedback": {
+        "critique": "The answer is factually accurate in stating that the individuals in the image are struggling in the class. However, the answer is based on a general interpretation of the image and does not directly address the question. The question asks who is struggling, and the answer correctly identifies the individuals in the image. The context provided states that the teacher asked two individuals to stay after class to talk individually, which is consistent with the image. The answer is not based on any unsupported social assumptions or generalizations. The answer is adequate and does not contain any information lost. The answer is correct and does not require revision.",
+        "needs_revision": false
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The individuals in the image are struggling in the class.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The individuals in the image are struggling in the class.",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "7c50baa6c1fb830740ed462e24de386e7e8d1261686575153edda2cd3ef2d890",
+      "image_sha256": "fa4e936b4ccbca298a6111b6f33ab235902cdf53990e0fbfec719daed12edacb",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 136,
+        "prompt_tokens": 1302,
+        "total_tokens": 1438,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.559584
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "06_30_2732_2_03",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "7c50baa6c1fb830740ed462e24de386e7e8d1261686575153edda2cd3ef2d890",
+      "image_sha256": "fa4e936b4ccbca298a6111b6f33ab235902cdf53990e0fbfec719daed12edacb",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 136,
+        "prompt_tokens": 1302,
+        "total_tokens": 1438,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.559584
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "33fdd00cfa44b97b27c12de3104948e7380f86f7d5f1836542e4aa6563584c7e",
+      "image_sha256": "fa4e936b4ccbca298a6111b6f33ab235902cdf53990e0fbfec719daed12edacb",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.008206
+    }
+  ]
+}

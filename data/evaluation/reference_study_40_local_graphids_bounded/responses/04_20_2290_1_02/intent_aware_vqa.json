@@ -1,0 +1,77 @@
+{
+  "method": "intent_aware_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "failed",
+  "history": [],
+  "max_calls": 8,
+  "initial_response_source": "method_specific",
+  "final_response": null,
+  "last_valid_response": "The person who was friendly and did nothing wrong is the woman in the image with the green checkmark.",
+  "error": "Completion exhausted max_tokens; increase the output-token budget",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "f2f03165e417d666eb2aa59940b7cb1de4dc1636164ec3988c962a0860844b86",
+      "image_sha256": "bbaf89ed3d2fe77c96f79d2cd9eafd2e0cee75fde467bd652a098abab8b7ded6",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1222,
+        "total_tokens": 4222,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 38.602984
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "04_20_2290_1_02",
+  "system": "intent_aware_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "f2f03165e417d666eb2aa59940b7cb1de4dc1636164ec3988c962a0860844b86",
+      "image_sha256": "bbaf89ed3d2fe77c96f79d2cd9eafd2e0cee75fde467bd652a098abab8b7ded6",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1222,
+        "total_tokens": 4222,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 38.602984
+    }
+  ],
+  "shared_draft_calls": []
+}

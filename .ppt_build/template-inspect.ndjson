@@ -1,0 +1,364 @@
+{"kind":"deck","id":"pr/tchay2","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"subtitle","type":"subtitle","textPreview":"Click to edit Master subtitle style"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Title and Content","type":"obj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Section Header","type":"secHead","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Two Content","type":"twoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Comparison","type":"twoTxTwoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 5","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout6.xml","name":"Title Only","type":"titleOnly","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout7.xml","name":"Blank","type":"blank","placeholders":[{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout8.xml","name":"Content with Caption","type":"objTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout9.xml","name":"Picture with Caption","type":"picTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"picture","type":"picture"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout10.xml","name":"Title and Vertical Text","type":"vertTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout11.xml","name":"Vertical Title and Text","type":"vertTitleAndTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"Total Rotation Minimization Problem","textShapes":2}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"name":"Subtitle 2","placeholder":"subtitle","text":" Total Rotation Minimization Problem","textPreview":"Total Rotation Minimization Problem","textChars":36,"textLines":1,"bbox":[185.5,44.54,618.8,129.65]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"name":"TextBox 8","text":"Presented By :\nAryan Balsaraf (IIT2023046)\nAmber Purwar(IIT2023051)\nAgraj Singh(IIT2023075)\n\n\n\n\n\n","textPreview":"Presented By : | Aryan Balsaraf (IIT2023046) | Amber Purwar(IIT2023051) | Agraj Singh(IIT2023075) |  |  |  |  |  |","textChars":97,"textLines":10,"bbox":[32.92,239.25,932.29,397.44]}
+{"kind":"image","id":"im/jqxw72dk","slide":1,"name":"Picture 4","bbox":[29.8,44.54,179.1,146.39]}
+{"kind":"image","id":"im/ipofexcz","slide":1,"name":"Picture 7","bbox":[780.19,44.54,179.81,146.39]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":""}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"INTRODUCTION:","textShapes":3}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"name":"TextBox 6","text":"INTRODUCTION:","textPreview":"INTRODUCTION:","textChars":13,"textLines":1,"bbox":[25.68,9.6,870.93,64.62]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"name":"TextBox 7","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[883.2,686.4,52.8,33.6]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"name":"TextBox 2","text":"• Wireless Sensor Networks (WSNs) are widely used in real-world applications\n\n• Examples include:\n– Health monitoring (patient tracking systems)\n– Battlefield surveillance (enemy movement detection)\n– Environmental monitoring (air pollution, forest fire detection, tsunami alerts)\n\n• In many scenarios, sensors are deployed in remote or dangerous locations\n• Battery replacement is difficult or impossible\n\n                                                          \n                                                                                                                      ","textPreview":"• Wireless Sensor Networks (WSNs) are widely used in real-world applications |  | • Examples include: | – Health monitoring (patient trac...","textChars":584,"textLines":12,"bbox":[55.1,127.72,828.1,562.24]}
+{"kind":"image","id":"im/nix0be18","slide":2,"name":"Ink 3","bbox":[865.69,653.83,66.52,50.91]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":""}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"Energy Limitation & Scheduling Concept","textShapes":1}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"name":"Content Placeholder 2","text":"Energy Limitation & Scheduling Concept\n\n1.Each sensor operates on a limited battery\n2. Continuous operation quickly drains energy\n• To save energy:\n– Sensors are divided into groups (covers)\n– Each group can independently monitor the environment\n• Groups are activated one at a time, others remain inactive\nReal-Life Example:\nLike CCTV cameras in a city working in shifts instead of all running together\n","textPreview":"Energy Limitation & Scheduling Concept |  | 1.Each sensor operates on a limited battery | 2. Continuous operation quickly drains energy |...","textChars":404,"textLines":11,"bbox":[48,109.36,864,533.81]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":""}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"Problem Definition:","textShapes":2}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"name":"TextBox 6","text":"Problem Definition:","textPreview":"Problem Definition:","textChars":19,"textLines":1,"bbox":[40.08,0,870.93,64.62]}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"name":"TextBox 7","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"image","id":"im/z6lc7q1o","slide":4,"name":"Picture 9","bbox":[24,72,912,624]}
+{"kind":"image","id":"im/fed47q18","slide":4,"name":"Ink 3","bbox":[880.09,634.25,66.52,60.89]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":""}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"5","textShapes":1}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"name":"TextBox 1","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"image","id":"im/tkjutw7u","slide":5,"name":"Picture 9","bbox":[24,12,912,672]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":""}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"6","textShapes":1}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"name":"TextBox 1","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"image","id":"im/alg3a143","slide":6,"name":"Picture 9","bbox":[24,12,912,672]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":""}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"Rotation Minimization Problem (TRMP)","textShapes":2}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"name":"Title 1","placeholder":"title","text":"Rotation Minimization Problem (TRMP)","textPreview":"Rotation Minimization Problem (TRMP)","textChars":36,"textLines":1,"bbox":[24.98,0,910.03,64.62]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"name":"TextBox 2","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"image","id":"im/jq14rap8","slide":7,"name":"Picture 9","bbox":[24,72,912,624]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":""}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"Example","textShapes":3}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"name":"Title 1","placeholder":"title","text":"Example","textPreview":"Example","textChars":7,"textLines":1,"bbox":[37.06,28.83,864,85.3]}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"name":"TextBox 2","text":"[1]","textPreview":"[1]","textChars":3,"textLines":1,"bbox":[-2.03,101.38,78.19,38.78]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"TextBox 7","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"image","id":"im/jyl0fqxw","slide":8,"name":"Picture 3","bbox":[31.11,138.85,577.37,520.07]}
+{"kind":"image","id":"im/r2tobe1c","slide":8,"name":"Picture 6","bbox":[599.85,138.85,329.05,520.07]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":""}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"LITERATURE REVIEW","textShapes":3}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"name":"TextBox 6","text":"LITERATURE REVIEW","textPreview":"LITERATURE REVIEW","textChars":17,"textLines":1,"bbox":[40.08,0,870.93,64.62]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"name":"TextBox 7","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"name":"TextBox 2","text":"Boosting an evolution strategy with a preprocessing step: application to group scheduling problem in directional sensor networks[1]\nMethodology Proposed\nThe paper proposes a two-membered Evolution Strategy ((1+1)-ES) based approach (ES-TRMP) for solving TRMP.\nResearch Gap\nExisting methods mainly use evolutionary or greedy techniques, but they do not incorporate learning-based adaptive decision making.\nCurrent approaches also lack mechanisms to dynamically learn better scheduling strategies during the search process.","textPreview":"Boosting an evolution strategy with a preprocessing step: application to group scheduling problem in directional sensor networks[1] | Met...","textChars":521,"textLines":6,"bbox":[67.62,104.41,737.95,583.24]}
+{"kind":"image","id":"im/jutknyd4","slide":9,"name":"Ink 3","bbox":[880.09,634.25,66.52,60.89]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":""}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"Solution Framework","textShapes":10}
+{"kind":"shape","id":"sh/xc3mho32","slide":10,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"name":"TextBox 2","text":"Solution Framework","textPreview":"Solution Framework","textChars":18,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"shape","id":"sh/zelojyl8","slide":10,"name":"Rectangle 3","bbox":[24,93.12,451.2,278.4]}
+{"kind":"textbox","id":"sh/ydcnatkn","slide":10,"name":"TextBox 4","text":"Hybrid Architecture","textPreview":"Hybrid Architecture","textChars":19,"textLines":1,"bbox":[35.52,102.72,428.16,43.2]}
+{"kind":"textbox","id":"sh/l036l83y","slide":10,"name":"TextBox 5","text":"• ES performs global exploration over schedules\n• RL handles intelligent local perturbation decisions\n• Together they balance exploration and exploitation","textPreview":"• ES performs global exploration over schedules | • RL handles intelligent local perturbation decisions | • Together they balance explora...","textChars":154,"textLines":3,"bbox":[35.52,148.8,428.16,206.4]}
+{"kind":"shape","id":"sh/kzu5c32t","slide":10,"name":"Rectangle 6","bbox":[494.4,93.12,451.2,278.4]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"name":"TextBox 7","text":"ES — Outer Loop","textPreview":"ES — Outer Loop","textChars":15,"textLines":1,"bbox":[505.92,102.72,428.16,43.2]}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"name":"TextBox 8","text":"• Maintains a population of candidate schedules\n• Selects parent schedule for each iteration\n• Applies ES-style survival selection","textPreview":"• Maintains a population of candidate schedules | • Selects parent schedule for each iteration | • Applies ES-style survival selection","textChars":130,"textLines":3,"bbox":[505.92,148.8,428.16,206.4]}
+{"kind":"shape","id":"sh/s7yt4b21","slide":10,"name":"Rectangle 9","bbox":[24,390.72,451.2,278.4]}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"name":"TextBox 10","text":"RL — Inner Loop","textPreview":"RL — Inner Loop","textChars":15,"textLines":1,"bbox":[35.52,400.32,428.16,43.2]}
+{"kind":"textbox","id":"sh/q5gb21kb","slide":10,"name":"TextBox 11","text":"• Replaces random mutation with learned decisions\n• Learns which groups to remove and where to insert\n• Uses softmax policy over preference arrays","textPreview":"• Replaces random mutation with learned decisions | • Learns which groups to remove and where to insert | • Uses softmax policy over pref...","textChars":146,"textLines":3,"bbox":[35.52,446.4,428.16,206.4]}
+{"kind":"shape","id":"sh/r6pcv6lw","slide":10,"name":"Rectangle 12","bbox":[494.4,390.72,451.2,278.4]}
+{"kind":"textbox","id":"sh/0bit8b2d","slide":10,"name":"TextBox 13","text":"Objective","textPreview":"Objective","textChars":9,"textLines":1,"bbox":[505.92,400.32,428.16,43.2]}
+{"kind":"textbox","id":"sh/1cru1g3y","slide":10,"name":"TextBox 14","text":"• Minimise total rotation cost across all groups\n• Reward = cost_before − cost_after\n• Positive reward → improvement accepted","textPreview":"• Minimise total rotation cost across all groups | • Reward = cost_before − cost_after | • Positive reward → improvement accepted","textChars":125,"textLines":3,"bbox":[505.92,446.4,428.16,206.4]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"name":"TextBox 15","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":""}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"System Architecture","textShapes":13}
+{"kind":"shape","id":"sh/xcryxg7y","slide":11,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"name":"TextBox 2","text":"System Architecture","textPreview":"System Architecture","textChars":19,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"name":"TextBox 3","text":"Outer Loop: Evolution Strategy for global search\nInner Loop: RL agent for remove + insert decisions\nRL replaces random mutation with learned actions\nHybrid model improves convergence & solution quality","textPreview":"Outer Loop: Evolution Strategy for global search | Inner Loop: RL agent for remove + insert decisions | RL replaces random mutation with ...","textChars":201,"textLines":4,"bbox":[28.8,96,432,604.8]}
+{"kind":"shape","id":"sh/250zy18b","slide":11,"name":"Rectangle 4","bbox":[489.6,86.4,441.6,42.24]}
+{"kind":"textbox","id":"sh/98rytw72","slide":11,"name":"TextBox 5","text":"Initial Population","textPreview":"Initial Population","textChars":18,"textLines":1,"bbox":[489.6,86.4,441.6,42.24]}
+{"kind":"shape","id":"sh/o7ih0r6h","slide":11,"name":"Connector 6","bbox":[710.4,128.64,0,9.6]}
+{"kind":"shape","id":"sh/72t03qp0","slide":11,"name":"Rectangle 7","bbox":[489.6,138.24,441.6,42.24]}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"name":"TextBox 8","text":"Evolution Strategy\n(Global Search)","textPreview":"Evolution Strategy | (Global Search)","textChars":34,"textLines":2,"bbox":[489.6,138.24,441.6,42.24]}
+{"kind":"shape","id":"sh/ofqtgnyt","slide":11,"name":"Connector 9","bbox":[710.4,180.48,0,9.6]}
+{"kind":"shape","id":"sh/9gza9sze","slide":11,"name":"Rectangle 10","bbox":[489.6,190.08,441.6,42.24]}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"name":"TextBox 11","text":"Select Parent Schedule","textPreview":"Select Parent Schedule","textChars":22,"textLines":1,"bbox":[489.6,190.08,441.6,42.24]}
+{"kind":"shape","id":"sh/nehs7iho","slide":11,"name":"Connector 12","bbox":[710.4,232.32,0,9.6]}
+{"kind":"shape","id":"sh/0b6tc3yx","slide":11,"name":"Rectangle 13","bbox":[489.6,241.92,441.6,42.24]}
+{"kind":"textbox","id":"sh/1cfa58zi","slide":11,"name":"TextBox 14","text":"RL Module\n(Remove + Insert)","textPreview":"RL Module | (Remove + Insert)","textChars":27,"textLines":2,"bbox":[489.6,241.92,441.6,42.24]}
+{"kind":"shape","id":"sh/epobatgr","slide":11,"name":"Connector 15","bbox":[710.4,284.16,0,9.6]}
+{"kind":"shape","id":"sh/zaxs3yhc","slide":11,"name":"Rectangle 16","bbox":[489.6,293.76,441.6,42.24]}
+{"kind":"textbox","id":"sh/cn6t83y1","slide":11,"name":"TextBox 17","text":"New Schedule","textPreview":"New Schedule","textChars":12,"textLines":1,"bbox":[489.6,293.76,441.6,42.24]}
+{"kind":"shape","id":"sh/dofa18z6","slide":11,"name":"Connector 18","bbox":[710.4,336,0,9.6]}
+{"kind":"shape","id":"sh/tsnip0ny","slide":11,"name":"Rectangle 19","bbox":[489.6,345.6,441.6,42.24]}
+{"kind":"textbox","id":"sh/87ehgv6d","slide":11,"name":"TextBox 20","text":"Compute Cost","textPreview":"Compute Cost","textChars":12,"textLines":1,"bbox":[489.6,345.6,441.6,42.24]}
+{"kind":"shape","id":"sh/7650nq5s","slide":11,"name":"Connector 21","bbox":[710.4,387.84,0,9.6]}
+{"kind":"shape","id":"sh/65wzelo7","slide":11,"name":"Rectangle 22","bbox":[489.6,397.44,441.6,42.24]}
+{"kind":"textbox","id":"sh/l43ilgn2","slide":11,"name":"TextBox 23","text":"Reward = Old − New Cost","textPreview":"Reward = Old − New Cost","textChars":23,"textLines":1,"bbox":[489.6,397.44,441.6,42.24]}
+{"kind":"shape","id":"sh/k3uhcb6h","slide":11,"name":"Connector 24","bbox":[710.4,439.68,0,9.6]}
+{"kind":"shape","id":"sh/j2lgjq5w","slide":11,"name":"Rectangle 25","bbox":[489.6,449.28,441.6,42.24]}
+{"kind":"textbox","id":"sh/y1czalob","slide":11,"name":"TextBox 26","text":"RL Update","textPreview":"RL Update","textChars":9,"textLines":1,"bbox":[489.6,449.28,441.6,42.24]}
+{"kind":"shape","id":"sh/p07ixkn6","slide":11,"name":"Connector 27","bbox":[710.4,491.52,0,9.6]}
+{"kind":"shape","id":"sh/4zyhofml","slide":11,"name":"Rectangle 28","bbox":[489.6,501.12,441.6,42.24]}
+{"kind":"textbox","id":"sh/m58fih43","slide":11,"name":"TextBox 29","text":"Selection (Keep Better)","textPreview":"Selection (Keep Better)","textChars":23,"textLines":1,"bbox":[489.6,501.12,441.6,42.24]}
+{"kind":"shape","id":"sh/n61wbmlo","slide":11,"name":"Connector 30","bbox":[710.4,543.36,0,9.6]}
+{"kind":"shape","id":"sh/o7axk7m9","slide":11,"name":"Rectangle 31","bbox":[489.6,552.96,441.6,42.24]}
+{"kind":"textbox","id":"sh/98jedc3u","slide":11,"name":"TextBox 32","text":"Repeat →","textPreview":"Repeat →","textChars":8,"textLines":1,"bbox":[489.6,552.96,441.6,42.24]}
+{"kind":"textbox","id":"sh/eh8fex47","slide":11,"name":"TextBox 33","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":""}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"RL – State, Action, Reward","textShapes":11}
+{"kind":"shape","id":"sh/1gbm9s3a","slide":12,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"name":"TextBox 2","text":"RL – State, Action, Reward","textPreview":"RL – State, Action, Reward","textChars":26,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"shape","id":"sh/ra943il8","slide":12,"name":"Rectangle 3","bbox":[24,90.24,292.8,55.68]}
+{"kind":"textbox","id":"sh/q903ad4n","slide":12,"name":"TextBox 4","text":"STATE","textPreview":"STATE","textChars":5,"textLines":1,"bbox":[24,90.24,292.8,55.68]}
+{"kind":"shape","id":"sh/dcbm583y","slide":12,"name":"Rectangle 5","bbox":[24,157.44,292.8,247.68]}
+{"kind":"textbox","id":"sh/sb2lcnmd","slide":12,"name":"TextBox 6","text":"Current schedule\n(group sequence)","textPreview":"Current schedule | (group sequence)","textChars":33,"textLines":2,"bbox":[33.6,167.04,273.6,225.6]}
+{"kind":"shape","id":"sh/b6d4f2lc","slide":12,"name":"Rectangle 7","bbox":[24,426.24,292.8,247.68]}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"name":"TextBox 8","text":"Current total cost","textPreview":"Current total cost","textChars":18,"textLines":1,"bbox":[33.6,435.84,273.6,225.6]}
+{"kind":"shape","id":"sh/wvupgz6t","slide":12,"name":"Rectangle 9","bbox":[331.2,90.24,292.8,55.68]}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"name":"TextBox 10","text":"ACTION","textPreview":"ACTION","textChars":6,"textLines":1,"bbox":[331.2,90.24,292.8,55.68]}
+{"kind":"shape","id":"sh/atc7epon","slide":12,"name":"Rectangle 11","bbox":[331.2,157.44,292.8,247.68]}
+{"kind":"textbox","id":"sh/bulo7u58","slide":12,"name":"TextBox 12","text":"Remove a group\nfrom the schedule","textPreview":"Remove a group | from the schedule","textChars":32,"textLines":2,"bbox":[340.8,167.04,273.6,225.6]}
+{"kind":"shape","id":"sh/orapcf6h","slide":12,"name":"Rectangle 13","bbox":[331.2,426.24,292.8,247.68]}
+{"kind":"textbox","id":"sh/9sj65kn2","slide":12,"name":"TextBox 14","text":"Insert group at\na new position","textPreview":"Insert group at | a new position","textChars":30,"textLines":2,"bbox":[340.8,435.84,273.6,225.6]}
+{"kind":"shape","id":"sh/mps7a5or","slide":12,"name":"Rectangle 15","bbox":[638.4,90.24,292.8,55.68]}
+{"kind":"textbox","id":"sh/nq1o3a5w","slide":12,"name":"TextBox 16","text":"REWARD","textPreview":"REWARD","textChars":6,"textLines":1,"bbox":[638.4,90.24,292.8,55.68]}
+{"kind":"shape","id":"sh/0nap8f6l","slide":12,"name":"Rectangle 17","bbox":[638.4,157.44,292.8,247.68]}
+{"kind":"textbox","id":"sh/1oj61kn6","slide":12,"name":"TextBox 18","text":"Reward =\nCost_before − Cost_after","textPreview":"Reward = | Cost_before − Cost_after","textChars":33,"textLines":2,"bbox":[648,167.04,273.6,225.6]}
+{"kind":"shape","id":"sh/hkbm5wzu","slide":12,"name":"Rectangle 19","bbox":[638.4,426.24,292.8,247.68]}
+{"kind":"textbox","id":"sh/gj25cry9","slide":12,"name":"TextBox 20","text":"Positive → improvement\nNegative → penalty","textPreview":"Positive → improvement | Negative → penalty","textChars":41,"textLines":2,"bbox":[648,435.84,273.6,225.6]}
+{"kind":"textbox","id":"sh/fit436ho","slide":12,"name":"TextBox 21","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":""}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"RL – Softmax Decision & Preference Learning","textShapes":13}
+{"kind":"shape","id":"sh/q50nydsj","slide":13,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"name":"TextBox 2","text":"RL – Softmax Decision & Preference Learning","textPreview":"RL – Softmax Decision & Preference Learning","textChars":43,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"name":"TextBox 3","text":"Probabilistic action selection via sample_softmax()\nHigher preference → Higher selection probability\nEnsures Exploration — tries less-favoured actions\nEnsures Exploitation — favours best-known actions","textPreview":"Probabilistic action selection via sample_softmax() | Higher preference → Higher selection probability | Ensures Exploration — tries less...","textChars":200,"textLines":4,"bbox":[28.8,91.2,432,326.4]}
+{"kind":"shape","id":"sh/p4r6p8by","slide":13,"name":"Rectangle 4","bbox":[28.8,436.8,432,72]}
+{"kind":"textbox","id":"sh/21gnuts7","slide":13,"name":"TextBox 5","text":"P(a) = exp(pref[a]) / Σ exp(pref[i])","textPreview":"P(a) = exp(pref[a]) / Σ exp(pref[i])","textChars":36,"textLines":1,"bbox":[33.6,441.6,422.4,62.4]}
+{"kind":"textbox","id":"sh/32ponyts","slide":13,"name":"TextBox 6","text":"Preference Arrays:","textPreview":"Preference Arrays:","textChars":18,"textLines":1,"bbox":[475.2,88.32,460.8,43.2]}
+{"kind":"shape","id":"sh/gzy5s3a1","slide":13,"name":"Rectangle 7","bbox":[475.2,136.32,192,115.2]}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"name":"TextBox 8","text":"del_pref[]","textPreview":"del_pref[]","textChars":10,"textLines":1,"bbox":[475.2,145.92,192,96]}
+{"kind":"shape","id":"sh/hcfy9k3u","slide":13,"name":"Rectangle 9","bbox":[676.8,136.32,259.2,115.2]}
+{"kind":"textbox","id":"sh/gb6x0zm9","slide":13,"name":"TextBox 10","text":"Removal preference — score for removing each group","textPreview":"Removal preference — score for removing each group","textChars":50,"textLines":1,"bbox":[681.6,141.12,249.6,105.6]}
+{"kind":"shape","id":"sh/vaxg7ulo","slide":13,"name":"Rectangle 11","bbox":[475.2,275.52,192,115.2]}
+{"kind":"textbox","id":"sh/u9ofyp43","slide":13,"name":"TextBox 12","text":"ins_pref[]","textPreview":"ins_pref[]","textChars":10,"textLines":1,"bbox":[475.2,285.12,192,96]}
+{"kind":"shape","id":"sh/t8fy5k3i","slide":13,"name":"Rectangle 13","bbox":[676.8,275.52,259.2,115.2]}
+{"kind":"textbox","id":"sh/876xwfmx","slide":13,"name":"TextBox 14","text":"Insertion preference — score for inserting at each position","textPreview":"Insertion preference — score for inserting at each position","textChars":59,"textLines":1,"bbox":[681.6,280.32,249.6,105.6]}
+{"kind":"shape","id":"sh/7mdg3als","slide":13,"name":"Rectangle 15","bbox":[475.2,414.72,192,115.2]}
+{"kind":"textbox","id":"sh/6l4fu547","slide":13,"name":"TextBox 16","text":"last_removed[]","textPreview":"last_removed[]","textChars":14,"textLines":1,"bbox":[475.2,424.32,192,96]}
+{"kind":"shape","id":"sh/lkvy103m","slide":13,"name":"Rectangle 17","bbox":[676.8,414.72,259.2,115.2]}
+{"kind":"textbox","id":"sh/kjmxsfm1","slide":13,"name":"TextBox 18","text":"Tracks groups removed in the last iteration","textPreview":"Tracks groups removed in the last iteration","textChars":43,"textLines":1,"bbox":[681.6,419.52,249.6,105.6]}
+{"kind":"shape","id":"sh/cnqh8fux","slide":13,"name":"Rectangle 19","bbox":[475.2,553.92,192,115.2]}
+{"kind":"textbox","id":"sh/xozyhkbi","slide":13,"name":"TextBox 20","text":"last_insert_pos[]","textPreview":"last_insert_pos[]","textChars":17,"textLines":1,"bbox":[475.2,563.52,192,96]}
+{"kind":"shape","id":"sh/q18f65cr","slide":13,"name":"Rectangle 21","bbox":[676.8,553.92,259.2,115.2]}
+{"kind":"textbox","id":"sh/bmhgfatc","slide":13,"name":"TextBox 22","text":"Tracks insertion positions in last iteration","textPreview":"Tracks insertion positions in last iteration","textChars":44,"textLines":1,"bbox":[681.6,558.72,249.6,105.6]}
+{"kind":"textbox","id":"sh/oz6x4vul","slide":13,"name":"TextBox 23","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":""}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"RL – Update Rule & Perturbation","textShapes":20}
+{"kind":"shape","id":"sh/xc7eds76","slide":14,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"name":"TextBox 2","text":"RL – Update Rule & Perturbation","textPreview":"RL – Update Rule & Perturbation","textChars":31,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/jepwf2pc","slide":14,"name":"TextBox 3","text":"Update Rule","textPreview":"Update Rule","textChars":11,"textLines":1,"bbox":[28.8,88.32,441.6,43.2]}
+{"kind":"shape","id":"sh/idgvmx8r","slide":14,"name":"Rectangle 4","bbox":[28.8,136.32,144,96]}
+{"kind":"textbox","id":"sh/5grehs7i","slide":14,"name":"TextBox 5","text":"Advantage:","textPreview":"Advantage:","textChars":10,"textLines":1,"bbox":[28.8,145.92,144,76.8]}
+{"kind":"shape","id":"sh/kfidonqx","slide":14,"name":"Rectangle 6","bbox":[182.4,136.32,288,96]}
+{"kind":"textbox","id":"sh/zi5c3y98","slide":14,"name":"TextBox 7","text":"adv = reward − baseline","textPreview":"adv = reward − baseline","textChars":23,"textLines":1,"bbox":[192,141.12,268.8,86.4]}
+{"kind":"shape","id":"sh/ehwvat8n","slide":14,"name":"Rectangle 8","bbox":[28.8,256.32,144,96]}
+{"kind":"textbox","id":"sh/c3e1gjyd","slide":14,"name":"TextBox 9","text":"Update:","textPreview":"Update:","textChars":7,"textLines":1,"bbox":[28.8,265.92,144,76.8]}
+{"kind":"shape","id":"sh/x4ni9ofy","slide":14,"name":"Rectangle 10","bbox":[182.4,256.32,288,96]}
+{"kind":"textbox","id":"sh/a1wze9g7","slide":14,"name":"TextBox 11","text":"pref += α × adv","textPreview":"pref += α × adv","textChars":15,"textLines":1,"bbox":[192,261.12,268.8,86.4]}
+{"kind":"shape","id":"sh/b2507exs","slide":14,"name":"Rectangle 12","bbox":[28.8,376.32,144,96]}
+{"kind":"textbox","id":"sh/kre1k3y9","slide":14,"name":"TextBox 13","text":"Baseline:","textPreview":"Baseline:","textChars":9,"textLines":1,"bbox":[28.8,385.92,144,76.8]}
+{"kind":"shape","id":"sh/ls7idofu","slide":14,"name":"Rectangle 14","bbox":[182.4,376.32,288,96]}
+{"kind":"textbox","id":"sh/y5wjitgj","slide":14,"name":"TextBox 15","text":"Stabilises learning by subtracting average reward","textPreview":"Stabilises learning by subtracting average reward","textChars":49,"textLines":1,"bbox":[192,381.12,268.8,86.4]}
+{"kind":"shape","id":"sh/z650byxo","slide":14,"name":"Rectangle 16","bbox":[28.8,496.32,144,96]}
+{"kind":"textbox","id":"sh/0buh8zy5","slide":14,"name":"TextBox 17","text":"α (alpha):","textPreview":"α (alpha):","textChars":10,"textLines":1,"bbox":[28.8,505.92,144,76.8]}
+{"kind":"shape","id":"sh/1w3i14fq","slide":14,"name":"Rectangle 18","bbox":[182.4,496.32,288,96]}
+{"kind":"textbox","id":"sh/hsvy50re","slide":14,"name":"TextBox 19","text":"Learning rate — controls update step size","textPreview":"Learning rate — controls update step size","textChars":41,"textLines":1,"bbox":[192,501.12,268.8,86.4]}
+{"kind":"textbox","id":"sh/grmxwvqt","slide":14,"name":"TextBox 20","text":"Perturbation Using RL","textPreview":"Perturbation Using RL","textChars":21,"textLines":1,"bbox":[489.6,88.32,441.6,43.2]}
+{"kind":"shape","id":"sh/fqdg3q98","slide":14,"name":"Rectangle 21","bbox":[489.6,136.32,124.8,96]}
+{"kind":"textbox","id":"sh/up4fal83","slide":14,"name":"TextBox 22","text":"Step 1","textPreview":"Step 1","textChars":6,"textLines":1,"bbox":[489.6,145.92,124.8,76.8]}
+{"kind":"shape","id":"sh/pwvy90rq","slide":14,"name":"Rectangle 23","bbox":[624,136.32,307.2,96]}
+{"kind":"textbox","id":"sh/4vmh0vq5","slide":14,"name":"TextBox 24","text":"Select groups to remove\nusing del_pref[] (RL-based)","textPreview":"Select groups to remove | using del_pref[] (RL-based)","textChars":51,"textLines":2,"bbox":[633.6,141.12,288,86.4]}
+{"kind":"shape","id":"sh/3udg7q9k","slide":14,"name":"Rectangle 25","bbox":[489.6,256.32,124.8,96]}
+{"kind":"textbox","id":"sh/2t4fyl8z","slide":14,"name":"TextBox 26","text":"Step 2","textPreview":"Step 2","textChars":6,"textLines":1,"bbox":[489.6,265.92,124.8,76.8]}
+{"kind":"shape","id":"sh/d0fydk7m","slide":14,"name":"Rectangle 27","bbox":[624,256.32,307.2,96]}
+{"kind":"textbox","id":"sh/cz6h4fq1","slide":14,"name":"TextBox 28","text":"Temporarily store\nthe removed groups","textPreview":"Temporarily store | the removed groups","textChars":36,"textLines":2,"bbox":[633.6,261.12,288,86.4]}
+{"kind":"shape","id":"sh/atg3idk7","slide":14,"name":"Rectangle 29","bbox":[489.6,376.32,124.8,96]}
+{"kind":"textbox","id":"sh/bup4rils","slide":14,"name":"TextBox 30","text":"Step 3","textPreview":"Step 3","textChars":6,"textLines":1,"bbox":[489.6,385.92,124.8,76.8]}
+{"kind":"shape","id":"sh/cvylkn2d","slide":14,"name":"Rectangle 31","bbox":[624,376.32,307.2,96]}
+{"kind":"textbox","id":"sh/xw7mts3y","slide":14,"name":"TextBox 32","text":"Insert groups optimally\nusing ins_pref[]","textPreview":"Insert groups optimally | using ins_pref[]","textChars":40,"textLines":2,"bbox":[633.6,381.12,288,86.4]}
+{"kind":"shape","id":"sh/yxgnmxkj","slide":14,"name":"Rectangle 33","bbox":[489.6,496.32,124.8,96]}
+{"kind":"textbox","id":"sh/jyp4fil4","slide":14,"name":"TextBox 34","text":"Score","textPreview":"Score","textChars":5,"textLines":1,"bbox":[489.6,505.92,124.8,76.8]}
+{"kind":"shape","id":"sh/kzy5on2p","slide":14,"name":"Rectangle 35","bbox":[624,496.32,307.2,96]}
+{"kind":"textbox","id":"sh/lkrmhsju","slide":14,"name":"TextBox 36","text":"Preference − Cost\n(combines learning + optimization)","textPreview":"Preference − Cost | (combines learning + optimization)","textChars":52,"textLines":2,"bbox":[633.6,501.12,288,86.4]}
+{"kind":"textbox","id":"sh/6l0nqxkf","slide":14,"name":"TextBox 37","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":""}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"Cost Function","textShapes":15}
+{"kind":"shape","id":"sh/547mhg3m","slide":15,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/k3y5ov21","slide":15,"name":"TextBox 2","text":"Cost Function","textPreview":"Cost Function","textChars":13,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"shape","id":"sh/76p4jqls","slide":15,"name":"Rectangle 3","bbox":[24,93.12,49.92,67.2]}
+{"kind":"textbox","id":"sh/65gnqlk7","slide":15,"name":"TextBox 4","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[24,93.12,49.92,67.2]}
+{"kind":"shape","id":"sh/t87ml0ji","slide":15,"name":"Rectangle 5","bbox":[81.6,93.12,854.4,67.2]}
+{"kind":"textbox","id":"sh/s7y5sv2x","slide":15,"name":"TextBox 6","text":"Calculates total rotation cost across all scheduled groups","textPreview":"Calculates total rotation cost across all scheduled groups","textChars":58,"textLines":1,"bbox":[91.2,95.04,835.2,63.36]}
+{"kind":"shape","id":"sh/na5476l8","slide":15,"name":"Rectangle 7","bbox":[24,179.52,49.92,67.2]}
+{"kind":"textbox","id":"sh/m9c3e1kn","slide":15,"name":"TextBox 8","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[24,179.52,49.92,67.2]}
+{"kind":"shape","id":"sh/wrm9kvep","slide":15,"name":"Rectangle 9","bbox":[81.6,179.52,854.4,67.2]}
+{"kind":"textbox","id":"sh/hsvat0fa","slide":15,"name":"TextBox 10","text":"Uses minimum angular distance between sensor orientations","textPreview":"Uses minimum angular distance between sensor orientations","textChars":57,"textLines":1,"bbox":[91.2,181.44,835.2,63.36]}
+{"kind":"shape","id":"sh/upkrilwj","slide":15,"name":"Rectangle 11","bbox":[24,265.92,49.92,67.2]}
+{"kind":"textbox","id":"sh/vqdsrqx4","slide":15,"name":"TextBox 12","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[24,265.92,49.92,67.2]}
+{"kind":"shape","id":"sh/4vm9ovel","slide":15,"name":"Rectangle 13","bbox":[81.6,265.92,854.4,67.2]}
+{"kind":"textbox","id":"sh/5wvax0f6","slide":15,"name":"TextBox 14","text":"If |Δθ| ≤ 180° → take the direct rotation path","textPreview":"If |Δθ| ≤ 180° → take the direct rotation path","textChars":46,"textLines":1,"bbox":[91.2,267.84,835.2,63.36]}
+{"kind":"shape","id":"sh/it4rm5wv","slide":15,"name":"Rectangle 15","bbox":[24,352.32,49.92,67.2]}
+{"kind":"textbox","id":"sh/judsvqxg","slide":15,"name":"TextBox 16","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[24,352.32,49.92,67.2]}
+{"kind":"shape","id":"sh/0z29cbyh","slide":15,"name":"Rectangle 17","bbox":[81.6,352.32,854.4,67.2]}
+{"kind":"textbox","id":"sh/l0bqlgf2","slide":15,"name":"TextBox 18","text":"If |Δθ| > 180° → take shorter circular path (360° − |Δθ|)","textPreview":"If |Δθ| > 180° → take shorter circular path (360° − |Δθ|)","textChars":57,"textLines":1,"bbox":[91.2,354.24,835.2,63.36]}
+{"kind":"shape","id":"sh/1kjyt83e","slide":15,"name":"Rectangle 19","bbox":[24,438.72,49.92,67.2]}
+{"kind":"textbox","id":"sh/gjax03m9","slide":15,"name":"TextBox 20","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[24,438.72,49.92,67.2]}
+{"kind":"shape","id":"sh/fi1grylo","slide":15,"name":"Rectangle 21","bbox":[81.6,438.72,854.4,67.2]}
+{"kind":"textbox","id":"sh/ehsfyt43","slide":15,"name":"TextBox 22","text":"Only sensors present in the group contribute to the cost","textPreview":"Only sensors present in the group contribute to the cost","textChars":56,"textLines":1,"bbox":[91.2,440.64,835.2,63.36]}
+{"kind":"shape","id":"sh/p8jyx83q","slide":15,"name":"Rectangle 23","bbox":[24,525.12,49.92,67.2]}
+{"kind":"textbox","id":"sh/o7ah4nm5","slide":15,"name":"TextBox 24","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[24,525.12,49.92,67.2]}
+{"kind":"shape","id":"sh/361gvilk","slide":15,"name":"Rectangle 25","bbox":[81.6,525.12,854.4,67.2]}
+{"kind":"textbox","id":"sh/25sf2d4z","slide":15,"name":"TextBox 26","text":"Guarantees minimum total rotation for any given schedule","textPreview":"Guarantees minimum total rotation for any given schedule","textChars":56,"textLines":1,"bbox":[91.2,527.04,835.2,63.36]}
+{"kind":"shape","id":"sh/dc3y1s3m","slide":15,"name":"Rectangle 27","bbox":[24,604.8,912,67.2]}
+{"kind":"textbox","id":"sh/cbuh8nmh","slide":15,"name":"TextBox 28","text":"d(φ₁, φ₂) = min( |φ₁ − φ₂|,  360 − |φ₁ − φ₂| )    [expressed in degrees]","textPreview":"d(φ₁, φ₂) = min( |φ₁ − φ₂|,  360 − |φ₁ − φ₂| )    [expressed in degrees]","textChars":72,"textLines":1,"bbox":[33.6,606.72,892.8,61.44]}
+{"kind":"textbox","id":"sh/uh4v2pkj","slide":15,"name":"TextBox 29","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":""}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"Algorithm Workflow – Flowchart","textShapes":20}
+{"kind":"shape","id":"sh/8z2h8bq1","slide":16,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/9kby1g7m","slide":16,"name":"TextBox 2","text":"Algorithm Workflow – Flowchart","textPreview":"Algorithm Workflow – Flowchart","textChars":30,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"shape","id":"sh/ytkf2h8j","slide":16,"name":"Rectangle 3","bbox":[28.8,84.48,355.2,46.08]}
+{"kind":"textbox","id":"sh/zutgvm94","slide":16,"name":"TextBox 4","text":"START","textPreview":"START","textChars":5,"textLines":1,"bbox":[28.8,84.48,355.2,46.08]}
+{"kind":"shape","id":"sh/kv2h4rqp","slide":16,"name":"Connector 5","bbox":[206.4,130.56,0,9.6]}
+{"kind":"shape","id":"sh/lwbyxwra","slide":16,"name":"Rectangle 6","bbox":[28.8,140.16,355.2,46.08]}
+{"kind":"textbox","id":"sh/ip4zel83","slide":16,"name":"TextBox 7","text":"Initialise Population","textPreview":"Initialise Population","textChars":21,"textLines":1,"bbox":[28.8,140.16,355.2,46.08]}
+{"kind":"shape","id":"sh/3qdg7qpo","slide":16,"name":"Connector 8","bbox":[206.4,186.24,0,9.6]}
+{"kind":"shape","id":"sh/fm1gzq5o","slide":16,"name":"Rectangle 9","bbox":[28.8,195.84,355.2,46.08]}
+{"kind":"textbox","id":"sh/e1sf65o3","slide":16,"name":"TextBox 10","text":"Generate Initial Schedule","textPreview":"Generate Initial Schedule","textChars":25,"textLines":1,"bbox":[28.8,195.84,355.2,46.08]}
+{"kind":"shape","id":"sh/1ojy10ne","slide":16,"name":"Connector 11","bbox":[206.4,241.92,0,9.6]}
+{"kind":"shape","id":"sh/gnax8v6t","slide":16,"name":"Rectangle 12","bbox":[28.8,251.52,355.2,46.08]}
+{"kind":"textbox","id":"sh/nqlg3a5k","slide":16,"name":"TextBox 13","text":"Compute Cost","textPreview":"Compute Cost","textChars":12,"textLines":1,"bbox":[28.8,251.52,355.2,46.08]}
+{"kind":"shape","id":"sh/2pcfa5oz","slide":16,"name":"Connector 14","bbox":[206.4,297.6,0,9.6]}
+{"kind":"shape","id":"sh/ps3y5knq","slide":16,"name":"Rectangle 15","bbox":[28.8,307.2,355.2,46.08]}
+{"kind":"textbox","id":"sh/oruhcf65","slide":16,"name":"TextBox 16","text":"Select Parent Schedule","textPreview":"Select Parent Schedule","textChars":22,"textLines":1,"bbox":[28.8,307.2,355.2,46.08]}
+{"kind":"shape","id":"sh/bulg7u5g","slide":16,"name":"Connector 17","bbox":[206.4,353.28,0,9.6]}
+{"kind":"shape","id":"sh/atczepob","slide":16,"name":"Rectangle 18","bbox":[28.8,362.88,355.2,46.08]}
+{"kind":"textbox","id":"sh/mpgj6t8j","slide":16,"name":"TextBox 19","text":"RL: Remove Groups","textPreview":"RL: Remove Groups","textChars":17,"textLines":1,"bbox":[28.8,362.88,355.2,46.08]}
+{"kind":"shape","id":"sh/7qp0zepo","slide":16,"name":"Connector 20","bbox":[206.4,408.96,0,9.6]}
+{"kind":"shape","id":"sh/8by18jq9","slide":16,"name":"Rectangle 21","bbox":[28.8,418.56,355.2,46.08]}
+{"kind":"textbox","id":"sh/9c7i1o7u","slide":16,"name":"TextBox 22","text":"RL: Insert Groups","textPreview":"RL: Insert Groups","textChars":17,"textLines":1,"bbox":[28.8,418.56,355.2,46.08]}
+{"kind":"shape","id":"sh/ylwj2987","slide":16,"name":"Connector 23","bbox":[206.4,464.64,0,9.6]}
+{"kind":"shape","id":"sh/zm50veps","slide":16,"name":"Rectangle 24","bbox":[28.8,474.24,355.2,46.08]}
+{"kind":"textbox","id":"sh/kne14jqd","slide":16,"name":"TextBox 25","text":"New Schedule","textPreview":"New Schedule","textChars":12,"textLines":1,"bbox":[28.8,474.24,355.2,46.08]}
+{"kind":"shape","id":"sh/lo7ixo7y","slide":16,"name":"Rectangle 26","bbox":[422.4,84.48,355.2,46.08]}
+{"kind":"textbox","id":"sh/ih0jedob","slide":16,"name":"TextBox 27","text":"Compute New Cost","textPreview":"Compute New Cost","textChars":16,"textLines":1,"bbox":[422.4,84.48,355.2,46.08]}
+{"kind":"shape","id":"sh/ji9k7ypw","slide":16,"name":"Connector 28","bbox":[600,130.56,0,9.6]}
+{"kind":"shape","id":"sh/tcbmdcre","slide":16,"name":"Rectangle 29","bbox":[422.4,140.16,355.2,46.08]}
+{"kind":"textbox","id":"sh/sb2l47at","slide":16,"name":"TextBox 30","text":"Reward = Old − New Cost","textPreview":"Reward = Old − New Cost","textChars":23,"textLines":1,"bbox":[422.4,140.16,355.2,46.08]}
+{"kind":"shape","id":"sh/rat4b298","slide":16,"name":"Connector 31","bbox":[600,186.24,0,9.6]}
+{"kind":"shape","id":"sh/69k32xsn","slide":16,"name":"Rectangle 32","bbox":[422.4,195.84,355.2,46.08]}
+{"kind":"textbox","id":"sh/58bm9sr2","slide":16,"name":"TextBox 33","text":"Update RL Policy","textPreview":"Update RL Policy","textChars":16,"textLines":1,"bbox":[422.4,195.84,355.2,46.08]}
+{"kind":"shape","id":"sh/47il0nah","slide":16,"name":"Connector 34","bbox":[600,241.92,0,9.6]}
+{"kind":"shape","id":"sh/j6947i9w","slide":16,"name":"Rectangle 35","bbox":[422.4,251.52,355.2,46.08]}
+{"kind":"textbox","id":"sh/i503ydsr","slide":16,"name":"TextBox 36","text":"Is New Cost < Old Cost?","textPreview":"Is New Cost < Old Cost?","textChars":23,"textLines":1,"bbox":[422.4,251.52,355.2,46.08]}
+{"kind":"shape","id":"sh/p4vmlwrm","slide":16,"name":"Connector 37","bbox":[600,297.6,0,9.6]}
+{"kind":"shape","id":"sh/o3m5crq1","slide":16,"name":"Rectangle 38","bbox":[422.4,307.2,355.2,46.08]}
+{"kind":"textbox","id":"sh/wnadcrqh","slide":16,"name":"TextBox 39","text":"Replace Parent","textPreview":"Replace Parent","textChars":14,"textLines":1,"bbox":[422.4,307.2,355.2,46.08]}
+{"kind":"shape","id":"sh/xoju5wr2","slide":16,"name":"Connector 40","bbox":[600,353.28,0,9.6]}
+{"kind":"shape","id":"sh/alsbahsb","slide":16,"name":"Rectangle 41","bbox":[422.4,362.88,355.2,46.08]}
+{"kind":"textbox","id":"sh/vm1c3m9w","slide":16,"name":"TextBox 42","text":"Repeat Loop","textPreview":"Repeat Loop","textChars":11,"textLines":1,"bbox":[422.4,362.88,355.2,46.08]}
+{"kind":"shape","id":"sh/kbudgrqt","slide":16,"name":"Connector 43","bbox":[600,408.96,0,9.6]}
+{"kind":"shape","id":"sh/5c3u9wry","slide":16,"name":"Rectangle 44","bbox":[422.4,418.56,355.2,46.08]}
+{"kind":"textbox","id":"sh/i9sve18n","slide":16,"name":"TextBox 45","text":"END","textPreview":"END","textChars":3,"textLines":1,"bbox":[422.4,418.56,355.2,46.08]}
+{"kind":"shape","id":"sh/tg3udgra","slide":16,"name":"Rectangle 48","bbox":[792,84.48,144,115.2]}
+{"kind":"textbox","id":"sh/3apg3atc","slide":16,"name":"TextBox 49","text":"ES manages\npopulation & selection","textPreview":"ES manages | population & selection","textChars":33,"textLines":2,"bbox":[799.68,89.28,128.64,105.6]}
+{"kind":"shape","id":"sh/29wfa5sr","slide":16,"name":"Rectangle 50","bbox":[792,266.88,144,115.2]}
+{"kind":"textbox","id":"sh/pc7y5kbi","slide":16,"name":"TextBox 51","text":"RL handles\nperturbation decisions","textPreview":"RL handles | perturbation decisions","textChars":33,"textLines":2,"bbox":[799.68,271.68,128.64,105.6]}
+{"kind":"shape","id":"sh/obyxcfax","slide":16,"name":"Rectangle 52","bbox":[792,449.28,144,115.2]}
+{"kind":"textbox","id":"sh/f65wzqtg","slide":16,"name":"TextBox 53","text":"Cost comparison\ndetermines survivor","textPreview":"Cost comparison | determines survivor","textChars":35,"textLines":2,"bbox":[799.68,454.08,128.64,105.6]}
+{"kind":"textbox","id":"sh/u5wf6lcv","slide":16,"name":"TextBox 54","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":""}
+{"kind":"slide","id":"sl/14bup87q","slide":17,"title":"CODE","textShapes":12}
+{"kind":"textbox","id":"sh/1c7e50ni","slide":17,"name":"Rectangle 1","text":"CODE","textPreview":"CODE","textChars":4,"textLines":1,"bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/snedsvml","slide":17,"name":"TextBox 6","text":"Reduced total rotation cost","textPreview":"Reduced total rotation cost","textChars":27,"textLines":1,"bbox":[40.32,141.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/pc7qhwn6","slide":17,"name":"TextBox 10","text":"Improved group scheduling quality","textPreview":"Improved group scheduling quality","textChars":33,"textLines":1,"bbox":[40.32,333.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/3ap8fm50","slide":17,"name":"TextBox 12","text":"Better scalability for large group sets","textPreview":"Better scalability for large group sets","textChars":39,"textLines":1,"bbox":[40.32,429.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/honqdwnu","slide":17,"name":"TextBox 14","text":"Adaptive performance across problem instances","textPreview":"Adaptive performance across problem instances","textChars":45,"textLines":1,"bbox":[40.32,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/fm58bm54","slide":17,"name":"TextBox 16","text":"Adaptive leangfrom past decisions","textPreview":"Adaptive leangfrom past decisions","textChars":33,"textLines":1,"bbox":[501.12,141.12,418.56,35.54]}
+{"kind":"textbox","id":"sh/14rqpgne","slide":17,"name":"TextBox 18","text":"Avoids local optima via ES global search","textPreview":"Avoids local optima via ES global search","textChars":40,"textLines":1,"bbox":[501.12,237.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/8ze9gbyx","slide":17,"name":"TextBox 20","text":"Intelligent remove & insert decisions","textPreview":"Intelligent remove & insert decisions","textChars":37,"textLines":1,"bbox":[501.12,333.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/mxw7e1gr","slide":17,"name":"TextBox 22","text":"Efficient search — fewer wasted perturbations","textPreview":"Efficient search — fewer wasted perturbations","textChars":45,"textLines":1,"bbox":[501.12,429.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/0vepcbyl","slide":17,"name":"TextBox 24","text":"Population diversity maintained via ES","textPreview":"Population diversity maintained via ES","textChars":38,"textLines":1,"bbox":[501.12,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/zul836xg","slide":17,"name":"TextBox 25","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"shape","id":"sh/gbedwfmx","slide":17,"name":"AutoShape 2","bbox":[464,344,32,32]}
+{"kind":"shape","id":"sh/rm5czq50","slide":17,"name":"AutoShape 4","bbox":[480,360,32,32]}
+{"kind":"textbox","id":"sh/4by9or6l","slide":17,"name":"TextBox 9","text":"COMPARISON","textPreview":"COMPARISON","textChars":10,"textLines":1,"bbox":[586.02,220.38,159.27,38.78]}
+{"kind":"image","id":"im/twzaxonu","slide":17,"name":"Picture 5","bbox":[2.74,158.89,389.08,428.15]}
+{"kind":"image","id":"im/i5obi9o7","slide":17,"name":"Picture 8","bbox":[397.96,249.98,559.3,245.97]}
+{"kind":"notes","id":"nt/14bup87q","slide":17,"text":""}
+{"kind":"slide","id":"sl/y5wne50z","slide":18,"title":"RESULT COMPARISON","textShapes":13}
+{"kind":"textbox","id":"sh/wrelszu9","slide":18,"name":"Rectangle 1","text":"RESULT COMPARISON","textPreview":"RESULT COMPARISON","textChars":17,"textLines":1,"bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/5gnmp4bq","slide":18,"name":"TextBox 6","text":"Reduced total rotation cost","textPreview":"Reduced total rotation cost","textChars":27,"textLines":1,"bbox":[40.32,141.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/upg3i18r","slide":18,"name":"TextBox 10","text":"Improved group scheduling quality","textPreview":"Improved group scheduling quality","textChars":33,"textLines":1,"bbox":[40.32,333.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/gbylkbqh","slide":18,"name":"TextBox 12","text":"Better scalability for large group sets","textPreview":"Better scalability for large group sets","textChars":39,"textLines":1,"bbox":[40.32,429.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/6lg3e18f","slide":18,"name":"TextBox 14","text":"Adaptive performance across problem instances","textPreview":"Adaptive performance across problem instances","textChars":45,"textLines":1,"bbox":[40.32,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/snylgrql","slide":18,"name":"TextBox 16","text":"Adaptive leangfrom past decisions","textPreview":"Adaptive leangfrom past decisions","textChars":33,"textLines":1,"bbox":[501.12,141.12,418.56,35.54]}
+{"kind":"textbox","id":"sh/qh03ql8j","slide":18,"name":"TextBox 18","text":"Avoids local optima via ES global search","textPreview":"Avoids local optima via ES global search","textChars":40,"textLines":1,"bbox":[501.12,237.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/nedoru9c","slide":18,"name":"TextBox 20","text":"Intelligent remove & insert decisions","textPreview":"Intelligent remove & insert decisions","textChars":37,"textLines":1,"bbox":[501.12,333.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/90v6t4ri","slide":18,"name":"TextBox 22","text":"Efficient search — fewer wasted perturbations","textPreview":"Efficient search — fewer wasted perturbations","textChars":45,"textLines":1,"bbox":[501.12,429.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/v2xovu9o","slide":18,"name":"TextBox 24","text":"Population diversity maintained via ES","textPreview":"Population diversity maintained via ES","textChars":38,"textLines":1,"bbox":[501.12,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/w36poza9","slide":18,"name":"TextBox 25","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"textbox","id":"sh/7yh8nytw","slide":18,"name":"TextBox 31","text":"GA + GREEDY","textPreview":"GA + GREEDY","textChars":11,"textLines":1,"bbox":[95.36,110.08,184.29,38.78]}
+{"kind":"textbox","id":"sh/6x8retcb","slide":18,"name":"TextBox 32","text":"GA+RL","textPreview":"GA+RL","textChars":5,"textLines":1,"bbox":[517.4,109,321.39,38.78]}
+{"kind":"image","id":"im/2d4jep4n","slide":18,"name":"Picture 27","bbox":[40.32,154.43,395.69,492.35]}
+{"kind":"image","id":"im/3ed07u58","slide":18,"name":"Picture 29","bbox":[468.81,154.43,418.56,492.35]}
+{"kind":"notes","id":"nt/y5wne50z","slide":18,"text":""}
+{"kind":"slide","id":"sl/nid43ytk","slide":19,"title":"Expected Outcomes & Advantages","textShapes":14}
+{"kind":"shape","id":"sh/9gb6xgbi","slide":19,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/8v2pobax","slide":19,"name":"TextBox 2","text":"Expected Outcomes & Advantages","textPreview":"Expected Outcomes & Advantages","textChars":30,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/vitozqt8","slide":19,"name":"TextBox 3","text":"Expected Outcomes","textPreview":"Expected Outcomes","textChars":17,"textLines":1,"bbox":[28.8,84.48,451.2,43.2]}
+{"kind":"textbox","id":"sh/ahk7qls3","slide":19,"name":"TextBox 4","text":"Advantages","textPreview":"Advantages","textChars":10,"textLines":1,"bbox":[489.6,84.48,451.2,43.2]}
+{"kind":"shape","id":"sh/xkbq10be","slide":19,"name":"Rectangle 5","bbox":[28.8,136.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/wj2psvat","slide":19,"name":"TextBox 6","text":"Reduced total rotation cost","textPreview":"Reduced total rotation cost","textChars":27,"textLines":1,"bbox":[40.32,141.12,418.56,69.12]}
+{"kind":"shape","id":"sh/jmd83atk","slide":19,"name":"Rectangle 7","bbox":[28.8,232.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/il47u5sz","slide":19,"name":"TextBox 8","text":"Faster convergence to near-optimal solution","textPreview":"Faster convergence to near-optimal solution","textChars":43,"textLines":1,"bbox":[40.32,237.12,418.56,69.12]}
+{"kind":"shape","id":"sh/cri1gnql","slide":19,"name":"Rectangle 9","bbox":[28.8,328.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/dsri9sr6","slide":19,"name":"TextBox 10","text":"Improved group scheduling quality","textPreview":"Improved group scheduling quality","textChars":33,"textLines":1,"bbox":[40.32,333.12,418.56,69.12]}
+{"kind":"shape","id":"sh/qpgjex8f","slide":19,"name":"Rectangle 11","bbox":[28.8,424.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/rqp07290","slide":19,"name":"TextBox 12","text":"Better scalability for large group sets","textPreview":"Better scalability for large group sets","textChars":39,"textLines":1,"bbox":[40.32,429.12,418.56,69.12]}
+{"kind":"shape","id":"sh/0vi1k7qx","slide":19,"name":"Rectangle 13","bbox":[28.8,520.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/1gridcr2","slide":19,"name":"TextBox 14","text":"Adaptive performance across problem instances","textPreview":"Adaptive performance across problem instances","textChars":45,"textLines":1,"bbox":[40.32,525.12,418.56,69.12]}
+{"kind":"shape","id":"sh/et0jix8r","slide":19,"name":"Rectangle 15","bbox":[489.6,136.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/zu90b29c","slide":19,"name":"TextBox 16","text":"Adaptive learning from past decisions","textPreview":"Adaptive learning from past decisions","textChars":37,"textLines":1,"bbox":[501.12,141.12,418.56,69.12]}
+{"kind":"shape","id":"sh/oj21o7qt","slide":19,"name":"Rectangle 17","bbox":[489.6,232.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/9kb2hcre","slide":19,"name":"TextBox 18","text":"Avoids local optima via ES global search","textPreview":"Avoids local optima via ES global search","textChars":40,"textLines":1,"bbox":[501.12,237.12,418.56,69.12]}
+{"kind":"shape","id":"sh/x07i1cji","slide":19,"name":"Rectangle 19","bbox":[489.6,328.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/wfy1s7ix","slide":19,"name":"TextBox 20","text":"Intelligent remove & insert decisions","textPreview":"Intelligent remove & insert decisions","textChars":37,"textLines":1,"bbox":[501.12,333.12,418.56,69.12]}
+{"kind":"shape","id":"sh/vep0z21c","slide":19,"name":"Rectangle 21","bbox":[489.6,424.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/adgjqx0r","slide":19,"name":"TextBox 22","text":"Efficient search — fewer wasted perturbations","textPreview":"Efficient search — fewer wasted perturbations","textChars":45,"textLines":1,"bbox":[501.12,429.12,418.56,69.12]}
+{"kind":"shape","id":"sh/54ri5wje","slide":19,"name":"Rectangle 23","bbox":[489.6,520.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/k3y1wri9","slide":19,"name":"TextBox 24","text":"Population diversity maintained via ES","textPreview":"Population diversity maintained via ES","textChars":38,"textLines":1,"bbox":[501.12,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/j2p03m1o","slide":19,"name":"TextBox 25","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/nid43ytk","slide":19,"text":""}
+{"kind":"slide","id":"sl/zyxsni5k","slide":20,"title":"Future Work","textShapes":3}
+{"kind":"shape","id":"sh/qpwjmh8n","slide":20,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/rq50vmp8","slide":20,"name":"TextBox 2","text":"Future Work","textPreview":"Future Work","textChars":11,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/po3itc72","slide":20,"name":"TextBox 4","text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"textbox","id":"sh/3ml0rmpw","slide":20,"name":"TextBox 6","text":"• The proposed RL-based approach performs well for small and medium instances\n• However, for large-scale problems (high number of groups):\n– Execution time increases significantly\n– Computational overhead of RL becomes higher\n– Cost improvements are not always consistent\n• RL requires sufficient iterations to learn good policies, which increases runtime","textPreview":"• The proposed RL-based approach performs well for small and medium instances | • However, for large-scale problems (high number of group...","textChars":355,"textLines":6,"bbox":[56.77,137.74,753.81,358.67]}
+{"kind":"notes","id":"nt/zyxsni5k","slide":20,"text":""}
+{"kind":"slide","id":"sl/m1wvqtk3","slide":21,"title":"References","textShapes":3}
+{"kind":"shape","id":"sh/1gbmxs7a","slide":21,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/0f2lon6p","slide":21,"name":"TextBox 2","text":"References","textPreview":"References","textChars":10,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/qp03yt8n","slide":21,"name":"TextBox 4","text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"textbox","id":"sh/sb2lk36t","slide":21,"name":"TextBox 6","text":"[1] G. Srivastava and A. Singh, “Boosting an evolution strategy with a preprocessing step: application to group scheduling problem in directional sensor networks,” Eur. J. Oper. Res., vol. 231, pp. xxx–xxx, 2013.\n[2] R. Addanki et al., “Neural Large Neighborhood Search,” 2020.\n[3] J. Song et al., “Learning Large Neighborhood Search Policy for Integer Programming,” in Proc. NeurIPS, 2021.\n[4] A. Rossi, A. Singh, and M. Sevaux, “Lifetime maximization in wireless directional sensor network,” Eur. J. Oper. Res., vol. 231, 2013.","textPreview":"[1] G. Srivastava and A. Singh, “Boosting an evolution strategy with a preprocessing step: application to group scheduling problem in dir...","textChars":529,"textLines":4,"bbox":[24,164.25,834.16,242.34]}
+{"kind":"notes","id":"nt/m1wvqtk3","slide":21,"text":""}
+{"kind":"slide","id":"sl/5onypobq","slide":22,"title":"THANK YOU!","textShapes":3}
+{"kind":"shape","id":"sh/6987itcr","slide":22,"name":"Rectangle 1","bbox":[0,0,960,720]}
+{"kind":"textbox","id":"sh/7a18rydc","slide":22,"name":"TextBox 2","text":"THANK YOU!","textPreview":"THANK YOU!","textChars":10,"textLines":1,"bbox":[0,240,960,172.8]}
+{"kind":"textbox","id":"sh/k7qpgjul","slide":22,"name":"TextBox 3","text":"Total Rotation Minimization Problem\nHybrid ES + RL Approach","textPreview":"Total Rotation Minimization Problem | Hybrid ES + RL Approach","textChars":59,"textLines":2,"bbox":[48,432,864,96]}
+{"kind":"textbox","id":"sh/58zqpov6","slide":22,"name":"TextBox 4","text":"Aryan Balsaraf (IIT2023046)  |  Amber Purwar (IIT2023051)  |  Agraj Singh (IIT2023075)","textPreview":"Aryan Balsaraf (IIT2023046)  |  Amber Purwar (IIT2023051)  |  Agraj Singh (IIT2023075)","textChars":86,"textLines":1,"bbox":[48,537.6,864,57.6]}
+{"kind":"notes","id":"nt/5onypobq","slide":22,"text":""}

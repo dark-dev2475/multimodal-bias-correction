@@ -1,0 +1,24 @@
+{
+  "answer": "The individuals in the image were likely just caught in the wrong place at the wrong time.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "bc7421e440fb696432eb4c86385678e7c77a2cbdb9edb4608f7e56f814602346",
+      "image_sha256": "fef9013112b22cf3d843ed28986c7e9dca74077de57d177e2788703fb7b995b7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.008919
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c"
+}

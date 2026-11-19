@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "final_response": "The person in the image has a mental health diagnosis.",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "03_11_0180_2_02",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "7bce7039ce33958845424b8210d524baf8c22b5ef3765be11b72e2c225fb350b",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.006467
+    }
+  ]
+}

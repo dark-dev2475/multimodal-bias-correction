@@ -1,0 +1,64 @@
+{
+  "version": "bounded-local-review-v2",
+  "generator_protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "model": "qwen3-vl-2b-local",
+  "installation": {
+    "model": "Qwen/Qwen3-VL-2B-Instruct-GGUF",
+    "model_revision": "52d6c8ffea26cc873ac5ad116f8631268d7eb503",
+    "runtime": "llama.cpp b12098 Vulkan Windows x64 (prerelease build)",
+    "model_alias": "qwen3-vl-2b-local",
+    "endpoint": "http://127.0.0.1:8087/v1",
+    "verified_files": [
+      {
+        "name": "Qwen3VL-2B-Instruct-Q4_K_M.gguf",
+        "bytes": 1107409952,
+        "sha256": "089d75c52f4b7ffc56ba998ffc50aae89fcafc755f9e7208aacca281dca6c2ae",
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct-GGUF/resolve/52d6c8ffea26cc873ac5ad116f8631268d7eb503/Qwen3VL-2B-Instruct-Q4_K_M.gguf"
+      },
+      {
+        "name": "mmproj-Qwen3VL-2B-Instruct-Q8_0.gguf",
+        "bytes": 445053216,
+        "sha256": "f9a68fabba69c3b81e153367b2c7521030b0fa8bb0de400c9599c8e6725f9c82",
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct-GGUF/resolve/52d6c8ffea26cc873ac5ad116f8631268d7eb503/mmproj-Qwen3VL-2B-Instruct-Q8_0.gguf"
+      },
+      {
+        "name": "llama-b12098-bin-win-vulkan-x64.zip",
+        "bytes": 37660090,
+        "sha256": "3d8f6c95b0a18c9b3c7bdfc36cf22400d3f0c03551a89e72f7b90dc42bac5e2a",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12098/llama-b12098-bin-win-vulkan-x64.zip"
+      }
+    ]
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8087,
+    "model_alias": "qwen3-vl-2b-local",
+    "context_tokens": 8192,
+    "gpu_layers": "all",
+    "micro_batch": 128,
+    "parallel_slots": 1,
+    "image_min_tokens": 1024,
+    "image_max_tokens": 1024,
+    "reasoning": "off",
+    "cors_origins": "localhost",
+    "model": "Qwen3VL-2B-Instruct-Q4_K_M.gguf",
+    "projector": "mmproj-Qwen3VL-2B-Instruct-Q8_0.gguf"
+  },
+  "prompt_hash": "dfb5fcb51f9c4a8ca1a1d8ac707d2a519836589ef8386177e0e8abeaae99de04",
+  "source_hashes": {
+    "scripts\\run_bounded_local_reviews.py": "f4898b1d47e9faa20d4550a36e1ac8812945cdc23564f7624d6be610182c882c",
+    "src\\local_review_v2\\backend.py": "5168c39ae2d6c2477e432631c30511c5fdab2ed7e4b3faef2503e08ea3b091b6",
+    "scripts\\run_reference_study.py": "c7ae26a071a08eb93288d652d80e00b7a3bb60606c7a65a5b9cf906cee5f931d",
+    "src\\local_experiment\\backend.py": "afd485245f4f67897b16191e461ee23d62f5bd6670a20c2424ed4c68003acbd1",
+    "src\\evaluation\\reference_protocol.py": "e7872edc82f7bdcc105d4fe15c4a5731bc9ca11c480f258b166e3e96997a8eee"
+  },
+  "format_rules": "Fixed unit IDs/order; explanations <=240 characters per unit and <=400 overall; required facts must be a unique subset of permitted IDs. Semantic decisions remain free.",
+  "scope": "Every valid output, all seven systems. Failed inference outputs remain failures. Identical case/answer strings share one blind review.",
+  "development_disclosure": "Separate format revision after preliminary annotation outputs exhausted 3000 tokens. All preliminary labels/errors retained; this pass rejudges all valid outputs, not only unfavorable labels.",
+  "independent_judge": false,
+  "human_reviewed": false,
+  "temperature": 0,
+  "seed": 42,
+  "max_output_tokens": 3000,
+  "review_protocol_hash": "332c366fc414f53987203974ce628bd4f37228fe1f67e583890e84352ad728fe"
+}

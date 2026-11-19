@@ -1,0 +1,404 @@
+{"kind":"deck","id":"pr/u86jn9","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"subtitle","type":"subtitle","textPreview":"Click to edit Master subtitle style"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Title and Content","type":"obj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Section Header","type":"secHead","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Two Content","type":"twoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Comparison","type":"twoTxTwoObj","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 3","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"content placeholder 5","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout6.xml","name":"Title Only","type":"titleOnly","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout7.xml","name":"Blank","type":"blank","placeholders":[{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout8.xml","name":"Content with Caption","type":"objTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"content placeholder 2","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout9.xml","name":"Picture with Caption","type":"picTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"picture","type":"picture"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout10.xml","name":"Title and Vertical Text","type":"vertTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout11.xml","name":"Vertical Title and Text","type":"vertTitleAndTx","placeholders":[{"name":"title","type":"title","textPreview":"Click to edit Master title style"},{"name":"body","type":"body","textPreview":"Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level"},{"name":"dateTime","type":"dateTime","textPreview":"5/5/2026"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber","textPreview":"‹#›"}]}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"Inference-Time Multimodal Bias Correction","textShapes":2}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"name":"Subtitle 2","placeholder":"subtitle","text":"Inference-Time Multimodal Bias Correction","textPreview":"Inference-Time Multimodal Bias Correction","textChars":41,"textLines":1,"bbox":[185.5,44.54,618.8,129.65]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"name":"TextBox 8","text":"Research and demo project\n\nEvidence-grounded, claim-level correction\nfor unsupported assumptions in visual-language responses\n\nPrepared by: ____________________\nDate: ____________________","textPreview":"Research and demo project |  | Evidence-grounded, claim-level correction | for unsupported assumptions in visual-language responses |  | ...","textChars":187,"textLines":7,"bbox":[32.92,239.25,932.29,397.44]}
+{"kind":"image","id":"im/jqxw72dk","slide":1,"name":"Picture 4","bbox":[29.8,44.54,179.1,146.39]}
+{"kind":"image","id":"im/ipofexcz","slide":1,"name":"Picture 7","bbox":[780.19,44.54,179.81,146.39]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"Project overview. Replace the presenter name and date before delivery."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"INTRODUCTION","textShapes":3}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"name":"TextBox 6","text":"INTRODUCTION","textPreview":"INTRODUCTION","textChars":12,"textLines":1,"bbox":[25.68,9.6,870.93,64.62]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"name":"TextBox 7","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[883.2,686.4,52.8,33.6]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"name":"TextBox 2","text":"• Vision-language models can describe images fluently while adding assumptions that the image does not establish.\n\n• The risk is highest when a prompt invites a judgment about identity, health, personality, social behavior, or demographics.\n\n• This project tests whether a system can inspect its expressed claims during inference and revise unsupported or bias-relevant content using visual evidence.\n\n• The approach does not access hidden chain-of-thought and does not retrain the model.","textPreview":"• Vision-language models can describe images fluently while adding assumptions that the image does not establish. |  | • The risk is high...","textChars":488,"textLines":7,"bbox":[55.1,127.72,828.1,562.24]}
+{"kind":"image","id":"im/nix0be18","slide":2,"name":"Ink 3","bbox":[865.69,653.83,66.52,50.91]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"Source: project research question and pipeline documentation."}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"Research Question","textShapes":1}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"name":"Content Placeholder 2","text":"Research Question\n\nCan a multimodal AI system detect unsupported or bias-relevant assumptions in its generated response during inference and autonomously revise the response using visual evidence?\n\nScope\n• Operate on claims expressed in generated output\n• Use evidence checking and bias monitoring at inference time\n• Avoid additional training or full model retraining\n\nTarget contribution\nEvidence-grounded, claim-level, multimodal inference-time correction.","textPreview":"Research Question |  | Can a multimodal AI system detect unsupported or bias-relevant assumptions in its generated response during infere...","textChars":459,"textLines":11,"bbox":[48,109.36,864,533.81]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"Source: project research question."}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"Problem Definition","textShapes":8}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"name":"TextBox 6","text":"Problem Definition","textPreview":"Problem Definition","textChars":18,"textLines":1,"bbox":[40.08,0,870.93,64.62]}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"name":"TextBox 7","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"textbox","id":"sh/ih8ju9sn","slide":4,"text":"A response may combine visible facts with unsupported personal inferences.","textPreview":"A response may combine visible facts with unsupported personal inferences.","textChars":74,"textLines":1,"bbox":[52,95,820,48]}
+{"kind":"shape","id":"sh/kbm987y5","slide":4,"bbox":[48,185,390,320]}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"text":"Visible evidence","textPreview":"Visible evidence","textChars":16,"textLines":1,"bbox":[62,195,362,34]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"text":"A person wears glasses.\nTwo people sit near medical equipment.\nA cane is visible.","textPreview":"A person wears glasses. | Two people sit near medical equipment. | A cane is visible.","textChars":81,"textLines":3,"bbox":[62,237,362,258]}
+{"kind":"shape","id":"sh/jadsz2xk","slide":4,"bbox":[522,185,390,320]}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"text":"Unsupported inference","textPreview":"Unsupported inference","textChars":21,"textLines":1,"bbox":[536,195,362,34]}
+{"kind":"textbox","id":"sh/x8vaxsfe","slide":4,"text":"The person is open to meeting new people.\nSomeone has a mental health diagnosis.\nA person’s age category is established.","textPreview":"The person is open to meeting new people. | Someone has a mental health diagnosis. | A person’s age category is established.","textChars":120,"textLines":3,"bbox":[536,237,362,258]}
+{"kind":"textbox","id":"sh/a5kr2xg3","slide":4,"text":"The evaluation distinguishes image-supported observations from claims the image does not establish.","textPreview":"The evaluation distinguishes image-supported observations from claims the image does not establish.","textChars":99,"textLines":1,"bbox":[65,550,830,60]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"Examples reflect the manually reviewed BBQ-V reference annotations."}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"5","textShapes":9}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"name":"TextBox 1","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"shape","id":"sh/cf2tcr61","slide":5,"bbox":[0,0,960,79]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"text":"Project Objectives","textPreview":"Project Objectives","textChars":18,"textLines":1,"bbox":[24,4,912,68]}
+{"kind":"shape","id":"sh/yhkbe1o7","slide":5,"bbox":[45,120,260,390]}
+{"kind":"textbox","id":"sh/l4bupwny","slide":5,"text":"Detect","textPreview":"Detect","textChars":6,"textLines":1,"bbox":[59,130,232,34]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"text":"Extract claims from the generated response and inspect each claim against visual evidence.","textPreview":"Extract claims from the generated response and inspect each claim against visual evidence.","textChars":90,"textLines":1,"bbox":[59,172,232,328]}
+{"kind":"shape","id":"sh/n6dcr65o","slide":5,"bbox":[350,120,260,390]}
+{"kind":"textbox","id":"sh/m5kbi1oj","slide":5,"text":"Correct","textPreview":"Correct","textChars":7,"textLines":1,"bbox":[364,130,232,34]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"text":"Revise the response when a claim is unsupported or requires correction.","textPreview":"Revise the response when a claim is unsupported or requires correction.","textChars":71,"textLines":1,"bbox":[364,172,232,328]}
+{"kind":"shape","id":"sh/x4vedgvm","slide":5,"bbox":[655,120,260,390]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"text":"Verify","textPreview":"Verify","textChars":6,"textLines":1,"bbox":[669,130,232,34]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"text":"Record final verification and preserve diagnostics for evaluation.","textPreview":"Record final verification and preserve diagnostics for evaluation.","textChars":66,"textLines":1,"bbox":[669,172,232,328]}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"text":"No model retraining. No hidden reasoning access. Claim-level analysis only.","textPreview":"No model retraining. No hidden reasoning access. Claim-level analysis only.","textChars":75,"textLines":1,"bbox":[75,565,810,48]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"Source: pipeline design in src/pipeline."}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"6","textShapes":5}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"name":"TextBox 1","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"shape","id":"sh/zi98nu94","slide":6,"bbox":[0,0,960,79]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"text":"Scope and Contribution","textPreview":"Scope and Contribution","textChars":22,"textLines":1,"bbox":[24,4,912,68]}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"text":"What this project contributes","textPreview":"What this project contributes","textChars":29,"textLines":1,"bbox":[60,105,840,44]}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"text":"• Multimodal, evidence-grounded claim checking during inference\n\n• Claim-level bias monitoring for medical, demographic, identity, emotion, relationship, occupation, and socioeconomic assumptions\n\n• A correction loop that uses recorded evidence and bias signals\n\n• An API-free preliminary evaluation of completed outputs using manually reviewed reference annotations","textPreview":"• Multimodal, evidence-grounded claim checking during inference |  | • Claim-level bias monitoring for medical, demographic, identity, em...","textChars":366,"textLines":7,"bbox":[92,180,780,340]}
+{"kind":"textbox","id":"sh/7m98ru9g","slide":6,"text":"Not a generic text-only self-correction method","textPreview":"Not a generic text-only self-correction method","textChars":46,"textLines":1,"bbox":[100,565,760,46]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"Source: project context and evaluation report."}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"Claim-Level Reasoning","textShapes":9}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"name":"Title 1","placeholder":"title","text":"Claim-Level Reasoning","textPreview":"Claim-Level Reasoning","textChars":21,"textLines":1,"bbox":[24.98,0,910.03,64.62]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"name":"TextBox 2","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"shape","id":"sh/ydkbm5sv","slide":7,"bbox":[48,120,260,390]}
+{"kind":"textbox","id":"sh/zedcfa9g","slide":7,"text":"Observation","textPreview":"Observation","textChars":11,"textLines":1,"bbox":[62,130,232,34]}
+{"kind":"textbox","id":"sh/kzmdova1","slide":7,"text":"Directly visible detail\n\nExample:\nA person is wearing glasses.","textPreview":"Directly visible detail |  | Example: | A person is wearing glasses.","textChars":62,"textLines":4,"bbox":[62,172,232,328]}
+{"kind":"shape","id":"sh/l0vuh0rm","slide":7,"bbox":[350,120,260,390]}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"text":"Inference","textPreview":"Inference","textChars":9,"textLines":1,"bbox":[364,130,232,34]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"text":"Interpretation that needs support\n\nExample:\nThis looks dangerous.","textPreview":"Interpretation that needs support |  | Example: | This looks dangerous.","textChars":65,"textLines":4,"bbox":[364,172,232,328]}
+{"kind":"shape","id":"sh/baxkjqlk","slide":7,"bbox":[652,120,260,390]}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"text":"Problematic assumption","textPreview":"Problematic assumption","textChars":22,"textLines":1,"bbox":[666,130,232,34]}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"text":"Unsupported personal claim\n\nExample:\nThe person has a diagnosis.","textPreview":"Unsupported personal claim |  | Example: | The person has a diagnosis.","textChars":64,"textLines":4,"bbox":[666,172,232,328]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"text":"The pipeline analyzes these claims rather than hidden reasoning traces.","textPreview":"The pipeline analyzes these claims rather than hidden reasoning traces.","textChars":71,"textLines":1,"bbox":[85,565,790,44]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"Source: claim extractor and manual reference schema."}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"Manual Reference Annotations","textShapes":6}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"name":"Title 1","placeholder":"title","text":"Manual Reference Annotations","textPreview":"Manual Reference Annotations","textChars":28,"textLines":1,"bbox":[37.06,28.83,864,85.3]}
+{"kind":"shape","id":"sh/g72x4zyd","slide":8,"name":"TextBox 2","bbox":[-2.03,101.38,78.19,38.78]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"TextBox 7","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"shape","id":"sh/id0fu50z","slide":8,"bbox":[45,145,400,420]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"text":"Reference layer","textPreview":"Reference layer","textChars":15,"textLines":1,"bbox":[59,155,372,34]}
+{"kind":"textbox","id":"sh/98rehwve","slide":8,"text":"25 manually reviewed claims\n3 BBQ-V examples\n\nEvidence status:\nSUPPORTED\nNOT_ESTABLISHED\nUNCERTAIN","textPreview":"25 manually reviewed claims | 3 BBQ-V examples |  | Evidence status: | SUPPORTED | NOT_ESTABLISHED | UNCERTAIN","textChars":98,"textLines":7,"bbox":[59,197,372,358]}
+{"kind":"shape","id":"sh/m5gvmhwn","slide":8,"bbox":[515,145,400,420]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"text":"Evaluation use","textPreview":"Evaluation use","textChars":14,"textLines":1,"bbox":[529,155,372,34]}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"text":"The reference claim universe supports conservative matching against recorded system responses.\n\nIt is not official BBQ-V ground truth and it is not an LLM judge.","textPreview":"The reference claim universe supports conservative matching against recorded system responses. |  | It is not official BBQ-V ground truth...","textChars":161,"textLines":3,"bbox":[529,197,372,358]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"Source: data/evaluation/manual_reference_annotations.json."}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"LITERATURE REVIEW","textShapes":3}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"name":"TextBox 6","text":"LITERATURE REVIEW","textPreview":"LITERATURE REVIEW","textChars":17,"textLines":1,"bbox":[40.08,0,870.93,64.62]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"name":"TextBox 7","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"name":"TextBox 2","text":"PLACEHOLDER\n\nAdd reviewed papers, their methods, and the specific gap this project addresses.\n\nNo literature-review sources were provided in the repository, so this section is intentionally left for completion.","textPreview":"PLACEHOLDER |  | Add reviewed papers, their methods, and the specific gap this project addresses. |  | No literature-review sources were ...","textChars":210,"textLines":5,"bbox":[67.62,104.41,737.95,583.24]}
+{"kind":"image","id":"im/jutknyd4","slide":9,"name":"Ink 3","bbox":[880.09,634.25,66.52,60.89]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"Placeholder intentionally retained because no literature-review sources were supplied."}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"Solution Framework","textShapes":10}
+{"kind":"shape","id":"sh/xc3mho32","slide":10,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"name":"TextBox 2","text":"Solution Framework","textPreview":"Solution Framework","textChars":18,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"shape","id":"sh/zelojyl8","slide":10,"name":"Rectangle 3","bbox":[24,93.12,451.2,278.4]}
+{"kind":"textbox","id":"sh/ydcnatkn","slide":10,"name":"TextBox 4","text":"Initial generation","textPreview":"Initial generation","textChars":18,"textLines":1,"bbox":[35.52,102.72,428.16,43.2]}
+{"kind":"textbox","id":"sh/l036l83y","slide":10,"name":"TextBox 5","text":"Generate an answer for the image and question.\n\nRecord the initial response as the input to claim extraction.","textPreview":"Generate an answer for the image and question. |  | Record the initial response as the input to claim extraction.","textChars":109,"textLines":3,"bbox":[35.52,148.8,428.16,206.4]}
+{"kind":"shape","id":"sh/kzu5c32t","slide":10,"name":"Rectangle 6","bbox":[494.4,93.12,451.2,278.4]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"name":"TextBox 7","text":"Claim extraction","textPreview":"Claim extraction","textChars":16,"textLines":1,"bbox":[505.92,102.72,428.16,43.2]}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"name":"TextBox 8","text":"Identify expressed observations and inferences.\n\nNo hidden chain-of-thought is accessed.","textPreview":"Identify expressed observations and inferences. |  | No hidden chain-of-thought is accessed.","textChars":88,"textLines":3,"bbox":[505.92,148.8,428.16,206.4]}
+{"kind":"shape","id":"sh/s7yt4b21","slide":10,"name":"Rectangle 9","bbox":[24,390.72,451.2,278.4]}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"name":"TextBox 10","text":"Evidence and bias checks","textPreview":"Evidence and bias checks","textChars":24,"textLines":1,"bbox":[35.52,400.32,428.16,43.2]}
+{"kind":"textbox","id":"sh/q5gb21kb","slide":10,"name":"TextBox 11","text":"Batch-check visual support.\nFlag bias-relevant or unsupported claims.\nMark claims requiring correction.","textPreview":"Batch-check visual support. | Flag bias-relevant or unsupported claims. | Mark claims requiring correction.","textChars":103,"textLines":3,"bbox":[35.52,446.4,428.16,206.4]}
+{"kind":"shape","id":"sh/r6pcv6lw","slide":10,"name":"Rectangle 12","bbox":[494.4,390.72,451.2,278.4]}
+{"kind":"textbox","id":"sh/0bit8b2d","slide":10,"name":"TextBox 13","text":"Correction and verification","textPreview":"Correction and verification","textChars":27,"textLines":1,"bbox":[505.92,400.32,428.16,43.2]}
+{"kind":"textbox","id":"sh/1cru1g3y","slide":10,"name":"TextBox 14","text":"Rewrite when needed.\nVerify the corrected response.\nRetain pipeline diagnostics.","textPreview":"Rewrite when needed. | Verify the corrected response. | Retain pipeline diagnostics.","textChars":80,"textLines":3,"bbox":[505.92,446.4,428.16,206.4]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"name":"TextBox 15","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"Source: src/pipeline/pipeline.py and project pipeline description."}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"Pipeline Architecture","textShapes":13}
+{"kind":"shape","id":"sh/xcryxg7y","slide":11,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"name":"TextBox 2","text":"Pipeline Architecture","textPreview":"Pipeline Architecture","textChars":21,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"name":"TextBox 3","text":"Input: image and question\n\nThe proposed system produces a response, extracts its expressed claims, checks evidence in batch, monitors bias, corrects claims that require correction, and records final verification.\n\nThe recorded result keeps initial and final responses plus stage diagnostics.","textPreview":"Input: image and question |  | The proposed system produces a response, extracts its expressed claims, checks evidence in batch, monitors...","textChars":291,"textLines":5,"bbox":[28.8,96,432,604.8]}
+{"kind":"shape","id":"sh/250zy18b","slide":11,"name":"Rectangle 4","bbox":[489.6,86.4,441.6,42.24]}
+{"kind":"textbox","id":"sh/98rytw72","slide":11,"name":"TextBox 5","text":"Image + question","textPreview":"Image + question","textChars":16,"textLines":1,"bbox":[489.6,86.4,441.6,42.24]}
+{"kind":"shape","id":"sh/o7ih0r6h","slide":11,"name":"Connector 6","bbox":[710.4,128.64,0,9.6]}
+{"kind":"shape","id":"sh/72t03qp0","slide":11,"name":"Rectangle 7","bbox":[489.6,138.24,441.6,42.24]}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"name":"TextBox 8","text":"Initial VLM generation","textPreview":"Initial VLM generation","textChars":22,"textLines":1,"bbox":[489.6,138.24,441.6,42.24]}
+{"kind":"shape","id":"sh/ofqtgnyt","slide":11,"name":"Connector 9","bbox":[710.4,180.48,0,9.6]}
+{"kind":"shape","id":"sh/9gza9sze","slide":11,"name":"Rectangle 10","bbox":[489.6,190.08,441.6,42.24]}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"name":"TextBox 11","text":"Claim extraction","textPreview":"Claim extraction","textChars":16,"textLines":1,"bbox":[489.6,190.08,441.6,42.24]}
+{"kind":"shape","id":"sh/nehs7iho","slide":11,"name":"Connector 12","bbox":[710.4,232.32,0,9.6]}
+{"kind":"shape","id":"sh/0b6tc3yx","slide":11,"name":"Rectangle 13","bbox":[489.6,241.92,441.6,42.24]}
+{"kind":"textbox","id":"sh/1cfa58zi","slide":11,"name":"TextBox 14","text":"Batch evidence checking","textPreview":"Batch evidence checking","textChars":23,"textLines":1,"bbox":[489.6,241.92,441.6,42.24]}
+{"kind":"shape","id":"sh/epobatgr","slide":11,"name":"Connector 15","bbox":[710.4,284.16,0,9.6]}
+{"kind":"shape","id":"sh/zaxs3yhc","slide":11,"name":"Rectangle 16","bbox":[489.6,293.76,441.6,42.24]}
+{"kind":"textbox","id":"sh/cn6t83y1","slide":11,"name":"TextBox 17","text":"Bias monitoring","textPreview":"Bias monitoring","textChars":15,"textLines":1,"bbox":[489.6,293.76,441.6,42.24]}
+{"kind":"shape","id":"sh/dofa18z6","slide":11,"name":"Connector 18","bbox":[710.4,336,0,9.6]}
+{"kind":"shape","id":"sh/tsnip0ny","slide":11,"name":"Rectangle 19","bbox":[489.6,345.6,441.6,42.24]}
+{"kind":"textbox","id":"sh/87ehgv6d","slide":11,"name":"TextBox 20","text":"Correction policy","textPreview":"Correction policy","textChars":17,"textLines":1,"bbox":[489.6,345.6,441.6,42.24]}
+{"kind":"shape","id":"sh/7650nq5s","slide":11,"name":"Connector 21","bbox":[710.4,387.84,0,9.6]}
+{"kind":"shape","id":"sh/65wzelo7","slide":11,"name":"Rectangle 22","bbox":[489.6,397.44,441.6,42.24]}
+{"kind":"textbox","id":"sh/l43ilgn2","slide":11,"name":"TextBox 23","text":"Self-correction","textPreview":"Self-correction","textChars":15,"textLines":1,"bbox":[489.6,397.44,441.6,42.24]}
+{"kind":"shape","id":"sh/k3uhcb6h","slide":11,"name":"Connector 24","bbox":[710.4,439.68,0,9.6]}
+{"kind":"shape","id":"sh/j2lgjq5w","slide":11,"name":"Rectangle 25","bbox":[489.6,449.28,441.6,42.24]}
+{"kind":"textbox","id":"sh/y1czalob","slide":11,"name":"TextBox 26","text":"Final verification","textPreview":"Final verification","textChars":18,"textLines":1,"bbox":[489.6,449.28,441.6,42.24]}
+{"kind":"shape","id":"sh/p07ixkn6","slide":11,"name":"Connector 27","bbox":[710.4,491.52,0,9.6]}
+{"kind":"shape","id":"sh/4zyhofml","slide":11,"name":"Rectangle 28","bbox":[489.6,501.12,441.6,42.24]}
+{"kind":"textbox","id":"sh/m58fih43","slide":11,"name":"TextBox 29","text":"Recorded result","textPreview":"Recorded result","textChars":15,"textLines":1,"bbox":[489.6,501.12,441.6,42.24]}
+{"kind":"shape","id":"sh/n61wbmlo","slide":11,"name":"Connector 30","bbox":[710.4,543.36,0,9.6]}
+{"kind":"shape","id":"sh/o7axk7m9","slide":11,"name":"Rectangle 31","bbox":[489.6,552.96,441.6,42.24]}
+{"kind":"textbox","id":"sh/98jedc3u","slide":11,"name":"TextBox 32","text":"Final response","textPreview":"Final response","textChars":14,"textLines":1,"bbox":[489.6,552.96,441.6,42.24]}
+{"kind":"textbox","id":"sh/eh8fex47","slide":11,"name":"TextBox 33","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"Source: src/pipeline modules."}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"Evidence, Bias, and Correction","textShapes":11}
+{"kind":"shape","id":"sh/1gbm9s3a","slide":12,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"name":"TextBox 2","text":"Evidence, Bias, and Correction","textPreview":"Evidence, Bias, and Correction","textChars":30,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"shape","id":"sh/ra943il8","slide":12,"name":"Rectangle 3","bbox":[24,90.24,292.8,55.68]}
+{"kind":"textbox","id":"sh/q903ad4n","slide":12,"name":"TextBox 4","text":"Evidence","textPreview":"Evidence","textChars":8,"textLines":1,"bbox":[24,90.24,292.8,55.68]}
+{"kind":"shape","id":"sh/dcbm583y","slide":12,"name":"Rectangle 5","bbox":[24,157.44,292.8,247.68]}
+{"kind":"textbox","id":"sh/sb2lcnmd","slide":12,"name":"TextBox 6","text":"SUPPORTED\nDirectly grounded in the image\n\nUNSUPPORTED\nThe image does not establish the claim\n\nUNCERTAIN\nThe image is insufficient for a clear decision","textPreview":"SUPPORTED | Directly grounded in the image |  | UNSUPPORTED | The image does not establish the claim |  | UNCERTAIN | The image is insuff...","textChars":150,"textLines":8,"bbox":[33.6,167.04,273.6,308.8]}
+{"kind":"shape","id":"sh/b6d4f2lc","slide":12,"name":"Rectangle 7","bbox":[24,426.24,292.8,247.68]}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"name":"TextBox 8","text":"Evidence checker records claim status","textPreview":"Evidence checker records claim status","textChars":37,"textLines":1,"bbox":[33.6,435.84,273.6,225.6]}
+{"kind":"shape","id":"sh/wvupgz6t","slide":12,"name":"Rectangle 9","bbox":[331.2,90.24,292.8,55.68]}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"name":"TextBox 10","text":"Bias","textPreview":"Bias","textChars":4,"textLines":1,"bbox":[331.2,90.24,292.8,55.68]}
+{"kind":"shape","id":"sh/atc7epon","slide":12,"name":"Rectangle 11","bbox":[331.2,157.44,292.8,247.68]}
+{"kind":"textbox","id":"sh/bulo7u58","slide":12,"name":"TextBox 12","text":"Monitor claims for bias-relevant assumptions about health, demographics, identity, emotion, occupation, relationships, and socioeconomic status.","textPreview":"Monitor claims for bias-relevant assumptions about health, demographics, identity, emotion, occupation, relationships, and socioeconomic ...","textChars":144,"textLines":1,"bbox":[340.8,167.04,273.6,225.6]}
+{"kind":"shape","id":"sh/orapcf6h","slide":12,"name":"Rectangle 13","bbox":[331.2,426.24,292.8,247.68]}
+{"kind":"textbox","id":"sh/9sj65kn2","slide":12,"name":"TextBox 14","text":"Bias flag and severity are recorded","textPreview":"Bias flag and severity are recorded","textChars":35,"textLines":1,"bbox":[340.8,435.84,273.6,225.6]}
+{"kind":"shape","id":"sh/mps7a5or","slide":12,"name":"Rectangle 15","bbox":[638.4,90.24,292.8,55.68]}
+{"kind":"textbox","id":"sh/nq1o3a5w","slide":12,"name":"TextBox 16","text":"Correction","textPreview":"Correction","textChars":10,"textLines":1,"bbox":[638.4,90.24,292.8,55.68]}
+{"kind":"shape","id":"sh/0nap8f6l","slide":12,"name":"Rectangle 17","bbox":[638.4,157.44,292.8,247.68]}
+{"kind":"textbox","id":"sh/1oj61kn6","slide":12,"name":"TextBox 18","text":"Claims marked as requiring correction inform the rewrite. The final response undergoes verification.","textPreview":"Claims marked as requiring correction inform the rewrite. The final response undergoes verification.","textChars":100,"textLines":1,"bbox":[648,167.04,273.6,225.6]}
+{"kind":"shape","id":"sh/hkbm5wzu","slide":12,"name":"Rectangle 19","bbox":[638.4,426.24,292.8,247.68]}
+{"kind":"textbox","id":"sh/gj25cry9","slide":12,"name":"TextBox 20","text":"Correction history remains available for diagnostics","textPreview":"Correction history remains available for diagnostics","textChars":52,"textLines":1,"bbox":[648,435.84,273.6,225.6]}
+{"kind":"textbox","id":"sh/fit436ho","slide":12,"name":"TextBox 21","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"Source: evidence checker, bias monitor, correction policy, and verifier modules."}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"Methodological Safeguards","textShapes":13}
+{"kind":"shape","id":"sh/q50nydsj","slide":13,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"name":"TextBox 2","text":"Methodological Safeguards","textPreview":"Methodological Safeguards","textChars":25,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"name":"TextBox 3","text":"The project evaluates expressed response claims only. It does not treat the verifier as ground truth, use BBQ-V category labels as claim-level truth, or call an LLM during evaluation.\n\nThe manual reference annotations form an independent reference layer. Matching remains deterministic and conservative.","textPreview":"The project evaluates expressed response claims only. It does not treat the verifier as ground truth, use BBQ-V category labels as claim-...","textChars":303,"textLines":3,"bbox":[28.8,91.2,432,326.4]}
+{"kind":"shape","id":"sh/p4r6p8by","slide":13,"name":"Rectangle 4","bbox":[28.8,436.8,432,72]}
+{"kind":"textbox","id":"sh/21gnuts7","slide":13,"name":"TextBox 5","text":"No hidden reasoning access","textPreview":"No hidden reasoning access","textChars":26,"textLines":1,"bbox":[33.6,441.6,422.4,62.4]}
+{"kind":"textbox","id":"sh/32ponyts","slide":13,"name":"TextBox 6","text":"Only expressed claims are analyzed","textPreview":"Only expressed claims are analyzed","textChars":34,"textLines":1,"bbox":[475.2,88.32,460.8,43.2]}
+{"kind":"shape","id":"sh/gzy5s3a1","slide":13,"name":"Rectangle 7","bbox":[475.2,136.32,192,115.2]}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"name":"TextBox 8","text":"Reference","textPreview":"Reference","textChars":9,"textLines":1,"bbox":[475.2,145.92,192,96]}
+{"kind":"shape","id":"sh/hcfy9k3u","slide":13,"name":"Rectangle 9","bbox":[676.8,136.32,259.2,115.2]}
+{"kind":"textbox","id":"sh/gb6x0zm9","slide":13,"name":"TextBox 10","text":"Manually reviewed reference annotations","textPreview":"Manually reviewed reference annotations","textChars":39,"textLines":1,"bbox":[681.6,141.12,249.6,105.6]}
+{"kind":"shape","id":"sh/vaxg7ulo","slide":13,"name":"Rectangle 11","bbox":[475.2,275.52,192,115.2]}
+{"kind":"textbox","id":"sh/u9ofyp43","slide":13,"name":"TextBox 12","text":"Matching","textPreview":"Matching","textChars":8,"textLines":1,"bbox":[475.2,285.12,192,96]}
+{"kind":"shape","id":"sh/t8fy5k3i","slide":13,"name":"Rectangle 13","bbox":[676.8,275.52,259.2,115.2]}
+{"kind":"textbox","id":"sh/876xwfmx","slide":13,"name":"TextBox 14","text":"Conservative deterministic phrase rules","textPreview":"Conservative deterministic phrase rules","textChars":39,"textLines":1,"bbox":[681.6,280.32,249.6,105.6]}
+{"kind":"shape","id":"sh/7mdg3als","slide":13,"name":"Rectangle 15","bbox":[475.2,414.72,192,115.2]}
+{"kind":"textbox","id":"sh/6l4fu547","slide":13,"name":"TextBox 16","text":"Diagnostics","textPreview":"Diagnostics","textChars":11,"textLines":1,"bbox":[475.2,424.32,192,96]}
+{"kind":"shape","id":"sh/lkvy103m","slide":13,"name":"Rectangle 17","bbox":[676.8,414.72,259.2,115.2]}
+{"kind":"textbox","id":"sh/kjmxsfm1","slide":13,"name":"TextBox 18","text":"Structured pipeline fields remain system diagnostics","textPreview":"Structured pipeline fields remain system diagnostics","textChars":52,"textLines":1,"bbox":[681.6,419.52,249.6,105.6]}
+{"kind":"shape","id":"sh/cnqh8fux","slide":13,"name":"Rectangle 19","bbox":[475.2,553.92,192,115.2]}
+{"kind":"textbox","id":"sh/xozyhkbi","slide":13,"name":"TextBox 20","text":"Reporting","textPreview":"Reporting","textChars":9,"textLines":1,"bbox":[475.2,563.52,192,96]}
+{"kind":"shape","id":"sh/q18f65cr","slide":13,"name":"Rectangle 21","bbox":[676.8,553.92,259.2,115.2]}
+{"kind":"textbox","id":"sh/bmhgfatc","slide":13,"name":"TextBox 22","text":"Unavailable metrics are reported as N/A with a reason","textPreview":"Unavailable metrics are reported as N/A with a reason","textChars":53,"textLines":1,"bbox":[681.6,558.72,249.6,105.6]}
+{"kind":"textbox","id":"sh/oz6x4vul","slide":13,"name":"TextBox 23","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"Source: manual-reference evaluation methodology."}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"Evaluation Design","textShapes":20}
+{"kind":"shape","id":"sh/xc7eds76","slide":14,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"name":"TextBox 2","text":"Evaluation Design","textPreview":"Evaluation Design","textChars":17,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/jepwf2pc","slide":14,"name":"TextBox 3","text":"Two separated layers","textPreview":"Two separated layers","textChars":20,"textLines":1,"bbox":[28.8,88.32,441.6,43.2]}
+{"kind":"shape","id":"sh/idgvmx8r","slide":14,"name":"Rectangle 4","bbox":[28.8,136.32,144,96]}
+{"kind":"textbox","id":"sh/5grehs7i","slide":14,"name":"TextBox 5","text":"Response","textPreview":"Response","textChars":8,"textLines":1,"bbox":[28.8,145.92,144,76.8]}
+{"kind":"shape","id":"sh/kfidonqx","slide":14,"name":"Rectangle 6","bbox":[182.4,136.32,288,96]}
+{"kind":"textbox","id":"sh/zi5c3y98","slide":14,"name":"TextBox 7","text":"Manual-reference response matching","textPreview":"Manual-reference response matching","textChars":34,"textLines":1,"bbox":[192,141.12,268.8,86.4]}
+{"kind":"shape","id":"sh/ehwvat8n","slide":14,"name":"Rectangle 8","bbox":[28.8,256.32,144,96]}
+{"kind":"textbox","id":"sh/c3e1gjyd","slide":14,"name":"TextBox 9","text":"States","textPreview":"States","textChars":6,"textLines":1,"bbox":[28.8,265.92,144,76.8]}
+{"kind":"shape","id":"sh/x4ni9ofy","slide":14,"name":"Rectangle 10","bbox":[182.4,256.32,288,96]}
+{"kind":"textbox","id":"sh/a1wze9g7","slide":14,"name":"TextBox 11","text":"PRESENT, OMITTED, UNMATCHED, CONTRADICTED, or UNSUPPORTED_PROBLEMATIC","textPreview":"PRESENT, OMITTED, UNMATCHED, CONTRADICTED, or UNSUPPORTED_PROBLEMATIC","textChars":69,"textLines":1,"bbox":[192,261.12,268.8,129.6]}
+{"kind":"shape","id":"sh/b2507exs","slide":14,"name":"Rectangle 12","bbox":[28.8,376.32,144,96]}
+{"kind":"textbox","id":"sh/kre1k3y9","slide":14,"name":"TextBox 13","text":"Coverage","textPreview":"Coverage","textChars":8,"textLines":1,"bbox":[28.8,385.92,144,76.8]}
+{"kind":"shape","id":"sh/ls7idofu","slide":14,"name":"Rectangle 14","bbox":[182.4,376.32,288,96]}
+{"kind":"textbox","id":"sh/y5wjitgj","slide":14,"name":"TextBox 15","text":"Reference supported-claim retention and omission are coverage observations, not semantic retention or over-correction.","textPreview":"Reference supported-claim retention and omission are coverage observations, not semantic retention or over-correction.","textChars":118,"textLines":1,"bbox":[192,381.12,268.8,129.6]}
+{"kind":"shape","id":"sh/z650byxo","slide":14,"name":"Rectangle 16","bbox":[28.8,496.32,144,96]}
+{"kind":"textbox","id":"sh/0buh8zy5","slide":14,"name":"TextBox 17","text":"Errors","textPreview":"Errors","textChars":6,"textLines":1,"bbox":[28.8,505.92,144,76.8]}
+{"kind":"shape","id":"sh/1w3i14fq","slide":14,"name":"Rectangle 18","bbox":[182.4,496.32,288,96]}
+{"kind":"textbox","id":"sh/hsvy50re","slide":14,"name":"TextBox 19","text":"Record remaining and newly introduced reference-problematic claims.","textPreview":"Record remaining and newly introduced reference-problematic claims.","textChars":67,"textLines":1,"bbox":[192,501.12,268.8,86.4]}
+{"kind":"textbox","id":"sh/grmxwvqt","slide":14,"name":"TextBox 20","text":"Perturbation Using RL","textPreview":"Perturbation Using RL","textChars":21,"textLines":1,"bbox":[489.6,88.32,441.6,43.2]}
+{"kind":"shape","id":"sh/fqdg3q98","slide":14,"name":"Rectangle 21","bbox":[489.6,136.32,124.8,96]}
+{"kind":"textbox","id":"sh/up4fal83","slide":14,"name":"TextBox 22","text":"Proposed","textPreview":"Proposed","textChars":8,"textLines":1,"bbox":[489.6,145.92,124.8,76.8]}
+{"kind":"shape","id":"sh/pwvy90rq","slide":14,"name":"Rectangle 23","bbox":[624,136.32,307.2,96]}
+{"kind":"textbox","id":"sh/4vmh0vq5","slide":14,"name":"TextBox 24","text":"Structured pipeline diagnostics only","textPreview":"Structured pipeline diagnostics only","textChars":36,"textLines":1,"bbox":[633.6,141.12,288,86.4]}
+{"kind":"shape","id":"sh/3udg7q9k","slide":14,"name":"Rectangle 25","bbox":[489.6,256.32,124.8,96]}
+{"kind":"textbox","id":"sh/2t4fyl8z","slide":14,"name":"TextBox 26","text":"Claims","textPreview":"Claims","textChars":6,"textLines":1,"bbox":[489.6,265.92,124.8,76.8]}
+{"kind":"shape","id":"sh/d0fydk7m","slide":14,"name":"Rectangle 27","bbox":[624,256.32,307.2,96]}
+{"kind":"textbox","id":"sh/cz6h4fq1","slide":14,"name":"TextBox 28","text":"Extracted claims, evidence status, bias flags, and correction requirements","textPreview":"Extracted claims, evidence status, bias flags, and correction requirements","textChars":74,"textLines":1,"bbox":[633.6,261.12,288,86.4]}
+{"kind":"shape","id":"sh/atg3idk7","slide":14,"name":"Rectangle 29","bbox":[489.6,376.32,124.8,96]}
+{"kind":"textbox","id":"sh/bup4rils","slide":14,"name":"TextBox 30","text":"Outcome","textPreview":"Outcome","textChars":7,"textLines":1,"bbox":[489.6,385.92,124.8,76.8]}
+{"kind":"shape","id":"sh/cvylkn2d","slide":14,"name":"Rectangle 31","bbox":[624,376.32,307.2,96]}
+{"kind":"textbox","id":"sh/xw7mts3y","slide":14,"name":"TextBox 32","text":"Correction rate only where the claim and outcome match reliably","textPreview":"Correction rate only where the claim and outcome match reliably","textChars":63,"textLines":1,"bbox":[633.6,381.12,288,86.4]}
+{"kind":"shape","id":"sh/yxgnmxkj","slide":14,"name":"Rectangle 33","bbox":[489.6,496.32,124.8,96]}
+{"kind":"textbox","id":"sh/jyp4fil4","slide":14,"name":"TextBox 34","text":"Ground truth","textPreview":"Ground truth","textChars":12,"textLines":1,"bbox":[489.6,505.92,124.8,76.8]}
+{"kind":"shape","id":"sh/kzy5on2p","slide":14,"name":"Rectangle 35","bbox":[624,496.32,307.2,96]}
+{"kind":"textbox","id":"sh/lkrmhsju","slide":14,"name":"TextBox 36","text":"Verifier output remains a diagnostic, never independent ground truth","textPreview":"Verifier output remains a diagnostic, never independent ground truth","textChars":68,"textLines":1,"bbox":[633.6,501.12,288,86.4]}
+{"kind":"textbox","id":"sh/6l0nqxkf","slide":14,"name":"TextBox 37","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"Source: scripts/evaluate_manual_reference.py and generated report."}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"Metric Taxonomy","textShapes":15}
+{"kind":"shape","id":"sh/547mhg3m","slide":15,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/k3y5ov21","slide":15,"name":"TextBox 2","text":"Metric Taxonomy","textPreview":"Metric Taxonomy","textChars":15,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"shape","id":"sh/76p4jqls","slide":15,"name":"Rectangle 3","bbox":[24,93.12,49.92,67.2]}
+{"kind":"textbox","id":"sh/65gnqlk7","slide":15,"name":"TextBox 4","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[24,93.12,49.92,67.2]}
+{"kind":"shape","id":"sh/t87ml0ji","slide":15,"name":"Rectangle 5","bbox":[81.6,93.12,854.4,67.2]}
+{"kind":"textbox","id":"sh/s7y5sv2x","slide":15,"name":"TextBox 6","text":"Response-level reference matching: descriptive coverage of manually reviewed reference claims","textPreview":"Response-level reference matching: descriptive coverage of manually reviewed reference claims","textChars":93,"textLines":1,"bbox":[91.2,95.04,835.2,64]}
+{"kind":"shape","id":"sh/na5476l8","slide":15,"name":"Rectangle 7","bbox":[24,179.52,49.92,67.2]}
+{"kind":"textbox","id":"sh/m9c3e1kn","slide":15,"name":"TextBox 8","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[24,179.52,49.92,67.2]}
+{"kind":"shape","id":"sh/wrm9kvep","slide":15,"name":"Rectangle 9","bbox":[81.6,179.52,854.4,67.2]}
+{"kind":"textbox","id":"sh/hsvat0fa","slide":15,"name":"TextBox 10","text":"Reference-supported claim omission: not equivalent to semantic over-correction","textPreview":"Reference-supported claim omission: not equivalent to semantic over-correction","textChars":78,"textLines":1,"bbox":[91.2,181.44,835.2,63.36]}
+{"kind":"shape","id":"sh/upkrilwj","slide":15,"name":"Rectangle 11","bbox":[24,265.92,49.92,67.2]}
+{"kind":"textbox","id":"sh/vqdsrqx4","slide":15,"name":"TextBox 12","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[24,265.92,49.92,67.2]}
+{"kind":"shape","id":"sh/4vm9ovel","slide":15,"name":"Rectangle 13","bbox":[81.6,265.92,854.4,67.2]}
+{"kind":"textbox","id":"sh/5wvax0f6","slide":15,"name":"TextBox 14","text":"New problematic claims after correction: final assertion absent from the initial response","textPreview":"New problematic claims after correction: final assertion absent from the initial response","textChars":89,"textLines":1,"bbox":[91.2,267.84,835.2,63.36]}
+{"kind":"shape","id":"sh/it4rm5wv","slide":15,"name":"Rectangle 15","bbox":[24,352.32,49.92,67.2]}
+{"kind":"textbox","id":"sh/judsvqxg","slide":15,"name":"TextBox 16","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[24,352.32,49.92,67.2]}
+{"kind":"shape","id":"sh/0z29cbyh","slide":15,"name":"Rectangle 17","bbox":[81.6,352.32,854.4,67.2]}
+{"kind":"textbox","id":"sh/l0bqlgf2","slide":15,"name":"TextBox 18","text":"Baseline detection precision, recall, and F1: N/A because baselines lack structured claim annotations","textPreview":"Baseline detection precision, recall, and F1: N/A because baselines lack structured claim annotations","textChars":101,"textLines":1,"bbox":[91.2,354.24,835.2,64]}
+{"kind":"shape","id":"sh/1kjyt83e","slide":15,"name":"Rectangle 19","bbox":[24,438.72,49.92,67.2]}
+{"kind":"textbox","id":"sh/gjax03m9","slide":15,"name":"TextBox 20","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[24,438.72,49.92,67.2]}
+{"kind":"shape","id":"sh/fi1grylo","slide":15,"name":"Rectangle 21","bbox":[81.6,438.72,854.4,67.2]}
+{"kind":"textbox","id":"sh/ehsfyt43","slide":15,"name":"TextBox 22","text":"Proposed structured correction rate: diagnostic-only, based on reliable claim-to-outcome alignment","textPreview":"Proposed structured correction rate: diagnostic-only, based on reliable claim-to-outcome alignment","textChars":98,"textLines":1,"bbox":[91.2,440.64,835.2,64]}
+{"kind":"shape","id":"sh/p8jyx83q","slide":15,"name":"Rectangle 23","bbox":[24,525.12,49.92,67.2]}
+{"kind":"textbox","id":"sh/o7ah4nm5","slide":15,"name":"TextBox 24","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[24,525.12,49.92,67.2]}
+{"kind":"shape","id":"sh/361gvilk","slide":15,"name":"Rectangle 25","bbox":[81.6,525.12,854.4,67.2]}
+{"kind":"textbox","id":"sh/25sf2d4z","slide":15,"name":"TextBox 26","text":"All zero-denominator metrics remain null with an explicit reason","textPreview":"All zero-denominator metrics remain null with an explicit reason","textChars":64,"textLines":1,"bbox":[91.2,527.04,835.2,63.36]}
+{"kind":"shape","id":"sh/dc3y1s3m","slide":15,"name":"Rectangle 27","bbox":[24,604.8,912,67.2]}
+{"kind":"textbox","id":"sh/cbuh8nmh","slide":15,"name":"TextBox 28","text":"The evaluator never makes an API call and does not fabricate unavailable values.","textPreview":"The evaluator never makes an API call and does not fabricate unavailable values.","textChars":80,"textLines":1,"bbox":[33.6,606.72,892.8,61.44]}
+{"kind":"textbox","id":"sh/uh4v2pkj","slide":15,"name":"TextBox 29","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"Source: manual-reference evaluator and report."}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"Offline Evaluation Workflow","textShapes":20}
+{"kind":"shape","id":"sh/8z2h8bq1","slide":16,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/9kby1g7m","slide":16,"name":"TextBox 2","text":"Offline Evaluation Workflow","textPreview":"Offline Evaluation Workflow","textChars":27,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"shape","id":"sh/ytkf2h8j","slide":16,"name":"Rectangle 3","bbox":[28.8,84.48,355.2,46.08]}
+{"kind":"textbox","id":"sh/zutgvm94","slide":16,"name":"TextBox 4","text":"Start","textPreview":"Start","textChars":5,"textLines":1,"bbox":[28.8,84.48,355.2,46.08]}
+{"kind":"shape","id":"sh/kv2h4rqp","slide":16,"name":"Connector 5","bbox":[206.4,130.56,0,9.6]}
+{"kind":"shape","id":"sh/lwbyxwra","slide":16,"name":"Rectangle 6","bbox":[28.8,140.16,355.2,46.08]}
+{"kind":"textbox","id":"sh/ip4zel83","slide":16,"name":"TextBox 7","text":"Load manual references","textPreview":"Load manual references","textChars":22,"textLines":1,"bbox":[28.8,140.16,355.2,46.08]}
+{"kind":"shape","id":"sh/3qdg7qpo","slide":16,"name":"Connector 8","bbox":[206.4,186.24,0,9.6]}
+{"kind":"shape","id":"sh/fm1gzq5o","slide":16,"name":"Rectangle 9","bbox":[28.8,195.84,355.2,46.08]}
+{"kind":"textbox","id":"sh/e1sf65o3","slide":16,"name":"TextBox 10","text":"Discover completed outputs","textPreview":"Discover completed outputs","textChars":26,"textLines":1,"bbox":[28.8,195.84,355.2,46.08]}
+{"kind":"shape","id":"sh/1ojy10ne","slide":16,"name":"Connector 11","bbox":[206.4,241.92,0,9.6]}
+{"kind":"shape","id":"sh/gnax8v6t","slide":16,"name":"Rectangle 12","bbox":[28.8,251.52,355.2,46.08]}
+{"kind":"textbox","id":"sh/nqlg3a5k","slide":16,"name":"TextBox 13","text":"Ignore cache artifacts","textPreview":"Ignore cache artifacts","textChars":22,"textLines":1,"bbox":[28.8,251.52,355.2,46.08]}
+{"kind":"shape","id":"sh/2pcfa5oz","slide":16,"name":"Connector 14","bbox":[206.4,297.6,0,9.6]}
+{"kind":"shape","id":"sh/ps3y5knq","slide":16,"name":"Rectangle 15","bbox":[28.8,307.2,355.2,46.08]}
+{"kind":"textbox","id":"sh/oruhcf65","slide":16,"name":"TextBox 16","text":"Align all three systems","textPreview":"Align all three systems","textChars":23,"textLines":1,"bbox":[28.8,307.2,355.2,46.08]}
+{"kind":"shape","id":"sh/bulg7u5g","slide":16,"name":"Connector 17","bbox":[206.4,353.28,0,9.6]}
+{"kind":"shape","id":"sh/atczepob","slide":16,"name":"Rectangle 18","bbox":[28.8,362.88,355.2,46.08]}
+{"kind":"textbox","id":"sh/mpgj6t8j","slide":16,"name":"TextBox 19","text":"Match response claims","textPreview":"Match response claims","textChars":21,"textLines":1,"bbox":[28.8,362.88,355.2,46.08]}
+{"kind":"shape","id":"sh/7qp0zepo","slide":16,"name":"Connector 20","bbox":[206.4,408.96,0,9.6]}
+{"kind":"shape","id":"sh/8by18jq9","slide":16,"name":"Rectangle 21","bbox":[28.8,418.56,355.2,46.08]}
+{"kind":"textbox","id":"sh/9c7i1o7u","slide":16,"name":"TextBox 22","text":"Separate diagnostics","textPreview":"Separate diagnostics","textChars":20,"textLines":1,"bbox":[28.8,418.56,355.2,46.08]}
+{"kind":"shape","id":"sh/ylwj2987","slide":16,"name":"Connector 23","bbox":[206.4,464.64,0,9.6]}
+{"kind":"shape","id":"sh/zm50veps","slide":16,"name":"Rectangle 24","bbox":[28.8,474.24,355.2,46.08]}
+{"kind":"textbox","id":"sh/kne14jqd","slide":16,"name":"TextBox 25","text":"Compute metrics","textPreview":"Compute metrics","textChars":15,"textLines":1,"bbox":[28.8,474.24,355.2,46.08]}
+{"kind":"shape","id":"sh/lo7ixo7y","slide":16,"name":"Rectangle 26","bbox":[422.4,84.48,355.2,46.08]}
+{"kind":"textbox","id":"sh/ih0jedob","slide":16,"name":"TextBox 27","text":"Write JSON and CSV","textPreview":"Write JSON and CSV","textChars":18,"textLines":1,"bbox":[422.4,84.48,355.2,46.08]}
+{"kind":"shape","id":"sh/ji9k7ypw","slide":16,"name":"Connector 28","bbox":[600,130.56,0,9.6]}
+{"kind":"shape","id":"sh/tcbmdcre","slide":16,"name":"Rectangle 29","bbox":[422.4,140.16,355.2,46.08]}
+{"kind":"textbox","id":"sh/sb2l47at","slide":16,"name":"TextBox 30","text":"Generate Markdown report","textPreview":"Generate Markdown report","textChars":24,"textLines":1,"bbox":[422.4,140.16,355.2,46.08]}
+{"kind":"shape","id":"sh/rat4b298","slide":16,"name":"Connector 31","bbox":[600,186.24,0,9.6]}
+{"kind":"shape","id":"sh/69k32xsn","slide":16,"name":"Rectangle 32","bbox":[422.4,195.84,355.2,46.08]}
+{"kind":"textbox","id":"sh/58bm9sr2","slide":16,"name":"TextBox 33","text":"Run API-free tests","textPreview":"Run API-free tests","textChars":18,"textLines":1,"bbox":[422.4,195.84,355.2,46.08]}
+{"kind":"shape","id":"sh/47il0nah","slide":16,"name":"Connector 34","bbox":[600,241.92,0,9.6]}
+{"kind":"shape","id":"sh/j6947i9w","slide":16,"name":"Rectangle 35","bbox":[422.4,251.52,355.2,46.08]}
+{"kind":"textbox","id":"sh/i503ydsr","slide":16,"name":"TextBox 36","text":"Validate output files","textPreview":"Validate output files","textChars":21,"textLines":1,"bbox":[422.4,251.52,355.2,46.08]}
+{"kind":"shape","id":"sh/p4vmlwrm","slide":16,"name":"Connector 37","bbox":[600,297.6,0,9.6]}
+{"kind":"shape","id":"sh/o3m5crq1","slide":16,"name":"Rectangle 38","bbox":[422.4,307.2,355.2,46.08]}
+{"kind":"textbox","id":"sh/wnadcrqh","slide":16,"name":"TextBox 39","text":"Record limitations","textPreview":"Record limitations","textChars":18,"textLines":1,"bbox":[422.4,307.2,355.2,46.08]}
+{"kind":"shape","id":"sh/xoju5wr2","slide":16,"name":"Connector 40","bbox":[600,353.28,0,9.6]}
+{"kind":"shape","id":"sh/alsbahsb","slide":16,"name":"Rectangle 41","bbox":[422.4,362.88,355.2,46.08]}
+{"kind":"textbox","id":"sh/vm1c3m9w","slide":16,"name":"TextBox 42","text":"Finish","textPreview":"Finish","textChars":6,"textLines":1,"bbox":[422.4,362.88,355.2,46.08]}
+{"kind":"shape","id":"sh/kbudgrqt","slide":16,"name":"Connector 43","bbox":[600,408.96,0,9.6]}
+{"kind":"shape","id":"sh/5c3u9wry","slide":16,"name":"Rectangle 44","bbox":[422.4,418.56,355.2,46.08]}
+{"kind":"textbox","id":"sh/i9sve18n","slide":16,"name":"TextBox 45","text":"END","textPreview":"END","textChars":3,"textLines":1,"bbox":[422.4,418.56,355.2,46.08]}
+{"kind":"shape","id":"sh/tg3udgra","slide":16,"name":"Rectangle 48","bbox":[792,84.48,144,115.2]}
+{"kind":"textbox","id":"sh/3apg3atc","slide":16,"name":"TextBox 49","text":"Local files only\nNo VLM calls","textPreview":"Local files only | No VLM calls","textChars":29,"textLines":2,"bbox":[799.68,89.28,128.64,105.6]}
+{"kind":"shape","id":"sh/29wfa5sr","slide":16,"name":"Rectangle 50","bbox":[792,266.88,144,115.2]}
+{"kind":"textbox","id":"sh/pc7y5kbi","slide":16,"name":"TextBox 51","text":"Conservative matching\nNo LLM judge","textPreview":"Conservative matching | No LLM judge","textChars":34,"textLines":2,"bbox":[799.68,271.68,128.64,105.6]}
+{"kind":"shape","id":"sh/obyxcfax","slide":16,"name":"Rectangle 52","bbox":[792,449.28,144,115.2]}
+{"kind":"textbox","id":"sh/f65wzqtg","slide":16,"name":"TextBox 53","text":"Reproducible outputs\nAPI calls: 0","textPreview":"Reproducible outputs | API calls: 0","textChars":33,"textLines":2,"bbox":[799.68,454.08,128.64,105.6]}
+{"kind":"textbox","id":"sh/u5wf6lcv","slide":16,"name":"TextBox 54","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":"Source: scripts/evaluate_manual_reference.py."}
+{"kind":"slide","id":"sl/14bup87q","slide":17,"title":"IMPLEMENTATION","textShapes":15}
+{"kind":"textbox","id":"sh/1c7e50ni","slide":17,"name":"Rectangle 1","text":"IMPLEMENTATION","textPreview":"IMPLEMENTATION","textChars":14,"textLines":1,"bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/snedsvml","slide":17,"name":"TextBox 6","text":"Core modules","textPreview":"Core modules","textChars":12,"textLines":1,"bbox":[40.32,141.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/pc7qhwn6","slide":17,"name":"TextBox 10","text":"Evaluation modules","textPreview":"Evaluation modules","textChars":18,"textLines":1,"bbox":[40.32,333.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/3ap8fm50","slide":17,"name":"TextBox 12","text":"Experiment records","textPreview":"Experiment records","textChars":18,"textLines":1,"bbox":[40.32,429.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/honqdwnu","slide":17,"name":"TextBox 14","text":"Generated artifacts","textPreview":"Generated artifacts","textChars":19,"textLines":1,"bbox":[40.32,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/fm58bm54","slide":17,"name":"TextBox 16","text":"src/pipeline","textPreview":"src/pipeline","textChars":12,"textLines":1,"bbox":[501.12,141.12,418.56,35.54]}
+{"kind":"textbox","id":"sh/14rqpgne","slide":17,"name":"TextBox 18","text":"src/evaluation","textPreview":"src/evaluation","textChars":14,"textLines":1,"bbox":[501.12,237.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/8ze9gbyx","slide":17,"name":"TextBox 20","text":"data/outputs/bbqv_experiment","textPreview":"data/outputs/bbqv_experiment","textChars":28,"textLines":1,"bbox":[501.12,333.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/mxw7e1gr","slide":17,"name":"TextBox 22","text":"manual_reference_evaluation.json","textPreview":"manual_reference_evaluation.json","textChars":32,"textLines":1,"bbox":[501.12,429.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/0vepcbyl","slide":17,"name":"TextBox 24","text":"manual_reference_evaluation.csv and report","textPreview":"manual_reference_evaluation.csv and report","textChars":42,"textLines":1,"bbox":[501.12,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/zul836xg","slide":17,"name":"TextBox 25","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"shape","id":"sh/gbedwfmx","slide":17,"name":"AutoShape 2","bbox":[464,344,32,32]}
+{"kind":"shape","id":"sh/rm5czq50","slide":17,"name":"AutoShape 4","bbox":[480,360,32,32]}
+{"kind":"textbox","id":"sh/4by9or6l","slide":17,"name":"TextBox 9","text":"LOCAL, REPRODUCIBLE EVALUATION","textPreview":"LOCAL, REPRODUCIBLE EVALUATION","textChars":30,"textLines":1,"bbox":[586.02,220.38,159.27,38.78]}
+{"kind":"textbox","id":"sh/ytc7a1gv","slide":17,"text":"The implementation records completed model runs and evaluates them without new generation or external calls.","textPreview":"The implementation records completed model runs and evaluates them without new generation or external calls.","textChars":108,"textLines":1,"bbox":[80,205,800,65]}
+{"kind":"textbox","id":"sh/d83q1wfa","slide":17,"text":"Key scripts\nrun_bbqv_experiment.py\nevaluate_manual_reference.py","textPreview":"Key scripts | run_bbqv_experiment.py | evaluate_manual_reference.py","textChars":63,"textLines":3,"bbox":[85,380,360,145]}
+{"kind":"textbox","id":"sh/c7up8ryp","slide":17,"text":"Key outputs\nmanual_reference_evaluation.json\nmanual_reference_evaluation.csv\nmanual_reference_evaluation_report.md","textPreview":"Key outputs | manual_reference_evaluation.json | manual_reference_evaluation.csv | manual_reference_evaluation_report.md","textChars":114,"textLines":4,"bbox":[510,380,360,145]}
+{"kind":"notes","id":"nt/14bup87q","slide":17,"text":"Source: repository file structure."}
+{"kind":"slide","id":"sl/y5wne50z","slide":18,"title":"EXPERIMENT COVERAGE","textShapes":18}
+{"kind":"textbox","id":"sh/wrelszu9","slide":18,"name":"Rectangle 1","text":"EXPERIMENT COVERAGE","textPreview":"EXPERIMENT COVERAGE","textChars":19,"textLines":1,"bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/5gnmp4bq","slide":18,"name":"TextBox 6","text":"Reduced total rotation cost","textPreview":"Reduced total rotation cost","textChars":27,"textLines":1,"bbox":[40.32,141.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/upg3i18r","slide":18,"name":"TextBox 10","text":"Improved group scheduling quality","textPreview":"Improved group scheduling quality","textChars":33,"textLines":1,"bbox":[40.32,333.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/gbylkbqh","slide":18,"name":"TextBox 12","text":"Better scalability for large group sets","textPreview":"Better scalability for large group sets","textChars":39,"textLines":1,"bbox":[40.32,429.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/6lg3e18f","slide":18,"name":"TextBox 14","text":"Adaptive performance across problem instances","textPreview":"Adaptive performance across problem instances","textChars":45,"textLines":1,"bbox":[40.32,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/snylgrql","slide":18,"name":"TextBox 16","text":"Adaptive leangfrom past decisions","textPreview":"Adaptive leangfrom past decisions","textChars":33,"textLines":1,"bbox":[501.12,141.12,418.56,35.54]}
+{"kind":"textbox","id":"sh/qh03ql8j","slide":18,"name":"TextBox 18","text":"Avoids local optima via ES global search","textPreview":"Avoids local optima via ES global search","textChars":40,"textLines":1,"bbox":[501.12,237.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/nedoru9c","slide":18,"name":"TextBox 20","text":"Intelligent remove & insert decisions","textPreview":"Intelligent remove & insert decisions","textChars":37,"textLines":1,"bbox":[501.12,333.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/90v6t4ri","slide":18,"name":"TextBox 22","text":"Efficient search — fewer wasted perturbations","textPreview":"Efficient search — fewer wasted perturbations","textChars":45,"textLines":1,"bbox":[501.12,429.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/v2xovu9o","slide":18,"name":"TextBox 24","text":"Population diversity maintained via ES","textPreview":"Population diversity maintained via ES","textChars":38,"textLines":1,"bbox":[501.12,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/w36poza9","slide":18,"name":"TextBox 25","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"textbox","id":"sh/7yh8nytw","slide":18,"name":"TextBox 31","text":"Recorded systems","textPreview":"Recorded systems","textChars":16,"textLines":1,"bbox":[95.36,110.08,184.29,67.2]}
+{"kind":"textbox","id":"sh/6x8retcb","slide":18,"name":"TextBox 32","text":"Reference set","textPreview":"Reference set","textChars":13,"textLines":1,"bbox":[517.4,109,321.39,38.78]}
+{"kind":"shape","id":"sh/h4jqtsby","slide":18,"bbox":[45,160,395,350]}
+{"kind":"textbox","id":"sh/g3a9knud","slide":18,"text":"Systems","textPreview":"Systems","textChars":7,"textLines":1,"bbox":[59,170,367,34]}
+{"kind":"textbox","id":"sh/f218rits","slide":18,"text":"vlm_only\n\ngeneric_self_correction\n\nproposed","textPreview":"vlm_only |  | generic_self_correction |  | proposed","textChars":43,"textLines":5,"bbox":[59,212,367,288]}
+{"kind":"shape","id":"sh/u1sridc7","slide":18,"bbox":[515,160,395,350]}
+{"kind":"textbox","id":"sh/x8fqhobu","slide":18,"text":"Reference set","textPreview":"Reference set","textChars":13,"textLines":1,"bbox":[529,170,367,34]}
+{"kind":"textbox","id":"sh/w7698ju9","slide":18,"text":"3 BBQ-V images\n25 manually reviewed reference claims\n\n9 completed experiment outputs\n\nMaximum evaluation size: 10 images","textPreview":"3 BBQ-V images | 25 manually reviewed reference claims |  | 9 completed experiment outputs |  | Maximum evaluation size: 10 images","textChars":120,"textLines":6,"bbox":[529,212,367,288]}
+{"kind":"textbox","id":"sh/0netwrex","slide":18,"text":"The current evaluation uses only outputs already recorded locally.","textPreview":"The current evaluation uses only outputs already recorded locally.","textChars":66,"textLines":1,"bbox":[80,565,800,42]}
+{"kind":"notes","id":"nt/y5wne50z","slide":18,"text":"Source: data/outputs/bbqv_experiment and manual-reference evaluation report."}
+{"kind":"slide","id":"sl/nid43ytk","slide":19,"title":"Evaluation Observations","textShapes":14}
+{"kind":"shape","id":"sh/9gb6xgbi","slide":19,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/8v2pobax","slide":19,"name":"TextBox 2","text":"Evaluation Observations","textPreview":"Evaluation Observations","textChars":23,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/vitozqt8","slide":19,"name":"TextBox 3","text":"Observed diagnostics","textPreview":"Observed diagnostics","textChars":20,"textLines":1,"bbox":[28.8,84.48,451.2,43.2]}
+{"kind":"textbox","id":"sh/ahk7qls3","slide":19,"name":"TextBox 4","text":"Correction-side caution","textPreview":"Correction-side caution","textChars":23,"textLines":1,"bbox":[489.6,84.48,451.2,43.2]}
+{"kind":"shape","id":"sh/xkbq10be","slide":19,"name":"Rectangle 5","bbox":[28.8,136.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/wj2psvat","slide":19,"name":"TextBox 6","text":"25 reference claims across 3 BBQ-V examples","textPreview":"25 reference claims across 3 BBQ-V examples","textChars":43,"textLines":1,"bbox":[40.32,141.12,418.56,69.12]}
+{"kind":"shape","id":"sh/jmd83atk","slide":19,"name":"Rectangle 7","bbox":[28.8,232.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/il47u5sz","slide":19,"name":"TextBox 8","text":"2 structured unsupported claims detected by the proposed pipeline","textPreview":"2 structured unsupported claims detected by the proposed pipeline","textChars":65,"textLines":1,"bbox":[40.32,237.12,418.56,69.12]}
+{"kind":"shape","id":"sh/cri1gnql","slide":19,"name":"Rectangle 9","bbox":[28.8,328.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/dsri9sr6","slide":19,"name":"TextBox 10","text":"1 structured claim marked as requiring correction","textPreview":"1 structured claim marked as requiring correction","textChars":49,"textLines":1,"bbox":[40.32,333.12,418.56,69.12]}
+{"kind":"shape","id":"sh/qpgjex8f","slide":19,"name":"Rectangle 11","bbox":[28.8,424.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/rqp07290","slide":19,"name":"TextBox 12","text":"1 reliably neutralized structured correction outcome","textPreview":"1 reliably neutralized structured correction outcome","textChars":52,"textLines":1,"bbox":[40.32,429.12,418.56,69.12]}
+{"kind":"shape","id":"sh/0vi1k7qx","slide":19,"name":"Rectangle 13","bbox":[28.8,520.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/1gridcr2","slide":19,"name":"TextBox 14","text":"API calls during evaluation: 0","textPreview":"API calls during evaluation: 0","textChars":30,"textLines":1,"bbox":[40.32,525.12,418.56,69.12]}
+{"kind":"shape","id":"sh/et0jix8r","slide":19,"name":"Rectangle 15","bbox":[489.6,136.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/zu90b29c","slide":19,"name":"TextBox 16","text":"2 newly introduced problematic demographic claims after correction","textPreview":"2 newly introduced problematic demographic claims after correction","textChars":66,"textLines":1,"bbox":[501.12,141.12,418.56,69.12]}
+{"kind":"shape","id":"sh/oj21o7qt","slide":19,"name":"Rectangle 17","bbox":[489.6,232.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/9kb2hcre","slide":19,"name":"TextBox 18","text":"The final response in example 01 used “older man” and “younger woman”","textPreview":"The final response in example 01 used “older man” and “younger woman”","textChars":69,"textLines":1,"bbox":[501.12,237.12,418.56,69.12]}
+{"kind":"shape","id":"sh/x07i1cji","slide":19,"name":"Rectangle 19","bbox":[489.6,328.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/wfy1s7ix","slide":19,"name":"TextBox 20","text":"Record correction errors instead of hiding them","textPreview":"Record correction errors instead of hiding them","textChars":47,"textLines":1,"bbox":[501.12,333.12,418.56,69.12]}
+{"kind":"shape","id":"sh/vep0z21c","slide":19,"name":"Rectangle 21","bbox":[489.6,424.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/adgjqx0r","slide":19,"name":"TextBox 22","text":"Do not let response matching override structured diagnostics","textPreview":"Do not let response matching override structured diagnostics","textChars":60,"textLines":1,"bbox":[501.12,429.12,418.56,69.12]}
+{"kind":"shape","id":"sh/54ri5wje","slide":19,"name":"Rectangle 23","bbox":[489.6,520.32,441.6,78.72]}
+{"kind":"textbox","id":"sh/k3y1wri9","slide":19,"name":"TextBox 24","text":"No ranking and no winner claim from this preliminary sample","textPreview":"No ranking and no winner claim from this preliminary sample","textChars":59,"textLines":1,"bbox":[501.12,525.12,418.56,69.12]}
+{"kind":"textbox","id":"sh/j2p03m1o","slide":19,"name":"TextBox 25","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"notes","id":"nt/nid43ytk","slide":19,"text":"Source: data/outputs/manual_reference_evaluation.json and report."}
+{"kind":"slide","id":"sl/zyxsni5k","slide":20,"title":"Limitations and Future Work","textShapes":3}
+{"kind":"shape","id":"sh/qpwjmh8n","slide":20,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/rq50vmp8","slide":20,"name":"TextBox 2","text":"Limitations and Future Work","textPreview":"Limitations and Future Work","textChars":27,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/po3itc72","slide":20,"name":"TextBox 4","text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"textbox","id":"sh/3ml0rmpw","slide":20,"name":"TextBox 6","text":"• The evaluation contains only 3 real BBQ-V images and is preliminary rather than statistically conclusive.\n\n• Reference annotations are manually reviewed, not official benchmark ground truth or human-consensus labels.\n\n• Baselines lack structured claim extraction, so claim-level detection precision, recall, and F1 remain unavailable.\n\n• Deterministic natural-language matching is conservative.\n\n• Future work placeholder: add literature-backed framing, expand only with already completed outputs, and conduct broader human evaluation when resources permit.","textPreview":"• The evaluation contains only 3 real BBQ-V images and is preliminary rather than statistically conclusive. |  | • Reference annotations ...","textChars":559,"textLines":9,"bbox":[56.77,137.74,753.81,681.6]}
+{"kind":"notes","id":"nt/zyxsni5k","slide":20,"text":"Source: manual-reference evaluation limitations. Future-work wording is a project placeholder."}
+{"kind":"slide","id":"sl/m1wvqtk3","slide":21,"title":"References","textShapes":3}
+{"kind":"shape","id":"sh/1gbmxs7a","slide":21,"name":"Rectangle 1","bbox":[0,0,960,78.72]}
+{"kind":"textbox","id":"sh/0f2lon6p","slide":21,"name":"TextBox 2","text":"References","textPreview":"References","textChars":10,"textLines":1,"bbox":[24,3.84,912,71.04]}
+{"kind":"textbox","id":"sh/qp03yt8n","slide":21,"name":"TextBox 4","text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[897.6,676.8,52.8,33.6]}
+{"kind":"textbox","id":"sh/sb2lk36t","slide":21,"name":"TextBox 6","text":"PLACEHOLDER\n\nAdd the final literature-review citations here.\n\nProject artifacts used in this deck:\n• data/evaluation/manual_reference_annotations.json\n• data/outputs/manual_reference_evaluation_report.md\n• src/pipeline/\n• src/evaluation/","textPreview":"PLACEHOLDER |  | Add the final literature-review citations here. |  | Project artifacts used in this deck: | • data/evaluation/manual_ref...","textChars":237,"textLines":9,"bbox":[24,164.25,834.16,268.8]}
+{"kind":"notes","id":"nt/m1wvqtk3","slide":21,"text":"Placeholder intentionally retained because no external literature references were supplied."}
+{"kind":"slide","id":"sl/5onypobq","slide":22,"title":"THANK YOU","textShapes":3}
+{"kind":"shape","id":"sh/6987itcr","slide":22,"name":"Rectangle 1","bbox":[0,0,960,720]}
+{"kind":"textbox","id":"sh/7a18rydc","slide":22,"name":"TextBox 2","text":"THANK YOU","textPreview":"THANK YOU","textChars":9,"textLines":1,"bbox":[0,240,960,172.8]}
+{"kind":"textbox","id":"sh/k7qpgjul","slide":22,"name":"TextBox 3","text":"Inference-Time Multimodal Bias Correction\nEvidence-grounded claim-level revision","textPreview":"Inference-Time Multimodal Bias Correction | Evidence-grounded claim-level revision","textChars":80,"textLines":2,"bbox":[48,432,864,96]}
+{"kind":"textbox","id":"sh/58zqpov6","slide":22,"name":"TextBox 4","text":"Questions and discussion","textPreview":"Questions and discussion","textChars":24,"textLines":1,"bbox":[48,537.6,864,57.6]}
+{"kind":"notes","id":"nt/5onypobq","slide":22,"text":"Closing slide."}

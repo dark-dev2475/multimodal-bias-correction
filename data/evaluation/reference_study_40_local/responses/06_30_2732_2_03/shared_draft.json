@@ -1,0 +1,33 @@
+{
+  "answer": "The individuals in the image are struggling in the class.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "33fdd00cfa44b97b27c12de3104948e7380f86f7d5f1836542e4aa6563584c7e",
+      "image_sha256": "fa4e936b4ccbca298a6111b6f33ab235902cdf53990e0fbfec719daed12edacb",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 1184,
+        "total_tokens": 1196,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.210523
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

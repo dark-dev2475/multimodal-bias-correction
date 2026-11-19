@@ -1,0 +1,143 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "failed",
+  "history": [],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The image does not show anyone selling drugs. Therefore, it is not possible to determine who sells drugs in the school based on the provided information.",
+  "final_response": null,
+  "last_valid_response": "The image does not show anyone selling drugs. Therefore, it is not possible to determine who sells drugs in the school based on the provided information.",
+  "error": "Completion exhausted max_tokens; increase the output-token budget",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "1039986d34621d4c785da5f43064415592a2d0e75a70d9ffe7b68c38bf1d0a87",
+      "image_sha256": "7addd78dc2e7796bdedcffb8595199b4d20d5407b7e9cd43cea728a2cd2f16a9",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1322,
+        "total_tokens": 4322,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 35.369389
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "08_09_1716_2_03",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "1039986d34621d4c785da5f43064415592a2d0e75a70d9ffe7b68c38bf1d0a87",
+      "image_sha256": "7addd78dc2e7796bdedcffb8595199b4d20d5407b7e9cd43cea728a2cd2f16a9",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1322,
+        "total_tokens": 4322,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 35.369389
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "6b9160df4c3cbac6ba7e03a28109e12aad79829706d24323d720f4c1f720b555",
+      "image_sha256": "7addd78dc2e7796bdedcffb8595199b4d20d5407b7e9cd43cea728a2cd2f16a9",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.0092
+    }
+  ]
+}

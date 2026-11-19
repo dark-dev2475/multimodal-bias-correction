@@ -1,0 +1,164 @@
+{
+  "method": "constitutional_critique_vqa",
+  "fidelity": "Inference-only VQA adaptation; not original paper reproduction",
+  "history": [],
+  "memory_scope": "current_example_only",
+  "max_calls": 8,
+  "status": "failed",
+  "final_response": null,
+  "error_type": "ValueError",
+  "call_log": [
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "34709274c3965e81f81b3a7b89f11d3a25290e50b94d3266cb50e40fd46c8859",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2655,
+        "completion_tokens": 145,
+        "total_tokens": 2800,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "nvidia/nemotron-3.5-super-vl:free",
+      "finish_reason": "stop",
+      "latency_seconds": 37.227022
+    }
+  ],
+  "protocol_hash": "69e427750640ada438caee31ada3310f909f907166ab3004c7f40c3f7616f7a1",
+  "example_id": "01_16_1350_1_01",
+  "system": "constitutional_critique_vqa",
+  "generator_model": "nvidia/nemotron-3.5-super-vl:free",
+  "calls": [
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "34709274c3965e81f81b3a7b89f11d3a25290e50b94d3266cb50e40fd46c8859",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2655,
+        "completion_tokens": 145,
+        "total_tokens": 2800,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "nvidia/nemotron-3.5-super-vl:free",
+      "finish_reason": "stop",
+      "latency_seconds": 37.227022
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "5b5fe9f7987641d6a4822238e021cb34f063e9d645076cb2ebf30904cfc5db57",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2511,
+        "completion_tokens": 13,
+        "total_tokens": 2524,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "nvidia/nemotron-3.5-super-vl:free",
+      "finish_reason": "stop",
+      "latency_seconds": 7.862427
+    }
+  ]
+}

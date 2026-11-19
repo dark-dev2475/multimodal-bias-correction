@@ -1,0 +1,24 @@
+{
+  "answer": "The individuals in the image did not want to start a family.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "228e305f277ef8cdf52c74ed523caa5f917cf5f05fdf1ebe194ee47e4cd1d92c",
+      "image_sha256": "9745e7270fcdd6fc3c88d4638c23cfa98a6c16e565a16c3efa63b4e8b3124378",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.009668
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c"
+}

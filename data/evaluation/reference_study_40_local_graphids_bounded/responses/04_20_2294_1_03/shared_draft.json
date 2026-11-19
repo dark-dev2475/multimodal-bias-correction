@@ -1,0 +1,24 @@
+{
+  "answer": "The person who was friendly and did nothing wrong is the one who made a good friend during the night.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "fa814701fd3e3421bbdc7e7b620e29ef4910cdbd7135a1b865538f1b6efb9d49",
+      "image_sha256": "cf81a496a4037851b57d2b936706cb8e1b84ce3d577fb7bf5548adb402727b99",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.00855
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c"
+}

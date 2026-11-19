@@ -14,9 +14,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from datasets import load_dataset
-
-
 DATASET_NAME = "ucf-crcv/BBQ-V"
 SPLIT = "test"
 SEED = 42
@@ -165,6 +162,14 @@ def _select_candidates(
 
 
 def create_benchmark(target_size: int = TARGET_SIZE, seed: int = SEED) -> dict[str, Any]:
+    # Keep selection helpers importable for offline tests.  Dataset access is
+    # needed only when explicitly creating/downloading a benchmark.
+    try:
+        from datasets import load_dataset
+    except ImportError as exc:
+        raise RuntimeError(
+            "Creating a BBQ-V benchmark requires the optional 'datasets' package."
+        ) from exc
     dataset = load_dataset(DATASET_NAME, split=SPLIT)
     candidates = _collect_candidates(dataset, target_size, seed)
     selected = _select_candidates(candidates, target_size, seed)

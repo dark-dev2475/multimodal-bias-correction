@@ -1,0 +1,276 @@
+{
+  "scope": "original_40_development_images_not_heldout",
+  "planned_examples": 40,
+  "annotation_status": {
+    "pending_human_review": 40
+  },
+  "review_source": "ai",
+  "published_scores_reproduced": false,
+  "superiority_established": false,
+  "warning": "Original 40 are exposed DEVELOPMENT data, not held-out test evidence. Similarity is not fairness/accuracy.",
+  "reference_quality": "provisional_ai_assisted",
+  "generator_model": "qwen3-vl-2b-local",
+  "systems": {
+    "raw": {
+      "planned": 40,
+      "status_counts": {
+        "completed": 40
+      },
+      "semantically_reviewed": 4,
+      "review_coverage": 0.1,
+      "descriptive_scored_only": {
+        "task_correctness": 1.0,
+        "unsupported_social_assumption_rate": 0.0,
+        "safe_correct_rate": 1.0,
+        "supported_unit_precision": 1.0,
+        "required_fact_recall": 1.0,
+        "grounded_content_f1": 1.0,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": 0.3730259985980978,
+        "rouge_l_f1": 0.2955801555171698
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.1,
+      "operational_denominator": 40,
+      "semantic_metric_denominators": {
+        "task_correctness": 4,
+        "unsupported_social_assumption_rate": 4,
+        "safe_correct_rate": 4,
+        "supported_unit_precision": 4,
+        "required_fact_recall": 4,
+        "grounded_content_f1": 4,
+        "false_abstention_rate": 0
+      }
+    },
+    "eigr": {
+      "planned": 40,
+      "status_counts": {
+        "verified_subset": 15,
+        "abstained": 25
+      },
+      "semantically_reviewed": 4,
+      "review_coverage": 0.1,
+      "descriptive_scored_only": {
+        "task_correctness": 1.0,
+        "unsupported_social_assumption_rate": 0.0,
+        "safe_correct_rate": 1.0,
+        "supported_unit_precision": 1.0,
+        "required_fact_recall": 1.0,
+        "grounded_content_f1": 1.0,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": 0.2197238925857922,
+        "rouge_l_f1": 0.1777187255608177
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.1,
+      "operational_denominator": 40,
+      "semantic_metric_denominators": {
+        "task_correctness": 4,
+        "unsupported_social_assumption_rate": 4,
+        "safe_correct_rate": 4,
+        "supported_unit_precision": 4,
+        "required_fact_recall": 4,
+        "grounded_content_f1": 4,
+        "false_abstention_rate": 0
+      }
+    },
+    "self_refine_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "completed": 12,
+        "failed": 6,
+        "not_collected": 22
+      },
+      "semantically_reviewed": 4,
+      "review_coverage": 0.1,
+      "descriptive_scored_only": {
+        "task_correctness": 1.0,
+        "unsupported_social_assumption_rate": 0.0,
+        "safe_correct_rate": 1.0,
+        "supported_unit_precision": 1.0,
+        "required_fact_recall": 1.0,
+        "grounded_content_f1": 1.0,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": 0.3667833655472625,
+        "rouge_l_f1": 0.29254750533585816
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.1,
+      "operational_denominator": 40,
+      "semantic_metric_denominators": {
+        "task_correctness": 4,
+        "unsupported_social_assumption_rate": 4,
+        "safe_correct_rate": 4,
+        "supported_unit_precision": 4,
+        "required_fact_recall": 4,
+        "grounded_content_f1": 4,
+        "false_abstention_rate": 0
+      }
+    },
+    "intent_aware_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "not_collected": 40
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40,
+      "semantic_metric_denominators": {
+        "task_correctness": 0,
+        "unsupported_social_assumption_rate": 0,
+        "safe_correct_rate": 0,
+        "supported_unit_precision": 0,
+        "required_fact_recall": 0,
+        "grounded_content_f1": 0,
+        "false_abstention_rate": 0
+      }
+    },
+    "reflexion_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "not_collected": 40
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40,
+      "semantic_metric_denominators": {
+        "task_correctness": 0,
+        "unsupported_social_assumption_rate": 0,
+        "safe_correct_rate": 0,
+        "supported_unit_precision": 0,
+        "required_fact_recall": 0,
+        "grounded_content_f1": 0,
+        "false_abstention_rate": 0
+      }
+    },
+    "constitutional_critique_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "not_collected": 40
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40,
+      "semantic_metric_denominators": {
+        "task_correctness": 0,
+        "unsupported_social_assumption_rate": 0,
+        "safe_correct_rate": 0,
+        "supported_unit_precision": 0,
+        "required_fact_recall": 0,
+        "grounded_content_f1": 0,
+        "false_abstention_rate": 0
+      }
+    },
+    "always_abstain": {
+      "planned": 40,
+      "status_counts": {
+        "not_collected": 40
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40,
+      "semantic_metric_denominators": {
+        "task_correctness": 0,
+        "unsupported_social_assumption_rate": 0,
+        "safe_correct_rate": 0,
+        "supported_unit_precision": 0,
+        "required_fact_recall": 0,
+        "grounded_content_f1": 0,
+        "false_abstention_rate": 0
+      }
+    }
+  },
+  "status": "incomplete_no_performance_conclusion",
+  "paired_comparisons": {},
+  "review_warning": "Self-judged AI estimates; generator and judge share weights. Not independent validation.",
+  "judge_independence": false,
+  "reference_answerability": {
+    "insufficient_evidence": 39,
+    "answerable": 1
+  },
+  "review_errors": 1,
+  "engineering_followup": true,
+  "development_adaptation_disclosure": "Claim identity/link constraints added after observing graph failures on these original development cases. Dependencies restricted to earlier draft units after a separate demo produced a cycle. This ordered-DAG representation cannot encode forward-premise dependencies. Not held-out validation or evidence of generalization.",
+  "structural_schema_specialization": "Observation source first; empty context forbids context source; context quotes restricted to full context or exact sentences; judgment IDs/counts bound to requested IDs. Does not verify visual truth. Claim IDs/texts assigned deterministically in input unit order; dependencies limited to earlier claims; contradiction IDs limited to other known claims; evidence references must have observation-ID syntax. Core DAG/existence checks retained. Ordered-DAG constraint can miss forward-premise links.",
+  "report_generated_at": "2026-11-04T06:56:52.605121+00:00",
+  "collection_attempts_complete": false,
+  "valid_outputs_reviewed_fully": false,
+  "mechanism_activation": {
+    "attempted_cases": 40,
+    "cases_with_saved_graph": 40,
+    "cases_with_dependency_edges": 9,
+    "dependency_edges": 12,
+    "cases_with_measured_interventions": 0,
+    "measured_intervention_contrasts": 0,
+    "intervention_status_counts": {},
+    "verification_calls_with_any_rejected_claim": 16,
+    "answers_changed_from_draft": 30,
+    "warning": "Mechanism activation and structural certificates do not prove correctness, bias reduction, or novelty."
+  }
+}

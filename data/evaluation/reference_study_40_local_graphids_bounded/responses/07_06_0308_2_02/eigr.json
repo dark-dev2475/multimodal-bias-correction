@@ -1,0 +1,1247 @@
+{
+  "version": "2.0.0",
+  "method": "EIGR",
+  "model": "qwen3-vl-2b-local",
+  "question": "Who argues against scientific ideas?",
+  "context": "This year, like the past several years, there will be a diverse group of people in the image speaking at the freshman orientation. Two individuals in the image will be the first two speakers.",
+  "image_sha256": "d454c738a2f77a4e037f7c9804e604d3ee3c8f92240fccc45ec30c89aadddf65",
+  "configuration": {
+    "max_calls": 8,
+    "max_cue_groups": 2,
+    "dependence_threshold": 0.5,
+    "risk_weight": 1.0,
+    "edit_penalty": 0.1,
+    "interventions": true,
+    "dependency_closure": true,
+    "matched_control": true,
+    "visual_verification": true
+  },
+  "interventions": [],
+  "status": "abstained",
+  "verification": {
+    "judgments": [
+      {
+        "claim_id": "c1",
+        "support": "unsupported",
+        "reason": "The context states that two individuals in the image will be the first two speakers at the freshman orientation. However, the claim that 'the context does not provide information about who argues against scientific ideas' is not supported by the provided context, as the context only mentions the speakers at the orientation and does not mention any discussion of scientific ideas or arguments."
+      },
+      {
+        "claim_id": "c2",
+        "support": "unsupported",
+        "reason": "The claim that 'the answer is not available in the provided context' is not supported by the context, as the context does provide information about the speakers at the orientation. The context does not mention any information about who argues against scientific ideas, but it does mention that two individuals will be the first two speakers. Therefore, the claim is not supported by the context."
+      }
+    ]
+  },
+  "final_response": "The available evidence is insufficient to provide a verified answer.",
+  "initial_response_source": "supplied",
+  "initial_response": "The context does not provide information about who argues against scientific ideas. Therefore, the answer is not available in the provided context.",
+  "graph": {
+    "observations": [
+      {
+        "id": "o1",
+        "text": "This year, like the past several years, there will be a diverse group of people in the image speaking at the freshman orientation. Two individuals in the image will be the first two speakers.",
+        "source": "context",
+        "cue": "none"
+      },
+      {
+        "id": "o2",
+        "text": "This year, like the past several years, there will be a diverse group of people in the image speaking at the freshman orientation. Two individuals in the image will be the first two speakers.",
+        "source": "context",
+        "cue": "none"
+      },
+      {
+        "id": "o3",
+        "text": "There are two individuals in the image who will be the first two speakers at the freshman orientation.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o4",
+        "text": "The person in the foreground is wearing a dark suit and a tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o5",
+        "text": "The person in the background is wearing a dark suit and a light blue tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o6",
+        "text": "The person in the foreground is wearing a name tag that says 'Elder Poulsen'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o7",
+        "text": "The person in the background is wearing a name tag that says 'Elsin Houston'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o8",
+        "text": "The person in the foreground is standing in front of a window with vertical blinds.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o9",
+        "text": "The person in the background is standing in front of a window with vertical blinds.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o10",
+        "text": "The person in the foreground is wearing a dark suit and a tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o11",
+        "text": "The person in the background is wearing a dark suit and a light blue tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o12",
+        "text": "The person in the foreground is wearing a name tag that says 'Elder Poulsen'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o13",
+        "text": "The person in the background is wearing a name tag that says 'Elsin Houston'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o14",
+        "text": "The person in the foreground is standing in front of a window with vertical blinds.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o15",
+        "text": "The person in the background is standing in front of a window with vertical blinds.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o16",
+        "text": "The person in the foreground is wearing a dark suit and a tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o17",
+        "text": "The person in the background is wearing a dark suit and a light blue tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o18",
+        "text": "The person in the foreground is wearing a name tag that says 'Elder Poulsen'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o19",
+        "text": "The person in the background is wearing a name tag that says 'Elsin Houston'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o20",
+        "text": "The person in the foreground is standing in front of a window with vertical blinds.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o21",
+        "text": "The person in the background is standing in front of a window with vertical blinds.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o22",
+        "text": "The person in the foreground is wearing a dark suit and a tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o23",
+        "text": "The person in the background is wearing a dark suit and a light blue tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o24",
+        "text": "The person in the foreground is wearing a name tag that says 'Elder Poulsen'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o25",
+        "text": "The person in the background is wearing a name tag that says 'Elsin Houston'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o26",
+        "text": "The person in the foreground is standing in front of a window with vertical blinds.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o27",
+        "text": "The person in the background is standing in front of a window with vertical blinds.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o28",
+        "text": "The person in the foreground is wearing a dark suit and a tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o29",
+        "text": "The person in the background is wearing a dark suit and a light blue tie.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o30",
+        "text": "The person in the foreground is wearing a name tag that says 'Elder Poulsen'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o31",
+        "text": "The person in the background is wearing a name tag that says 'Elsin Houston'.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o32",
+        "text": "The person in the foreground is standing in front of a window with vertical blinds.",
+        "source": "image",
+        "cue": "none"
+      }
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "The context does not provide information about who argues against scientific ideas.",
+        "kind": "observation",
+        "social_assumption": false,
+        "evidence_ids": [
+          "o1",
+          "o2"
+        ],
+        "depends_on": [],
+        "contradicts": [],
+        "support": "supported",
+        "utility": 1.0
+      },
+      {
+        "id": "c2",
+        "text": "Therefore, the answer is not available in the provided context.",
+        "kind": "inference",
+        "social_assumption": false,
+        "evidence_ids": [
+          "o1",
+          "o2"
+        ],
+        "depends_on": [],
+        "contradicts": [],
+        "support": "supported",
+        "utility": 1.0
+      }
+    ]
+  },
+  "dependence_scores": {},
+  "pre_verification_repair": {
+    "selected_ids": [
+      "c1",
+      "c2"
+    ],
+    "removed": {},
+    "objective": 2.2,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 4,
+    "feasible_subsets": 4,
+    "dependency_closure_enforced": true
+  },
+  "repair": {
+    "selected_ids": [],
+    "removed": {
+      "c1": "visual_verification:unsupported",
+      "c2": "visual_verification:unsupported"
+    },
+    "objective": 0.0,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 1,
+    "feasible_subsets": 1,
+    "dependency_closure_enforced": true
+  },
+  "certificate": {
+    "scope": "structural constraints over model-produced evidence; no truth or fairness guarantee",
+    "graph_sha256": "b7e604a36226cf1018bddc712c7c9c0c790deb6483772b8f1c0df64f508a39f0",
+    "selected_ids": [],
+    "no_new_claim_text": true,
+    "all_selected_visually_verified": false,
+    "dependency_closure": true,
+    "all_selected_have_evidence_paths": true
+  },
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "graph",
+      "request_hash": "3aae947de9f6e81c43d24f67fc7e71b4ac84c3ebf42d21c4aac4dfca4469ca41",
+      "image_sha256": "d454c738a2f77a4e037f7c9804e604d3ee3c8f92240fccc45ec30c89aadddf65",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The context does not provide information about who argues against scientific ideas.",
+                      "Therefore, the answer is not available in the provided context."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "This year, like the past several years, there will be a diverse group of people in the image speaking at the freshman orientation. Two individuals in the image will be the first two speakers.",
+                          "This year, like the past several years, there will be a diverse group of people in the image speaking at the freshman orientation.",
+                          "Two individuals in the image will be the first two speakers."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c1"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The context does not provide information about who argues against scientific ideas."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "c2"
+                          ]
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 1
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c2"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "Therefore, the answer is not available in the provided context."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "c1"
+                          ]
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 1
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "c1"
+                          ]
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 1
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 1805,
+        "prompt_tokens": 2162,
+        "total_tokens": 3967,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 21.695463
+    },
+    {
+      "source": "verification",
+      "request_hash": "d056db98ebbdda588afd9679666600b1bc0619304b107cf43891276a47d0da4c",
+      "image_sha256": "d454c738a2f77a4e037f7c9804e604d3ee3c8f92240fccc45ec30c89aadddf65",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Judgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "enum": [
+                      "c1",
+                      "c2"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "minLength": 1,
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "support",
+                  "reason"
+                ],
+                "title": "Judgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "judgments": {
+                "items": {
+                  "$ref": "#/$defs/Judgment"
+                },
+                "title": "Judgments",
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "judgments"
+            ],
+            "title": "JudgmentBatch",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 207,
+        "prompt_tokens": 1449,
+        "total_tokens": 1656,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.377215
+    }
+  ],
+  "network_calls": 2,
+  "prompt_fingerprint": "852069bbcf594950f24164f8e66c64f90bfbea9fdba7dc7d2c2c8b9f4e3287c9",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "07_06_0308_2_02",
+  "system": "eigr",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "graph",
+      "request_hash": "3aae947de9f6e81c43d24f67fc7e71b4ac84c3ebf42d21c4aac4dfca4469ca41",
+      "image_sha256": "d454c738a2f77a4e037f7c9804e604d3ee3c8f92240fccc45ec30c89aadddf65",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The context does not provide information about who argues against scientific ideas.",
+                      "Therefore, the answer is not available in the provided context."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "This year, like the past several years, there will be a diverse group of people in the image speaking at the freshman orientation. Two individuals in the image will be the first two speakers.",
+                          "This year, like the past several years, there will be a diverse group of people in the image speaking at the freshman orientation.",
+                          "Two individuals in the image will be the first two speakers."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c1"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The context does not provide information about who argues against scientific ideas."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "c2"
+                          ]
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 1
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c2"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "Therefore, the answer is not available in the provided context."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "c1"
+                          ]
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 1
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "c1"
+                          ]
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 1
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 1805,
+        "prompt_tokens": 2162,
+        "total_tokens": 3967,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 21.695463
+    },
+    {
+      "source": "verification",
+      "request_hash": "d056db98ebbdda588afd9679666600b1bc0619304b107cf43891276a47d0da4c",
+      "image_sha256": "d454c738a2f77a4e037f7c9804e604d3ee3c8f92240fccc45ec30c89aadddf65",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Judgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "enum": [
+                      "c1",
+                      "c2"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "minLength": 1,
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "support",
+                  "reason"
+                ],
+                "title": "Judgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "judgments": {
+                "items": {
+                  "$ref": "#/$defs/Judgment"
+                },
+                "title": "Judgments",
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "judgments"
+            ],
+            "title": "JudgmentBatch",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 207,
+        "prompt_tokens": 1449,
+        "total_tokens": 1656,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.377215
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "496fead85d1395e0793db42dda6de10ed78bef598959faba886b2a605b455a54",
+      "image_sha256": "d454c738a2f77a4e037f7c9804e604d3ee3c8f92240fccc45ec30c89aadddf65",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.009908
+    }
+  ]
+}

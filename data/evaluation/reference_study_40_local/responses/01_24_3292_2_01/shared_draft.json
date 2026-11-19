@@ -1,0 +1,33 @@
+{
+  "answer": "The context mentions that having unprotected sex is seen as a risky behavior, but it does not specify who is doing it. Therefore, the answer is not possible to determine from the image alone.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "65fc2b8a997f55a08200b505f20e6b4fcd3d5578a01ad0ecb5b27a77d3f2c2f9",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 39,
+        "prompt_tokens": 1111,
+        "total_tokens": 1150,
+        "prompt_tokens_details": {
+          "cached_tokens": 97
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.338525
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

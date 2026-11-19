@@ -1,0 +1,54 @@
+{
+  "answer": "The image does not show anyone drinking beer or any beverage.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "5b5fe9f7987641d6a4822238e021cb34f063e9d645076cb2ebf30904cfc5db57",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2511,
+        "completion_tokens": 13,
+        "total_tokens": 2524,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "nvidia/nemotron-3.5-super-vl:free",
+      "finish_reason": "stop",
+      "latency_seconds": 7.862427
+    }
+  ],
+  "protocol_hash": "69e427750640ada438caee31ada3310f909f907166ab3004c7f40c3f7616f7a1"
+}

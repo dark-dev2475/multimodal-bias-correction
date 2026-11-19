@@ -1,0 +1,10 @@
+{
+  "status": "abstained",
+  "final_response": "The available evidence does not establish an answer.",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "02_02_0108_2_02",
+  "system": "always_abstain",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": []
+}

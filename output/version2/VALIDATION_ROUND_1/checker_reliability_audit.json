@@ -1,0 +1,79 @@
+{
+  "origin": "assistant_posthoc_spot_check_not_human_approval",
+  "calibration_three_class_supplement": {
+    "nli_deberta": {
+      "planned": 24,
+      "exact_three_class_correct": 22,
+      "errors": [
+        {
+          "id": "criminality_unknown",
+          "expected": "unknown",
+          "prediction": "contradicted"
+        },
+        {
+          "id": "qualification_unknown",
+          "expected": "unknown",
+          "prediction": "contradicted"
+        }
+      ]
+    },
+    "qwen_pointwise": {
+      "planned": 24,
+      "exact_three_class_correct": 16,
+      "errors": [
+        {
+          "id": "belief_contradicted",
+          "expected": "contradicted",
+          "prediction": "unknown"
+        },
+        {
+          "id": "criminality_contradicted",
+          "expected": "contradicted",
+          "prediction": "unknown"
+        },
+        {
+          "id": "employment_contradicted",
+          "expected": "contradicted",
+          "prediction": "unknown"
+        },
+        {
+          "id": "friendship_contradicted",
+          "expected": "contradicted",
+          "prediction": "unknown"
+        },
+        {
+          "id": "life_stability_contradicted",
+          "expected": "contradicted",
+          "prediction": "unknown"
+        },
+        {
+          "id": "parenthood_contradicted",
+          "expected": "contradicted",
+          "prediction": "unknown"
+        },
+        {
+          "id": "productivity_contradicted",
+          "expected": "contradicted",
+          "prediction": "unknown"
+        },
+        {
+          "id": "qualification_contradicted",
+          "expected": "contradicted",
+          "prediction": "unknown"
+        }
+      ]
+    }
+  },
+  "real_data_checker_validated": false,
+  "downstream_semantic_scoring_approved": false,
+  "known_nli_false_entailment": {
+    "example_id": "02_11_0780_2_01",
+    "system": "always_abstain",
+    "premise": "The available evidence does not establish an answer.",
+    "hypothesis": "The office is shared between two individuals in the image.",
+    "model_prediction": "entailed",
+    "pair_hash": "b311a54b624763f0897f9b346d61e58ff7036030fad4efa040c0e6e6ef663d67",
+    "audit_reason": "A generic abstention does not state that two people share an office."
+  },
+  "conclusion": "The small synthetic gate did not establish real-data reliability. Do not use these diagnostics as validated accuracy/fairness or paper comparison results."
+}

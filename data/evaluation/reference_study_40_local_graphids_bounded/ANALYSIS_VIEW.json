@@ -1,0 +1,9 @@
+{
+  "analysis_only": true,
+  "source_study": "data\\evaluation\\reference_study_40_local_graphids",
+  "generator_protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "review_protocol_hash": "332c366fc414f53987203974ce628bd4f37228fe1f67e583890e84352ad728fe",
+  "label_directory": "ai_reviews_v2",
+  "generated_at": "2026-11-04T07:57:49.660354+00:00",
+  "warning": "Same-model AI labels, not human ground truth. Never use this analysis view for collection."
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "presentation-finalization.v1",
+  "finalSha256": "e6154a9867d36465e28980a575bb293e2bb468fb87bbb72b1b2ac3de323be371",
+  "byteCount": 133389,
+  "packageIntegrity": {
+    "chart_count": 0,
+    "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+    "finding_count": 0,
+    "findings": [],
+    "notes_parts_skipped": 22,
+    "relationship_part_count": 59,
+    "slide_count": 22,
+    "status": "pass",
+    "exitCode": 0,
+    "findingCount": 0,
+    "warnings": []
+  },
+  "presentationLayout": {
+    "finding_count": 0,
+    "findings": [],
+    "slide_count": 22,
+    "slide_size_in": [
+      10,
+      7.5
+    ],
+    "warning_count": 7,
+    "warnings": [
+      {
+        "kind": "object_outside_slide_boundary",
+        "object_id": "9",
+        "object_kind": "sp",
+        "slide": 1
+      },
+      {
+        "kind": "object_outside_slide_boundary",
+        "object_id": "3",
+        "object_kind": "sp",
+        "slide": 8
+      },
+      {
+        "kind": "substantial_text_frame_overlap",
+        "left_object_id": "13",
+        "overlap_height_in": 0.72,
+        "overlap_width_in": 3.75,
+        "right_object_id": "28",
+        "slide": 17
+      },
+      {
+        "kind": "substantial_text_frame_overlap",
+        "left_object_id": "19",
+        "overlap_height_in": 0.3425,
+        "overlap_width_in": 3.9467,
+        "right_object_id": "27",
+        "slide": 17
+      },
+      {
+        "kind": "substantial_text_frame_overlap",
+        "left_object_id": "23",
+        "overlap_height_in": 0.72,
+        "overlap_width_in": 3.75,
+        "right_object_id": "29",
+        "slide": 17
+      },
+      {
+        "kind": "substantial_text_frame_overlap",
+        "left_object_id": "19",
+        "overlap_height_in": 0.72,
+        "overlap_width_in": 3.8229,
+        "right_object_id": "39",
+        "slide": 18
+      },
+      {
+        "kind": "object_outside_slide_boundary",
+        "object_id": "7",
+        "object_kind": "sp",
+        "slide": 20
+      }
+    ],
+    "exitCode": 0,
+    "findingCount": 0
+  },
+  "fontSelection": {
+    "basis": "unspecified",
+    "approvedFamilies": [],
+    "scriptFonts": {},
+    "referenceSha256": null,
+    "referenceFontsVerifiedInEncodedText": false
+  },
+  "firstPartyImport": {
+    "performed": true,
+    "passed": true,
+    "slideCount": 22,
+    "sha256": "e6154a9867d36465e28980a575bb293e2bb468fb87bbb72b1b2ac3de323be371",
+    "runtimeNodeModules": "C:\\Users\\gagan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules",
+    "nodeExecutable": "C:\\Users\\gagan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe"
+  },
+  "nativeTableArithmetic": {
+    "performed": true,
+    "checked_column_count": 0,
+    "checks": [],
+    "claim_boundary": "Displayed-value arithmetic with rounding tolerance; not source-data verification.",
+    "eligible_table_count": 0,
+    "finding_count": 0,
+    "findings": [],
+    "native_table_count": 0,
+    "passed": true,
+    "schema_version": "presentation-native-table-arithmetic.v1",
+    "skipped_tables": [],
+    "slide_count": 22,
+    "warning_count": 0,
+    "warnings": []
+  },
+  "nativeChartTitles": {
+    "performed": true,
+    "checks": [],
+    "finding_count": 0,
+    "findings": [],
+    "native_chart_count": 0,
+    "native_powerpoint_verified": false,
+    "passed": true,
+    "presentation_sha256": "e6154a9867d36465e28980a575bb293e2bb468fb87bbb72b1b2ac3de323be371",
+    "schema_version": "presentation-native-chart-titles.v1",
+    "slide_count": 22,
+    "source_text_emitted": false,
+    "unresolved_linked_title_count": 0
+  },
+  "sourceDerivedPolicyFlags": [
+    "--expected-slide-size-emu",
+    "9144000,6858000",
+    "--validate-bullet-geometry",
+    "--validate-heading-fit",
+    "--cover-role",
+    "none",
+    "--expected-slide-count",
+    "22"
+  ],
+  "nativeChartValidation": {
+    "detectedOwnerSlides": [],
+    "detectedChartCount": 0,
+    "targetApplication": "portable",
+    "sourceChartOwnersExplicitlyDeclared": true,
+    "validatorRan": false,
+    "passed": true
+  }
+}

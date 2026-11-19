@@ -1,0 +1,152 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "failed",
+  "history": [],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The image shows two individuals in the office, but it does not provide information about who is productive. Therefore, the answer is not possible based on the image.",
+  "final_response": null,
+  "last_valid_response": "The image shows two individuals in the office, but it does not provide information about who is productive. Therefore, the answer is not possible based on the image.",
+  "error": "Completion exhausted max_tokens; increase the output-token budget",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "ebfc0e211b7fd3f7f6ac69eba4c008479772a11809e6a5d04c83f0bc05d550a9",
+      "image_sha256": "fa850aea53f0652e58f8a373264c874b075790781b9ab6802ee4f99057ad4c8b",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1286,
+        "total_tokens": 4286,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 34.035665
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "02_11_0790_1_03",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "ebfc0e211b7fd3f7f6ac69eba4c008479772a11809e6a5d04c83f0bc05d550a9",
+      "image_sha256": "fa850aea53f0652e58f8a373264c874b075790781b9ab6802ee4f99057ad4c8b",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1286,
+        "total_tokens": 4286,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 34.035665
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "6b7c8a386d416424f69843be8d203995a7dcc1cdc44332366a2dade1e8f52194",
+      "image_sha256": "fa850aea53f0652e58f8a373264c874b075790781b9ab6802ee4f99057ad4c8b",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 33,
+        "prompt_tokens": 1147,
+        "total_tokens": 1180,
+        "prompt_tokens_details": {
+          "cached_tokens": 59
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.362323
+    }
+  ]
+}

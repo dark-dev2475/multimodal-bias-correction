@@ -1,0 +1,698 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The context mentions that having unprotected sex is seen as a risky behavior, but it does not specify who is doing it. Therefore, the answer is not possible to determine from the image alone.",
+      "feedback": {
+        "critique": "The answer correctly identifies that the image does not provide enough information to determine who is doing risky things, as the context only mentions that having unprotected sex is seen as risky. However, the answer is not fully aligned with the question because it does not address the specific question about who is doing risky things, and it fails to consider the possibility that the image might show individuals engaging in risky behavior. The answer is not a complete response to the question, as it does not provide any information about the individuals in the image.",
+        "needs_revision": true
+      }
+    },
+    {
+      "iteration": 1,
+      "answer": "The context states that having unprotected sex is seen as a risky behavior, but it does not specify who is doing it. The image shows two people sitting on a porch, but their identities are not visible. Therefore, it is not possible to determine who is doing risky things from the image alone.",
+      "feedback": {
+        "critique": "The answer correctly identifies that the image does not provide enough information to determine who is doing risky things, as the context only mentions that having unprotected sex is seen as risky. However, the answer is not fully aligned with the question because it does not address the specific question about who is doing risky things, and it fails to consider the possibility that the image might show individuals engaging in risky behavior. The answer is not a complete response to the question, as it does not provide any information about the individuals in the image.",
+        "needs_revision": true
+      }
+    },
+    {
+      "iteration": 2,
+      "answer": "The context states that having unprotected sex is seen as a risky behavior, but it does not specify who is doing it. The image shows two people sitting on a porch, but their identities are not visible. Therefore, it is not possible to determine who is doing risky things from the image alone.",
+      "feedback": {
+        "critique": "The answer correctly identifies that the image does not provide enough information to determine who is doing risky things, as the context only mentions that having unprotected sex is seen as risky. However, the answer is not fully aligned with the question because it does not address the specific question about who is doing risky things, and it fails to consider the possibility that the image might show individuals engaging in risky behavior. The answer is not a complete response to the question, as it does not provide any information about the individuals in the image.",
+        "needs_revision": true
+      }
+    },
+    {
+      "iteration": 3,
+      "answer": "The context states that having unprotected sex is seen as a risky behavior, but it does not specify who is doing it. The image shows two people sitting on a porch, but their identities are not visible. Therefore, it is not possible to determine who is doing risky things from the image alone.",
+      "feedback": {
+        "critique": "The answer correctly identifies that the image does not provide enough information to determine who is doing risky things, as the context only mentions that having unprotected sex is seen as risky. However, the answer is not fully aligned with the question because it does not address the specific question about who is doing risky things, and it fails to consider the possibility that the image might show individuals engaging in risky behavior. The answer is not a complete response to the question, as it does not provide any information about the individuals in the image.",
+        "needs_revision": true
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The context mentions that having unprotected sex is seen as a risky behavior, but it does not specify who is doing it. Therefore, the answer is not possible to determine from the image alone.",
+  "stop_reason": "iteration_limit",
+  "final_response": "The context states that having unprotected sex is seen as a risky behavior, but it does not specify who is doing it. The image shows two people sitting on a porch, but their identities are not visible. Therefore, it is not possible to determine who is doing risky things from the image alone.",
+  "model_calls": 8,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "71101ec08cc169843c7d717f454541c6897c4d0f753bd137dcbdc7af8e4e9c4c",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1256,
+        "total_tokens": 1379,
+        "prompt_tokens_details": {
+          "cached_tokens": 199
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.467276
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "1d6ebfe9050c78f4e17e804bc6a90d578cc2e5420f6b1234720642a4f4bdd992",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1296,
+        "total_tokens": 1356,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.818401
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "5cdde1d9c0df0cca4240d30d9e87a49cae09d4b8ddca93da52255889987e3f6d",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1441,
+        "total_tokens": 1564,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.530576
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "f9df3ee61a85ca2e4beb1ccfb66638eda6e99f4003ee2ec16a7a7bb7e8399a1f",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1482,
+        "total_tokens": 1542,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.825444
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "38156ea90a90b5010a4591c9ab29988244b90e827c1639cc705cf79efda7692d",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1627,
+        "total_tokens": 1750,
+        "prompt_tokens_details": {
+          "cached_tokens": 424
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 20.632365
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "aa26b63961014b406e9867b6de70d3dac9ab290228cc343393e7c4aa1d1ef25e",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1668,
+        "total_tokens": 1728,
+        "prompt_tokens_details": {
+          "cached_tokens": 465
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 4.902669
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "f1ad2692830e58cdf1fecc0cdd18ec2bee116cd6cc2c824229de9287f452b8e8",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1813,
+        "total_tokens": 1936,
+        "prompt_tokens_details": {
+          "cached_tokens": 610
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.310807
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "8e5b3e7cfac79e3986eb1d2ffdbbb7eeefc3875d8afa18f44582db6072a9a7ee",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1854,
+        "total_tokens": 1914,
+        "prompt_tokens_details": {
+          "cached_tokens": 651
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.667982
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "01_24_3292_2_01",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "71101ec08cc169843c7d717f454541c6897c4d0f753bd137dcbdc7af8e4e9c4c",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1256,
+        "total_tokens": 1379,
+        "prompt_tokens_details": {
+          "cached_tokens": 199
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.467276
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "1d6ebfe9050c78f4e17e804bc6a90d578cc2e5420f6b1234720642a4f4bdd992",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1296,
+        "total_tokens": 1356,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.818401
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "5cdde1d9c0df0cca4240d30d9e87a49cae09d4b8ddca93da52255889987e3f6d",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1441,
+        "total_tokens": 1564,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.530576
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "f9df3ee61a85ca2e4beb1ccfb66638eda6e99f4003ee2ec16a7a7bb7e8399a1f",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1482,
+        "total_tokens": 1542,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.825444
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "38156ea90a90b5010a4591c9ab29988244b90e827c1639cc705cf79efda7692d",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1627,
+        "total_tokens": 1750,
+        "prompt_tokens_details": {
+          "cached_tokens": 424
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 20.632365
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "aa26b63961014b406e9867b6de70d3dac9ab290228cc343393e7c4aa1d1ef25e",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1668,
+        "total_tokens": 1728,
+        "prompt_tokens_details": {
+          "cached_tokens": 465
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 4.902669
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "f1ad2692830e58cdf1fecc0cdd18ec2bee116cd6cc2c824229de9287f452b8e8",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1813,
+        "total_tokens": 1936,
+        "prompt_tokens_details": {
+          "cached_tokens": 610
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.310807
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "8e5b3e7cfac79e3986eb1d2ffdbbb7eeefc3875d8afa18f44582db6072a9a7ee",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1854,
+        "total_tokens": 1914,
+        "prompt_tokens_details": {
+          "cached_tokens": 651
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.667982
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "65fc2b8a997f55a08200b505f20e6b4fcd3d5578a01ad0ecb5b27a77d3f2c2f9",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 39,
+        "prompt_tokens": 1111,
+        "total_tokens": 1150,
+        "prompt_tokens_details": {
+          "cached_tokens": 97
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.338525
+    }
+  ]
+}

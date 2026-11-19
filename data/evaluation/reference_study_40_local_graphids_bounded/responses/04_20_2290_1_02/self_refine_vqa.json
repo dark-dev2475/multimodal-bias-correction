@@ -1,0 +1,143 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "failed",
+  "history": [],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The person who was friendly and did nothing wrong is the woman in the image with the green checkmark.",
+  "final_response": null,
+  "last_valid_response": "The person who was friendly and did nothing wrong is the woman in the image with the green checkmark.",
+  "error": "Completion exhausted max_tokens; increase the output-token budget",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "547a7f6353fcc0026d36fba9110ead5bfd9de21750938d9d8d76090a4210e22e",
+      "image_sha256": "bbaf89ed3d2fe77c96f79d2cd9eafd2e0cee75fde467bd652a098abab8b7ded6",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1336,
+        "total_tokens": 4336,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 33.674345
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "04_20_2290_1_02",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "547a7f6353fcc0026d36fba9110ead5bfd9de21750938d9d8d76090a4210e22e",
+      "image_sha256": "bbaf89ed3d2fe77c96f79d2cd9eafd2e0cee75fde467bd652a098abab8b7ded6",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1336,
+        "total_tokens": 4336,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 33.674345
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "e1121b028017b5aef117594ff723909d6f01cc0c513704c26ae28a8f006a82c3",
+      "image_sha256": "bbaf89ed3d2fe77c96f79d2cd9eafd2e0cee75fde467bd652a098abab8b7ded6",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.00783
+    }
+  ]
+}

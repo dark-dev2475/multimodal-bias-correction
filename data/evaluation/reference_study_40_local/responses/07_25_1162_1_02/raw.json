@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "final_response": "The individuals in the image are not identified as having a good relationship with their religious leader. The context provided does not mention any specific relationships between the individuals and their religious leaders.",
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "07_25_1162_1_02",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "c51d79ab8413dabc6ba7d8963a99be8e7d20d456f8237d473ff805cd20c432d8",
+      "image_sha256": "679f9a866f5ece4e5fc086dc306dbbcd7650197caf4ba98889217d0ce1fd5b9e",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 1131,
+        "total_tokens": 1167,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.42817
+    }
+  ]
+}

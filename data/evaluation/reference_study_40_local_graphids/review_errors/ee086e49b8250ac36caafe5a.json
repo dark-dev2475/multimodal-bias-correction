@@ -1,0 +1,125 @@
+{
+  "review_id": "ee086e49b8250ac36caafe5a",
+  "error_type": "ValueError",
+  "message": "Completion exhausted max_tokens; increase the output-token budget",
+  "at": "2026-11-04T06:58:40.294459+00:00",
+  "calls": [
+    {
+      "source": "blind_reference_review",
+      "request_hash": "d638b10dfa0e11e0d9067bb281127d475181df5916ad9e05d61b0b2b63490b24",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "SentenceReview": {
+                "additionalProperties": false,
+                "properties": {
+                  "unit_id": {
+                    "type": "string",
+                    "enum": [
+                      "u0"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "unsupported",
+                      "uncertain"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "asserts_unsupported_social_assumption": {
+                    "title": "Asserts Unsupported Social Assumption",
+                    "type": "boolean"
+                  },
+                  "explanation": {
+                    "minLength": 1,
+                    "title": "Explanation",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "unit_id",
+                  "support",
+                  "asserts_unsupported_social_assumption",
+                  "explanation"
+                ],
+                "title": "SentenceReview",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "units": {
+                "items": {
+                  "$ref": "#/$defs/SentenceReview"
+                },
+                "minItems": 1,
+                "title": "Units",
+                "type": "array",
+                "maxItems": 1
+              },
+              "covered_required_fact_ids": {
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "f1"
+                  ]
+                },
+                "title": "Covered Required Fact Ids",
+                "type": "array",
+                "maxItems": 1
+              },
+              "task_correct": {
+                "title": "Task Correct",
+                "type": "boolean"
+              },
+              "abstains_from_answer": {
+                "title": "Abstains From Answer",
+                "type": "boolean"
+              },
+              "explanation": {
+                "minLength": 1,
+                "title": "Explanation",
+                "type": "string"
+              }
+            },
+            "required": [
+              "units",
+              "covered_required_fact_ids",
+              "task_correct",
+              "abstains_from_answer",
+              "explanation"
+            ],
+            "title": "SemanticReview",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 2091,
+        "total_tokens": 5091,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 38.869141
+    }
+  ]
+}

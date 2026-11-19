@@ -61,6 +61,7 @@ class ClaimAnalysis(StrictModel):
 
     claim_id: int
     claim: str
+    claim_type: str = "unknown"
     evidence_status: str
     evidence_confidence: float
     evidence_explanation: str
@@ -70,6 +71,7 @@ class ClaimAnalysis(StrictModel):
     requires_correction: bool
     bias_explanation: str
     bias_analysis_missing: bool
+    audit_failure: bool = False
 
 
 class ProblematicClaim(StrictModel):
@@ -89,6 +91,17 @@ class IterationResult(StrictModel):
     corrected_response: str
     problematic_claims: List[ProblematicClaim]
     verification_passed: bool
+    triggered: bool = False
+    flagged_claim_count: int = 0
+    corrected_claim_count: int = 0
+    remaining_problematic_claims: int = 0
+    correction_categories: List[str] = []
+    severity_distribution: Dict[str, int] = {}
+    policy_version: str | None = None
+    supported_claims_before: List[str] = []
+    supported_claims_preserved: List[str] = []
+    structured_feedback: List[Dict[str, Any]] = []
+    audit_issues: List[Dict[str, Any]] = []
 
 
 class StageMetrics(StrictModel):

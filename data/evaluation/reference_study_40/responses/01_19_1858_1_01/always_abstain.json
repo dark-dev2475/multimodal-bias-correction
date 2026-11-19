@@ -1,0 +1,10 @@
+{
+  "status": "abstained",
+  "final_response": "The available evidence does not establish an answer.",
+  "protocol_hash": "69e427750640ada438caee31ada3310f909f907166ab3004c7f40c3f7616f7a1",
+  "example_id": "01_19_1858_1_01",
+  "system": "always_abstain",
+  "generator_model": "nvidia/nemotron-3.5-super-vl:free",
+  "calls": [],
+  "shared_draft_calls": []
+}

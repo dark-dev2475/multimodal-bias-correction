@@ -1,0 +1,33 @@
+{
+  "answer": "The person in the image reacted violently.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "0b3ce4f987831fcc338da78ba1dd587e44d9b949ddb7e4b53b5454322fb87651",
+      "image_sha256": "df029e31d55f32cda5d1d69121657ae8bb26e97a6e053f2ed5df04f032742942",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 1100,
+        "total_tokens": 1109,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.115088
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

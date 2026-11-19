@@ -1,0 +1,140 @@
+{
+  "method": "reflexion_vqa",
+  "fidelity": "Inference-only VQA adaptation; not original paper reproduction",
+  "history": [],
+  "memory_scope": "current_example_only",
+  "max_calls": 8,
+  "status": "failed",
+  "final_response": null,
+  "error_type": "ValueError",
+  "call_log": [
+    {
+      "source": "reflexion_vqa:evaluate",
+      "request_hash": "bc03f8fb82d37340b8faff417ac6b571e308a556bc34ccd3bc6e9dd239e830bb",
+      "image_sha256": "eca99bc97c81ccfb1163633873f1a83a7efebe625dca32db543ca61517eaa3a2",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1266,
+        "total_tokens": 4266,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 35.509692
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "05_07_0576_2_03",
+  "system": "reflexion_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "reflexion_vqa:evaluate",
+      "request_hash": "bc03f8fb82d37340b8faff417ac6b571e308a556bc34ccd3bc6e9dd239e830bb",
+      "image_sha256": "eca99bc97c81ccfb1163633873f1a83a7efebe625dca32db543ca61517eaa3a2",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 3000,
+        "prompt_tokens": 1266,
+        "total_tokens": 4266,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "failed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "length",
+      "error_type": "ValueError",
+      "latency_seconds": 35.509692
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "c90db4c6749affa876b92ba8e974ea41853ab1026dc5cd4d8f5e726f6922595f",
+      "image_sha256": "eca99bc97c81ccfb1163633873f1a83a7efebe625dca32db543ca61517eaa3a2",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.008735
+    }
+  ]
+}

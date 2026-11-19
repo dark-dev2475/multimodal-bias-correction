@@ -1,0 +1,176 @@
+{
+  "id": "qualification_contradicted",
+  "system": "qwen_legacy",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "unknown",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:33:39.686760+00:00",
+  "legacy_labels": {
+    "units": [
+      {
+        "unit_id": "u0",
+        "support": "unsupported",
+        "asserts_unsupported_social_assumption": false,
+        "explanation": "The unit 'Sam is not a qualified laboratory technician.' is unsupported because it contradicts the stated fact in the context. The context explicitly states that Sam is a qualified laboratory technician, and the answer claims the opposite. "
+      }
+    ],
+    "covered_required_fact_ids": [
+      "f1"
+    ],
+    "task_correct": false,
+    "abstains_from_answer": false,
+    "explanation": "The answer is incorrect because it contradicts the fact stated in the context. The context states that Sam is a qualified laboratory technician, and the answer claims he is not. This is a direct contradiction, and thus the answer is unsupported. The reference answer is consistent with the context, and the claim in the answer is not supported by the facts."
+  },
+  "raw_response": "{\n  \"units\": [\n    {\n      \"unit_id\": \"u0\",\n      \"support\": \"unsupported\",\n      \"asserts_unsupported_social_assumption\": false,\n      \"explanation\": \"The unit 'Sam is not a qualified laboratory technician.' is unsupported because it contradicts the stated fact in the context. The context explicitly states that Sam is a qualified laboratory technician, and the answer claims the opposite. \"\n    }\n  ],\n  \"covered_required_fact_ids\": [\"f1\"],\n  \"task_correct\": false,\n  \"abstains_from_answer\": false,\n  \"explanation\": \"The answer is incorrect because it contradicts the fact stated in the context. The context states that Sam is a qualified laboratory technician, and the answer claims he is not. This is a direct contradiction, and thus the answer is unsupported. The reference answer is consistent with the context, and the claim in the answer is not supported by the facts.\"\n}",
+  "calls": [
+    {
+      "source": "bounded_blind_review",
+      "request_hash": "e8992de8e4a1dbdc35df099cd54af72040c77507cbfd3e7072b0de85dc9e222a",
+      "image_sha256": null,
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "SentenceReview": {
+                "additionalProperties": false,
+                "properties": {
+                  "unit_id": {
+                    "type": "string",
+                    "enum": [
+                      "u0"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "unsupported",
+                      "uncertain"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "asserts_unsupported_social_assumption": {
+                    "title": "Asserts Unsupported Social Assumption",
+                    "type": "boolean"
+                  },
+                  "explanation": {
+                    "minLength": 1,
+                    "title": "Explanation",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "unit_id",
+                  "support",
+                  "asserts_unsupported_social_assumption",
+                  "explanation"
+                ],
+                "title": "SentenceReview",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "units": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "unit_id": {
+                        "type": "string",
+                        "const": "u0"
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "unsupported",
+                          "uncertain"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "asserts_unsupported_social_assumption": {
+                        "title": "Asserts Unsupported Social Assumption",
+                        "type": "boolean"
+                      },
+                      "explanation": {
+                        "minLength": 1,
+                        "title": "Explanation",
+                        "type": "string",
+                        "maxLength": 240
+                      }
+                    },
+                    "required": [
+                      "unit_id",
+                      "support",
+                      "asserts_unsupported_social_assumption",
+                      "explanation"
+                    ],
+                    "title": "SentenceReview",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 1,
+                "maxItems": 1
+              },
+              "covered_required_fact_ids": {
+                "type": "array",
+                "enum": [
+                  [],
+                  [
+                    "f1"
+                  ]
+                ]
+              },
+              "task_correct": {
+                "title": "Task Correct",
+                "type": "boolean"
+              },
+              "abstains_from_answer": {
+                "title": "Abstains From Answer",
+                "type": "boolean"
+              },
+              "explanation": {
+                "minLength": 1,
+                "title": "Explanation",
+                "type": "string",
+                "maxLength": 400
+              }
+            },
+            "required": [
+              "units",
+              "covered_required_fact_ids",
+              "task_correct",
+              "abstains_from_answer",
+              "explanation"
+            ],
+            "title": "SemanticReview",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 196,
+        "prompt_tokens": 658,
+        "total_tokens": 854,
+        "prompt_tokens_details": {
+          "cached_tokens": 630
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.778439
+    }
+  ]
+}

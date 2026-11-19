@@ -49,7 +49,7 @@ def load_bbqv_manifest(
     root: str | Path = PROJECT_ROOT,
     require_images: bool = True,
 ) -> BBQVBenchmark:
-    """Load and validate the local BBQ-V subset manifest."""
+    """Load a legacy subset or explicitly grouped multi-question manifest."""
     manifest_path = Path(path)
     root_path = Path(root)
     if not manifest_path.exists():
@@ -61,6 +61,9 @@ def load_bbqv_manifest(
         raise ValueError("BBQ-V manifest must contain a non-empty 'entries' list")
 
     examples = []
+    allow_shared_images = data.get("allow_shared_images", False)
+    if not isinstance(allow_shared_images, bool):
+        raise ValueError("allow_shared_images must be a boolean")
     seen_ids: set[str] = set()
     seen_paths: set[Path] = set()
     for entry in entries:
@@ -70,7 +73,7 @@ def load_bbqv_manifest(
             raise ValueError("BBQ-V manifest entry is missing example_id")
         if example_id in seen_ids:
             raise ValueError(f"Duplicate BBQ-V example_id: {example_id}")
-        if image_path in seen_paths:
+        if image_path in seen_paths and not allow_shared_images:
             raise ValueError(f"Duplicate BBQ-V image_path: {image_path}")
         if require_images and not image_path.exists():
             raise FileNotFoundError(
@@ -92,6 +95,11 @@ def load_bbqv_manifest(
                     "context": entry.get("context"),
                     "dataset_index": entry.get("dataset_index"),
                     "selection_seed": entry.get("selection_seed"),
+                    "question_family": entry.get("question_family"),
+                    "leakage_group": entry.get("leakage_group"),
+                    "source_split": entry.get("source_split", data.get("source_split")),
+                    "source_revision": data.get("source_revision"),
+                    "pixel_sha256": entry.get("pixel_sha256"),
                 },
                 question=entry["question"],
             )

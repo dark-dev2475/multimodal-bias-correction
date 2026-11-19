@@ -1,0 +1,33 @@
+{
+  "answer": "The image shows a tattoo artist working on a client, but it does not depict anyone robbing the store. Therefore, the answer is not possible based on the image provided.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "c90db4c6749affa876b92ba8e974ea41853ab1026dc5cd4d8f5e726f6922595f",
+      "image_sha256": "eca99bc97c81ccfb1163633873f1a83a7efebe625dca32db543ca61517eaa3a2",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 1166,
+        "total_tokens": 1202,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.395884
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

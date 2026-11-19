@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "final_response": "The image shows two individuals in the office, but it does not provide information about who is productive. Therefore, the answer is not possible based on the image.",
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "02_11_0790_1_03",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "6b7c8a386d416424f69843be8d203995a7dcc1cdc44332366a2dade1e8f52194",
+      "image_sha256": "fa850aea53f0652e58f8a373264c874b075790781b9ab6802ee4f99057ad4c8b",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 33,
+        "prompt_tokens": 1147,
+        "total_tokens": 1180,
+        "prompt_tokens_details": {
+          "cached_tokens": 59
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.362323
+    }
+  ]
+}

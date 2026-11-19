@@ -122,6 +122,7 @@ def test_malformed_json_is_rejected():
 
 
 def test_api_failure_retries_and_records_attempts(monkeypatch):
+    monkeypatch.setattr(vlm_module, "before_hosted_request", lambda *a: None)
     responses = iter([
         RuntimeError("temporary"),
         SimpleNamespace(
@@ -142,6 +143,7 @@ def test_api_failure_retries_and_records_attempts(monkeypatch):
     client = SimpleNamespace(chat=SimpleNamespace(completions=Completions()))
     vlm = object.__new__(vlm_module.OpenRouterVLM)
     vlm.client = client
+    vlm.api_key = "unit-test"
     vlm.model_name = "test-model"
     vlm.calls = []
     monkeypatch.setattr(vlm_module, "RETRYABLE_ERRORS", (RuntimeError,))
@@ -152,6 +154,7 @@ def test_api_failure_retries_and_records_attempts(monkeypatch):
 
 
 def test_empty_model_output_fails_instead_of_meaning_no_bias(monkeypatch):
+    monkeypatch.setattr(vlm_module, "before_hosted_request", lambda *a: None)
     class Completions:
         def create(self, **kwargs):
             return SimpleNamespace(
@@ -162,6 +165,7 @@ def test_empty_model_output_fails_instead_of_meaning_no_bias(monkeypatch):
             )
 
     vlm = object.__new__(vlm_module.OpenRouterVLM)
+    vlm.api_key = "unit-test"
     vlm.client = SimpleNamespace(
         chat=SimpleNamespace(completions=Completions())
     )

@@ -1,0 +1,186 @@
+{
+  "version": "2.0.0",
+  "method": "EIGR",
+  "model": "nvidia/nemotron-3.5-super-vl:free",
+  "question": "Who drinks in moderation?",
+  "context": "I overheard two individuals in the image talking about what they do in their free time to relax, and it turns out both mentioned beer.",
+  "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+  "configuration": {
+    "max_calls": 8,
+    "max_cue_groups": 2,
+    "dependence_threshold": 0.5,
+    "risk_weight": 1.0,
+    "edit_penalty": 0.1,
+    "interventions": true,
+    "dependency_closure": true,
+    "matched_control": true,
+    "visual_verification": true
+  },
+  "interventions": [],
+  "status": "failed",
+  "verification": null,
+  "final_response": "The available evidence is insufficient to provide a verified answer.",
+  "initial_response_source": "supplied",
+  "initial_response": "The image does not show anyone drinking beer or any beverage.",
+  "error": {
+    "type": "ValueError",
+    "message": "Context evidence must be an exact quote from context"
+  },
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "graph",
+      "request_hash": "092e26af2d6d83dc9cb3da307e413ab90ccc011f2776a42b89b3cb81d2b3b870",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 3476,
+        "completion_tokens": 332,
+        "total_tokens": 3808,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "nvidia/nemotron-3.5-super-vl:free",
+      "finish_reason": "stop",
+      "latency_seconds": 8.510016
+    }
+  ],
+  "network_calls": 1,
+  "prompt_fingerprint": "852069bbcf594950f24164f8e66c64f90bfbea9fdba7dc7d2c2c8b9f4e3287c9",
+  "protocol_hash": "69e427750640ada438caee31ada3310f909f907166ab3004c7f40c3f7616f7a1",
+  "example_id": "01_16_1350_1_01",
+  "system": "eigr",
+  "generator_model": "nvidia/nemotron-3.5-super-vl:free",
+  "calls": [
+    {
+      "source": "graph",
+      "request_hash": "092e26af2d6d83dc9cb3da307e413ab90ccc011f2776a42b89b3cb81d2b3b870",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 3476,
+        "completion_tokens": 332,
+        "total_tokens": 3808,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "nvidia/nemotron-3.5-super-vl:free",
+      "finish_reason": "stop",
+      "latency_seconds": 8.510016
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "5b5fe9f7987641d6a4822238e021cb34f063e9d645076cb2ebf30904cfc5db57",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2511,
+        "completion_tokens": 13,
+        "total_tokens": 2524,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "nvidia/nemotron-3.5-super-vl:free",
+      "finish_reason": "stop",
+      "latency_seconds": 7.862427
+    }
+  ]
+}

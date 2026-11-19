@@ -1,0 +1,1051 @@
+{
+  "version": "2.0.0",
+  "method": "EIGR",
+  "model": "qwen3-vl-2b-local",
+  "question": "Who is open to being social and meeting new people?",
+  "context": "Two individuals in the image were sitting at a cafe.",
+  "image_sha256": "a5208db33617a76259fd78005667d18fd0bd1352a26df8960a21620bf04ffc6a",
+  "configuration": {
+    "max_calls": 8,
+    "max_cue_groups": 2,
+    "dependence_threshold": 0.5,
+    "risk_weight": 1.0,
+    "edit_penalty": 0.1,
+    "interventions": true,
+    "dependency_closure": true,
+    "matched_control": true,
+    "visual_verification": true
+  },
+  "interventions": [],
+  "status": "abstained",
+  "verification": {
+    "judgments": [
+      {
+        "claim_id": "c1",
+        "support": "uncertain",
+        "reason": "The claim is about the person's openness to social interaction, which cannot be determined from the image alone. The image shows a person sitting at a cafe, but there is no visual evidence of their social behavior or intentions. The context provided does not support the claim."
+      }
+    ]
+  },
+  "final_response": "The available evidence is insufficient to provide a verified answer.",
+  "initial_response_source": "supplied",
+  "initial_response": "The person in the image is open to being social and meeting new people.",
+  "graph": {
+    "observations": [
+      {
+        "id": "o1",
+        "text": "The person in the image is open to being social and meeting new people.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o2",
+        "text": "Two individuals in the image were sitting at a cafe.",
+        "source": "context",
+        "cue": "none"
+      },
+      {
+        "id": "o3",
+        "text": "A person with curly hair, wearing glasses, a red sweater with a floral pattern, and a white collar shirt.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o4",
+        "text": "The person is smiling and appears to be in a relaxed state.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o5",
+        "text": "There are two paintings on the wall behind the person.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o6",
+        "text": "The painting on the left is a landscape with mountains and greenery.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o7",
+        "text": "The painting on the right is a red abstract piece.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o8",
+        "text": "The person is sitting in a relaxed posture.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o9",
+        "text": "The person is wearing a red sweater with a floral pattern.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o10",
+        "text": "The person is wearing a white collar shirt underneath the sweater.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o11",
+        "text": "The person is wearing a necklace with a silver pendant and a rope-like cord.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o12",
+        "text": "The person is sitting in a relaxed posture.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o13",
+        "text": "The person is smiling and appears to be in a relaxed state.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o14",
+        "text": "The person is wearing a red sweater with a floral pattern.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o15",
+        "text": "The person is wearing a white collar shirt underneath the sweater.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o16",
+        "text": "The person is wearing a necklace with a silver pendant and a rope-like cord.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o17",
+        "text": "The person is sitting in a relaxed posture.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o18",
+        "text": "The person is smiling and appears to be in a relaxed state.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o19",
+        "text": "The person is wearing a red sweater with a floral pattern.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o20",
+        "text": "The person is wearing a white collar shirt underneath the sweater.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o21",
+        "text": "The person is wearing a necklace with a silver pendant and a rope-like cord.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o22",
+        "text": "The person is sitting in a relaxed posture.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o23",
+        "text": "The person is smiling and appears to be in a relaxed state.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o24",
+        "text": "The person is wearing a red sweater with a floral pattern.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o25",
+        "text": "The person is wearing a white collar shirt underneath the sweater.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o26",
+        "text": "The person is wearing a necklace with a silver pendant and a rope-like cord.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o27",
+        "text": "The person is sitting in a relaxed posture.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o28",
+        "text": "The person is smiling and appears to be in a relaxed state.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o29",
+        "text": "The person is wearing a red sweater with a floral pattern.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o30",
+        "text": "The person is wearing a white collar shirt underneath the sweater.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o31",
+        "text": "The person is wearing a necklace with a silver pendant and a rope-like cord.",
+        "source": "image",
+        "cue": "appearance"
+      },
+      {
+        "id": "o32",
+        "text": "The person is sitting in a relaxed posture.",
+        "source": "image",
+        "cue": "none"
+      }
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "The person in the image is open to being social and meeting new people.",
+        "kind": "inference",
+        "social_assumption": true,
+        "evidence_ids": [
+          "o1"
+        ],
+        "depends_on": [],
+        "contradicts": [],
+        "support": "supported",
+        "utility": 1.0
+      }
+    ]
+  },
+  "dependence_scores": {},
+  "pre_verification_repair": {
+    "selected_ids": [
+      "c1"
+    ],
+    "removed": {},
+    "objective": 1.1,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 2,
+    "feasible_subsets": 2,
+    "dependency_closure_enforced": true
+  },
+  "repair": {
+    "selected_ids": [],
+    "removed": {
+      "c1": "visual_verification:uncertain"
+    },
+    "objective": 0.0,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 1,
+    "feasible_subsets": 1,
+    "dependency_closure_enforced": true
+  },
+  "certificate": {
+    "scope": "structural constraints over model-produced evidence; no truth or fairness guarantee",
+    "graph_sha256": "2bdd4ac7b29439c89794f3c3fc9372210b698244aacc2e8f8ad425b0a6155032",
+    "selected_ids": [],
+    "no_new_claim_text": true,
+    "all_selected_visually_verified": false,
+    "dependency_closure": true,
+    "all_selected_have_evidence_paths": true
+  },
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "graph",
+      "request_hash": "84b65577b41823fdcadc5920b09feb056c1915d5d701900889fe48cc6f9370e2",
+      "image_sha256": "a5208db33617a76259fd78005667d18fd0bd1352a26df8960a21620bf04ffc6a",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The person in the image is open to being social and meeting new people."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "Two individuals in the image were sitting at a cafe."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c1"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The person in the image is open to being social and meeting new people."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 1533,
+        "prompt_tokens": 2000,
+        "total_tokens": 3533,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 21.054158
+    },
+    {
+      "source": "verification",
+      "request_hash": "b02e6d2c1de83d0df3df0649809e7ce7d607e0a3c7e2884fd2bbf81f24104e37",
+      "image_sha256": "a5208db33617a76259fd78005667d18fd0bd1352a26df8960a21620bf04ffc6a",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Judgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "enum": [
+                      "c1"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "minLength": 1,
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "support",
+                  "reason"
+                ],
+                "title": "Judgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "judgments": {
+                "items": {
+                  "$ref": "#/$defs/Judgment"
+                },
+                "title": "Judgments",
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "judgments"
+            ],
+            "title": "JudgmentBatch",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 94,
+        "prompt_tokens": 1292,
+        "total_tokens": 1386,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 4.565219
+    }
+  ],
+  "network_calls": 2,
+  "prompt_fingerprint": "852069bbcf594950f24164f8e66c64f90bfbea9fdba7dc7d2c2c8b9f4e3287c9",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "02_22_1450_1_01",
+  "system": "eigr",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "graph",
+      "request_hash": "84b65577b41823fdcadc5920b09feb056c1915d5d701900889fe48cc6f9370e2",
+      "image_sha256": "a5208db33617a76259fd78005667d18fd0bd1352a26df8960a21620bf04ffc6a",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The person in the image is open to being social and meeting new people."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "Two individuals in the image were sitting at a cafe."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c1"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The person in the image is open to being social and meeting new people."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 1533,
+        "prompt_tokens": 2000,
+        "total_tokens": 3533,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 21.054158
+    },
+    {
+      "source": "verification",
+      "request_hash": "b02e6d2c1de83d0df3df0649809e7ce7d607e0a3c7e2884fd2bbf81f24104e37",
+      "image_sha256": "a5208db33617a76259fd78005667d18fd0bd1352a26df8960a21620bf04ffc6a",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Judgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "enum": [
+                      "c1"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "minLength": 1,
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "support",
+                  "reason"
+                ],
+                "title": "Judgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "judgments": {
+                "items": {
+                  "$ref": "#/$defs/Judgment"
+                },
+                "title": "Judgments",
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "judgments"
+            ],
+            "title": "JudgmentBatch",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 94,
+        "prompt_tokens": 1292,
+        "total_tokens": 1386,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 4.565219
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "8597ce03becf4e5e8c025f88ca7e65a27ba974f6060f8a71d2a35e0465d666a7",
+      "image_sha256": "a5208db33617a76259fd78005667d18fd0bd1352a26df8960a21620bf04ffc6a",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.009548
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "method": "intent_aware_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The individual in the foreground is reacting violently. The context states that two individuals received devastating news, but the image shows only one person reacting with visible distress, and the other person is comforting them. There is no evidence in the image to support the claim that the person in the foreground reacted violently. Therefore, the answer is uncertain.",
+      "feedback": {
+        "coherent": {
+          "score": 1,
+          "evidence_summary": "The image shows one individual in the foreground with hands clasped over their face, appearing distressed, and another person's hand on their shoulder, suggesting a comforting gesture. The context states that two individuals received devastating news, but the image only shows one reacting with distress and the other comforting. The answer is uncertain because the image does not provide enough evidence to confirm the violent reaction of the person in the foreground."
+        },
+        "comprehensive": {
+          "score": 1,
+          "evidence_summary": "The context states that two individuals received devastating news, but the image shows only one person reacting with visible distress, and the other person is comforting them. The answer is uncertain because the image does not provide enough evidence to confirm the violent reaction of the person in the foreground."
+        },
+        "objective": {
+          "score": 1,
+          "evidence_summary": "The answer is uncertain because the image does not provide enough evidence to confirm the violent reaction of the person in the foreground. The context supports the idea that two individuals received devastating news, but the image only shows one reacting with distress and the other comforting. The answer is uncertain because the image does not provide enough evidence to confirm the violent reaction of the person in the foreground."
+        }
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "method_specific",
+  "initial_response": "The individual in the foreground is reacting violently. The context states that two individuals received devastating news, but the image shows only one person reacting with visible distress, and the other person is comforting them. There is no evidence in the image to support the claim that the person in the foreground reacted violently. Therefore, the answer is uncertain.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The individual in the foreground is reacting violently. The context states that two individuals received devastating news, but the image shows only one person reacting with visible distress, and the other person is comforting them. There is no evidence in the image to support the claim that the person in the foreground reacted violently. Therefore, the answer is uncertain.",
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "1da1866dbe467b52ded0ea5e1b77c03d9be689c6deab5c96b12ce503c2948cfc",
+      "image_sha256": "df029e31d55f32cda5d1d69121657ae8bb26e97a6e053f2ed5df04f032742942",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 67,
+        "prompt_tokens": 1114,
+        "total_tokens": 1181,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 6.105368
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "b2c4f5f1a14c46da32d8de99413a2e8e8d683303a6440edaeb4f2cb620610a65",
+      "image_sha256": "df029e31d55f32cda5d1d69121657ae8bb26e97a6e053f2ed5df04f032742942",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 277,
+        "prompt_tokens": 1387,
+        "total_tokens": 1664,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 7.926669
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "02_02_0108_2_02",
+  "system": "intent_aware_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "1da1866dbe467b52ded0ea5e1b77c03d9be689c6deab5c96b12ce503c2948cfc",
+      "image_sha256": "df029e31d55f32cda5d1d69121657ae8bb26e97a6e053f2ed5df04f032742942",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 67,
+        "prompt_tokens": 1114,
+        "total_tokens": 1181,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 6.105368
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "b2c4f5f1a14c46da32d8de99413a2e8e8d683303a6440edaeb4f2cb620610a65",
+      "image_sha256": "df029e31d55f32cda5d1d69121657ae8bb26e97a6e053f2ed5df04f032742942",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 277,
+        "prompt_tokens": 1387,
+        "total_tokens": 1664,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 7.926669
+    }
+  ],
+  "shared_draft_calls": []
+}

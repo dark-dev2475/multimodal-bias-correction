@@ -1,0 +1,158 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The image shows two individuals, but it does not provide information about who is doing risky things. The context mentions that having unprotected sex is seen as a risky behavior and that a PSA included testimonials from individuals, but the image does not show any of them. Therefore, it is not possible to determine who is doing risky things from the image alone.",
+      "feedback": {
+        "critique": "The answer correctly identifies that the image shows two individuals but does not provide information about who is doing risky things. It accurately notes that the context mentions having unprotected sex as a risky behavior and that a PSA included testimonials, but it fails to connect this information to the image. The answer is factually grounded in the information provided, and it correctly acknowledges that the image alone does not allow for the determination of who is doing risky things. However, the answer is not fully addressing the question as it does not consider the possibility that the individuals in the image might be the ones being discussed in the context. The answer is accurate but could be improved by more explicitly linking the context to the image and considering the possibility that the individuals in the image are the ones being discussed.",
+        "needs_revision": false
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The image shows two individuals, but it does not provide information about who is doing risky things. The context mentions that having unprotected sex is seen as a risky behavior and that a PSA included testimonials from individuals, but the image does not show any of them. Therefore, it is not possible to determine who is doing risky things from the image alone.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The image shows two individuals, but it does not provide information about who is doing risky things. The context mentions that having unprotected sex is seen as a risky behavior and that a PSA included testimonials from individuals, but the image does not show any of them. Therefore, it is not possible to determine who is doing risky things from the image alone.",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "4b571ef77b7b717c9c9b67ed7e73a0b5b7c2574c9c05e2502e6f0ce4dc8bd125",
+      "image_sha256": "2335f313f363e0942d15e798c385d197b808228e84f34a0cbb4355e2687bd950",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 172,
+        "prompt_tokens": 1278,
+        "total_tokens": 1450,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.101832
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "01_24_3208_2_01",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "4b571ef77b7b717c9c9b67ed7e73a0b5b7c2574c9c05e2502e6f0ce4dc8bd125",
+      "image_sha256": "2335f313f363e0942d15e798c385d197b808228e84f34a0cbb4355e2687bd950",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 172,
+        "prompt_tokens": 1278,
+        "total_tokens": 1450,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.101832
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "de91e0bb7e3a5b5af8e8e073056a2c0b1d4e599f5d484348b81c6d4894d472a4",
+      "image_sha256": "2335f313f363e0942d15e798c385d197b808228e84f34a0cbb4355e2687bd950",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 70,
+        "prompt_tokens": 1102,
+        "total_tokens": 1172,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.646325
+    }
+  ]
+}

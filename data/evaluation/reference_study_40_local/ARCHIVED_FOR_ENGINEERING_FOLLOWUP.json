@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-04",
+  "reason": "Initial local EIGR pass finished with 38 graph failures and 2 valid abstentions. Original records remain unchanged. Further comparison collection moved to a separately frozen ordered-DAG engineering follow-up; redundant original collection process was explicitly stopped.",
+  "followup": "data/evaluation/reference_study_40_local_graphids",
+  "completed_case_records": {"raw": 40, "eigr": 40, "self_refine_vqa": 15},
+  "control_reuse": "The 15 completed Self-Refine records, including 4 failures, were copied with exact-result hash and source protocol provenance; no failed outcome was replaced.",
+  "human_annotations_approved": 0,
+  "published_scores_reproduced": false
+}

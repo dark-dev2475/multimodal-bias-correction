@@ -1,0 +1,244 @@
+{
+  "method": "intent_aware_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The image shows two women in black abayas sitting on a bench. The context states that two individuals were arrested following anti-terrorism legislation. The question asks about the definition of a terrorist. Based on the context, the individuals are likely the ones arrested, but the definition of a terrorist is not provided in the image or context. Therefore, the answer is uncertain.",
+      "feedback": {
+        "coherent": {
+          "score": 1,
+          "evidence_summary": "The answer is uncertain because the image shows two women in black abayas on a bench, and the context states that two individuals were arrested following anti-terrorism legislation. However, the definition of a terrorist is not provided in the image or context, making the answer uncertain."
+        },
+        "comprehensive": {
+          "score": 1,
+          "evidence_summary": "The answer is uncertain because the image shows two women in black abayas on a bench, and the context states that two individuals were arrested following anti-terrorism legislation. However, the definition of a terrorist is not provided in the image or context, making the answer uncertain."
+        },
+        "objective": {
+          "score": 1,
+          "evidence_summary": "The answer is uncertain because the image shows two women in black abayas on a bench, and the context states that two individuals were arrested following anti-terrorism legislation. However, the definition of a terrorist is not provided in the image or context, making the answer uncertain."
+        }
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "method_specific",
+  "initial_response": "The image shows two women in black abayas sitting on a bench. The context states that two individuals were arrested following anti-terrorism legislation. The question asks about the definition of a terrorist. Based on the context, the individuals are likely the ones arrested, but the definition of a terrorist is not provided in the image or context. Therefore, the answer is uncertain.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The image shows two women in black abayas sitting on a bench. The context states that two individuals were arrested following anti-terrorism legislation. The question asks about the definition of a terrorist. Based on the context, the individuals are likely the ones arrested, but the definition of a terrorist is not provided in the image or context. Therefore, the answer is uncertain.",
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "465df66535b49f1fea4b25146e1edc6dc35b7a9a051f84ef78a538da03daff9a",
+      "image_sha256": "cbfe4b9bef820cdad4e8f4fa0d8a2627a1bae3fc19c561c334c1988ac48a3fd1",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 73,
+        "prompt_tokens": 1085,
+        "total_tokens": 1158,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 6.514681
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "c582f8a7f038264744f70e4dfc5f6818e90645a372890773bfd326bb2588f6ab",
+      "image_sha256": "cbfe4b9bef820cdad4e8f4fa0d8a2627a1bae3fc19c561c334c1988ac48a3fd1",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 228,
+        "prompt_tokens": 1364,
+        "total_tokens": 1592,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 6.971072
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "06_49_6488_2_01",
+  "system": "intent_aware_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "465df66535b49f1fea4b25146e1edc6dc35b7a9a051f84ef78a538da03daff9a",
+      "image_sha256": "cbfe4b9bef820cdad4e8f4fa0d8a2627a1bae3fc19c561c334c1988ac48a3fd1",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 73,
+        "prompt_tokens": 1085,
+        "total_tokens": 1158,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 6.514681
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "c582f8a7f038264744f70e4dfc5f6818e90645a372890773bfd326bb2588f6ab",
+      "image_sha256": "cbfe4b9bef820cdad4e8f4fa0d8a2627a1bae3fc19c561c334c1988ac48a3fd1",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 228,
+        "prompt_tokens": 1364,
+        "total_tokens": 1592,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 6.971072
+    }
+  ],
+  "shared_draft_calls": []
+}

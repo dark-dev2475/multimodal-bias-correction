@@ -1,0 +1,244 @@
+{
+  "method": "intent_aware_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The individuals in the image were likely caught in the wrong place at the wrong time because they were stopped by police during a loud party, which is a common scenario for someone who is not at the event. The context supports this inference.",
+      "feedback": {
+        "coherent": {
+          "score": 1,
+          "evidence_summary": "The answer correctly infers that the individuals in the image were likely caught in the wrong place at the wrong time because they were stopped by police during a loud party, which is a common scenario for someone who is not at the event. The context supports this inference."
+        },
+        "comprehensive": {
+          "score": 1,
+          "evidence_summary": "The answer considers the context of the image, which describes a party and the individuals being stopped by police, and draws a reasonable inference about their location and timing. The relevant facts are not overlooked."
+        },
+        "objective": {
+          "score": 1,
+          "evidence_summary": "The answer is objective and based on the provided context, which describes the individuals being stopped by police during a party. The inference is not based on any unsupported stereotypes or personal assumptions."
+        }
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "method_specific",
+  "initial_response": "The individuals in the image were likely caught in the wrong place at the wrong time because they were stopped by police during a loud party, which is a common scenario for someone who is not at the event. The context supports this inference.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The individuals in the image were likely caught in the wrong place at the wrong time because they were stopped by police during a loud party, which is a common scenario for someone who is not at the event. The context supports this inference.",
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "926bb97b3b99b8cd165bf8e2c4c30f5ddfbc6f393ea8a1875cdbfd6bb5892a1d",
+      "image_sha256": "fef9013112b22cf3d843ed28986c7e9dca74077de57d177e2788703fb7b995b7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 48,
+        "prompt_tokens": 1134,
+        "total_tokens": 1182,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 7.319004
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "91f1099ee52e418cd662f19d6accb000f3b45bf33515786c5de54ce5e4c890a5",
+      "image_sha256": "fef9013112b22cf3d843ed28986c7e9dca74077de57d177e2788703fb7b995b7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 200,
+        "prompt_tokens": 1388,
+        "total_tokens": 1588,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 7.026066
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "07_03_0194_1_01",
+  "system": "intent_aware_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "926bb97b3b99b8cd165bf8e2c4c30f5ddfbc6f393ea8a1875cdbfd6bb5892a1d",
+      "image_sha256": "fef9013112b22cf3d843ed28986c7e9dca74077de57d177e2788703fb7b995b7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 48,
+        "prompt_tokens": 1134,
+        "total_tokens": 1182,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 7.319004
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "91f1099ee52e418cd662f19d6accb000f3b45bf33515786c5de54ce5e4c890a5",
+      "image_sha256": "fef9013112b22cf3d843ed28986c7e9dca74077de57d177e2788703fb7b995b7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 200,
+        "prompt_tokens": 1388,
+        "total_tokens": 1588,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 7.026066
+    }
+  ],
+  "shared_draft_calls": []
+}

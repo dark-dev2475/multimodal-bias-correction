@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "final_response": "The individuals in the image are not speaking proper English.",
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "08_14_3538_1_03",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "35ce70400a084f588cca7bb70c7f175f2b08a1346f8be0520352f557385ac054",
+      "image_sha256": "8e6b3b6133b19efd7e61d01b34eacad9237aa06242e31baccb93a53ac0058bdb",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 1120,
+        "total_tokens": 1132,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.215925
+    }
+  ]
+}

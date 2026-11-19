@@ -2,6 +2,7 @@ import os
 import time
 import base64
 from pathlib import Path
+from utils.free_policy import DEFAULT_MODEL, FREE_OPTIONS, validate_route, before_hosted_request, FreeQuotaPause
 
 from dotenv import load_dotenv
 from openai import (
@@ -37,10 +38,12 @@ class OpenRouterVLM:
 
     def __init__(
         self,
-        model_name="inclusionai/ling-3.0-flash-vl:free"
+        model_name=DEFAULT_MODEL
     ):
 
+        validate_route(model_name)
         api_key = os.getenv("OPENROUTER_API_KEY")
+        self.api_key = api_key
 
         if not api_key:
             raise ValueError(
@@ -49,7 +52,8 @@ class OpenRouterVLM:
 
         self.client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
-            api_key=api_key
+            api_key=api_key,
+            max_retries=0
         )
 
         self.model_name = model_name
@@ -140,7 +144,7 @@ class OpenRouterVLM:
         prompt,
         image_path=None,
         source="Model",
-        max_attempts=3,
+        max_attempts=1,
         base_delay=2.0
     ):
         """Call the model and return non-empty text.
@@ -157,8 +161,12 @@ class OpenRouterVLM:
         for attempt in range(1, max_attempts + 1):
 
             try:
+                before_hosted_request(self.model_name, self.api_key)
                 response = self.client.chat.completions.create(
                     model=self.model_name,
+                    extra_body=FREE_OPTIONS,
+                    max_tokens=3000,
+                    temperature=0,
                     messages=[
                         {
                             "role": "user",
@@ -168,9 +176,11 @@ class OpenRouterVLM:
                 )
 
             except RETRYABLE_ERRORS as exc:
+                if isinstance(exc, RateLimitError):
+                    raise FreeQuotaPause("Free provider quota unavailable; no paid fallback") from exc
                 last_error = (
                     f"{source} API call failed "
-                    f"({type(exc).__name__}: {exc})"
+                    f"({type(exc).__name__})"
                 )
 
             else:

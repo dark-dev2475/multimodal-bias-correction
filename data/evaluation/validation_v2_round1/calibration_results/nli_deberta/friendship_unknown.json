@@ -1,0 +1,15 @@
+{
+  "id": "friendship_unknown",
+  "system": "nli_deberta",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "unknown",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:07:55.798120+00:00",
+  "raw_softmax_not_calibrated_probabilities": {
+    "contradicted": 0.0007755584665574133,
+    "entailed": 0.0003775990626309067,
+    "unknown": 0.9988467693328857
+  },
+  "input_tokens": 24,
+  "calls": []
+}

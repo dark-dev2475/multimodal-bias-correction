@@ -1,9 +1,19 @@
+from collections import Counter
+from inspect import signature
+
 from pipeline.generator import InitialGenerator
 from pipeline.claim_extractor import Claim, ClaimExtractor
 from pipeline.evidence_checker import EvidenceChecker, EvidenceResult, EvidenceResultList
 from pipeline.bias_monitor import BiasMonitor
 from pipeline.corrector import SelfCorrector
+from pipeline.correction_policy import CORRECTION_POLICY_VERSION
 from pipeline.verifier import BiasVerifier, VerificationList
+from pipeline.audit_gate import (
+    AUDIT_GATE_VERSION,
+    issue_dicts,
+    validate_bias_coverage,
+    validate_evidence_coverage,
+)
 from utils.schemas import (
     GenerationMode, PipelineResult, StageMetrics, StopReason,
 )
@@ -29,6 +39,8 @@ STAGE_BY_CLASS = {
     "BiasVerifier": "verification"
 }
 
+MAX_CORRECTION_ITERATIONS = 2
+
 
 def claim_fingerprint(claims):
     """Order- and whitespace-insensitive signature of a set of claims.
@@ -51,20 +63,36 @@ class BiasCorrectionPipeline:
         enable_claim_extraction=True,
         enable_evidence_checking=True,
         enable_bias_monitor=True,
-        enable_verification=True
+        enable_verification=True,
+        use_structured_feedback=True,
+        use_correction_policy=True,
+        enable_audit_gate=True,
     ):
 
         self.generator = InitialGenerator(mode=generation_mode)
         self.claim_extractor = ClaimExtractor()
         self.evidence_checker = EvidenceChecker()
         self.bias_monitor = BiasMonitor()
-        self.corrector = SelfCorrector()
+        corrector_parameters = signature(SelfCorrector).parameters
+        if {
+            "use_structured_feedback",
+            "use_correction_policy"
+        }.issubset(corrector_parameters):
+            self.corrector = SelfCorrector(
+                use_structured_feedback=use_structured_feedback,
+                use_correction_policy=use_correction_policy
+            )
+        else:
+            self.corrector = SelfCorrector()
         self.verifier = BiasVerifier()
         self.ablation_config = {
             "claim_extraction": enable_claim_extraction,
             "evidence_checking": enable_evidence_checking,
             "bias_monitor": enable_bias_monitor,
-            "verification": enable_verification
+            "verification": enable_verification,
+            "structured_feedback": use_structured_feedback,
+            "correction_policy": use_correction_policy,
+            "audit_gate": enable_audit_gate,
         }
 
     # ---------------------------------------------------------
@@ -143,7 +171,9 @@ class BiasCorrectionPipeline:
             "evidence": self.evidence_checker.PROMPT_VERSION,
             "bias_monitor": self.bias_monitor.PROMPT_VERSION,
             "correction": self.corrector.PROMPT_VERSION,
-            "verification": self.verifier.PROMPT_VERSION
+            "verification": self.verifier.PROMPT_VERSION,
+            "correction_policy": CORRECTION_POLICY_VERSION,
+            "audit_gate": AUDIT_GATE_VERSION,
         }
 
     # ---------------------------------------------------------
@@ -214,6 +244,23 @@ class BiasCorrectionPipeline:
         else:
             bias_by_id = {}
 
+        audit_issues = []
+        if self.ablation_config.get("audit_gate", True):
+            audit_issues = validate_evidence_coverage(
+                claims, evidence_results.results
+            )
+            # An intentionally removed bias monitor is a valid ablation, not
+            # a malformed monitor response.  Only enforce its contract when
+            # that stage actually ran.
+            if self.ablation_config["bias_monitor"]:
+                audit_issues += validate_bias_coverage(
+                    evidence_results.results, bias_results.results
+                )
+
+        claim_types = {
+            claim.claim_id if hasattr(claim, "claim_id") else index: claim.type
+            for index, claim in enumerate(claims, start=1)
+        }
         claim_analysis = []
 
         for evidence in evidence_results.results:
@@ -229,6 +276,7 @@ class BiasCorrectionPipeline:
             analysis = {
                 "claim_id": evidence.claim_id,
                 "claim": evidence.claim,
+                "claim_type": claim_types.get(evidence.claim_id, "unknown"),
                 "evidence_status": evidence.evidence_status,
                 "evidence_confidence": evidence.confidence,
                 "evidence_explanation": evidence.explanation,
@@ -250,6 +298,43 @@ class BiasCorrectionPipeline:
                 })
 
             claim_analysis.append(analysis)
+
+        # Fail closed: a malformed upstream response cannot become a silent
+        # "no bias" verdict.  The corrector receives a targeted instruction
+        # to remove/neutralise the affected claim.  This is a reliability
+        # intervention, not a prediction that the claim is socially biased.
+        by_id = {index: claim for index, claim in enumerate(claims, start=1)}
+        failed_ids = {
+            issue.claim_id for issue in audit_issues
+            if issue.claim_id in by_id
+            and issue.code in {"missing_evidence", "evidence_claim_mismatch", "missing_bias_decision", "bias_claim_mismatch"}
+        }
+        seen_ids = {item["claim_id"] for item in claim_analysis}
+        for claim_id in sorted(failed_ids - seen_ids):
+            claim = by_id[claim_id]
+            claim_analysis.append({
+                "claim_id": claim_id,
+                "claim": claim.claim,
+                "claim_type": claim.type,
+                "evidence_status": "UNCERTAIN",
+                "evidence_confidence": 0.0,
+                "evidence_explanation": "Audit gate could not validate evidence-stage coverage.",
+                "bias_detected": False,
+                "bias_category": "audit_failure",
+                "severity": "medium",
+                "requires_correction": True,
+                "bias_explanation": "Fail-closed correction: a required structured decision was missing or misaligned.",
+                "bias_analysis_missing": True,
+                "audit_failure": True,
+            })
+        for item in claim_analysis:
+            if item["claim_id"] in failed_ids:
+                item["audit_failure"] = True
+                item["requires_correction"] = True
+                if item["bias_category"] == "none":
+                    item["bias_category"] = "audit_failure"
+                    item["severity"] = "medium"
+                    item["bias_explanation"] = "Fail-closed correction: a required structured decision was missing or misaligned."
 
         flagged_claims = [
             item for item in claim_analysis
@@ -274,7 +359,7 @@ class BiasCorrectionPipeline:
         print(f"\nTotal claims: {len(claims)}")
         print(f"Analysed claims: {len(claim_analysis)}")
         print(f"Flagged claims: {len(flagged_claims)}")
-        return claim_analysis, flagged_claims
+        return claim_analysis, flagged_claims, issue_dicts(audit_issues)
 
     # ---------------------------------------------------------
     # STEP 5: Self Correction
@@ -284,7 +369,8 @@ class BiasCorrectionPipeline:
         self,
         image_path,
         original_response,
-        flagged_claims
+        flagged_claims,
+        supported_claims=None
     ):
 
         # Nothing to correct
@@ -292,11 +378,16 @@ class BiasCorrectionPipeline:
 
             return original_response
 
-        corrected_response = self.corrector.correct(
-            image_path=image_path,
-            original_response=original_response,
-            flagged_claims=flagged_claims
-        )
+        correction_args = {
+            "image_path": image_path,
+            "original_response": original_response,
+            "flagged_claims": flagged_claims,
+        }
+        if "supported_claims" in signature(
+            self.corrector.correct
+        ).parameters:
+            correction_args["supported_claims"] = supported_claims or []
+        corrected_response = self.corrector.correct(**correction_args)
 
         return corrected_response
 
@@ -321,7 +412,12 @@ class BiasCorrectionPipeline:
     # COMPLETE PIPELINE
     # ---------------------------------------------------------
 
-    def run(self, image_path, question, max_iterations=2):
+    def run(
+        self,
+        image_path,
+        question,
+        max_iterations=MAX_CORRECTION_ITERATIONS
+    ):
 
         if max_iterations < 1:
             raise ValueError("max_iterations must be at least 1")
@@ -415,10 +511,15 @@ class BiasCorrectionPipeline:
             # EVIDENCE + BIAS ANALYSIS
             # -----------------------------------------------------
 
-            claim_analysis, flagged_claims = self.analyze_claims(
+            claim_analysis, flagged_claims, audit_issues = self.analyze_claims(
                 image_path,
                 claims
             )
+
+            supported_claims = [
+                item for item in claim_analysis
+                if item["evidence_status"] == "SUPPORTED"
+            ]
 
             print("\nCLAIM ANALYSIS")
             print("-" * 70)
@@ -432,6 +533,9 @@ class BiasCorrectionPipeline:
                     f"Requires correction: "
                     f"{item['requires_correction']}"
                 )
+
+            if audit_issues:
+                print(f"Audit-gate issues: {len(audit_issues)} (fail-closed correction enabled)")
 
             # -----------------------------------------------------
             # SELF-CORRECTION
@@ -453,7 +557,8 @@ class BiasCorrectionPipeline:
                 corrected_response = self.correct_response(
                     image_path,
                     current_response,
-                    flagged_claims
+                    flagged_claims,
+                    supported_claims
                 )
 
             print("\nCORRECTED RESPONSE")
@@ -486,6 +591,35 @@ class BiasCorrectionPipeline:
                 and len(problematic_claims) == 0
             )
 
+            supported_before = [item["claim"] for item in supported_claims]
+            corrected_lower = corrected_response.casefold()
+            supported_preserved = [
+                claim for claim in supported_before
+                if claim.casefold() in corrected_lower
+            ]
+            categories = sorted({
+                item["bias_category"] for item in flagged_claims
+                if item["bias_category"] != "none"
+            })
+            severity_distribution = dict(Counter(
+                item["severity"] for item in flagged_claims
+            ))
+            structured_feedback = [
+                {
+                    "claim": item["claim"],
+                    "claim_type": item.get("claim_type", "unknown"),
+                    "bias_category": item["bias_category"],
+                    "evidence_status": item["evidence_status"],
+                    "evidence_confidence": item["evidence_confidence"],
+                    "evidence_explanation": item["evidence_explanation"],
+                    "severity": item["severity"],
+                }
+                for item in flagged_claims
+            ]
+            corrected_claim_count = sum(
+                item["claim"].casefold() not in corrected_lower
+                for item in flagged_claims
+            )
             correction_history.append({
                 "iteration": iteration,
                 "input_response": current_response,
@@ -504,7 +638,18 @@ class BiasCorrectionPipeline:
                     }
                     for claim in problematic_claims
                 ],
-                "verification_passed": verification_passed
+                "verification_passed": verification_passed,
+                "triggered": bool(flagged_claims),
+                "flagged_claim_count": len(flagged_claims),
+                "corrected_claim_count": corrected_claim_count,
+                "remaining_problematic_claims": len(problematic_claims),
+                "correction_categories": categories,
+                "severity_distribution": severity_distribution,
+                "policy_version": CORRECTION_POLICY_VERSION,
+                "supported_claims_before": supported_before,
+                "supported_claims_preserved": supported_preserved,
+                "structured_feedback": structured_feedback,
+                "audit_issues": audit_issues,
             })
 
             completed_iterations = iteration
@@ -579,6 +724,7 @@ class BiasCorrectionPipeline:
             "configuration": {
                 "max_iterations": max_iterations,
                 "generation_mode": self.generator.mode.value,
+                "correction_policy_version": CORRECTION_POLICY_VERSION,
                 **self.ablation_config
             }
         }).model_dump(mode="json")

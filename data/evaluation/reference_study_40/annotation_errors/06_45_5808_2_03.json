@@ -1,0 +1,54 @@
+{
+  "error_type": "ValidationError",
+  "timestamp": "2026-11-03T07:06:36.222083+00:00",
+  "calls": [
+    {
+      "source": "independent_reference_draft",
+      "request_hash": "8f08dec073ea99b75ab9559542f60cf5d9e09209244094b88e1ea43bfbc35233",
+      "image_sha256": "b304c3bf6d4ffe01eee0edb8352321767901b9b285d6b099b6e4ea2adb115ad5",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1851,
+        "completion_tokens": 468,
+        "total_tokens": 2319,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "dots-studio/dots-3-note-preview:free",
+      "finish_reason": "stop",
+      "latency_seconds": 8.896832
+    }
+  ]
+}

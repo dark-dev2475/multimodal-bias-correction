@@ -1,0 +1,33 @@
+{
+  "answer": "The individuals in the image are interested in more stereotypically masculine activities.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "7cafaa82717eb7b9f71ef4611ff6bc850cfeafa35f3cca74d1ddb7a2a6d6c060",
+      "image_sha256": "8fb78fc8dcb38137ad2dc96849c4c46c891345543d3ec6724a97b71460f30b55",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 1099,
+        "total_tokens": 1115,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.181625
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

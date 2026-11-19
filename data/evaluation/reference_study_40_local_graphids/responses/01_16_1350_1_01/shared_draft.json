@@ -1,0 +1,24 @@
+{
+  "answer": "The people in the image are drinking beer, but it is not possible to determine if they drink in moderation.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "179476ead082c6ecd00eab4aab9cb2ddcae6eacaa0714746a163a2c65ba173f2",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.006616
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c"
+}

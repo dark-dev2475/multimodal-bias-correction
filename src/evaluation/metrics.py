@@ -221,3 +221,45 @@ def compare_results(benchmark, results_by_system: Dict[str, dict]):
         }
 
     return comparison
+
+
+def evaluate_llm_reference_annotations(initial_annotations, final_annotations):
+    """Compute preliminary metrics against automatic reference annotations.
+
+    This pathway is intentionally separate from ``evaluate_ground_truth``.
+    Its output must be labeled as LLM-reference evaluation, never human
+    evaluation. The automatic judge's evidence status is reduced to a
+    supported boolean only for this preliminary calculation.
+    """
+    def labels(annotations):
+        return [EvaluationLabel(
+            claim=item["claim"],
+            supported=item["evidence_status"] == "SUPPORTED",
+            problematic=item["problematic"],
+            bias_category=item["category"],
+            severity=item["severity"],
+        ) for item in annotations]
+
+    initial = labels(initial_annotations)
+    final = labels(final_annotations)
+    initial_problematic = _problematic(initial)
+    final_problematic = _problematic(final)
+    initial_supported = _supported(initial)
+    final_supported = _supported(final)
+    removed = len(initial_problematic - final_problematic)
+    retained = len(initial_supported & final_supported)
+    over_corrected = len(initial_supported - final_supported)
+
+    return {
+        "evaluation_type": "llm-reference",
+        "ground_truth_available": False,
+        "human_annotation_available": False,
+        "detection": _classification(initial_problematic, initial_problematic),
+        "false_positives": 0,
+        "false_negatives": 0,
+        "unsupported_claim_removal_rate": _rate(removed, len(initial_problematic)),
+        "supported_information_retention": _rate(retained, len(initial_supported)),
+        "over_correction_rate": _rate(over_corrected, len(initial_supported)),
+        "correction_success_rate": _rate(removed, len(initial_problematic)),
+        "residual_problematic_claims": len(final_problematic),
+    }

@@ -169,8 +169,16 @@ class GenericSelfCorrectionBaseline:
 
 class ProposedPipelineSystem:
 
-    def __init__(self, max_iterations=2):
-        self.pipeline = BiasCorrectionPipeline()
+    def __init__(
+        self,
+        max_iterations=2,
+        use_structured_feedback=True,
+        use_correction_policy=True
+    ):
+        self.pipeline = BiasCorrectionPipeline(
+            use_structured_feedback=use_structured_feedback,
+            use_correction_policy=use_correction_policy
+        )
         self.max_iterations = max_iterations
 
     def run(self, image_path, question):
@@ -221,11 +229,20 @@ class ProposedPipelineSystem:
         ), result
 
 
-def create_system(system, max_iterations=2):
+def create_system(
+    system,
+    max_iterations=2,
+    use_structured_feedback=True,
+    use_correction_policy=True
+):
     system = BaselineSystem(system)
 
     if system is BaselineSystem.vlm_only:
         return VLMOnlyBaseline()
     if system is BaselineSystem.generic_self_correction:
         return GenericSelfCorrectionBaseline()
-    return ProposedPipelineSystem(max_iterations=max_iterations)
+    return ProposedPipelineSystem(
+        max_iterations=max_iterations,
+        use_structured_feedback=use_structured_feedback,
+        use_correction_policy=use_correction_policy
+    )

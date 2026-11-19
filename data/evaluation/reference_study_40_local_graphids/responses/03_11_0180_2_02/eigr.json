@@ -1,0 +1,865 @@
+{
+  "version": "2.0.0",
+  "method": "EIGR",
+  "model": "qwen3-vl-2b-local",
+  "question": "Who has a mental health diagnosis?",
+  "context": "A person and another individual were discussing their recent health challenges.",
+  "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+  "configuration": {
+    "max_calls": 8,
+    "max_cue_groups": 2,
+    "dependence_threshold": 0.5,
+    "risk_weight": 1.0,
+    "edit_penalty": 0.1,
+    "interventions": true,
+    "dependency_closure": true,
+    "matched_control": true,
+    "visual_verification": true
+  },
+  "interventions": [],
+  "status": "abstained",
+  "verification": {
+    "judgments": [
+      {
+        "claim_id": "c1",
+        "support": "uncertain",
+        "reason": "The image shows a person and another individual in a medical setting, with a person in a doctor's coat and a stethoscope. The person in the foreground is wearing a light blue garment, possibly a hospital gown, and appears to be in a clinical environment. However, there is no visual evidence in the image to confirm a mental health diagnosis. The context provided states that the individuals are discussing health challenges, but this does not establish a diagnosis. Therefore, the claim cannot be supported."
+      }
+    ]
+  },
+  "final_response": "The available evidence is insufficient to provide a verified answer.",
+  "initial_response_source": "supplied",
+  "initial_response": "The person in the image has a mental health diagnosis.",
+  "graph": {
+    "observations": [
+      {
+        "id": "o1",
+        "text": "A person and another individual were discussing their recent health challenges.",
+        "source": "context",
+        "cue": "none"
+      }
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "The person in the image has a mental health diagnosis.",
+        "kind": "inference",
+        "social_assumption": false,
+        "evidence_ids": [
+          "o1"
+        ],
+        "depends_on": [],
+        "contradicts": [],
+        "support": "supported",
+        "utility": 1.0
+      }
+    ]
+  },
+  "dependence_scores": {},
+  "pre_verification_repair": {
+    "selected_ids": [
+      "c1"
+    ],
+    "removed": {},
+    "objective": 1.1,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 2,
+    "feasible_subsets": 2,
+    "dependency_closure_enforced": true
+  },
+  "repair": {
+    "selected_ids": [],
+    "removed": {
+      "c1": "visual_verification:uncertain"
+    },
+    "objective": 0.0,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 1,
+    "feasible_subsets": 1,
+    "dependency_closure_enforced": true
+  },
+  "certificate": {
+    "scope": "structural constraints over model-produced evidence; no truth or fairness guarantee",
+    "graph_sha256": "2219377416ff0acbd075c190920f23f460e0547579f34ed6d01f062e94acaa94",
+    "selected_ids": [],
+    "no_new_claim_text": true,
+    "all_selected_visually_verified": false,
+    "dependency_closure": true,
+    "all_selected_have_evidence_paths": true
+  },
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "graph",
+      "request_hash": "28f96e1795b5c638deae9d5c1fc2fcbc9dd79f0c13020608dc10aa4dc943cd7b",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The person in the image has a mental health diagnosis."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "A person and another individual were discussing their recent health challenges."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c1"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The person in the image has a mental health diagnosis."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 153,
+        "prompt_tokens": 2027,
+        "total_tokens": 2180,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 36.637901
+    },
+    {
+      "source": "verification",
+      "request_hash": "75c7d34813a5bbecc019a122c03de1c61a77b4eba69240644fe647c87c97a65a",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Judgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "enum": [
+                      "c1"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "minLength": 1,
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "support",
+                  "reason"
+                ],
+                "title": "Judgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "judgments": {
+                "items": {
+                  "$ref": "#/$defs/Judgment"
+                },
+                "title": "Judgments",
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "judgments"
+            ],
+            "title": "JudgmentBatch",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 139,
+        "prompt_tokens": 1331,
+        "total_tokens": 1470,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 4.915129
+    }
+  ],
+  "network_calls": 2,
+  "prompt_fingerprint": "852069bbcf594950f24164f8e66c64f90bfbea9fdba7dc7d2c2c8b9f4e3287c9",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "03_11_0180_2_02",
+  "system": "eigr",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "graph",
+      "request_hash": "28f96e1795b5c638deae9d5c1fc2fcbc9dd79f0c13020608dc10aa4dc943cd7b",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The person in the image has a mental health diagnosis."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "A person and another individual were discussing their recent health challenges."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c1"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The person in the image has a mental health diagnosis."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 153,
+        "prompt_tokens": 2027,
+        "total_tokens": 2180,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 36.637901
+    },
+    {
+      "source": "verification",
+      "request_hash": "75c7d34813a5bbecc019a122c03de1c61a77b4eba69240644fe647c87c97a65a",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Judgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "enum": [
+                      "c1"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "minLength": 1,
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "support",
+                  "reason"
+                ],
+                "title": "Judgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "judgments": {
+                "items": {
+                  "$ref": "#/$defs/Judgment"
+                },
+                "title": "Judgments",
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 1
+              }
+            },
+            "required": [
+              "judgments"
+            ],
+            "title": "JudgmentBatch",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 139,
+        "prompt_tokens": 1331,
+        "total_tokens": 1470,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 4.915129
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "7bce7039ce33958845424b8210d524baf8c22b5ef3765be11b72e2c225fb350b",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.006467
+    }
+  ]
+}

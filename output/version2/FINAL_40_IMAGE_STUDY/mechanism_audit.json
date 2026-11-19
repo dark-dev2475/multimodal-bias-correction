@@ -1,0 +1,12 @@
+{
+  "attempted_cases": 40,
+  "cases_with_saved_graph": 40,
+  "cases_with_dependency_edges": 9,
+  "dependency_edges": 12,
+  "cases_with_measured_interventions": 0,
+  "measured_intervention_contrasts": 0,
+  "intervention_status_counts": {},
+  "verification_calls_with_any_rejected_claim": 16,
+  "answers_changed_from_draft": 30,
+  "warning": "Mechanism activation and structural certificates do not prove correctness, bias reduction, or novelty."
+}

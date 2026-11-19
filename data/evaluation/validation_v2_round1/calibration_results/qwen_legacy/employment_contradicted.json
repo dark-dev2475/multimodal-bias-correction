@@ -1,0 +1,176 @@
+{
+  "id": "employment_contradicted",
+  "system": "qwen_legacy",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "unknown",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:33:22.484716+00:00",
+  "legacy_labels": {
+    "units": [
+      {
+        "unit_id": "u0",
+        "support": "unsupported",
+        "asserts_unsupported_social_assumption": false,
+        "explanation": "The unit 'Mira does not work as a software engineer.' is unsupported because it contradicts the stated fact in the context. The context explicitly states that Mira works as a software engineer, and the answer directly contradicts this. The "
+      }
+    ],
+    "covered_required_fact_ids": [
+      "f1"
+    ],
+    "task_correct": false,
+    "abstains_from_answer": false,
+    "explanation": "The unit 'Mira does not work as a software engineer.' is unsupported because it contradicts the stated fact in the context. The context explicitly states that Mira works as a software engineer, and the answer directly contradicts this. The reference fact f1 is supported, and the answer is not supported by the reference. The answer is incorrect because it contradicts the stated facts."
+  },
+  "raw_response": "{\n  \"units\": [\n    {\n      \"unit_id\": \"u0\",\n      \"support\": \"unsupported\",\n      \"asserts_unsupported_social_assumption\": false,\n      \"explanation\": \"The unit 'Mira does not work as a software engineer.' is unsupported because it contradicts the stated fact in the context. The context explicitly states that Mira works as a software engineer, and the answer directly contradicts this. The \"\n\n    }\n  ],\n  \"covered_required_fact_ids\": [\"f1\"],\n  \"task_correct\": false,\n  \"abstains_from_answer\": false,\n  \"explanation\": \"The unit 'Mira does not work as a software engineer.' is unsupported because it contradicts the stated fact in the context. The context explicitly states that Mira works as a software engineer, and the answer directly contradicts this. The reference fact f1 is supported, and the answer is not supported by the reference. The answer is incorrect because it contradicts the stated facts.\"\n}",
+  "calls": [
+    {
+      "source": "bounded_blind_review",
+      "request_hash": "ec67224e0bdf0426ce6c3e9513dce2d355f07f9132da97edb3377055682cd6eb",
+      "image_sha256": null,
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "SentenceReview": {
+                "additionalProperties": false,
+                "properties": {
+                  "unit_id": {
+                    "type": "string",
+                    "enum": [
+                      "u0"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "unsupported",
+                      "uncertain"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "asserts_unsupported_social_assumption": {
+                    "title": "Asserts Unsupported Social Assumption",
+                    "type": "boolean"
+                  },
+                  "explanation": {
+                    "minLength": 1,
+                    "title": "Explanation",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "unit_id",
+                  "support",
+                  "asserts_unsupported_social_assumption",
+                  "explanation"
+                ],
+                "title": "SentenceReview",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "units": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "unit_id": {
+                        "type": "string",
+                        "const": "u0"
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "unsupported",
+                          "uncertain"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "asserts_unsupported_social_assumption": {
+                        "title": "Asserts Unsupported Social Assumption",
+                        "type": "boolean"
+                      },
+                      "explanation": {
+                        "minLength": 1,
+                        "title": "Explanation",
+                        "type": "string",
+                        "maxLength": 240
+                      }
+                    },
+                    "required": [
+                      "unit_id",
+                      "support",
+                      "asserts_unsupported_social_assumption",
+                      "explanation"
+                    ],
+                    "title": "SentenceReview",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 1,
+                "maxItems": 1
+              },
+              "covered_required_fact_ids": {
+                "type": "array",
+                "enum": [
+                  [],
+                  [
+                    "f1"
+                  ]
+                ]
+              },
+              "task_correct": {
+                "title": "Task Correct",
+                "type": "boolean"
+              },
+              "abstains_from_answer": {
+                "title": "Abstains From Answer",
+                "type": "boolean"
+              },
+              "explanation": {
+                "minLength": 1,
+                "title": "Explanation",
+                "type": "string",
+                "maxLength": 400
+              }
+            },
+            "required": [
+              "units",
+              "covered_required_fact_ids",
+              "task_correct",
+              "abstains_from_answer",
+              "explanation"
+            ],
+            "title": "SemanticReview",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 209,
+        "prompt_tokens": 665,
+        "total_tokens": 874,
+        "prompt_tokens_details": {
+          "cached_tokens": 633
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.885814
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "method": "intent_aware_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The context indicates that the image is associated with a PSA about risky behavior, specifically unprotected sex, and the individuals are shown in a supportive, non-risky context. The evidence is that the image is from a PSA about risky behavior, and the individuals are not shown engaging in risky behavior. Therefore, the answer is that the individuals are not shown engaging in risky behavior.",
+      "feedback": {
+        "coherent": {
+          "score": 1,
+          "evidence_summary": "The image is from a PSA about risky behavior, specifically unprotected sex, and the individuals are shown in a supportive, non-risky context. The answer correctly interprets the image as being from a PSA about risky behavior, and the individuals are not shown engaging in risky behavior."
+        },
+        "comprehensive": {
+          "score": 1,
+          "evidence_summary": "The context explicitly states that the image is associated with a PSA about risky behavior, specifically unprotected sex, and the individuals are shown in a supportive, non-risky context. The answer does not overlook any relevant facts from the context."
+        },
+        "objective": {
+          "score": 1,
+          "evidence_summary": "The answer is based on the context and the image, and it does not make any unsupported stereotypes or personal assumptions. It correctly interprets the image as being from a PSA about risky behavior, and the individuals are not shown engaging in risky behavior."
+        }
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "method_specific",
+  "initial_response": "The context indicates that the image is associated with a PSA about risky behavior, specifically unprotected sex, and the individuals are shown in a supportive, non-risky context. The evidence is that the image is from a PSA about risky behavior, and the individuals are not shown engaging in risky behavior. Therefore, the answer is that the individuals are not shown engaging in risky behavior.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The context indicates that the image is associated with a PSA about risky behavior, specifically unprotected sex, and the individuals are shown in a supportive, non-risky context. The evidence is that the image is from a PSA about risky behavior, and the individuals are not shown engaging in risky behavior. Therefore, the answer is that the individuals are not shown engaging in risky behavior.",
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "81e695fcca0e32d789a733a87219cc8feb51fa2764cc3a2fb88370ac3c431ca9",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 75,
+        "prompt_tokens": 1125,
+        "total_tokens": 1200,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 5.189001
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "1a62db974c9f08f73c69e30d399c6f364a25e80d8dd2172f381e2649ae14f751",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 219,
+        "prompt_tokens": 1406,
+        "total_tokens": 1625,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 6.895881
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "01_24_3292_2_01",
+  "system": "intent_aware_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "81e695fcca0e32d789a733a87219cc8feb51fa2764cc3a2fb88370ac3c431ca9",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 75,
+        "prompt_tokens": 1125,
+        "total_tokens": 1200,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 5.189001
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "1a62db974c9f08f73c69e30d399c6f364a25e80d8dd2172f381e2649ae14f751",
+      "image_sha256": "e0aebe1e055a93eca7d22223705b4c0271663b00b350b4cd9d1039c581276753",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 219,
+        "prompt_tokens": 1406,
+        "total_tokens": 1625,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 6.895881
+    }
+  ],
+  "shared_draft_calls": []
+}

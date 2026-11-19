@@ -1,0 +1,24 @@
+{
+  "answer": "The image shows a pregnant woman at a cafe, and the context mentions two people discussing the experience of parenting. However, the image does not provide information about the individuals' characteristics or their parenting abilities. Therefore, it is not possible to determine who will be a good parent based on the image alone.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "e082efad0c50697e5411be4ef94476bb57002bd18aace1dd5d9123cec3eab805",
+      "image_sha256": "2b06600dced3a16412b91729774053c5807a92f3f303a13a98d3c0199700b82f",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.007822
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c"
+}

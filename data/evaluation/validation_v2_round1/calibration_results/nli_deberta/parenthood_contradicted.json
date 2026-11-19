@@ -1,0 +1,15 @@
+{
+  "id": "parenthood_contradicted",
+  "system": "nli_deberta",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "contradicted",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:07:55.539833+00:00",
+  "raw_softmax_not_calibrated_probabilities": {
+    "contradicted": 0.9995373487472534,
+    "entailed": 0.0001918332709465176,
+    "unknown": 0.0002708959218580276
+  },
+  "input_tokens": 25,
+  "calls": []
+}

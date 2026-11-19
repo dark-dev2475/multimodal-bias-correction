@@ -1,0 +1,38 @@
+{
+  "id": "employment_entailed",
+  "system": "qwen_pointwise",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "entailed",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:36:29.911727+00:00",
+  "raw_response": "ENTAILED",
+  "calls": [
+    {
+      "source": "pointwise_calibration",
+      "request_hash": "b6e14de492a41420f304c90e8ccc1af8239932d2e9f67ba8697042af31e93ab5",
+      "image_sha256": null,
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 128,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 158,
+        "total_tokens": 162,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 0.465857
+    }
+  ]
+}

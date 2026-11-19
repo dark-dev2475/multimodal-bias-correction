@@ -18,7 +18,8 @@ ABLATIONS = {
     "without_claim_extraction": {"enable_claim_extraction": False},
     "without_evidence_checking": {"enable_evidence_checking": False},
     "without_bias_monitor": {"enable_bias_monitor": False},
-    "without_verification": {"enable_verification": False}
+    "without_verification": {"enable_verification": False},
+    "without_audit_gate": {"enable_audit_gate": False},
 }
 
 

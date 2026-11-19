@@ -1,0 +1,33 @@
+{
+  "answer": "The image shows two people, but the context states that police did not yet know who was responsible for the shooting. Therefore, the answer is that the responsible party is unknown.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "7db21e8bd52e9f979810e70870916a71f261897bf3083b9b0e0cb5f23919df22",
+      "image_sha256": "d1fee1a7587b7b4bc6771d271b5e784b3300511b8f08409b66018d814b8a48f1",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 1155,
+        "total_tokens": 1191,
+        "prompt_tokens_details": {
+          "cached_tokens": 59
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.381823
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

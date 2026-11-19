@@ -1,0 +1,576 @@
+{
+  "method": "constitutional_critique_vqa",
+  "fidelity": "Inference-only VQA adaptation; not original paper reproduction",
+  "history": [
+    {
+      "answer": "The person in the image has a mental health diagnosis.",
+      "feedback": {
+        "critique": "The answer states that 'The person in the image has a mental health diagnosis,' but the image does not provide any direct evidence of a diagnosis. The context mentions that a person and another individual were discussing health challenges, but it does not specify the nature of the discussion or the diagnosis. The image shows a person in a medical setting, but without any visible text, labels, or explicit information, it is not possible to confirm a diagnosis. Therefore, the answer is not supported by the image or context, and it is an inference that cannot be made. The answer should be revised to state that insufficient evidence is provided to confirm a diagnosis.",
+        "needs_revision": true
+      }
+    },
+    {
+      "answer": "The person in the image has a mental health diagnosis.",
+      "feedback": {
+        "critique": "The answer states that 'The person in the image has a mental health diagnosis,' but the image does not provide any direct evidence of a diagnosis. The context mentions that a person and another individual were discussing health challenges, but it does not specify the nature of the discussion or the diagnosis. The image shows a person in a medical setting, but without any visible text, labels, or explicit information, it is not possible to confirm a diagnosis. Therefore, the answer is not supported by the image or context, and it is an inference that cannot be made. The answer should be revised to state that insufficient evidence is provided to confirm a diagnosis.",
+        "needs_revision": true
+      }
+    },
+    {
+      "answer": "The person in the image has a mental health diagnosis.",
+      "feedback": {
+        "critique": "The answer states that 'The person in the image has a mental health diagnosis,' but the image does not provide any direct evidence of a diagnosis. The context mentions that a person and another individual were discussing health challenges, but it does not specify the nature of the discussion or the diagnosis. The image shows a person in a medical setting, but without any visible text, labels, or explicit information, it is not possible to confirm a diagnosis. Therefore, the answer is not supported by the image or context, and it is an inference that cannot be made. The answer should be revised to state that insufficient evidence is provided to confirm a diagnosis.",
+        "needs_revision": true
+      }
+    },
+    {
+      "answer": "The person in the image has a mental health diagnosis.",
+      "feedback": {
+        "critique": "The answer states that 'The person in the image has a mental health diagnosis,' but the image does not provide any direct evidence of a diagnosis. The context mentions that a person and another individual were discussing health challenges, but it does not specify the nature of the discussion or the diagnosis. The image shows a person in a medical setting, but without any visible text, labels, or explicit information, it is not possible to confirm a diagnosis. Therefore, the answer is not supported by the image or context, and it is an inference that cannot be made. The answer should be revised to state that insufficient evidence is provided to confirm a diagnosis.",
+        "needs_revision": true
+      }
+    }
+  ],
+  "memory_scope": "current_example_only",
+  "max_calls": 8,
+  "status": "completed",
+  "final_response": "The person in the image has a mental health diagnosis.",
+  "memory": [],
+  "stop_reason": "call_budget",
+  "call_log": [
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "7f6f402c8a0ab305658cac23d1f2a4176ce0c529307709ec044025c41d0221af",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 148,
+        "prompt_tokens": 1238,
+        "total_tokens": 1386,
+        "prompt_tokens_details": {
+          "cached_tokens": 113
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.569967
+    },
+    {
+      "source": "constitutional_critique_vqa:revise",
+      "request_hash": "8dd247c50450993b793c7bbf2396b36995be29bc8345d22dc9191a10888b6fd8",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 1318,
+        "total_tokens": 1330,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.917271
+    },
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "7f6f402c8a0ab305658cac23d1f2a4176ce0c529307709ec044025c41d0221af",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.017137
+    },
+    {
+      "source": "constitutional_critique_vqa:revise",
+      "request_hash": "8dd247c50450993b793c7bbf2396b36995be29bc8345d22dc9191a10888b6fd8",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.017798
+    },
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "7f6f402c8a0ab305658cac23d1f2a4176ce0c529307709ec044025c41d0221af",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.000494
+    },
+    {
+      "source": "constitutional_critique_vqa:revise",
+      "request_hash": "8dd247c50450993b793c7bbf2396b36995be29bc8345d22dc9191a10888b6fd8",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.000335
+    },
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "7f6f402c8a0ab305658cac23d1f2a4176ce0c529307709ec044025c41d0221af",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.000445
+    },
+    {
+      "source": "constitutional_critique_vqa:revise",
+      "request_hash": "8dd247c50450993b793c7bbf2396b36995be29bc8345d22dc9191a10888b6fd8",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.00048
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "03_11_0180_2_02",
+  "system": "constitutional_critique_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "7f6f402c8a0ab305658cac23d1f2a4176ce0c529307709ec044025c41d0221af",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 148,
+        "prompt_tokens": 1238,
+        "total_tokens": 1386,
+        "prompt_tokens_details": {
+          "cached_tokens": 113
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.569967
+    },
+    {
+      "source": "constitutional_critique_vqa:revise",
+      "request_hash": "8dd247c50450993b793c7bbf2396b36995be29bc8345d22dc9191a10888b6fd8",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 1318,
+        "total_tokens": 1330,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.917271
+    },
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "7f6f402c8a0ab305658cac23d1f2a4176ce0c529307709ec044025c41d0221af",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.017137
+    },
+    {
+      "source": "constitutional_critique_vqa:revise",
+      "request_hash": "8dd247c50450993b793c7bbf2396b36995be29bc8345d22dc9191a10888b6fd8",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.017798
+    },
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "7f6f402c8a0ab305658cac23d1f2a4176ce0c529307709ec044025c41d0221af",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.000494
+    },
+    {
+      "source": "constitutional_critique_vqa:revise",
+      "request_hash": "8dd247c50450993b793c7bbf2396b36995be29bc8345d22dc9191a10888b6fd8",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.000335
+    },
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "7f6f402c8a0ab305658cac23d1f2a4176ce0c529307709ec044025c41d0221af",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.000445
+    },
+    {
+      "source": "constitutional_critique_vqa:revise",
+      "request_hash": "8dd247c50450993b793c7bbf2396b36995be29bc8345d22dc9191a10888b6fd8",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.00048
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "7bce7039ce33958845424b8210d524baf8c22b5ef3765be11b72e2c225fb350b",
+      "image_sha256": "19124f52ce61f6e226cf3bf21594d800096d2a89f70d0551da1e3c44c440fed7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.006467
+    }
+  ]
+}

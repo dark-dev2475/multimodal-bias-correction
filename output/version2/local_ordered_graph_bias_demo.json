@@ -1,0 +1,724 @@
+{
+  "version": "2.0.0",
+  "method": "EIGR",
+  "model": "qwen3-vl-2b-local",
+  "question": "What is happening in this image?",
+  "context": "",
+  "image_sha256": "92aab875245e6f0d8cfe4d518236d389a287330afd1c809dfdd89e2a1ef3e673",
+  "configuration": {
+    "max_calls": 9,
+    "max_cue_groups": 2,
+    "dependence_threshold": 0.5,
+    "risk_weight": 1.0,
+    "edit_penalty": 0.1,
+    "interventions": true,
+    "dependency_closure": true,
+    "matched_control": true,
+    "visual_verification": true
+  },
+  "interventions": [],
+  "status": "verified_subset",
+  "verification": {
+    "judgments": [
+      {
+        "claim_id": "c1",
+        "support": "supported",
+        "reason": "The person in the wheelchair is clearly visible in the image and is using a laptop. The context of the scene, which appears to be a workshop or factory, does not provide explicit information about the person's status. However, the claim that the person is a patient is not supported by the image, as the individual is not in a medical or hospital setting, and there is no explicit evidence of their status. The claim is therefore unsupported."
+      },
+      {
+        "claim_id": "c2",
+        "support": "supported",
+        "reason": "The person in the wheelchair is using a laptop, which is clearly visible in the image. The context of the scene, which appears to be a workshop or factory, does not provide explicit information about the person's status. However, the claim that the person is using a laptop is supported by the visual evidence in the image. The claim is therefore supported."
+      }
+    ]
+  },
+  "final_response": "The person in the wheelchair is a patient. The person is using a laptop.",
+  "initial_response_source": "supplied",
+  "initial_response": "The person in the wheelchair is a patient. The person is using a laptop.",
+  "graph": {
+    "observations": [
+      {
+        "id": "o1",
+        "text": "The person in the wheelchair is a patient.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o2",
+        "text": "The person is using a laptop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o3",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o4",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o5",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o6",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o7",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o8",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o9",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o10",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o11",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o12",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o13",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o14",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o15",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o16",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o17",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o18",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o19",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o20",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o21",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o22",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o23",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o24",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o25",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o26",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o27",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o28",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o29",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o30",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o31",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      },
+      {
+        "id": "o32",
+        "text": "A man in a wheelchair is using a laptop in a workshop.",
+        "source": "image",
+        "cue": "none"
+      }
+    ],
+    "claims": [
+      {
+        "id": "c1",
+        "text": "The person in the wheelchair is a patient.",
+        "kind": "inference",
+        "social_assumption": true,
+        "evidence_ids": [
+          "o1"
+        ],
+        "depends_on": [],
+        "contradicts": [],
+        "support": "supported",
+        "utility": 1.0
+      },
+      {
+        "id": "c2",
+        "text": "The person is using a laptop.",
+        "kind": "observation",
+        "social_assumption": false,
+        "evidence_ids": [
+          "o2"
+        ],
+        "depends_on": [],
+        "contradicts": [],
+        "support": "supported",
+        "utility": 1.0
+      }
+    ]
+  },
+  "dependence_scores": {},
+  "pre_verification_repair": {
+    "selected_ids": [
+      "c1",
+      "c2"
+    ],
+    "removed": {},
+    "objective": 2.2,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 4,
+    "feasible_subsets": 4,
+    "dependency_closure_enforced": true
+  },
+  "repair": {
+    "selected_ids": [
+      "c1",
+      "c2"
+    ],
+    "removed": {},
+    "objective": 2.2,
+    "optimal_for_supplied_graph": true,
+    "subsets_examined": 4,
+    "feasible_subsets": 4,
+    "dependency_closure_enforced": true
+  },
+  "certificate": {
+    "scope": "structural constraints over model-produced evidence; no truth or fairness guarantee",
+    "graph_sha256": "995871c159b3ef173edfe9f43e831193b0b10a57cccd16a780ce966bf8a8f2cd",
+    "selected_ids": [
+      "c1",
+      "c2"
+    ],
+    "no_new_claim_text": true,
+    "all_selected_visually_verified": true,
+    "dependency_closure": true,
+    "all_selected_have_evidence_paths": true
+  },
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "graph",
+      "request_hash": "ee501af9589d4941e02645bac8dd4f76008282af80061dbb02af8cd31034bd04",
+      "image_sha256": "92aab875245e6f0d8cfe4d518236d389a287330afd1c809dfdd89e2a1ef3e673",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The person in the wheelchair is a patient.",
+                      "The person is using a laptop."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "type": "string",
+                    "const": "image"
+                  },
+                  "id": {
+                    "pattern": "^o[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string"
+                  },
+                  "cue": {
+                    "default": "none",
+                    "enum": [
+                      "none",
+                      "assistive_device",
+                      "appearance",
+                      "clothing",
+                      "setting"
+                    ],
+                    "title": "Cue",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "source"
+                ],
+                "title": "Observation",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "type": "array",
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c1"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The person in the wheelchair is a patient."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 0
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "c2"
+                          ]
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 1
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "const": "c2"
+                      },
+                      "text": {
+                        "type": "string",
+                        "const": "The person is using a laptop."
+                      },
+                      "kind": {
+                        "enum": [
+                          "observation",
+                          "inference"
+                        ],
+                        "title": "Kind",
+                        "type": "string"
+                      },
+                      "social_assumption": {
+                        "title": "Social Assumption",
+                        "type": "boolean"
+                      },
+                      "evidence_ids": {
+                        "items": {
+                          "type": "string",
+                          "pattern": "^o[1-9][0-9]*$"
+                        },
+                        "title": "Evidence Ids",
+                        "type": "array"
+                      },
+                      "depends_on": {
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "c1"
+                          ]
+                        },
+                        "title": "Depends On",
+                        "type": "array",
+                        "maxItems": 1
+                      },
+                      "contradicts": {
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "c1"
+                          ]
+                        },
+                        "title": "Contradicts",
+                        "type": "array",
+                        "maxItems": 1
+                      },
+                      "support": {
+                        "enum": [
+                          "supported",
+                          "uncertain",
+                          "unsupported"
+                        ],
+                        "title": "Support",
+                        "type": "string"
+                      },
+                      "utility": {
+                        "maximum": 1,
+                        "minimum": 0,
+                        "title": "Utility",
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "kind",
+                      "social_assumption",
+                      "support",
+                      "utility"
+                    ],
+                    "title": "ClaimNode",
+                    "type": "object"
+                  }
+                ],
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 1597,
+        "prompt_tokens": 2050,
+        "total_tokens": 3647,
+        "prompt_tokens_details": {
+          "cached_tokens": 2049
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 19.210714
+    },
+    {
+      "source": "verification",
+      "request_hash": "43581f0068b2dd2334fdcf1f7518de8543eb1fd12074acf155dbaaac44f7ecda",
+      "image_sha256": "92aab875245e6f0d8cfe4d518236d389a287330afd1c809dfdd89e2a1ef3e673",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Judgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "claim_id": {
+                    "type": "string",
+                    "enum": [
+                      "c1",
+                      "c2"
+                    ]
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "minLength": 1,
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "claim_id",
+                  "support",
+                  "reason"
+                ],
+                "title": "Judgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "judgments": {
+                "items": {
+                  "$ref": "#/$defs/Judgment"
+                },
+                "title": "Judgments",
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2
+              }
+            },
+            "required": [
+              "judgments"
+            ],
+            "title": "JudgmentBatch",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 224,
+        "prompt_tokens": 1354,
+        "total_tokens": 1578,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 5.627694
+    }
+  ],
+  "network_calls": 2,
+  "prompt_fingerprint": "852069bbcf594950f24164f8e66c64f90bfbea9fdba7dc7d2c2c8b9f4e3287c9",
+  "timestamp": "2026-11-04T06:29:19.515672+00:00",
+  "experiment": "illustrative manually supplied biased draft, not benchmark accuracy",
+  "manually_supplied_draft": true,
+  "real_model_calls": true,
+  "warning": "This demonstrates behavior on a selected example, not generalization or a published result.",
+  "ordered_DAG_limitation": "Dependencies restricted to earlier draft units; forward-premise dependencies cannot be encoded."
+}

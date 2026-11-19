@@ -1,0 +1,24 @@
+{
+  "answer": "The person who was friendly and did nothing wrong is the woman in the image with the green checkmark.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "e1121b028017b5aef117594ff723909d6f01cc0c513704c26ae28a8f006a82c3",
+      "image_sha256": "bbaf89ed3d2fe77c96f79d2cd9eafd2e0cee75fde467bd652a098abab8b7ded6",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.00783
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c"
+}

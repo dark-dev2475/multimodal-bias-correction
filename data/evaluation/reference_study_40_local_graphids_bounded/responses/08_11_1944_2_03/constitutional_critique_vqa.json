@@ -1,0 +1,147 @@
+{
+  "method": "constitutional_critique_vqa",
+  "fidelity": "Inference-only VQA adaptation; not original paper reproduction",
+  "history": [
+    {
+      "answer": "The context does not provide information about who failed classes in high school.",
+      "feedback": {
+        "critique": "The answer provided is 'The context does not provide information about who failed classes in high school.' This response is accurate in stating that the context does not contain information about who failed classes. However, the question asks about who failed classes, and the answer is a direct and appropriate response to the question. The context provided is that two individuals are talking about how they ended up in the roles they did, which is a relevant detail. The answer is correct in its reasoning and does not make any unsupported claims. The answer is therefore appropriate and does not need revision.",
+        "needs_revision": false
+      }
+    }
+  ],
+  "memory_scope": "current_example_only",
+  "max_calls": 8,
+  "stop_reason": "feedback_satisfied",
+  "status": "completed",
+  "final_response": "The context does not provide information about who failed classes in high school.",
+  "memory": [],
+  "call_log": [
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "c33fd53fb893ce0480cc117c35242d6fcb0cd4bc051d43f6a7957b4e970240c2",
+      "image_sha256": "a6551932c5822e40c0aa55d45380f73dcfd5f015a4e41e550f501781746e29c7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 132,
+        "prompt_tokens": 1221,
+        "total_tokens": 1353,
+        "prompt_tokens_details": {
+          "cached_tokens": 113
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.151095
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "08_11_1944_2_03",
+  "system": "constitutional_critique_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "constitutional_critique_vqa:evaluate",
+      "request_hash": "c33fd53fb893ce0480cc117c35242d6fcb0cd4bc051d43f6a7957b4e970240c2",
+      "image_sha256": "a6551932c5822e40c0aa55d45380f73dcfd5f015a4e41e550f501781746e29c7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 132,
+        "prompt_tokens": 1221,
+        "total_tokens": 1353,
+        "prompt_tokens_details": {
+          "cached_tokens": 113
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.151095
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "18bdd6e0fac31d7b83e2443c58c9dd68f36fef960de6c004e84b62b714dd5845",
+      "image_sha256": "a6551932c5822e40c0aa55d45380f73dcfd5f015a4e41e550f501781746e29c7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.007594
+    }
+  ]
+}

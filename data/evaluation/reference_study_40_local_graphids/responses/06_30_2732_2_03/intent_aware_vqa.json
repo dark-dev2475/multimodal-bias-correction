@@ -1,0 +1,244 @@
+{
+  "method": "intent_aware_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The individuals in the image are the two students who are being addressed by the teacher after class. The context indicates the teacher is speaking with them individually, so they are the ones who are struggling. There is no evidence in the image to suggest any other students are struggling.",
+      "feedback": {
+        "coherent": {
+          "score": 1,
+          "evidence_summary": "The answer correctly identifies the two students in the image as the ones being addressed by the teacher after class, which aligns with the context. The context states the teacher is speaking with them individually, so they are the ones who are struggling. The answer does not mention any other students, and there is no evidence in the image to suggest any other students are struggling."
+        },
+        "comprehensive": {
+          "score": 1,
+          "evidence_summary": "The answer is comprehensive as it considers the context and the image to determine that the two students are the ones being addressed by the teacher. It does not overlook any relevant facts from the image or context."
+        },
+        "objective": {
+          "score": 1,
+          "evidence_summary": "The answer is objective as it is based on the information provided in the context and the image. It does not make any unsupported assumptions or stereotypes. The answer is justified by the facts presented."
+        }
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "method_specific",
+  "initial_response": "The individuals in the image are the two students who are being addressed by the teacher after class. The context indicates the teacher is speaking with them individually, so they are the ones who are struggling. There is no evidence in the image to suggest any other students are struggling.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The individuals in the image are the two students who are being addressed by the teacher after class. The context indicates the teacher is speaking with them individually, so they are the ones who are struggling. There is no evidence in the image to suggest any other students are struggling.",
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "0a7511c941706779bce8c8268f11b0756657a116076b8a88dd1efec0f4c85264",
+      "image_sha256": "fa4e936b4ccbca298a6111b6f33ab235902cdf53990e0fbfec719daed12edacb",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 55,
+        "prompt_tokens": 1198,
+        "total_tokens": 1253,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 5.681554
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "dc16a17cbe54850b46bd0ae1adb6b0ce92c89aa31a57e5267a7fc9321466b264",
+      "image_sha256": "fa4e936b4ccbca298a6111b6f33ab235902cdf53990e0fbfec719daed12edacb",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 220,
+        "prompt_tokens": 1459,
+        "total_tokens": 1679,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 7.308608
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "06_30_2732_2_03",
+  "system": "intent_aware_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "0a7511c941706779bce8c8268f11b0756657a116076b8a88dd1efec0f4c85264",
+      "image_sha256": "fa4e936b4ccbca298a6111b6f33ab235902cdf53990e0fbfec719daed12edacb",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 55,
+        "prompt_tokens": 1198,
+        "total_tokens": 1253,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 5.681554
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "dc16a17cbe54850b46bd0ae1adb6b0ce92c89aa31a57e5267a7fc9321466b264",
+      "image_sha256": "fa4e936b4ccbca298a6111b6f33ab235902cdf53990e0fbfec719daed12edacb",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "Aspect": {
+                "additionalProperties": false,
+                "properties": {
+                  "score": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Score",
+                    "type": "integer"
+                  },
+                  "evidence_summary": {
+                    "minLength": 1,
+                    "title": "Evidence Summary",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "score",
+                  "evidence_summary"
+                ],
+                "title": "Aspect",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "coherent": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "comprehensive": {
+                "$ref": "#/$defs/Aspect"
+              },
+              "objective": {
+                "$ref": "#/$defs/Aspect"
+              }
+            },
+            "required": [
+              "coherent",
+              "comprehensive",
+              "objective"
+            ],
+            "title": "IntentFeedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 220,
+        "prompt_tokens": 1459,
+        "total_tokens": 1679,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 7.308608
+    }
+  ],
+  "shared_draft_calls": []
+}

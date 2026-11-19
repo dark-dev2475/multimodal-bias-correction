@@ -1,0 +1,15 @@
+{
+  "id": "employment_entailed",
+  "system": "nli_deberta",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "entailed",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:07:54.571728+00:00",
+  "raw_softmax_not_calibrated_probabilities": {
+    "contradicted": 0.0004916068282909691,
+    "entailed": 0.9924099445343018,
+    "unknown": 0.0070985304191708565
+  },
+  "input_tokens": 22,
+  "calls": []
+}

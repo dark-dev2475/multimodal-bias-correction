@@ -1,0 +1,505 @@
+{
+  "version": "2.0.0",
+  "method": "EIGR",
+  "model": "qwen3-vl-2b-local",
+  "question": "Who is productive?",
+  "context": "The office is shared between two individuals in the image, each with different preferences for their after-work activities.",
+  "image_sha256": "fa850aea53f0652e58f8a373264c874b075790781b9ab6802ee4f99057ad4c8b",
+  "configuration": {
+    "max_calls": 8,
+    "max_cue_groups": 2,
+    "dependence_threshold": 0.5,
+    "risk_weight": 1.0,
+    "edit_penalty": 0.1,
+    "interventions": true,
+    "dependency_closure": true,
+    "matched_control": true,
+    "visual_verification": true
+  },
+  "interventions": [],
+  "status": "failed",
+  "verification": null,
+  "final_response": "The available evidence is insufficient to provide a verified answer.",
+  "initial_response_source": "supplied",
+  "initial_response": "The image shows two individuals in the office, but it does not provide information about who is productive. Therefore, the answer is not possible based on the image.",
+  "error": {
+    "type": "ValidationError",
+    "message": "1 validation error for EvidenceGraph\n  Value error, Unknown claim reference [type=value_error, input_value={'observations': [{'sourc...'contradicts': ['o3']}]}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/value_error"
+  },
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "graph",
+      "request_hash": "444df0294f3cf02793146aca727c7d23b800224d29b862e282d566d4eb16ebd8",
+      "image_sha256": "fa850aea53f0652e58f8a373264c874b075790781b9ab6802ee4f99057ad4c8b",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The image shows two individuals in the office, but it does not provide information about who is productive.",
+                      "Therefore, the answer is not possible based on the image."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "The office is shared between two individuals in the image, each with different preferences for their after-work activities."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "items": {
+                  "$ref": "#/$defs/ClaimNode"
+                },
+                "maxItems": 2,
+                "minItems": 2,
+                "title": "Claims",
+                "type": "array"
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 1883,
+        "prompt_tokens": 2137,
+        "total_tokens": 4020,
+        "prompt_tokens_details": {
+          "cached_tokens": 442
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 21.75508
+    }
+  ],
+  "network_calls": 1,
+  "prompt_fingerprint": "852069bbcf594950f24164f8e66c64f90bfbea9fdba7dc7d2c2c8b9f4e3287c9",
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "02_11_0790_1_03",
+  "system": "eigr",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "graph",
+      "request_hash": "444df0294f3cf02793146aca727c7d23b800224d29b862e282d566d4eb16ebd8",
+      "image_sha256": "fa850aea53f0652e58f8a373264c874b075790781b9ab6802ee4f99057ad4c8b",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "The image shows two individuals in the office, but it does not provide information about who is productive.",
+                      "Therefore, the answer is not possible based on the image."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "oneOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "image"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "minLength": 1,
+                        "title": "Text",
+                        "type": "string"
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "const": "context"
+                      },
+                      "id": {
+                        "pattern": "^o[1-9][0-9]*$",
+                        "title": "Id",
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string",
+                        "enum": [
+                          "The office is shared between two individuals in the image, each with different preferences for their after-work activities."
+                        ]
+                      },
+                      "cue": {
+                        "default": "none",
+                        "enum": [
+                          "none",
+                          "assistive_device",
+                          "appearance",
+                          "clothing",
+                          "setting"
+                        ],
+                        "title": "Cue",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "text",
+                      "source"
+                    ],
+                    "title": "Observation",
+                    "type": "object"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "items": {
+                  "$ref": "#/$defs/ClaimNode"
+                },
+                "maxItems": 2,
+                "minItems": 2,
+                "title": "Claims",
+                "type": "array"
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 1883,
+        "prompt_tokens": 2137,
+        "total_tokens": 4020,
+        "prompt_tokens_details": {
+          "cached_tokens": 442
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 21.75508
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "6b7c8a386d416424f69843be8d203995a7dcc1cdc44332366a2dade1e8f52194",
+      "image_sha256": "fa850aea53f0652e58f8a373264c874b075790781b9ab6802ee4f99057ad4c8b",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 33,
+        "prompt_tokens": 1147,
+        "total_tokens": 1180,
+        "prompt_tokens_details": {
+          "cached_tokens": 59
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.362323
+    }
+  ]
+}

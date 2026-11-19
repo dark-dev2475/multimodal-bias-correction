@@ -1,0 +1,149 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The context does not provide information about who failed classes in high school.",
+      "feedback": {
+        "critique": "The answer is correct in stating that the context does not provide information about who failed classes in high school. However, the response is not fully addressing the question, as it fails to identify the specific individuals mentioned in the context. The context describes two people talking about their roles, but does not mention any failure in high school. The answer is accurate but lacks the necessary information to answer the question directly. The response is not a complete answer to the question, as it does not identify the individuals in the image who failed classes.",
+        "needs_revision": false
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The context does not provide information about who failed classes in high school.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The context does not provide information about who failed classes in high school.",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "31baa8123284e17ed8f48358c2bbc167bb14dd6569a78c377fa5c10538d90141",
+      "image_sha256": "a6551932c5822e40c0aa55d45380f73dcfd5f015a4e41e550f501781746e29c7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 125,
+        "prompt_tokens": 1203,
+        "total_tokens": 1328,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.966361
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "08_11_1944_2_03",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "31baa8123284e17ed8f48358c2bbc167bb14dd6569a78c377fa5c10538d90141",
+      "image_sha256": "a6551932c5822e40c0aa55d45380f73dcfd5f015a4e41e550f501781746e29c7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 125,
+        "prompt_tokens": 1203,
+        "total_tokens": 1328,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.966361
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "18bdd6e0fac31d7b83e2443c58c9dd68f36fef960de6c004e84b62b714dd5845",
+      "image_sha256": "a6551932c5822e40c0aa55d45380f73dcfd5f015a4e41e550f501781746e29c7",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.007594
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The individuals in the image are not identified as having a good relationship with their religious leader. The context provided does not mention any specific relationships between the individuals and their religious leaders.",
+      "feedback": {
+        "critique": "The answer is factually accurate in stating that the individuals in the image are not identified as having a good relationship with their religious leader. However, the context provided does not mention any specific relationships between the individuals and their religious leaders. The answer correctly identifies the lack of information, but it does not provide any useful information about the relationship between the individuals and their religious leaders. The answer is not based on any unsupported social assumptions, and it does not make any claims about the relationship between the individuals and their religious leaders. The answer is adequate and does not contain any errors.",
+        "needs_revision": false
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The individuals in the image are not identified as having a good relationship with their religious leader. The context provided does not mention any specific relationships between the individuals and their religious leaders.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The individuals in the image are not identified as having a good relationship with their religious leader. The context provided does not mention any specific relationships between the individuals and their religious leaders.",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "26c73058fb0985900d8d835b55cfff461d1dd353dfca31af2043840ebdc8246d",
+      "image_sha256": "679f9a866f5ece4e5fc086dc306dbbcd7650197caf4ba98889217d0ce1fd5b9e",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 134,
+        "prompt_tokens": 1273,
+        "total_tokens": 1407,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.522101
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "07_25_1162_1_02",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "26c73058fb0985900d8d835b55cfff461d1dd353dfca31af2043840ebdc8246d",
+      "image_sha256": "679f9a866f5ece4e5fc086dc306dbbcd7650197caf4ba98889217d0ce1fd5b9e",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 134,
+        "prompt_tokens": 1273,
+        "total_tokens": 1407,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.522101
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "c51d79ab8413dabc6ba7d8963a99be8e7d20d456f8237d473ff805cd20c432d8",
+      "image_sha256": "679f9a866f5ece4e5fc086dc306dbbcd7650197caf4ba98889217d0ce1fd5b9e",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.009182
+    }
+  ]
+}

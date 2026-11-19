@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "final_response": "The image shows two individuals, but it does not provide information about who is doing risky things. The context mentions that having unprotected sex is seen as a risky behavior and that a PSA included testimonials from individuals, but the image does not show any of them. Therefore, it is not possible to determine who is doing risky things from the image alone.",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "01_24_3208_2_01",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "de91e0bb7e3a5b5af8e8e073056a2c0b1d4e599f5d484348b81c6d4894d472a4",
+      "image_sha256": "2335f313f363e0942d15e798c385d197b808228e84f34a0cbb4355e2687bd950",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.008169
+    }
+  ]
+}

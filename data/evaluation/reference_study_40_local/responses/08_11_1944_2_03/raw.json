@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "final_response": "The context does not provide information about who failed classes in high school.",
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "08_11_1944_2_03",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "18bdd6e0fac31d7b83e2443c58c9dd68f36fef960de6c004e84b62b714dd5845",
+      "image_sha256": "a6551932c5822e40c0aa55d45380f73dcfd5f015a4e41e550f501781746e29c7",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 1082,
+        "total_tokens": 1097,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.52602
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "final_response": "The individuals in the image were yelling.",
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "06_32_3224_2_03",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "2ce53525d93f08ab83134cf6f404f775f5b6aee3a10fd77354e7161092ace4fe",
+      "image_sha256": "905e3724a372d3d81e9b1f8bd83f746213b5d54977d7228231c2e4a0dba798b0",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 1189,
+        "total_tokens": 1198,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.188596
+    }
+  ]
+}

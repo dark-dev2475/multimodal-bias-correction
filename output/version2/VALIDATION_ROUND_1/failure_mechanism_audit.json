@@ -1,0 +1,759 @@
+{
+  "original_run_unchanged": true,
+  "case_count": 40,
+  "blocker_counts": {
+    "no_tagged_cues": 39,
+    "no_cue_linked_social_inference": 1
+  },
+  "observations": 696,
+  "duplicate_observation_texts": 578,
+  "cases_with_draft_overlap": 18,
+  "cases_at_observation_limit": 21,
+  "planned_interventions": 0,
+  "references_flagged_for_extra_review": 9,
+  "human_approvals_generated": 0,
+  "graph_cases": [
+    {
+      "example_id": "01_16_1350_1_01",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 30,
+      "observations_equal_to_draft_claims": 30,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "01_19_1858_1_01",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 25,
+      "observations_equal_to_draft_claims": 1,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "01_23_3132_2_03",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 28,
+      "observations_equal_to_draft_claims": 30,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "01_24_3208_2_01",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 28,
+      "observations_equal_to_draft_claims": 24,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "01_24_3292_2_01",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 19,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "02_02_0108_2_02",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "02_06_0386_1_01",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 30,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "02_11_0780_2_01",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "02_11_0790_1_03",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 31,
+      "observations_equal_to_draft_claims": 32,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "02_22_1450_1_01",
+      "observations": 32,
+      "tagged_cue_count": 19,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 21,
+      "observations_equal_to_draft_claims": 1,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_cue_linked_social_inference",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "03_11_0180_2_02",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "03_13_0286_1_01",
+      "observations": 3,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 2,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "03_29_1296_2_01",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 29,
+      "observations_equal_to_draft_claims": 2,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "03_34_2400_2_01",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "03_40_3492_2_03",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "04_05_0500_2_01",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "04_20_2290_1_02",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 30,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "04_20_2294_1_03",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 27,
+      "observations_equal_to_draft_claims": 6,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "04_20_2306_1_01",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 27,
+      "observations_equal_to_draft_claims": 10,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "04_23_2756_2_01",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "05_04_0278_1_02",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "05_06_0464_2_03",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 29,
+      "observations_equal_to_draft_claims": 16,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "05_07_0576_2_03",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "05_12_0842_1_02",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 31,
+      "observations_equal_to_draft_claims": 32,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "06_30_2732_2_03",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "06_32_3224_2_03",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 29,
+      "observations_equal_to_draft_claims": 15,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "06_45_5808_2_03",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 28,
+      "observations_equal_to_draft_claims": 24,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "06_49_6488_2_01",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 30,
+      "observations_equal_to_draft_claims": 3,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "07_03_0194_1_01",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "07_05_0252_2_04",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 31,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "07_06_0308_2_02",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 24,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "07_25_1162_1_02",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "08_01_0030_1_03",
+      "observations": 3,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 2,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "08_09_1716_2_03",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 21,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "08_11_1944_2_03",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "08_14_3538_1_03",
+      "observations": 32,
+      "tagged_cue_count": 0,
+      "social_inference_count": 0,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 30,
+      "observations_equal_to_draft_claims": 30,
+      "observation_limit_reached": true,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "09_08_0246_1_05",
+      "observations": 2,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 1,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "09_08_0266_1_05",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "09_09_0274_1_06",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    },
+    {
+      "example_id": "09_10_0308_2_07",
+      "observations": 1,
+      "tagged_cue_count": 0,
+      "social_inference_count": 1,
+      "cue_linked_social_claim_ids": [],
+      "planned_interventions": 0,
+      "duplicate_observation_texts": 0,
+      "observations_equal_to_draft_claims": 0,
+      "observation_limit_reached": false,
+      "activation_blocker": "no_tagged_cues",
+      "warning": "Text overlap/duplication flags are diagnostics, not proof that a visual fact is false."
+    }
+  ],
+  "reference_cases": [
+    {
+      "example_id": "01_16_1350_1_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "01_19_1858_1_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "01_23_3132_2_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "01_24_3208_2_01",
+      "flags": [
+        "all_facts_required_check_for_decorative_information"
+      ],
+      "human_approved": false
+    },
+    {
+      "example_id": "01_24_3292_2_01",
+      "flags": [
+        "all_facts_required_check_for_decorative_information"
+      ],
+      "human_approved": false
+    },
+    {
+      "example_id": "02_02_0108_2_02",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "02_06_0386_1_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "02_11_0780_2_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "02_11_0790_1_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "02_22_1450_1_01",
+      "flags": [
+        "all_facts_required_check_for_decorative_information"
+      ],
+      "human_approved": false
+    },
+    {
+      "example_id": "03_11_0180_2_02",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "03_13_0286_1_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "03_29_1296_2_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "03_34_2400_2_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "03_40_3492_2_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "04_05_0500_2_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "04_20_2290_1_02",
+      "flags": [
+        "all_facts_required_check_for_decorative_information"
+      ],
+      "human_approved": false
+    },
+    {
+      "example_id": "04_20_2294_1_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "04_20_2306_1_01",
+      "flags": [
+        "answerable_label_with_uncertainty_language_review_needed",
+        "all_facts_required_check_for_decorative_information",
+        "known_reference_answer_vs_unsupported_inference_list_inconsistency"
+      ],
+      "human_approved": false
+    },
+    {
+      "example_id": "04_23_2756_2_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "05_04_0278_1_02",
+      "flags": [
+        "all_facts_required_check_for_decorative_information"
+      ],
+      "human_approved": false
+    },
+    {
+      "example_id": "05_06_0464_2_03",
+      "flags": [
+        "all_facts_required_check_for_decorative_information"
+      ],
+      "human_approved": false
+    },
+    {
+      "example_id": "05_07_0576_2_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "05_12_0842_1_02",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "06_30_2732_2_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "06_32_3224_2_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "06_45_5808_2_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "06_49_6488_2_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "07_03_0194_1_01",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "07_05_0252_2_04",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "07_06_0308_2_02",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "07_25_1162_1_02",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "08_01_0030_1_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "08_09_1716_2_03",
+      "flags": [
+        "all_facts_required_check_for_decorative_information"
+      ],
+      "human_approved": false
+    },
+    {
+      "example_id": "08_11_1944_2_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "08_14_3538_1_03",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "09_08_0246_1_05",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "09_08_0266_1_05",
+      "flags": [
+        "all_facts_required_check_for_decorative_information"
+      ],
+      "human_approved": false
+    },
+    {
+      "example_id": "09_09_0274_1_06",
+      "flags": [],
+      "human_approved": false
+    },
+    {
+      "example_id": "09_10_0308_2_07",
+      "flags": [],
+      "human_approved": false
+    }
+  ]
+}

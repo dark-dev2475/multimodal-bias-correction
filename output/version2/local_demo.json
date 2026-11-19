@@ -1,0 +1,242 @@
+{
+  "version": "2.0.0",
+  "method": "EIGR",
+  "model": "qwen3-vl-2b-local",
+  "question": "What is happening in this image?",
+  "context": "",
+  "image_sha256": "92aab875245e6f0d8cfe4d518236d389a287330afd1c809dfdd89e2a1ef3e673",
+  "configuration": {
+    "max_calls": 9,
+    "max_cue_groups": 2,
+    "dependence_threshold": 0.5,
+    "risk_weight": 1.0,
+    "edit_penalty": 0.1,
+    "interventions": true,
+    "dependency_closure": true,
+    "matched_control": true,
+    "visual_verification": true
+  },
+  "interventions": [],
+  "status": "failed",
+  "verification": null,
+  "final_response": "The available evidence is insufficient to provide a verified answer.",
+  "initial_response_source": "generated",
+  "initial_response": "A man in a wheelchair is using a laptop in a workshop, while another man works at a table saw in the background.",
+  "error": {
+    "type": "ValueError",
+    "message": "Context evidence must be an exact quote from context"
+  },
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "generation",
+      "request_hash": "2240f2987e2770d54c9c0dee5a7f822076843f190fd6802a9888ad28ddfbb31c",
+      "image_sha256": "92aab875245e6f0d8cfe4d518236d389a287330afd1c809dfdd89e2a1ef3e673",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 26,
+        "prompt_tokens": 1108,
+        "total_tokens": 1134,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 21.676666
+    },
+    {
+      "source": "graph",
+      "request_hash": "3d7cae223ce332d2c6b913c2c559527669134da76fe4f914e610f845e9aad7f3",
+      "image_sha256": "92aab875245e6f0d8cfe4d518236d389a287330afd1c809dfdd89e2a1ef3e673",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "$defs": {
+              "ClaimNode": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string",
+                    "enum": [
+                      "A man in a wheelchair is using a laptop in a workshop, while another man works at a table saw in the background."
+                    ]
+                  },
+                  "kind": {
+                    "enum": [
+                      "observation",
+                      "inference"
+                    ],
+                    "title": "Kind",
+                    "type": "string"
+                  },
+                  "social_assumption": {
+                    "title": "Social Assumption",
+                    "type": "boolean"
+                  },
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "depends_on": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Depends On",
+                    "type": "array"
+                  },
+                  "contradicts": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Contradicts",
+                    "type": "array"
+                  },
+                  "support": {
+                    "enum": [
+                      "supported",
+                      "uncertain",
+                      "unsupported"
+                    ],
+                    "title": "Support",
+                    "type": "string"
+                  },
+                  "utility": {
+                    "maximum": 1,
+                    "minimum": 0,
+                    "title": "Utility",
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "kind",
+                  "social_assumption",
+                  "support",
+                  "utility"
+                ],
+                "title": "ClaimNode",
+                "type": "object"
+              },
+              "Observation": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^o[1-9][0-9]*$",
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "text": {
+                    "minLength": 1,
+                    "title": "Text",
+                    "type": "string"
+                  },
+                  "source": {
+                    "enum": [
+                      "image",
+                      "context"
+                    ],
+                    "title": "Source",
+                    "type": "string"
+                  },
+                  "cue": {
+                    "default": "none",
+                    "enum": [
+                      "none",
+                      "assistive_device",
+                      "appearance",
+                      "clothing",
+                      "setting"
+                    ],
+                    "title": "Cue",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "text",
+                  "source"
+                ],
+                "title": "Observation",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "observations": {
+                "items": {
+                  "$ref": "#/$defs/Observation"
+                },
+                "maxItems": 32,
+                "title": "Observations",
+                "type": "array"
+              },
+              "claims": {
+                "items": {
+                  "$ref": "#/$defs/ClaimNode"
+                },
+                "maxItems": 1,
+                "minItems": 1,
+                "title": "Claims",
+                "type": "array"
+              }
+            },
+            "required": [
+              "observations",
+              "claims"
+            ],
+            "title": "EvidenceGraph",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 1881,
+        "prompt_tokens": 2075,
+        "total_tokens": 3956,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 21.225514
+    }
+  ],
+  "network_calls": 2,
+  "prompt_fingerprint": "852069bbcf594950f24164f8e66c64f90bfbea9fdba7dc7d2c2c8b9f4e3287c9",
+  "timestamp": "2026-11-04T06:12:13.551937+00:00",
+  "experiment": "separate local-model development demo",
+  "structured_decoding": "JSON-schema constraints; no algorithm or reference changes"
+}

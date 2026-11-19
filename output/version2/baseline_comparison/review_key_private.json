@@ -1,0 +1,464 @@
+{
+  "d506884d0051cc75": {
+    "example_id": "01_01_0004_2_01",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "4435583fbc7b4ff2": {
+    "example_id": "01_01_0004_2_01",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "8102934c58394a95": {
+    "example_id": "01_01_0004_2_01",
+    "system": "self_refine_vqa",
+    "status": "failed",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "88ba520d38cd1e4a": {
+    "example_id": "01_01_0004_2_01",
+    "system": "intent_aware_vqa",
+    "status": "completed",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "0c0c7bfba1e2c060": {
+    "example_id": "01_01_0004_2_01",
+    "system": "eigr",
+    "status": "abstained",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "a1a42c38f5eaea6e": {
+    "example_id": "01_01_0004_2_01",
+    "system": "eigr_no_interventions",
+    "status": "abstained",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "a5623c7faf3d62df": {
+    "example_id": "01_01_0004_2_01",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "52bd7ca9c2109e3a": {
+    "example_id": "01_05_0234_1_03",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "2fb57fe05cc0c2d1921d"
+  },
+  "8b026723982b961c": {
+    "example_id": "01_05_0234_1_03",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "2fb57fe05cc0c2d1921d"
+  },
+  "75880aca44e808bb": {
+    "example_id": "01_05_0234_1_03",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "2fb57fe05cc0c2d1921d"
+  },
+  "83061022ed1ed58e": {
+    "example_id": "01_05_0234_1_03",
+    "system": "intent_aware_vqa",
+    "status": "failed",
+    "leakage_group": "2fb57fe05cc0c2d1921d"
+  },
+  "f64c0bc1fc4ff8c6": {
+    "example_id": "01_05_0234_1_03",
+    "system": "eigr",
+    "status": "failed",
+    "leakage_group": "2fb57fe05cc0c2d1921d"
+  },
+  "25b4c45acb41dd79": {
+    "example_id": "01_05_0234_1_03",
+    "system": "eigr_no_interventions",
+    "status": "failed",
+    "leakage_group": "2fb57fe05cc0c2d1921d"
+  },
+  "ed5f63dd5f58b948": {
+    "example_id": "01_05_0234_1_03",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "2fb57fe05cc0c2d1921d"
+  },
+  "0080258c269919b7": {
+    "example_id": "01_12_1068_2_02",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "975d54ffd8ace4a0d63e"
+  },
+  "515712fa0e322ee3": {
+    "example_id": "01_12_1068_2_02",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "975d54ffd8ace4a0d63e"
+  },
+  "0d188221946660ef": {
+    "example_id": "01_12_1068_2_02",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "975d54ffd8ace4a0d63e"
+  },
+  "1f2b5913d7f25497": {
+    "example_id": "01_12_1068_2_02",
+    "system": "intent_aware_vqa",
+    "status": "failed",
+    "leakage_group": "975d54ffd8ace4a0d63e"
+  },
+  "8cd6325309e9cc74": {
+    "example_id": "01_12_1068_2_02",
+    "system": "eigr",
+    "status": "abstained",
+    "leakage_group": "975d54ffd8ace4a0d63e"
+  },
+  "73c5df6cf9445ce2": {
+    "example_id": "01_12_1068_2_02",
+    "system": "eigr_no_interventions",
+    "status": "verified_subset",
+    "leakage_group": "975d54ffd8ace4a0d63e"
+  },
+  "917b42baa91a91cb": {
+    "example_id": "01_12_1068_2_02",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "975d54ffd8ace4a0d63e"
+  },
+  "e15b8b639f81ca6a": {
+    "example_id": "01_01_0006_1_02",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "b75a1e3f8ec18997": {
+    "example_id": "01_01_0006_1_02",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "7f6e77951db1b3ad": {
+    "example_id": "01_01_0006_1_02",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "f34a6dd611a61475": {
+    "example_id": "01_01_0006_1_02",
+    "system": "intent_aware_vqa",
+    "status": "completed",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "1081d638898bc845": {
+    "example_id": "01_01_0006_1_02",
+    "system": "eigr",
+    "status": "abstained",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "a27bf990743ad673": {
+    "example_id": "01_01_0006_1_02",
+    "system": "eigr_no_interventions",
+    "status": "failed",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "2de052e0c0465c44": {
+    "example_id": "01_01_0006_1_02",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "849b79fd3c07e64729a2"
+  },
+  "1cbf1d14b2ba9d1a": {
+    "example_id": "02_03_0340_2_01",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "20d6803b56053aba578a"
+  },
+  "12134a9fbf69524f": {
+    "example_id": "02_03_0340_2_01",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "20d6803b56053aba578a"
+  },
+  "56f07a6b3e808ccb": {
+    "example_id": "02_03_0340_2_01",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "20d6803b56053aba578a"
+  },
+  "14c760681c9c9591": {
+    "example_id": "02_03_0340_2_01",
+    "system": "intent_aware_vqa",
+    "status": "completed",
+    "leakage_group": "20d6803b56053aba578a"
+  },
+  "89e42b107c8c04fe": {
+    "example_id": "02_03_0340_2_01",
+    "system": "eigr",
+    "status": "verified_subset",
+    "leakage_group": "20d6803b56053aba578a"
+  },
+  "778636486b629eab": {
+    "example_id": "02_03_0340_2_01",
+    "system": "eigr_no_interventions",
+    "status": "verified_subset",
+    "leakage_group": "20d6803b56053aba578a"
+  },
+  "e7c199a676ea01a5": {
+    "example_id": "02_03_0340_2_01",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "20d6803b56053aba578a"
+  },
+  "ade0491a285b799a": {
+    "example_id": "02_25_1542_1_01",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "986ff66229a62fb072ca"
+  },
+  "1a5680eb460f471a": {
+    "example_id": "02_25_1542_1_01",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "986ff66229a62fb072ca"
+  },
+  "a55a989b42012a4f": {
+    "example_id": "02_25_1542_1_01",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "986ff66229a62fb072ca"
+  },
+  "96c83bd5b9e87981": {
+    "example_id": "02_25_1542_1_01",
+    "system": "intent_aware_vqa",
+    "status": "completed",
+    "leakage_group": "986ff66229a62fb072ca"
+  },
+  "c2ac69e23e79d5ff": {
+    "example_id": "02_25_1542_1_01",
+    "system": "eigr",
+    "status": "verified_subset",
+    "leakage_group": "986ff66229a62fb072ca"
+  },
+  "f549335665a622fa": {
+    "example_id": "02_25_1542_1_01",
+    "system": "eigr_no_interventions",
+    "status": "verified_subset",
+    "leakage_group": "986ff66229a62fb072ca"
+  },
+  "831aae5422e2ecd6": {
+    "example_id": "02_25_1542_1_01",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "986ff66229a62fb072ca"
+  },
+  "6e7d29cd59e61620": {
+    "example_id": "02_05_0364_2_02",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "85415088e2a6f749aab8"
+  },
+  "cc9d503464e6a310": {
+    "example_id": "02_05_0364_2_02",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "85415088e2a6f749aab8"
+  },
+  "e354bff62015927a": {
+    "example_id": "02_05_0364_2_02",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "85415088e2a6f749aab8"
+  },
+  "a729d3b044245b27": {
+    "example_id": "02_05_0364_2_02",
+    "system": "intent_aware_vqa",
+    "status": "completed",
+    "leakage_group": "85415088e2a6f749aab8"
+  },
+  "a76fcca91e4bda5c": {
+    "example_id": "02_05_0364_2_02",
+    "system": "eigr",
+    "status": "abstained",
+    "leakage_group": "85415088e2a6f749aab8"
+  },
+  "3565bb409b829e00": {
+    "example_id": "02_05_0364_2_02",
+    "system": "eigr_no_interventions",
+    "status": "abstained",
+    "leakage_group": "85415088e2a6f749aab8"
+  },
+  "54356697a1fdd228": {
+    "example_id": "02_05_0364_2_02",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "85415088e2a6f749aab8"
+  },
+  "c21da516dd37a822": {
+    "example_id": "02_18_1276_2_01",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "c1547ae335145a16df6c"
+  },
+  "e7b756e62cbf57ad": {
+    "example_id": "02_18_1276_2_01",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "c1547ae335145a16df6c"
+  },
+  "2ac5d53d63f8e422": {
+    "example_id": "02_18_1276_2_01",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "c1547ae335145a16df6c"
+  },
+  "be0a90e78e080eed": {
+    "example_id": "02_18_1276_2_01",
+    "system": "intent_aware_vqa",
+    "status": "completed",
+    "leakage_group": "c1547ae335145a16df6c"
+  },
+  "0240723652ba9758": {
+    "example_id": "02_18_1276_2_01",
+    "system": "eigr",
+    "status": "failed",
+    "leakage_group": "c1547ae335145a16df6c"
+  },
+  "2bab5144197f656f": {
+    "example_id": "02_18_1276_2_01",
+    "system": "eigr_no_interventions",
+    "status": "failed",
+    "leakage_group": "c1547ae335145a16df6c"
+  },
+  "75618f185c21aebf": {
+    "example_id": "02_18_1276_2_01",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "c1547ae335145a16df6c"
+  },
+  "92e5c72da801f931": {
+    "example_id": "03_33_2168_2_03",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "f2d1ccdefd9d4810c8c3"
+  },
+  "6755cab4deaee565": {
+    "example_id": "03_33_2168_2_03",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "f2d1ccdefd9d4810c8c3"
+  },
+  "8c8a81ec63ead9b6": {
+    "example_id": "03_33_2168_2_03",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "f2d1ccdefd9d4810c8c3"
+  },
+  "aaeff939109be425": {
+    "example_id": "03_33_2168_2_03",
+    "system": "intent_aware_vqa",
+    "status": "completed",
+    "leakage_group": "f2d1ccdefd9d4810c8c3"
+  },
+  "dc16fe038e86ab38": {
+    "example_id": "03_33_2168_2_03",
+    "system": "eigr",
+    "status": "failed",
+    "leakage_group": "f2d1ccdefd9d4810c8c3"
+  },
+  "99f56d7a839e4660": {
+    "example_id": "03_33_2168_2_03",
+    "system": "eigr_no_interventions",
+    "status": "failed",
+    "leakage_group": "f2d1ccdefd9d4810c8c3"
+  },
+  "89e92f81d735beb4": {
+    "example_id": "03_33_2168_2_03",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "f2d1ccdefd9d4810c8c3"
+  },
+  "e440683164a192ed": {
+    "example_id": "03_22_0640_2_01",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "6af5f82b64ac4aae6806"
+  },
+  "8efb9d1706a217ba": {
+    "example_id": "03_22_0640_2_01",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "6af5f82b64ac4aae6806"
+  },
+  "00c96c09c2e1e498": {
+    "example_id": "03_22_0640_2_01",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "6af5f82b64ac4aae6806"
+  },
+  "121b5af0b9b81cd8": {
+    "example_id": "03_22_0640_2_01",
+    "system": "intent_aware_vqa",
+    "status": "completed",
+    "leakage_group": "6af5f82b64ac4aae6806"
+  },
+  "32a83e8e9b1a0242": {
+    "example_id": "03_22_0640_2_01",
+    "system": "eigr",
+    "status": "verified_subset",
+    "leakage_group": "6af5f82b64ac4aae6806"
+  },
+  "be4425d1bc9bfe09": {
+    "example_id": "03_22_0640_2_01",
+    "system": "eigr_no_interventions",
+    "status": "verified_subset",
+    "leakage_group": "6af5f82b64ac4aae6806"
+  },
+  "ef3e286a235f2c92": {
+    "example_id": "03_22_0640_2_01",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "6af5f82b64ac4aae6806"
+  },
+  "4aace539a2f9e1ff": {
+    "example_id": "03_49_5294_1_03",
+    "system": "raw",
+    "status": "completed",
+    "leakage_group": "e45ba8e3dd5f777a84f0"
+  },
+  "3bca9d49120d179e": {
+    "example_id": "03_49_5294_1_03",
+    "system": "generic",
+    "status": "completed",
+    "leakage_group": "e45ba8e3dd5f777a84f0"
+  },
+  "0e6288dc891742f1": {
+    "example_id": "03_49_5294_1_03",
+    "system": "self_refine_vqa",
+    "status": "completed",
+    "leakage_group": "e45ba8e3dd5f777a84f0"
+  },
+  "6cb85b2e55ab0496": {
+    "example_id": "03_49_5294_1_03",
+    "system": "intent_aware_vqa",
+    "status": "completed",
+    "leakage_group": "e45ba8e3dd5f777a84f0"
+  },
+  "ddde3d88e2f1923b": {
+    "example_id": "03_49_5294_1_03",
+    "system": "eigr",
+    "status": "verified_subset",
+    "leakage_group": "e45ba8e3dd5f777a84f0"
+  },
+  "4f38a63d45a4d70e": {
+    "example_id": "03_49_5294_1_03",
+    "system": "eigr_no_interventions",
+    "status": "verified_subset",
+    "leakage_group": "e45ba8e3dd5f777a84f0"
+  },
+  "3e8edff3d8f1ba68": {
+    "example_id": "03_49_5294_1_03",
+    "system": "always_abstain",
+    "status": "abstained",
+    "leakage_group": "e45ba8e3dd5f777a84f0"
+  }
+}

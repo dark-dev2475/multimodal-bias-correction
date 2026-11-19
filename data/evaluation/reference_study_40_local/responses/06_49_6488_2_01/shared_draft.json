@@ -1,0 +1,33 @@
+{
+  "answer": "The image shows two women sitting on a bench. The context mentions that two individuals were arrested following anti-terrorism legislation, but it does not specify who they are. Therefore, it is not possible to determine who the individuals are from the image alone.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "16e03480f28cd7776338de058e595480234a04403a919015237446eb4c4b6df0",
+      "image_sha256": "cbfe4b9bef820cdad4e8f4fa0d8a2627a1bae3fc19c561c334c1988ac48a3fd1",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 50,
+        "prompt_tokens": 1071,
+        "total_tokens": 1121,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.463424
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

@@ -1,0 +1,45 @@
+{
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "scope": "Assistant-authored synthetic text contrast cases; not human image labels or held-out BBQ-V evidence.",
+  "gate": {
+    "complete_coverage_required": true,
+    "maximum_false_entailments": 0,
+    "minimum_entailed_recall": 0.875
+  },
+  "multimodal_judge_validated": false,
+  "systems": {
+    "nli_deberta": {
+      "planned": 24,
+      "valid": 24,
+      "missing_or_failed": 0,
+      "binary_support_correct_all_planned": 1.0,
+      "entailed_recall": 1.0,
+      "false_entailments": 0,
+      "nonentailed_cases": 16,
+      "gate_passed": true,
+      "gate_scope": "Synthetic text entailment only; NOT image grounding, bias accuracy, or human validation."
+    },
+    "qwen_legacy": {
+      "planned": 24,
+      "valid": 24,
+      "missing_or_failed": 0,
+      "binary_support_correct_all_planned": 0.5416666666666666,
+      "entailed_recall": 1.0,
+      "false_entailments": 11,
+      "nonentailed_cases": 16,
+      "gate_passed": false,
+      "gate_scope": "Synthetic text entailment only; NOT image grounding, bias accuracy, or human validation."
+    },
+    "qwen_pointwise": {
+      "planned": 24,
+      "valid": 24,
+      "missing_or_failed": 0,
+      "binary_support_correct_all_planned": 1.0,
+      "entailed_recall": 1.0,
+      "false_entailments": 0,
+      "nonentailed_cases": 16,
+      "gate_passed": true,
+      "gate_scope": "Synthetic text entailment only; NOT image grounding, bias accuracy, or human validation."
+    }
+  }
+}

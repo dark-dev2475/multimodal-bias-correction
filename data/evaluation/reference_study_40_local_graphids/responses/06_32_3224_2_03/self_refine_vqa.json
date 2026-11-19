@@ -1,0 +1,149 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The individuals in the image were yelling.",
+      "feedback": {
+        "critique": "The answer 'The individuals in the image were yelling.' is factually accurate based on the context provided. The context states that two individuals were driving to a restaurant and got into a fender bender, which resulted in a yelling match on the road. The image shows two men in the middle of a road, and the context supports the idea that they were yelling. However, the answer is a general statement that does not specify which individuals were yelling, nor does it mention the context of the fender bender or the fact that the yelling occurred in the middle of the road. The answer is not specific enough to be helpful or accurate in the context of the question. The answer is not incorrect, but it lacks the necessary detail to be fully informative.",
+        "needs_revision": false
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The individuals in the image were yelling.",
+  "stop_reason": "feedback_satisfied",
+  "final_response": "The individuals in the image were yelling.",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "812edb60a928b4d533ec1495d6c1529dfad2d3576653250ab13d9d104f191ffa",
+      "image_sha256": "905e3724a372d3d81e9b1f8bd83f746213b5d54977d7228231c2e4a0dba798b0",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 168,
+        "prompt_tokens": 1304,
+        "total_tokens": 1472,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.886262
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "06_32_3224_2_03",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "812edb60a928b4d533ec1495d6c1529dfad2d3576653250ab13d9d104f191ffa",
+      "image_sha256": "905e3724a372d3d81e9b1f8bd83f746213b5d54977d7228231c2e4a0dba798b0",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 168,
+        "prompt_tokens": 1304,
+        "total_tokens": 1472,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.886262
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "2ce53525d93f08ab83134cf6f404f775f5b6aee3a10fd77354e7161092ace4fe",
+      "image_sha256": "905e3724a372d3d81e9b1f8bd83f746213b5d54977d7228231c2e4a0dba798b0",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.010896
+    }
+  ]
+}

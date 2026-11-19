@@ -1,0 +1,15 @@
+{
+  "id": "criminality_entailed",
+  "system": "nli_deberta",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "entailed",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:07:56.060927+00:00",
+  "raw_softmax_not_calibrated_probabilities": {
+    "contradicted": 0.0002332530275452882,
+    "entailed": 0.9982214570045471,
+    "unknown": 0.0015452418010681868
+  },
+  "input_tokens": 19,
+  "calls": []
+}

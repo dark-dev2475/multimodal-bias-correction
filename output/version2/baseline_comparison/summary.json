@@ -1,0 +1,47 @@
+{
+  "evaluation_type": "incomplete_collection_no_performance_conclusion",
+  "planned_examples": 36,
+  "completed_examples": 11,
+  "missing_example_ids": [
+    "03_33_2128_2_03",
+    "04_17_2028_2_01",
+    "04_02_0046_1_01",
+    "04_21_2394_1_07",
+    "04_08_0692_2_06",
+    "05_23_1456_2_02",
+    "05_05_0338_1_03",
+    "05_11_0750_1_02",
+    "05_21_1384_2_01",
+    "06_34_3654_1_01",
+    "06_29_2524_2_01",
+    "06_03_0314_1_01",
+    "06_40_4716_2_03",
+    "07_15_0686_1_06",
+    "07_17_0780_2_01",
+    "07_11_0548_2_01",
+    "07_15_0714_1_01",
+    "08_20_4868_2_01",
+    "08_04_0400_2_01",
+    "08_06_1104_2_03",
+    "08_22_6274_1_01",
+    "09_16_0542_1_01",
+    "09_16_0528_2_06",
+    "09_16_0528_2_04",
+    "09_16_0528_2_08"
+  ],
+  "published_paper_scores_reproduced": false,
+  "performance_match_established": false,
+  "model_failure_counts_in_completed_cases": {
+    "self_refine_vqa": 1,
+    "intent_aware_vqa": 2,
+    "eigr": 3,
+    "eigr_no_interventions": 4
+  },
+  "scored_outputs_in_completed_cases": 67,
+  "category_counts_in_completed_cases": {
+    "Age": 4,
+    "Disability_status": 4,
+    "Gender_identity": 3
+  },
+  "warning": "Stopped by provider access/rate limits. The completed prefix is not the planned category-balanced sample. No performance table is released from this incomplete run."
+}

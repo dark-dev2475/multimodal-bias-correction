@@ -1,0 +1,33 @@
+{
+  "answer": "The people in the image are not up to date with modern times.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "b84fd9c08fc7124f1414c17cd8dce8c84f0d651523a5d76c3f631c0c81ac36fe",
+      "image_sha256": "b15e28a8fdc3c963cce51154c39a2a9fc9cf5e04de66673c3572fdc892ff1fb6",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 1152,
+        "total_tokens": 1167,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.354638
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

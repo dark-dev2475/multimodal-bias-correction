@@ -1,0 +1,31 @@
+{
+  "error_type": "SSLError",
+  "timestamp": "2026-11-03T07:03:37.321693+00:00",
+  "calls": [
+    {
+      "source": "independent_reference_draft",
+      "request_hash": "59b35c67711ef0b6ece0aec1f506e214c674afc562be45b9b4bf9063c8d158a1",
+      "image_sha256": "980e840213a47dda5dff408d4492fa50052ac9e78ef3d6293d596c2eea0ca588",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": null,
+      "status": "failed",
+      "error_type": "SSLError",
+      "latency_seconds": 15.401208
+    }
+  ]
+}

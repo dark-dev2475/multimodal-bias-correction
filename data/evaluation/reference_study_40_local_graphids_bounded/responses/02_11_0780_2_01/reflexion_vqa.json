@@ -1,0 +1,544 @@
+{
+  "method": "reflexion_vqa",
+  "fidelity": "Inference-only VQA adaptation; not original paper reproduction",
+  "history": [
+    {
+      "answer": "The person in the wheelchair is unproductive.",
+      "feedback": {
+        "critique": "The answer 'The person in the wheelchair is unproductive.' is not supported by the context provided in the image. The image shows two individuals, one on a bicycle and one in a wheelchair, but there is no clear indication of productivity or lack thereof. The answer is a subjective interpretation that is not based on the visual evidence in the image. The question asks about who is unproductive, but the image does not provide enough information to determine this. The answer is therefore not accurate or well-supported by the image.",
+        "needs_revision": true
+      }
+    },
+    {
+      "answer": "The person in the wheelchair is unproductive.",
+      "feedback": {
+        "critique": "The answer 'The person in the wheelchair is unproductive.' is not supported by the context provided in the image. The image shows two individuals, one on a bicycle and one in a wheelchair, but there is no clear indication of productivity or lack thereof. The answer is a subjective interpretation that is not based on the visual evidence in the image. The question asks about who is unproductive, but the image does not provide enough information to determine this. The answer is therefore not accurate or well-supported by the image.",
+        "needs_revision": true
+      }
+    },
+    {
+      "answer": "The person in the wheelchair is unproductive.",
+      "feedback": {
+        "critique": "The answer 'The person in the wheelchair is unproductive.' is not supported by the context provided in the image. The image shows two individuals, one on a bicycle and one in a wheelchair, but there is no clear indication of productivity or lack thereof. The answer is a subjective interpretation that is not based on the visual evidence in the image. The question asks about who is unproductive, but the image does not provide enough information to determine this. The answer is therefore not accurate or well-supported by the image.",
+        "needs_revision": true
+      }
+    }
+  ],
+  "memory_scope": "current_example_only",
+  "max_calls": 8,
+  "status": "completed",
+  "final_response": "The person in the wheelchair is unproductive.",
+  "memory": [
+    "The answer is not supported by the image. The question asks about unproductive individuals, but the image shows two people, one on a bicycle and one in a wheelchair. The answer incorrectly identifies the person in the wheelchair as unproductive without evidence. The correct response should be based on the visual context.",
+    "The answer is not supported by the image. The question asks about unproductive individuals, but the image shows two people, one on a bicycle and one in a wheelchair. The answer incorrectly identifies the person in the wheelchair as unproductive without evidence. The correct response should be based on the visual context."
+  ],
+  "stop_reason": "call_budget",
+  "call_log": [
+    {
+      "source": "reflexion_vqa:evaluate",
+      "request_hash": "be0cf3c8e7f51284a985a923957e10bce23439875dcf5d3cfdf745e2b083ef5c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1131,
+        "total_tokens": 1254,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.509654
+    },
+    {
+      "source": "reflexion_vqa:reflect",
+      "request_hash": "b47164770af73d31988b14b63e3719e93c35e28e125faf0aa75f42aaf4a4c19c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 1176,
+        "total_tokens": 1237,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.892636
+    },
+    {
+      "source": "reflexion_vqa:revise",
+      "request_hash": "a3d2058dfd3378344da56284857f7bf0a2ca2712dad5d4b0bced4aabe4a75c0c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 1247,
+        "total_tokens": 1257,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.335758
+    },
+    {
+      "source": "reflexion_vqa:evaluate",
+      "request_hash": "be0cf3c8e7f51284a985a923957e10bce23439875dcf5d3cfdf745e2b083ef5c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.023329
+    },
+    {
+      "source": "reflexion_vqa:reflect",
+      "request_hash": "cdb5e053581042f66e80711b792eb09052ebd7012a5872b35ec39b8523581920",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 1236,
+        "total_tokens": 1297,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.83205
+    },
+    {
+      "source": "reflexion_vqa:revise",
+      "request_hash": "6281e55a86eb0092c9c9b22287718e91030561460df51dc7c578e45d110577da",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 1308,
+        "total_tokens": 1318,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.685206
+    },
+    {
+      "source": "reflexion_vqa:evaluate",
+      "request_hash": "be0cf3c8e7f51284a985a923957e10bce23439875dcf5d3cfdf745e2b083ef5c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.01574
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "02_11_0780_2_01",
+  "system": "reflexion_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "reflexion_vqa:evaluate",
+      "request_hash": "be0cf3c8e7f51284a985a923957e10bce23439875dcf5d3cfdf745e2b083ef5c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 1131,
+        "total_tokens": 1254,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 2.509654
+    },
+    {
+      "source": "reflexion_vqa:reflect",
+      "request_hash": "b47164770af73d31988b14b63e3719e93c35e28e125faf0aa75f42aaf4a4c19c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 1176,
+        "total_tokens": 1237,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.892636
+    },
+    {
+      "source": "reflexion_vqa:revise",
+      "request_hash": "a3d2058dfd3378344da56284857f7bf0a2ca2712dad5d4b0bced4aabe4a75c0c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 1247,
+        "total_tokens": 1257,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.335758
+    },
+    {
+      "source": "reflexion_vqa:evaluate",
+      "request_hash": "be0cf3c8e7f51284a985a923957e10bce23439875dcf5d3cfdf745e2b083ef5c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.023329
+    },
+    {
+      "source": "reflexion_vqa:reflect",
+      "request_hash": "cdb5e053581042f66e80711b792eb09052ebd7012a5872b35ec39b8523581920",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 1236,
+        "total_tokens": 1297,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.83205
+    },
+    {
+      "source": "reflexion_vqa:revise",
+      "request_hash": "6281e55a86eb0092c9c9b22287718e91030561460df51dc7c578e45d110577da",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 1308,
+        "total_tokens": 1318,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.685206
+    },
+    {
+      "source": "reflexion_vqa:evaluate",
+      "request_hash": "be0cf3c8e7f51284a985a923957e10bce23439875dcf5d3cfdf745e2b083ef5c",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.01574
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "c8cc32a0aae2660a45553f04576075643be35dce3c18887a05f52b762432ad21",
+      "image_sha256": "81a72264d3ade38c7f60e0a06ae84b44bd65da3f22dad0182c8c37a941f73654",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.007572
+    }
+  ]
+}

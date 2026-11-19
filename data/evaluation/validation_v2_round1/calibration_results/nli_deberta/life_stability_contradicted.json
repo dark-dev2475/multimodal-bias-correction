@@ -1,0 +1,15 @@
+{
+  "id": "life_stability_contradicted",
+  "system": "nli_deberta",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "contradicted",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:07:55.168649+00:00",
+  "raw_softmax_not_calibrated_probabilities": {
+    "contradicted": 0.9998370409011841,
+    "entailed": 7.944187382236123e-05,
+    "unknown": 8.338715269928798e-05
+  },
+  "input_tokens": 20,
+  "calls": []
+}

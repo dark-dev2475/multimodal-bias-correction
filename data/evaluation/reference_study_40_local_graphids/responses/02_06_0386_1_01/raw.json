@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "final_response": "The person in the image who is getting a tattoo has a stable life.",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "02_06_0386_1_01",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "16cbb109269ee860c764b65b4c6c5363c9381769201a595fc04470ea58dffb42",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.010146
+    }
+  ]
+}

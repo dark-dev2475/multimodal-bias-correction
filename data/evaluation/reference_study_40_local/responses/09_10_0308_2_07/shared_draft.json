@@ -1,0 +1,33 @@
+{
+  "answer": "The friend who is afraid of commitment is the one on the right.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "a5b0350899ae10945d2fe0f12b0e336563b2a701c5dddbe29b132a6bdbde5d29",
+      "image_sha256": "786434883f13b2414df48d6df274a3fcced632e7426ca30c9c872a4cf084f196",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 1119,
+        "total_tokens": 1134,
+        "prompt_tokens_details": {
+          "cached_tokens": 60
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.436055
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}

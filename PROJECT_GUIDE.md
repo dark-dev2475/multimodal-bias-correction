@@ -46,6 +46,8 @@ The implementation is in `src/pipeline/`:
 - `corrector.py`: rewrites responses when flagged claims require correction.
 - `verifier.py`: checks the final response as a diagnostic.
 - `pipeline.py`: coordinates the complete six-stage workflow.
+- `audit_gate.py`: deterministic, fail-closed contract checks between
+  extraction, evidence, and bias-monitor stages.
 
 The initial prompt is intentionally conservative. It asks for information directly supported by visual evidence and prohibits unsupported inferences about medical status, occupation, socioeconomic status, religion, nationality, relationships, personality, and intentions.
 
@@ -182,6 +184,41 @@ remaining: 0
 
 No fake or partial model outputs were created. The experiment can be resumed with the same command after the quota resets or credits are added.
 
+### Structured correction improvement
+
+The proposed correction layer now uses a small versioned policy (`v1`) and
+explicit structured feedback for each flagged claim. Feedback includes the
+claim text and type, bias category, evidence status and confidence, evidence
+explanation, bias explanation, and severity. Each iteration also records the
+flag count, categories, severity distribution, remaining problematic claims,
+policy version, supported claims before correction, and supported claims
+preserved in the corrected response.
+
+The correction loop remains bounded at two iterations by default. It stops
+when verification passes or when the configured maximum is reached. The
+existing generic self-correction baseline is unchanged. The proposed system
+can be configured for future ablations with `use_structured_feedback`,
+`use_correction_policy`, and `max_iterations`.
+
+### Fail-closed audit gate
+
+The pipeline includes a deterministic audit gate (`v1`) that checks stage
+coverage and claim alignment. A missing or mismatched evidence/bias decision
+is never interpreted as an unbiased claim. Instead, it is recorded as an
+`audit_failure` and sent to the corrector for conservative removal or
+neutralisation. This requires no model training or additional model calls.
+It makes malformed structured outputs a measurable reliability event rather
+than a silent false negative. The `without_audit_gate` ablation isolates its
+contribution.
+
+The literature is used only as motivation: Self-Refine and Reflexion motivate
+bounded feedback/refinement, Constitutional AI motivates explicit principles,
+Intent-Aware Self-Correction motivates targeted bias feedback, Self-Debias
+motivates inference-time debiasing, and the survey provides positioning.
+This project investigates a multimodal, claim-level,
+visual-evidence-grounded, bias-specific correction loop; it does not claim
+that the cited papers introduced this exact architecture.
+
 ## 6. Baselines and Fairness
 
 The comparison is descriptive until independent human annotations exist.
@@ -215,6 +252,22 @@ The evaluation layer supports:
 - latency, iterations, API calls, cache usage, and estimated cost
 
 Research claims should only be made after independent human annotation of initial and final outputs.
+
+### Automatic reference annotations
+
+When manual annotation is unavailable, the project can create
+`llm_generated_reference` annotations with
+`scripts/run_automatic_annotation.py`. A separate vision model receives only
+the image and one generated claim. It does not receive BBQ-V category labels,
+pipeline verifier results, evidence-checker results, bias-monitor decisions,
+or expected answers. The resulting labels are stored separately from model
+outputs and verifier diagnostics.
+
+These are **LLM-generated reference annotations**, not human ground truth.
+They are suitable only for preliminary, explicitly labeled
+`llm-reference` evaluation. They must not be described as human-verified,
+gold labels, or definitive research results. Human claim-level annotation
+remains the future validation pathway.
 
 ## 8. Reproducibility
 

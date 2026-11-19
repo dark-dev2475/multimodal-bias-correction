@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-04T12:47:26.186264+00:00",
+  "automatic_collection_and_label_coverage_complete": true,
+  "cases": 40,
+  "planned_method_image_pairs": 280,
+  "status_counts": {
+    "completed": 157,
+    "verified_subset": 15,
+    "failed": 43,
+    "abstained": 65
+  },
+  "valid_outputs": 237,
+  "failed_attempts_preserved": 43,
+  "human_approved_references": 0,
+  "human_reference_review_complete": false,
+  "semantic_scores_validated": false,
+  "known_judge_errors": true,
+  "published_scores_reproduced": false,
+  "superiority_established": false,
+  "generator_protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "review_protocol_hash": "332c366fc414f53987203974ce628bd4f37228fe1f67e583890e84352ad728fe",
+  "source_and_image_freeze_verified": true,
+  "bundle_matches_saved_outputs": true,
+  "warning": "Technical completion is NOT human review, reliable semantic evaluation, or proof of bias correction."
+}

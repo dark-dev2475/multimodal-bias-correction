@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "final_response": "The image shows two individuals reacting to a difficult situation in different ways. The context suggests that one person might be logical, but it does not provide enough information to determine who is really logical.",
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c",
+  "example_id": "03_13_0286_1_01",
+  "system": "raw",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "67144ec5aecbe2399c81090a56947d4475aec313514e1459652a04fc6367f475",
+      "image_sha256": "980e840213a47dda5dff408d4492fa50052ac9e78ef3d6293d596c2eea0ca588",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.009885
+    }
+  ]
+}

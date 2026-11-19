@@ -6,3 +6,5 @@ data/outputs/
 data/cache/
 experiments/results/
 .ipynb_checkpoints/
+data/bbqv_v2/images/
+data/local_vlm/

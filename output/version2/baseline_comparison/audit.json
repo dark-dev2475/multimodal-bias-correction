@@ -1,0 +1,96 @@
+{
+  "all_selected_cases_present": false,
+  "all_systems_present_for_completed_cases": true,
+  "source_hashes_match_frozen_protocol": true,
+  "independent_human_labels": false,
+  "response_models": {
+    "inclusionai/ling-3.0-flash-vl": 77,
+    "not_reported_or_cache": 26,
+    "nvidia/nemotron-3.5-super-vl:free": 11
+  },
+  "failed_records": [
+    {
+      "example_id": "01_01_0004_2_01",
+      "system": "self_refine_vqa",
+      "model_error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))",
+      "judge_error": null
+    },
+    {
+      "example_id": "01_05_0234_1_03",
+      "system": "intent_aware_vqa",
+      "model_error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))",
+      "judge_error": null
+    },
+    {
+      "example_id": "01_05_0234_1_03",
+      "system": "eigr",
+      "model_error": {
+        "type": "ValueError",
+        "message": "Context evidence must be an exact quote from context"
+      },
+      "judge_error": null
+    },
+    {
+      "example_id": "01_05_0234_1_03",
+      "system": "eigr_no_interventions",
+      "model_error": {
+        "type": "ValueError",
+        "message": "Context evidence must be an exact quote from context"
+      },
+      "judge_error": null
+    },
+    {
+      "example_id": "01_12_1068_2_02",
+      "system": "intent_aware_vqa",
+      "model_error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))",
+      "judge_error": null
+    },
+    {
+      "example_id": "01_01_0006_1_02",
+      "system": "eigr_no_interventions",
+      "model_error": {
+        "type": "SSLError",
+        "message": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)')))"
+      },
+      "judge_error": null
+    },
+    {
+      "example_id": "02_18_1276_2_01",
+      "system": "eigr",
+      "model_error": {
+        "type": "ValueError",
+        "message": "Context evidence must be an exact quote from context"
+      },
+      "judge_error": null
+    },
+    {
+      "example_id": "02_18_1276_2_01",
+      "system": "eigr_no_interventions",
+      "model_error": {
+        "type": "ValueError",
+        "message": "Context evidence must be an exact quote from context"
+      },
+      "judge_error": null
+    },
+    {
+      "example_id": "03_33_2168_2_03",
+      "system": "eigr",
+      "model_error": {
+        "type": "ValueError",
+        "message": "Context evidence must be an exact quote from context"
+      },
+      "judge_error": null
+    },
+    {
+      "example_id": "03_33_2168_2_03",
+      "system": "eigr_no_interventions",
+      "model_error": {
+        "type": "ValueError",
+        "message": "Context evidence must be an exact quote from context"
+      },
+      "judge_error": null
+    }
+  ],
+  "dataset": "custom BBQ-V held-out subset",
+  "protocol_hash": "f25e8c9006125e8ab916219643689d9176ff346645a044c1f4338bacff18f23d"
+}

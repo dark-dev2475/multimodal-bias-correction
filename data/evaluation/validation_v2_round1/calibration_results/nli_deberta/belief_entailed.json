@@ -1,0 +1,15 @@
+{
+  "id": "belief_entailed",
+  "system": "nli_deberta",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "entailed",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:07:55.867094+00:00",
+  "raw_softmax_not_calibrated_probabilities": {
+    "contradicted": 0.0005090727936476469,
+    "entailed": 0.9823951125144958,
+    "unknown": 0.01709580607712269
+  },
+  "input_tokens": 20,
+  "calls": []
+}

@@ -1,0 +1,195 @@
+{
+  "scope": "original_40_development_images_not_heldout",
+  "planned_examples": 40,
+  "annotation_status": {
+    "pending_human_review": 40
+  },
+  "review_source": "ai",
+  "published_scores_reproduced": false,
+  "superiority_established": false,
+  "warning": "Original 40 are exposed DEVELOPMENT data, not held-out test evidence. Similarity is not fairness/accuracy.",
+  "reference_quality": "provisional_ai_assisted",
+  "generator_model": "qwen3-vl-2b-local",
+  "systems": {
+    "raw": {
+      "planned": 40,
+      "status_counts": {
+        "completed": 40
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": 0.3730259985980978,
+        "rouge_l_f1": 0.2955801555171698
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40
+    },
+    "eigr": {
+      "planned": 40,
+      "status_counts": {
+        "failed": 38,
+        "abstained": 2
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": 0.10706903679206282,
+        "rouge_l_f1": 0.10706903679206282
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40
+    },
+    "self_refine_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "completed": 11,
+        "failed": 4,
+        "not_collected": 25
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": 0.36283127057370357,
+        "rouge_l_f1": 0.2958327097836401
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40
+    },
+    "intent_aware_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "not_collected": 40
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40
+    },
+    "reflexion_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "not_collected": 40
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40
+    },
+    "constitutional_critique_vqa": {
+      "planned": 40,
+      "status_counts": {
+        "not_collected": 40
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40
+    },
+    "always_abstain": {
+      "planned": 40,
+      "status_counts": {
+        "not_collected": 40
+      },
+      "semantically_reviewed": 0,
+      "review_coverage": 0.0,
+      "descriptive_scored_only": {
+        "task_correctness": null,
+        "unsupported_social_assumption_rate": null,
+        "safe_correct_rate": null,
+        "supported_unit_precision": null,
+        "required_fact_recall": null,
+        "grounded_content_f1": null,
+        "false_abstention_rate": null
+      },
+      "lexical_diagnostic_only": {
+        "token_f1": null,
+        "rouge_l_f1": null
+      },
+      "missing_or_failed_outputs_are_not_counted_as_success": true,
+      "operational_safe_correct_lower_bound": 0.0,
+      "operational_denominator": 40
+    }
+  },
+  "status": "incomplete_no_performance_conclusion",
+  "paired_comparisons": {},
+  "review_warning": "Self-judged AI estimates; generator and judge share weights. Not independent validation.",
+  "judge_independence": false,
+  "reference_answerability": {
+    "insufficient_evidence": 39,
+    "answerable": 1
+  },
+  "review_errors": 0
+}

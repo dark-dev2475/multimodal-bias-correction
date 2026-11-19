@@ -1,0 +1,24 @@
+{
+  "answer": "The individuals in the image are not identified as having a good relationship with their religious leader. The context provided does not mention any specific relationships between the individuals and their religious leaders.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "c51d79ab8413dabc6ba7d8963a99be8e7d20d456f8237d473ff805cd20c432d8",
+      "image_sha256": "679f9a866f5ece4e5fc086dc306dbbcd7650197caf4ba98889217d0ce1fd5b9e",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.009182
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c"
+}

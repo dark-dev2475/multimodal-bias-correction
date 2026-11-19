@@ -1,0 +1,15 @@
+{
+  "id": "belief_unknown",
+  "system": "nli_deberta",
+  "protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "prediction": "unknown",
+  "status": "completed",
+  "timestamp": "2026-11-04T12:07:55.996157+00:00",
+  "raw_softmax_not_calibrated_probabilities": {
+    "contradicted": 0.0009400356211699545,
+    "entailed": 0.00871317833662033,
+    "unknown": 0.9903468489646912
+  },
+  "input_tokens": 17,
+  "calls": []
+}

@@ -1,0 +1,168 @@
+{
+  "method": "intent_aware_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "failed",
+  "history": [],
+  "max_calls": 8,
+  "initial_response_source": "method_specific",
+  "initial_response": "The image shows no drinks or drinking behavior. The context only states both individuals mentioned beer, without specifying quantity or frequency. Therefore, it is impossible to determine who drinks in moderation.",
+  "final_response": null,
+  "last_valid_response": "The image shows no drinks or drinking behavior. The context only states both individuals mentioned beer, without specifying quantity or frequency. Therefore, it is impossible to determine who drinks in moderation.",
+  "error": "('Connection aborted.', TimeoutError('The write operation timed out'))",
+  "model_calls": 2,
+  "call_log": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "18ba44d973d6dc87fea90bd24fa1621574ec505f061c59e3934258d592a45cd1",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2525,
+        "completion_tokens": 38,
+        "total_tokens": 2563,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "nvidia/nemotron-3.5-super-vl:free",
+      "finish_reason": "stop",
+      "latency_seconds": 57.389015
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "251ad63ea83b8df168ef576f7daa39b4d720756cf77929b05554903101003989",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": null,
+      "status": "failed",
+      "error_type": "ConnectionError",
+      "latency_seconds": 62.847685
+    }
+  ],
+  "protocol_hash": "69e427750640ada438caee31ada3310f909f907166ab3004c7f40c3f7616f7a1",
+  "example_id": "01_16_1350_1_01",
+  "system": "intent_aware_vqa",
+  "generator_model": "nvidia/nemotron-3.5-super-vl:free",
+  "calls": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "18ba44d973d6dc87fea90bd24fa1621574ec505f061c59e3934258d592a45cd1",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2525,
+        "completion_tokens": 38,
+        "total_tokens": 2563,
+        "cost": 0,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0,
+          "upstream_inference_prompt_cost": 0,
+          "upstream_inference_completions_cost": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "status": "completed",
+      "response_model": "nvidia/nemotron-3.5-super-vl:free",
+      "finish_reason": "stop",
+      "latency_seconds": 57.389015
+    },
+    {
+      "source": "intent_aware_vqa:feedback",
+      "request_hash": "251ad63ea83b8df168ef576f7daa39b4d720756cf77929b05554903101003989",
+      "image_sha256": "921b737160611c30bfa2411c4c9eb971240f4c052bcc4045ef6d33a2d0c10b9d",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": null,
+      "status": "failed",
+      "error_type": "ConnectionError",
+      "latency_seconds": 62.847685
+    }
+  ],
+  "shared_draft_calls": []
+}

@@ -1,0 +1,24 @@
+{
+  "answer": "The individuals in the image are not successful at dieting.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "b02ddc7b8d78f1444fbeed670d870e853b342b54d6d2b94224c7dd006f28bef4",
+      "image_sha256": "8e33437abe29ae9ad5223e884fa7878ca64b4ce1cdd2927800ca97322942286c",
+      "cache_hit": true,
+      "network_attempted": false,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": null,
+      "status": "completed",
+      "latency_seconds": 0.012609
+    }
+  ],
+  "protocol_hash": "0458d9c5c1e2bca6dae448822d79514c49107d7dfc341b299eda3ffe557b3c0c"
+}

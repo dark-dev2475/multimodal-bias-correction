@@ -1,0 +1,698 @@
+{
+  "method": "self_refine_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "completed",
+  "history": [
+    {
+      "iteration": 0,
+      "answer": "The person in the image who is getting a tattoo has a stable life.",
+      "feedback": {
+        "critique": "The answer is factually incorrect. The image shows two individuals in a tattoo studio, and the person getting a tattoo is the one who is being tattooed, not the one who has a stable life. The context states that two individuals who went to school together ran into each other and one started telling the other about their life. This suggests that the person who is being tattooed is the one who is sharing their life story, not the one with a stable life. The answer incorrectly identifies the person getting a tattoo as having a stable life, which is not supported by the context or the image. The answer also makes an unsupported social assumption that the person getting a tattoo is the one with a stable life, which is not based on the information provided in the image or context. The answer fails to consider the context and the image, and instead makes an assumption about the person's life that is not supported by the information provided.",
+        "needs_revision": true
+      }
+    },
+    {
+      "iteration": 1,
+      "answer": "The person in the image who is being tattooed has a stable life.",
+      "feedback": {
+        "critique": "The answer is factually incorrect. The image shows a person getting a tattoo, and the context states that two individuals who went to school together ran into each other and one started telling the other about their life. This suggests that the person who is being tattooed is the one who is sharing their life story, not the one with a stable life. The answer incorrectly identifies the person getting a tattoo as having a stable life, which is not supported by the context or the image. The answer also makes an unsupported social assumption that the person getting a tattoo is the one with a stable life, which is not based on the information provided in the image or context. The answer fails to consider the context and the image, and instead makes an assumption about the person's life that is not supported by the information provided.",
+        "needs_revision": true
+      }
+    },
+    {
+      "iteration": 2,
+      "answer": "The person in the image who is being tattooed has a stable life.",
+      "feedback": {
+        "critique": "The answer is factually incorrect. The image shows a person getting a tattoo, and the context states that two individuals who went to school together ran into each other and one started telling the other about their life. This suggests that the person who is being tattooed is the one who is sharing their life story, not the one with a stable life. The answer incorrectly identifies the person getting a tattoo as having a stable life, which is not supported by the context or the image. The answer also makes an unsupported social assumption that the person getting a tattoo is the one with a stable life, which is not based on the information provided in the image or context. The answer fails to consider the context and the image, and instead makes an assumption about the person's life that is not supported by the information provided.",
+        "needs_revision": true
+      }
+    },
+    {
+      "iteration": 3,
+      "answer": "The person in the image who is being tattooed has a stable life.",
+      "feedback": {
+        "critique": "The answer is factually incorrect. The image shows a person getting a tattoo, and the context states that two individuals who went to school together ran into each other and one started telling the other about their life. This suggests that the person who is being tattooed is the one who is sharing their life story, not the one with a stable life. The answer incorrectly identifies the person getting a tattoo as having a stable life, which is not supported by the context or the image. The answer also makes an unsupported social assumption that the person getting a tattoo is the one with a stable life, which is not based on the information provided in the image or context. The answer fails to consider the context and the image, and instead makes an assumption about the person's life that is not supported by the information provided.",
+        "needs_revision": true
+      }
+    }
+  ],
+  "max_calls": 8,
+  "initial_response_source": "shared",
+  "initial_response": "The person in the image who is getting a tattoo has a stable life.",
+  "stop_reason": "iteration_limit",
+  "final_response": "The person in the image who is being tattooed has a stable life.",
+  "model_calls": 8,
+  "call_log": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "ed386f06ff98e8fd06ec8e51cfff5c1c57c14b2130cf4bd0afee926db6735a1a",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 202,
+        "prompt_tokens": 1298,
+        "total_tokens": 1500,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.324843
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "a6d712e566166b8dd13d0f1d4109530cb9e495368d80737068d6c9d27414f3ae",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 1421,
+        "total_tokens": 1437,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.355816
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "2c1fdf02f301b415bf53e2216549024afb68e4f9f25c6b6264460ac68cadb22a",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 182,
+        "prompt_tokens": 1522,
+        "total_tokens": 1704,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.071363
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "84199664c8fa9274fe1cbbecfe72858b2f9f5b8e65c0207ab66a72d00ea17afa",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 1622,
+        "total_tokens": 1638,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.458061
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "13cc9f0e92ae7cc18e7b37fc39f2be315e2ddd0bf9adf95d73ecaae2373dbeed",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 182,
+        "prompt_tokens": 1723,
+        "total_tokens": 1905,
+        "prompt_tokens_details": {
+          "cached_tokens": 438
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.077877
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "286692b601ccdb92ded3b2ffd51ad2d78563a7457260ac2ec22cf2aa677cf694",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 1823,
+        "total_tokens": 1839,
+        "prompt_tokens_details": {
+          "cached_tokens": 538
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.555154
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "436039fb59788806d33f52e7725ded17c599e12beb8b6da8452e58f419b07033",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 182,
+        "prompt_tokens": 1924,
+        "total_tokens": 2106,
+        "prompt_tokens_details": {
+          "cached_tokens": 639
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.155022
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "09eac402e56f428a8619927c7e1ee86b390962175590b840e35699598d61a2d2",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 2024,
+        "total_tokens": 2040,
+        "prompt_tokens_details": {
+          "cached_tokens": 739
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.424618
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2",
+  "example_id": "02_06_0386_1_01",
+  "system": "self_refine_vqa",
+  "generator_model": "qwen3-vl-2b-local",
+  "calls": [
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "ed386f06ff98e8fd06ec8e51cfff5c1c57c14b2130cf4bd0afee926db6735a1a",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 202,
+        "prompt_tokens": 1298,
+        "total_tokens": 1500,
+        "prompt_tokens_details": {
+          "cached_tokens": 157
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.324843
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "a6d712e566166b8dd13d0f1d4109530cb9e495368d80737068d6c9d27414f3ae",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 1421,
+        "total_tokens": 1437,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.355816
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "2c1fdf02f301b415bf53e2216549024afb68e4f9f25c6b6264460ac68cadb22a",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 182,
+        "prompt_tokens": 1522,
+        "total_tokens": 1704,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.071363
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "84199664c8fa9274fe1cbbecfe72858b2f9f5b8e65c0207ab66a72d00ea17afa",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 1622,
+        "total_tokens": 1638,
+        "prompt_tokens_details": {
+          "cached_tokens": 3
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.458061
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "13cc9f0e92ae7cc18e7b37fc39f2be315e2ddd0bf9adf95d73ecaae2373dbeed",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 182,
+        "prompt_tokens": 1723,
+        "total_tokens": 1905,
+        "prompt_tokens_details": {
+          "cached_tokens": 438
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.077877
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "286692b601ccdb92ded3b2ffd51ad2d78563a7457260ac2ec22cf2aa677cf694",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 1823,
+        "total_tokens": 1839,
+        "prompt_tokens_details": {
+          "cached_tokens": 538
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.555154
+    },
+    {
+      "source": "self_refine_vqa:feedback",
+      "request_hash": "436039fb59788806d33f52e7725ded17c599e12beb8b6da8452e58f419b07033",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_object",
+          "schema": {
+            "additionalProperties": false,
+            "properties": {
+              "critique": {
+                "minLength": 1,
+                "title": "Critique",
+                "type": "string"
+              },
+              "needs_revision": {
+                "title": "Needs Revision",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "critique",
+              "needs_revision"
+            ],
+            "title": "Feedback",
+            "type": "object"
+          }
+        }
+      },
+      "usage": {
+        "completion_tokens": 182,
+        "prompt_tokens": 1924,
+        "total_tokens": 2106,
+        "prompt_tokens_details": {
+          "cached_tokens": 639
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 3.155022
+    },
+    {
+      "source": "self_refine_vqa:refinement",
+      "request_hash": "09eac402e56f428a8619927c7e1ee86b390962175590b840e35699598d61a2d2",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 2024,
+        "total_tokens": 2040,
+        "prompt_tokens_details": {
+          "cached_tokens": 739
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.424618
+    }
+  ],
+  "shared_draft_calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "16cbb109269ee860c764b65b4c6c5363c9381769201a595fc04470ea58dffb42",
+      "image_sha256": "6411562a370593a25ee6cf7d0a7c12fab3750cd8d132d175f51e7b9602dbcb70",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 1176,
+        "total_tokens": 1192,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.42627
+    }
+  ]
+}

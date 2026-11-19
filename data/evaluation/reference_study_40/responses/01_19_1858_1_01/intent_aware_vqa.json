@@ -1,0 +1,71 @@
+{
+  "method": "intent_aware_vqa",
+  "fidelity": "VQA adaptation, not published-score reproduction",
+  "status": "failed",
+  "history": [],
+  "max_calls": 8,
+  "initial_response_source": "method_specific",
+  "final_response": null,
+  "last_valid_response": "The image does not provide enough information to determine who is up to date with modern times.",
+  "error": "('Connection aborted.', ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))",
+  "model_calls": 1,
+  "call_log": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "aab9e0b764ed67759d8bd414267dcc11f96ad31ecdb95915b12c2c411fca7803",
+      "image_sha256": "b15e28a8fdc3c963cce51154c39a2a9fc9cf5e04de66673c3572fdc892ff1fb6",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": null,
+      "status": "failed",
+      "error_type": "ConnectionError",
+      "latency_seconds": 22.41502
+    }
+  ],
+  "protocol_hash": "69e427750640ada438caee31ada3310f909f907166ab3004c7f40c3f7616f7a1",
+  "example_id": "01_19_1858_1_01",
+  "system": "intent_aware_vqa",
+  "generator_model": "nvidia/nemotron-3.5-super-vl:free",
+  "calls": [
+    {
+      "source": "intent_aware_vqa:generation",
+      "request_hash": "aab9e0b764ed67759d8bd414267dcc11f96ad31ecdb95915b12c2c411fca7803",
+      "image_sha256": "b15e28a8fdc3c963cce51154c39a2a9fc9cf5e04de66673c3572fdc892ff1fb6",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "reasoning": {
+          "enabled": false
+        },
+        "provider": {
+          "max_price": {
+            "prompt": 0,
+            "completion": 0
+          },
+          "allow_fallbacks": false
+        }
+      },
+      "usage": null,
+      "status": "failed",
+      "error_type": "ConnectionError",
+      "latency_seconds": 22.41502
+    }
+  ],
+  "shared_draft_calls": []
+}

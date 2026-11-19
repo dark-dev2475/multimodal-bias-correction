@@ -1,0 +1,51 @@
+{
+  "version": "reference-text-diagnostic-round1",
+  "warning": "Independent-model TEXT entailment against AI-drafted reference facts. Not image-grounded accuracy, fairness, or a replacement for human labels. Non-entailment can reflect incomplete references or justified uncertainty.",
+  "calibration_protocol_hash": "9fb3644ef2c0a2b16f2a9703409c782fe9e15045d61b5508b18a9217f187af39",
+  "source_bundle_hash": "2e17d059f6c4327a18d8ae88eca6d700506ac6520ee3365173a934a54b236f5c",
+  "model_installation": {
+    "model_id": "cross-encoder/nli-deberta-v3-small",
+    "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+    "files": {
+      "config.json": {
+        "bytes": 1052,
+        "sha256": "885d0dceae8fa5c136da9209121ec9eb11160488e840de3bc1f29353674e5712"
+      },
+      "model.safetensors": {
+        "bytes": 567605820,
+        "sha256": "ebc79588dd73ccfb6a3f6078519cfbf512c5305384c5ea1845bc71cd32216e86"
+      },
+      "special_tokens_map.json": {
+        "bytes": 301,
+        "sha256": "ed7c099c988dbb414b18a6980d20cb57b91b7cd119f6f6941eb364b0e892e712"
+      },
+      "spm.model": {
+        "bytes": 2464616,
+        "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd"
+      },
+      "tokenizer.json": {
+        "bytes": 8656624,
+        "sha256": "5124ef2ead1a10a717703bc436de7f353da76d6340e4587719b42b1693707964"
+      },
+      "tokenizer_config.json": {
+        "bytes": 1346,
+        "sha256": "f3eecd07c370ef0bf7dd3780d3cd68cf9c8b00c267e21a208ddcd8f82bfec1a6"
+      }
+    },
+    "license": "Apache-2.0",
+    "purpose": "Separate text-entailment validation, not a vision model",
+    "model_card": "https://huggingface.co/cross-encoder/nli-deberta-v3-small"
+  },
+  "post_hoc": true,
+  "uses_images": false,
+  "reference_answer_used_as_evidence": false,
+  "directions": {
+    "unit_support": "reference facts -> answer sentence",
+    "required_fact_coverage": "whole answer -> required reference fact"
+  },
+  "source_hashes": {
+    "scripts\\evaluate_independent_reference_text.py": "85afcd3274525fc8f71b2e0b77c9a5f010ffad1ddd5b629d0c782d686cc9c63a",
+    "src\\validation_v2\\nli.py": "61ac40c734dad4f9bced3f3e3eec53fff315aa3f3bccd23e01119ef6f4489b98"
+  },
+  "protocol_hash": "0df567169a22496b523894faa3c2577f626450313227c0c414b3fa0ce6ee7d4d"
+}

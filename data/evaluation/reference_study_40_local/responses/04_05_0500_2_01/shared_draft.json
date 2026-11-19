@@ -1,0 +1,33 @@
+{
+  "answer": "The individuals in the image have never used a computer.",
+  "calls": [
+    {
+      "source": "shared_generation",
+      "request_hash": "fc219e152d1669c64a881f79f628c434de13d298768b657958f30d10a607f480",
+      "image_sha256": "d2b3226a6c19c4757e2470358541325505f847fcb48d20bd4f0de02843c100d3",
+      "cache_hit": false,
+      "network_attempted": true,
+      "max_tokens": 3000,
+      "temperature": 0,
+      "request_options": {
+        "seed": 42,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "usage": {
+        "completion_tokens": 12,
+        "prompt_tokens": 1096,
+        "total_tokens": 1108,
+        "prompt_tokens_details": {
+          "cached_tokens": 58
+        }
+      },
+      "status": "completed",
+      "response_model": "qwen3-vl-2b-local",
+      "finish_reason": "stop",
+      "latency_seconds": 1.142273
+    }
+  ],
+  "protocol_hash": "b199b683079e3a128c7074d334299cfa1b3968ccd3ab4173d4a56fc7c8032ce2"
+}
